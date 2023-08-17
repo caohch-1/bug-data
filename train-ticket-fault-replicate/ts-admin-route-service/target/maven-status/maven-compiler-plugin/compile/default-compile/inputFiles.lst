@@ -1,0 +1,13 @@
+/home/caohch1/Desktop/train-ticket-fault-replicate/ts-admin-route-service/src/main/java/adminroute/service/AdminRouteService.java
+/home/caohch1/Desktop/train-ticket-fault-replicate/ts-admin-route-service/src/main/java/adminroute/domain/response/GetRoutesListlResult.java
+/home/caohch1/Desktop/train-ticket-fault-replicate/ts-admin-route-service/src/main/java/adminroute/AdminRouteApplication.java
+/home/caohch1/Desktop/train-ticket-fault-replicate/ts-admin-route-service/src/main/java/adminroute/conf/HttpAspect.java
+/home/caohch1/Desktop/train-ticket-fault-replicate/ts-admin-route-service/src/main/java/adminroute/domain/bean/Route.java
+/home/caohch1/Desktop/train-ticket-fault-replicate/ts-admin-route-service/src/main/java/adminroute/domain/bean/CreateAndModifyRouteInfo.java
+/home/caohch1/Desktop/train-ticket-fault-replicate/ts-admin-route-service/src/main/java/adminroute/domain/bean/DeleteRouteInfo.java
+/home/caohch1/Desktop/train-ticket-fault-replicate/ts-admin-route-service/src/main/java/adminroute/service/AdminRouteServiceImpl.java
+/home/caohch1/Desktop/train-ticket-fault-replicate/ts-admin-route-service/src/main/java/adminroute/domain/request/CreateAndModifyRouteRequest.java
+/home/caohch1/Desktop/train-ticket-fault-replicate/ts-admin-route-service/src/main/java/adminroute/domain/request/DeleteRouteRequest.java
+/home/caohch1/Desktop/train-ticket-fault-replicate/ts-admin-route-service/src/main/java/adminroute/domain/response/DeleteRouteResult.java
+/home/caohch1/Desktop/train-ticket-fault-replicate/ts-admin-route-service/src/main/java/adminroute/domain/response/CreateAndModifyRouteResult.java
+/home/caohch1/Desktop/train-ticket-fault-replicate/ts-admin-route-service/src/main/java/adminroute/controller/AdminRouteController.java
