@@ -22,13 +22,19 @@ docker-compose up
 
 Now visit `localhost:8080` and you should see the UI of trainticket.
 
-### How deploy monitors
+### How to deploy monitors
 Excute `docker-compose up` in `monitor` dir.
-To use `docker-py` with `Docker Desktop`, following my answer [here](https://stackoverflow.com/a/76927390/12871978).
+*Note*: To use `docker-py` with `Docker Desktop`, following my answer [here](https://stackoverflow.com/a/76927390/12871978).
 
 
 ### How to run test scripts
-`mvn clean package` is all you need.
+1. Download Chromedriver accroding to your Chrome version.
+2. Change the chromedriver location of `System.setProperty("webdriver.chrome.driver", "/usr/local/share/chromedriver");` in the code.
+3. `mvn clean package` is all you need.
+
+
+*Note*: If your chrome driver is in the dir that need sudo premission, execute something like `sudo chmod +x /usr/local/share/chromedriver`.
+
 
 ## Todo
 1. Test if scripts can pass all tests.
