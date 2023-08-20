@@ -30,7 +30,7 @@ Excute `docker-compose up` in `monitor` dir.
 ### How to run test scripts
 1. Download Chromedriver accroding to your Chrome version.
 2. Change the chromedriver location of `System.setProperty("webdriver.chrome.driver", "/usr/local/share/chromedriver");` in the code.
-3. `mvn clean package` is all you need.
+3. `mvn clean test` is all you need.
 
 
 *Note*: If your chrome driver is in the dir that need sudo premission, execute something like `sudo chmod +x /usr/local/share/chromedriver`.
