@@ -37,6 +37,5 @@ Excute `docker-compose up` in `monitor` dir.
 
 
 ## Todo
-1. Test if scripts can pass all tests.
-2. Replicate F1.
-3. Write extractors.
+1. Replicate F1.
+2. Write extractors.
