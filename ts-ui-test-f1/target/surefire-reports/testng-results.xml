@@ -1,21 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="TestFlowTwoCancel" duration-ms="1298" started-at="2023-08-18T09:13:52Z" finished-at="2023-08-18T09:13:53Z">
+  <suite name="TestFlowTwoCancel" duration-ms="30133" started-at="2023-08-20T08:04:45Z" finished-at="2023-08-20T08:05:16Z">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="1298" started-at="2023-08-18T09:13:52Z" finished-at="2023-08-18T09:13:53Z">
+    <test name="Command line test" duration-ms="30133" started-at="2023-08-20T08:04:45Z" finished-at="2023-08-20T08:05:16Z">
       <class name="TestFlowTwoCancel">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:TestFlowTwoCancel@5315b42e]" name="setUp" is-config="true" duration-ms="549" started-at="2023-08-18T17:13:52Z" finished-at="2023-08-18T17:13:52Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:TestFlowTwoCancel@5315b42e]" name="setUp" is-config="true" duration-ms="720" started-at="2023-08-20T16:04:45Z" finished-at="2023-08-20T16:04:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testLogin()[pri:0, instance:TestFlowTwoCancel@5315b42e]" name="testLogin" duration-ms="673" started-at="2023-08-18T17:13:52Z" finished-at="2023-08-18T17:13:53Z">
+        <test-method status="PASS" signature="testLogin()[pri:0, instance:TestFlowTwoCancel@5315b42e]" name="testLogin" duration-ms="4479" started-at="2023-08-20T16:04:46Z" finished-at="2023-08-20T16:04:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLogin -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:TestFlowTwoCancel@5315b42e]" name="tearDown" is-config="true" duration-ms="69" started-at="2023-08-18T17:13:53Z" finished-at="2023-08-18T17:13:53Z">
+        <test-method status="PASS" signature="testViewOrders()[pri:0, instance:TestFlowTwoCancel@5315b42e]" name="testViewOrders" duration-ms="2738" started-at="2023-08-20T16:04:51Z" depends-on-methods="TestFlowTwoCancel.testLogin" finished-at="2023-08-20T16:04:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testViewOrders -->
+        <test-method status="PASS" signature="testClickOrderCancel()[pri:0, instance:TestFlowTwoCancel@5315b42e]" name="testClickOrderCancel" duration-ms="22117" started-at="2023-08-20T16:04:53Z" depends-on-methods="TestFlowTwoCancel.testViewOrders" finished-at="2023-08-20T16:05:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testClickOrderCancel -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:TestFlowTwoCancel@5315b42e]" name="tearDown" is-config="true" duration-ms="71" started-at="2023-08-20T16:05:16Z" finished-at="2023-08-20T16:05:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

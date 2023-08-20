@@ -1,5 +1,6 @@
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -30,7 +31,9 @@ public class TestFlowTwoCancel {
     @BeforeClass
     public void setUp() throws Exception {
         System.setProperty("webdriver.chrome.driver", "/usr/local/share/chromedriver");
-        driver = new ChromeDriver();
+        ChromeOptions chromeOptions = new ChromeOptions();
+        chromeOptions.addArguments("-headless");
+        driver = new ChromeDriver(chromeOptions);
         baseUrl = "http://localhost:8080";
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
     }
@@ -85,7 +88,6 @@ public class TestFlowTwoCancel {
     }
     @Test (dependsOnMethods = {"testViewOrders"})
     public void testClickOrderCancel() throws Exception{
-
         System.out.printf("The orders list size is:%d%n",myOrdersList.size());
         String statusOrder  = "";
         int i;
