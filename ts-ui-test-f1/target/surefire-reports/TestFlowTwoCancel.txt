@@ -1,4 +1,14 @@
 -------------------------------------------------------------------------------
 Test set: TestFlowTwoCancel
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 35.307 sec
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 29.695 sec <<< FAILURE!
+testClickOrderCancel(TestFlowTwoCancel)  Time elapsed: 17.932 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
+	at org.testng.Assert.assertEquals(Assert.java:115)
+	at org.testng.Assert.assertEquals(Assert.java:304)
+	at org.testng.Assert.assertEquals(Assert.java:314)
+	at TestFlowTwoCancel.testClickOrderCancel(TestFlowTwoCancel.java:125)
+

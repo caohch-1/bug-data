@@ -6,7 +6,8 @@
 1. Download [myProject](https://github.com/FudanSELab/train-ticket/blob/master/old-docs/Lib/myproject.zip).
 2. Move it to your `.m2` directory, where the lib of maven saved. The path just like `.m2\repository\myproject`
 3. Modify `<version>1.2.2.BUILD.SNAPSHOT</version>` to `<version>1.2.2.RELEASE</version>` in `micro-service-monitoring-zipkin-1.2.2.BUILD-SNAPSHOT.pom` and `micro-service-monitoring-core-1.2.2.BUILD-SNAPSHOT.pom`
-4. Excute following commands
+4. Modify image version for `ts-ticket-office-service` (node:13.3.0), `ts-voucher-mysql` (mysql:5.6.35), and all `ts-xxx-service` (openjdk:8-jre).
+5. Excute following commands
 ```bash
 mvn clean package
 docker-compose build
@@ -37,5 +38,4 @@ Excute `docker-compose up` in `monitor` dir.
 
 
 ## Todo
-1. Replicate F1.
-2. Write extractors.
+1. Write extractors.

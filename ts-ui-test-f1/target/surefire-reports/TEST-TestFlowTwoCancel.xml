@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="3" failures="0" name="TestFlowTwoCancel" time="34.164" errors="0" skipped="0">
+<testsuite tests="3" failures="1" name="TestFlowTwoCancel" time="28.324" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
@@ -63,7 +63,20 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="TestFlowTwoCancel" name="testLogin" time="6.93"/>
-  <testcase classname="TestFlowTwoCancel" name="testViewOrders" time="6.147"/>
-  <testcase classname="TestFlowTwoCancel" name="testClickOrderCancel" time="21.087"/>
+  <testcase classname="TestFlowTwoCancel" name="testLogin" time="6.889"/>
+  <testcase classname="TestFlowTwoCancel" name="testViewOrders" time="3.503"/>
+  <testcase classname="TestFlowTwoCancel" name="testClickOrderCancel" time="17.932">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
+	at org.testng.Assert.assertEquals(Assert.java:115)
+	at org.testng.Assert.assertEquals(Assert.java:304)
+	at org.testng.Assert.assertEquals(Assert.java:314)
+	at TestFlowTwoCancel.testClickOrderCancel(TestFlowTwoCancel.java:125)
+</failure>
+    <system-out>The orders list size is:1
+The Alert information of Cancel Ticket：Cancel Success:Success.Processes Seq.
+</system-out>
+  </testcase>
 </testsuite>
