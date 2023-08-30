@@ -1,12 +1,13 @@
 import docker
 
 class LogExtractor:
-    def __init__(self) -> None:
-        self.client = docker.from_env()
-        self.container_names = [c.name for c in self.client.containers.list() if "ts" in c.name]
+    def __init__(self, username, host) -> None:
+        self.client = docker.APIClient(base_url=f"ssh://{username}@{host}", use_ssh_client=True)
+        self.container_names = [c['Names'][0].replace('/','') for c in self.client.containers() if "train-ticket" in c['Names'][0]]
     
     def extract(self, container_name:str, output_dir:str="./logs"):
         with open(f"{output_dir}/{container_name}.txt", "w") as f:
+            print(container_name)
             dkg = self.client.containers.get(container_name).logs(stream=True, follow=False)
             lines = []
             try:
