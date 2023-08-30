@@ -24,7 +24,8 @@ docker-compose up
 Now visit `localhost:8080` and you should see the UI of trainticket.
 
 ### How to deploy monitors
-Excute `docker-compose up` in `monitor` dir.
+1. Set env variable`export DOCKER_HOST="unix:///home/caohch1/.docker/desktop/docker.sock"`
+2. Excute `docker-compose up` in `monitor` dir.
 *Note*: To use `docker-py` with `Docker Desktop`, following my answer [here](https://stackoverflow.com/a/76927390/12871978).
 
 
