@@ -13,11 +13,12 @@ mvn clean package
 docker-compose build
 docker-compose up
 # Waiting until all the containers are running
-# If you meet that some ts-xxx-mongo containers crash (e.g., exited with code 14)
+# If you meet that some ts-xxx-mongo containers crash (e.g., exited with code 14 or 100)
 # Try following 
 mvn clean package
 docker-compose build
 docker system prune
+docker volume prune
 docker-compose up
 ```
 

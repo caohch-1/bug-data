@@ -1,4 +1,5 @@
 import docker
+import os
 
 class LogExtractor:
     def __init__(self) -> None:
@@ -6,6 +7,9 @@ class LogExtractor:
         self.container_names = [c.name for c in self.client.containers.list() if "ts" in c.name]
     
     def extract(self, container_name:str, output_dir:str="./logs"):
+        if not os.path.exists(output_dir):
+            os.makedirs(output_dir)
+
         with open(f"{output_dir}/{container_name}.txt", "w") as f:
             dkg = self.client.containers.get(container_name).logs(stream=True, follow=False)
             lines = []

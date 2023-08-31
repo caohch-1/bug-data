@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="TestFlowOne" duration-ms="57618" started-at="2023-08-31T08:57:54Z" finished-at="2023-08-31T08:58:51Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="57618" started-at="2023-08-31T08:57:54Z" finished-at="2023-08-31T08:58:51Z">
+      <class name="TestFlowOne">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:TestFlowOne@5315b42e]" name="setUp" is-config="true" duration-ms="1141" started-at="2023-08-31T16:57:54Z" finished-at="2023-08-31T16:57:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testLogin()[pri:0, instance:TestFlowOne@5315b42e]" name="testLogin" duration-ms="7607" started-at="2023-08-31T16:57:55Z" finished-at="2023-08-31T16:58:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="testBooking()[pri:0, instance:TestFlowOne@5315b42e]" name="testBooking" duration-ms="18176" started-at="2023-08-31T16:58:02Z" depends-on-methods="TestFlowOne.testLogin" finished-at="2023-08-31T16:58:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBooking -->
+        <test-method status="PASS" signature="testSelectContacts()[pri:0, instance:TestFlowOne@5315b42e]" name="testSelectContacts" duration-ms="8426" started-at="2023-08-31T16:58:21Z" depends-on-methods="TestFlowOne.testBooking" finished-at="2023-08-31T16:58:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSelectContacts -->
+        <test-method status="PASS" signature="testTicketConfirm()[pri:0, instance:TestFlowOne@5315b42e]" name="testTicketConfirm" duration-ms="22182" started-at="2023-08-31T16:58:29Z" depends-on-methods="TestFlowOne.testBooking" finished-at="2023-08-31T16:58:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTicketConfirm -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:TestFlowOne@5315b42e]" name="tearDown" is-config="true" duration-ms="69" started-at="2023-08-31T16:58:51Z" finished-at="2023-08-31T16:58:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- TestFlowOne -->
+    </test> <!-- Command line test -->
+  </suite> <!-- TestFlowOne -->
+</testng-results>

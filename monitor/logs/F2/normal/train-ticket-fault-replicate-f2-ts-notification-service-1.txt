@@ -1,0 +1,17 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.3.RELEASE)
+
+c=notification.domain.NotifyInfo@8cab7e3
+c=notification.domain.NotifyInfo@fed51df
+requestArgs={"email":"fdse_microservices@163.com","orderNumber":"bb77560b-0c41-47a9-898a-88f862c9fe5f","username":"Default User","startingPlace":"shanghai","endPlace":"suzhou","startingTime":"Fri May 03 23:00:00 UTC 2013","date":"Thu Aug 31 08:58:36 UTC 2023","seatClass":"二等座","seatNumber":"137","price":"22.5"}
+requestArgs={"email":"fdse_microservices@163.com","orderNumber":"8f4d95de-7fe9-49e3-b346-20d7ab35ca7e","username":"Default User","startingPlace":"shanghai","endPlace":"suzhou","startingTime":"Fri May 03 23:00:00 UTC 2013","date":"Thu Aug 31 08:58:36 UTC 2023","seatClass":"二等座","seatNumber":"68","price":"22.5"}
+c=notification.domain.NotifyInfo@59f43463
+requestArgs={"email":"fdse_microservices@163.com","orderNumber":"d4982919-223f-48b1-bdff-d91ca9e796c5","username":"Default User","startingPlace":"shanghai","endPlace":"suzhou","startingTime":"Fri May 03 23:00:00 UTC 2013","date":"Thu Aug 31 08:58:37 UTC 2023","seatClass":"二等座","seatNumber":"85","price":"22.5"}
+c=notification.domain.NotifyInfo@1af35cf7
+requestArgs={"email":"fdse_microservices@163.com","orderNumber":"286762f8-ea58-4cca-842c-4181692053fd","username":"Default User","startingPlace":"shanghai","endPlace":"suzhou","startingTime":"Fri May 03 23:00:00 UTC 2013","date":"Thu Aug 31 08:58:37 UTC 2023","seatClass":"二等座","seatNumber":"109","price":"22.5"}

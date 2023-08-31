@@ -1,0 +1,318 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.3.RELEASE)
+
+2023-08-31 08:13:26.793  INFO [ts-travel-service,,,] 1 --- [           main] travel.TravelApplication                 : Starting TravelApplication v1.0 on a0f7c43f4013 with PID 1 (/app/ts-travel-service-1.0.jar started by root in /)
+2023-08-31 08:13:27.188  INFO [ts-travel-service,,,] 1 --- [           main] travel.TravelApplication                 : No active profile set, falling back to default profiles: default
+2023-08-31 08:13:30.929  INFO [ts-travel-service,,,] 1 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@61e717c2: startup date [Thu Aug 31 08:13:30 UTC 2023]; root of context hierarchy
+2023-08-31 08:14:09.550  INFO [ts-travel-service,,,] 1 --- [           main] o.s.i.config.IntegrationRegistrar        : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2023-08-31 08:14:20.776  INFO [ts-travel-service,,,] 1 --- [           main] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2023-08-31 08:14:20.885  INFO [ts-travel-service,,,] 1 --- [           main] faultConfiguringBeanFactoryPostProcessor : No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2023-08-31 08:14:21.795  INFO [ts-travel-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration$DefaultAsyncConfigurerSupport' of type [org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration$DefaultAsyncConfigurerSupport$$EnhancerBySpringCGLIB$$c871b72d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-08-31 08:14:24.621  INFO [ts-travel-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.annotation.SleuthAnnotationAutoConfiguration' of type [org.springframework.cloud.sleuth.annotation.SleuthAnnotationAutoConfiguration$$EnhancerBySpringCGLIB$$8d955f9c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-08-31 08:14:27.596  INFO [ts-travel-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'sleuthAdvisorConfig' of type [org.springframework.cloud.sleuth.annotation.SleuthAdvisorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-08-31 08:14:28.921  INFO [ts-travel-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'integrationGlobalProperties' of type [org.springframework.beans.factory.config.PropertiesFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-08-31 08:14:29.149  INFO [ts-travel-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'integrationGlobalProperties' of type [java.util.Properties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-08-31 08:14:32.209  INFO [ts-travel-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration' of type [org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration$$EnhancerBySpringCGLIB$$7313c589] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-08-31 08:14:50.991  INFO [ts-travel-service,,,] 1 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 12346 (http)
+2023-08-31 08:14:51.425  INFO [ts-travel-service,,,] 1 --- [           main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2023-08-31 08:14:51.464  INFO [ts-travel-service,,,] 1 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.14
+2023-08-31 08:14:52.820  INFO [ts-travel-service,,,] 1 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-08-31 08:14:52.826  INFO [ts-travel-service,,,] 1 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 82036 ms
+2023-08-31 08:15:16.799  INFO [ts-travel-service,,,] 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'metricsFilter' to: [/*]
+2023-08-31 08:15:16.799  INFO [ts-travel-service,,,] 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2023-08-31 08:15:16.800  INFO [ts-travel-service,,,] 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'traceFilter' to: [/*]
+2023-08-31 08:15:16.800  INFO [ts-travel-service,,,] 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2023-08-31 08:15:16.800  INFO [ts-travel-service,,,] 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2023-08-31 08:15:16.800  INFO [ts-travel-service,,,] 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2023-08-31 08:15:16.800  INFO [ts-travel-service,,,] 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2023-08-31 08:15:16.800  INFO [ts-travel-service,,,] 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'applicationContextIdFilter' to: [/*]
+2023-08-31 08:15:16.800  INFO [ts-travel-service,,,] 1 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2023-08-31 08:15:27.352  INFO [ts-travel-service,,,] 1 --- [           main] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[ts-travel-mongo:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2023-08-31 08:15:27.352  INFO [ts-travel-service,,,] 1 --- [           main] org.mongodb.driver.cluster               : Adding discovered server ts-travel-mongo:27017 to client view of cluster
+2023-08-31 08:15:29.779  INFO [ts-travel-service,,,] 1 --- [vel-mongo:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:1}] to ts-travel-mongo:27017
+2023-08-31 08:15:29.871  INFO [ts-travel-service,,,] 1 --- [vel-mongo:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=ts-travel-mongo:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[5, 0, 10]}, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, roundTripTimeNanos=89102598}
+2023-08-31 08:15:29.916  INFO [ts-travel-service,,,] 1 --- [vel-mongo:27017] org.mongodb.driver.cluster               : Discovered cluster type of STANDALONE
+2023-08-31 08:16:03.125  INFO [ts-travel-service,,,] 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@61e717c2: startup date [Thu Aug 31 08:13:30 UTC 2023]; root of context hierarchy
+2023-08-31 08:16:08.131  INFO [ts-travel-service,,,] 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/travel/retrieve],methods=[POST]}" onto public travel.domain.Trip travel.controller.TravelController.retrieve(travel.domain.Information2)
+2023-08-31 08:16:08.170  INFO [ts-travel-service,,,] 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/travel/getRouteByTripId/{tripId}],methods=[GET]}" onto public travel.domain.GetRouteResult travel.controller.TravelController.getRouteByTripId(java.lang.String)
+2023-08-31 08:16:08.170  INFO [ts-travel-service,,,] 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/travel/getTripAllDetailInfo],methods=[POST]}" onto public travel.domain.GetTripAllDetailResult travel.controller.TravelController.getTripAllDetailInfo(travel.domain.GetTripAllDetailInfo)
+2023-08-31 08:16:08.171  INFO [ts-travel-service,,,] 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/travel/queryAll],methods=[GET]}" onto public java.util.List<travel.domain.Trip> travel.controller.TravelController.queryAll()
+2023-08-31 08:16:08.205  INFO [ts-travel-service,,,] 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/travel/adminQueryAll],methods=[GET]}" onto public travel.domain.AdminFindAllResult travel.controller.TravelController.adminQueryAll()
+2023-08-31 08:16:08.206  INFO [ts-travel-service,,,] 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/travel/getTripsByRouteId],methods=[POST]}" onto public travel.domain.GetTripsByRouteIdResult travel.controller.TravelController.getTripsByRouteId(travel.domain.GetTripsByRouteIdInfo)
+2023-08-31 08:16:08.206  INFO [ts-travel-service,,,] 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/travel/getTrainTypeByTripId/{tripId}],methods=[GET]}" onto public travel.domain.GetTrainTypeResult travel.controller.TravelController.getTrainTypeByTripId(java.lang.String)
+2023-08-31 08:16:08.206  INFO [ts-travel-service,,,] 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/travel/queryWithPackage],methods=[POST]}" onto public travel.domain.QueryTripResponsePackage travel.controller.TravelController.queryPackage(travel.domain.QueryInfo)
+2023-08-31 08:16:08.242  INFO [ts-travel-service,,,] 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/travel/update],methods=[POST]}" onto public java.lang.String travel.controller.TravelController.update(travel.domain.Information)
+2023-08-31 08:16:08.243  INFO [ts-travel-service,,,] 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/travel/delete],methods=[POST]}" onto public java.lang.String travel.controller.TravelController.delete(travel.domain.Information2)
+2023-08-31 08:16:08.244  INFO [ts-travel-service,,,] 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/travel/create],methods=[POST]}" onto public java.lang.String travel.controller.TravelController.create(travel.domain.Information)
+2023-08-31 08:16:08.244  INFO [ts-travel-service,,,] 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/travel/query],methods=[POST]}" onto public java.util.ArrayList<travel.domain.TripResponse> travel.controller.TravelController.query(travel.domain.QueryInfo)
+2023-08-31 08:16:08.296  INFO [ts-travel-service,,,] 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2023-08-31 08:16:08.296  INFO [ts-travel-service,,,] 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2023-08-31 08:16:11.470  INFO [ts-travel-service,,,] 1 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2023-08-31 08:16:11.470  INFO [ts-travel-service,,,] 1 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2023-08-31 08:16:13.950  INFO [ts-travel-service,,,] 1 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2023-08-31 08:16:27.289  INFO [ts-travel-service,,,] 1 --- [           main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService  'taskScheduler'
+2023-08-31 08:16:38.034  INFO [ts-travel-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+2023-08-31 08:16:38.035  INFO [ts-travel-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+2023-08-31 08:16:38.083  INFO [ts-travel-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2023-08-31 08:16:38.084  INFO [ts-travel-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2023-08-31 08:16:38.084  INFO [ts-travel-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+2023-08-31 08:16:38.085  INFO [ts-travel-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2023-08-31 08:16:38.141  INFO [ts-travel-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2023-08-31 08:16:38.142  INFO [ts-travel-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2023-08-31 08:16:38.182  INFO [ts-travel-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2023-08-31 08:16:38.182  INFO [ts-travel-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2023-08-31 08:16:38.220  INFO [ts-travel-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2023-08-31 08:16:38.221  INFO [ts-travel-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2023-08-31 08:16:38.222  INFO [ts-travel-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2023-08-31 08:16:38.222  INFO [ts-travel-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2023-08-31 08:16:38.269  INFO [ts-travel-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2023-08-31 08:16:38.270  INFO [ts-travel-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+2023-08-31 08:16:38.271  INFO [ts-travel-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2023-08-31 08:16:38.272  INFO [ts-travel-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/features || /features.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2023-08-31 08:16:45.900  INFO [ts-travel-service,,,] 1 --- [           main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 
+2023-08-31 08:16:50.479  INFO [ts-travel-service,,,] 1 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2023-08-31 08:16:50.981  INFO [ts-travel-service,,,] 1 --- [           main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2023-08-31 08:16:51.870  INFO [ts-travel-service,,,] 1 --- [           main] o.s.i.endpoint.EventDrivenConsumer       : Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2023-08-31 08:16:51.888  INFO [ts-travel-service,,,] 1 --- [           main] o.s.i.channel.PublishSubscribeChannel    : Channel 'ts-travel-service:12346.errorChannel' has 1 subscriber(s).
+2023-08-31 08:16:51.892  INFO [ts-travel-service,,,] 1 --- [           main] o.s.i.endpoint.EventDrivenConsumer       : started _org.springframework.integration.errorLogger
+2023-08-31 08:16:53.233  INFO [ts-travel-service,,,] 1 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 12346 (http)
+2023-08-31 08:16:54.511  INFO [ts-travel-service,,,] 1 --- [           main] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:2}] to ts-travel-mongo:27017
+2023-08-31 08:16:55.725  INFO [ts-travel-service,,,] 1 --- [           main] travel.TravelApplication                 : Started TravelApplication in 223.44 seconds (JVM running for 229.372)
+2023-08-31 08:22:10.493  INFO [ts-travel-service,,,] 1 --- [io-12346-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2023-08-31 08:22:10.493  INFO [ts-travel-service,,,] 1 --- [io-12346-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2023-08-31 08:22:10.527  INFO [ts-travel-service,,,] 1 --- [io-12346-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 34 ms
+c=travel.domain.QueryInfo@2441efce
+requestArgs={"startingPlace":"Shang Hai","endPlace":"Su Zhou","departureTime":"Sep 17, 2023 12:00:00 AM"}
+2023-08-31 08:22:10.608  INFO [ts-travel-service,500de302f3b0d196,500de302f3b0d196,true] 1 --- [io-12346-exec-1] travel.config.HttpAspectConfig           : [Service:ts-travel-service][URI:ts-travel-service/travel/query][Method:POST][Request:{"startingPlace":"Shang Hai","endPlace":"Su Zhou","departureTime":"Sep 17, 2023 12:00:00 AM"}][RemoteHost:172.18.0.69][IP:172.18.0.69]
+[Travel Service] Query TripResponse
+[Travel Service][Get Route By Id] Route ID：92708982-77af-4318-be25-57ccb0ff69ad
+[Travel Service][Get Route By Id] Success.
+[Travel Service][Get Route By Id] Route ID：aefcef3f-3f42-46e8-afd7-6cb2a928bd3d
+[Travel Service][Get Route By Id] Success.
+[Travel Service][Get Route By Id] Route ID：a3f256c1-0e43-4f7d-9c21-121bf258101f
+[Travel Service][Get Route By Id] Success.
+[Travel Service][Get Route By Id] Route ID：084837bb-53c8-4438-87c8-0321a4d09917
+[Travel Service][Get Route By Id] Success.
+[Travel Service][Get Route By Id] Route ID：f3d4d4ef-693b-4456-8eed-59c0d717dd08
+[Travel Service][Get Route By Id] Success.
+c=D1345
+requestArgs="D1345"
+2023-08-31 08:22:12.543  INFO [ts-travel-service,500de302f3b0d196,d55b5725e6758098,true] 1 --- [io-12346-exec-2] travel.config.HttpAspectConfig           : [Service:ts-travel-service][URI:ts-travel-service/travel/getRouteByTripId/D1345][Method:GET][Request:"D1345"][RemoteHost:172.18.0.37][IP:172.18.0.37]
+[Get Route By Trip ID] TripId:D1345
+[Travel Service][Get Route By Id] Route ID：f3d4d4ef-693b-4456-8eed-59c0d717dd08
+[Travel Service][Get Route By Id] Success.
+[Get Route By Trip ID] Success
+2023-08-31 08:22:12.553  INFO [ts-travel-service,500de302f3b0d196,d55b5725e6758098,true] 1 --- [io-12346-exec-2] travel.config.HttpAspectConfig           : [Service:ts-travel-service][Response:{"status":true,"message":"Success","route":{"id":"f3d4d4ef-693b-4456-8eed-59c0d717dd08","stations":["shanghai","suzhou"],"distances":[0,50],"startStationId":"shanghai","terminalStationId":"suzhou"}}]
+c=D1345
+requestArgs="D1345"
+2023-08-31 08:22:12.612  INFO [ts-travel-service,500de302f3b0d196,0d8d495583f4f9f6,true] 1 --- [io-12346-exec-4] travel.config.HttpAspectConfig           : [Service:ts-travel-service][URI:ts-travel-service/travel/getTrainTypeByTripId/D1345][Method:GET][Request:"D1345"][RemoteHost:172.18.0.37][IP:172.18.0.37]
+2023-08-31 08:22:12.625  INFO [ts-travel-service,500de302f3b0d196,0d8d495583f4f9f6,true] 1 --- [io-12346-exec-4] travel.config.HttpAspectConfig           : [Service:ts-travel-service][Response:{"status":true,"message":"Success","trainType":{"id":"DongCheOne","economyClass":300,"confortClass":100,"averageSpeed":180}}]
+c=D1345
+requestArgs="D1345"
+2023-08-31 08:22:12.844  INFO [ts-travel-service,500de302f3b0d196,9328c5298df9e7c7,true] 1 --- [io-12346-exec-3] travel.config.HttpAspectConfig           : [Service:ts-travel-service][URI:ts-travel-service/travel/getRouteByTripId/D1345][Method:GET][Request:"D1345"][RemoteHost:172.18.0.37][IP:172.18.0.37]
+[Get Route By Trip ID] TripId:D1345
+[Travel Service][Get Route By Id] Route ID：f3d4d4ef-693b-4456-8eed-59c0d717dd08
+[Travel Service][Get Route By Id] Success.
+[Get Route By Trip ID] Success
+2023-08-31 08:22:12.855  INFO [ts-travel-service,500de302f3b0d196,9328c5298df9e7c7,true] 1 --- [io-12346-exec-3] travel.config.HttpAspectConfig           : [Service:ts-travel-service][Response:{"status":true,"message":"Success","route":{"id":"f3d4d4ef-693b-4456-8eed-59c0d717dd08","stations":["shanghai","suzhou"],"distances":[0,50],"startStationId":"shanghai","terminalStationId":"suzhou"}}]
+c=D1345
+requestArgs="D1345"
+2023-08-31 08:22:12.870  INFO [ts-travel-service,500de302f3b0d196,281cf435c2e4700c,true] 1 --- [io-12346-exec-5] travel.config.HttpAspectConfig           : [Service:ts-travel-service][URI:ts-travel-service/travel/getTrainTypeByTripId/D1345][Method:GET][Request:"D1345"][RemoteHost:172.18.0.37][IP:172.18.0.37]
+2023-08-31 08:22:12.880  INFO [ts-travel-service,500de302f3b0d196,281cf435c2e4700c,true] 1 --- [io-12346-exec-5] travel.config.HttpAspectConfig           : [Service:ts-travel-service][Response:{"status":true,"message":"Success","trainType":{"id":"DongCheOne","economyClass":300,"confortClass":100,"averageSpeed":180}}]
+[Train Service]计算时间：0 时间:Fri May 03 23:00:00 UTC 2013
+[Train Service]计算时间：16 时间:Fri May 03 23:16:00 UTC 2013
+2023-08-31 08:22:12.906  INFO [ts-travel-service,500de302f3b0d196,500de302f3b0d196,true] 1 --- [io-12346-exec-1] travel.config.HttpAspectConfig           : [Service:ts-travel-service][Response:[{"tripId":{"type":"D","number":"1345"},"trainTypeId":"DongCheOne","startingStation":"Shang Hai","terminalStation":"Su Zhou","startingTime":"May 3, 2013 11:00:00 PM","endTime":"May 3, 2013 11:16:00 PM","economyClass":150,"confortClass":50,"priceForEconomyClass":"22.5","priceForConfortClass":"50.0"}]]
+c=D1345
+requestArgs="D1345"
+2023-08-31 08:22:14.255  INFO [ts-travel-service,64ef342139f362c6,50dfb9925ea634b4,true] 1 --- [io-12346-exec-6] travel.config.HttpAspectConfig           : [Service:ts-travel-service][URI:ts-travel-service/travel/getRouteByTripId/D1345][Method:GET][Request:"D1345"][RemoteHost:172.18.0.65][IP:172.18.0.65]
+[Get Route By Trip ID] TripId:D1345
+[Travel Service][Get Route By Id] Route ID：f3d4d4ef-693b-4456-8eed-59c0d717dd08
+[Travel Service][Get Route By Id] Success.
+[Get Route By Trip ID] Success
+2023-08-31 08:22:14.266  INFO [ts-travel-service,64ef342139f362c6,50dfb9925ea634b4,true] 1 --- [io-12346-exec-6] travel.config.HttpAspectConfig           : [Service:ts-travel-service][Response:{"status":true,"message":"Success","route":{"id":"f3d4d4ef-693b-4456-8eed-59c0d717dd08","stations":["shanghai","suzhou"],"distances":[0,50],"startStationId":"shanghai","terminalStationId":"suzhou"}}]
+c=travel.domain.GetTripAllDetailInfo@77edb861
+requestArgs={"tripId":"D1345","travelDate":"Sep 17, 2023 12:00:00 AM","from":"Shang Hai","to":"Su Zhou"}
+2023-08-31 08:22:33.451  INFO [ts-travel-service,2dcd1ae04f52dd93,91618327593ed572,true] 1 --- [io-12346-exec-7] travel.config.HttpAspectConfig           : [Service:ts-travel-service][URI:ts-travel-service/travel/getTripAllDetailInfo/][Method:POST][Request:{"tripId":"D1345","travelDate":"Sep 17, 2023 12:00:00 AM","from":"Shang Hai","to":"Su Zhou"}][RemoteHost:172.18.0.8][IP:172.18.0.8]
+[TravelService] [GetTripAllDetailInfo] TripId:D1345
+[Travel Service][Get Route By Id] Route ID：f3d4d4ef-693b-4456-8eed-59c0d717dd08
+[Travel Service][Get Route By Id] Success.
+c=D1345
+requestArgs="D1345"
+2023-08-31 08:22:33.700  INFO [ts-travel-service,2dcd1ae04f52dd93,2f3b1f049d89f1fc,true] 1 --- [io-12346-exec-8] travel.config.HttpAspectConfig           : [Service:ts-travel-service][URI:ts-travel-service/travel/getRouteByTripId/D1345][Method:GET][Request:"D1345"][RemoteHost:172.18.0.37][IP:172.18.0.37]
+[Get Route By Trip ID] TripId:D1345
+[Travel Service][Get Route By Id] Route ID：f3d4d4ef-693b-4456-8eed-59c0d717dd08
+[Travel Service][Get Route By Id] Success.
+[Get Route By Trip ID] Success
+2023-08-31 08:22:33.712  INFO [ts-travel-service,2dcd1ae04f52dd93,2f3b1f049d89f1fc,true] 1 --- [io-12346-exec-8] travel.config.HttpAspectConfig           : [Service:ts-travel-service][Response:{"status":true,"message":"Success","route":{"id":"f3d4d4ef-693b-4456-8eed-59c0d717dd08","stations":["shanghai","suzhou"],"distances":[0,50],"startStationId":"shanghai","terminalStationId":"suzhou"}}]
+c=D1345
+requestArgs="D1345"
+2023-08-31 08:22:33.729  INFO [ts-travel-service,2dcd1ae04f52dd93,1c41bc6004519df4,true] 1 --- [io-12346-exec-9] travel.config.HttpAspectConfig           : [Service:ts-travel-service][URI:ts-travel-service/travel/getTrainTypeByTripId/D1345][Method:GET][Request:"D1345"][RemoteHost:172.18.0.37][IP:172.18.0.37]
+2023-08-31 08:22:33.738  INFO [ts-travel-service,2dcd1ae04f52dd93,1c41bc6004519df4,true] 1 --- [io-12346-exec-9] travel.config.HttpAspectConfig           : [Service:ts-travel-service][Response:{"status":true,"message":"Success","trainType":{"id":"DongCheOne","economyClass":300,"confortClass":100,"averageSpeed":180}}]
+c=D1345
+requestArgs="D1345"
+2023-08-31 08:22:33.805  INFO [ts-travel-service,2dcd1ae04f52dd93,3af2b0cf106e18ab,true] 1 --- [o-12346-exec-10] travel.config.HttpAspectConfig           : [Service:ts-travel-service][URI:ts-travel-service/travel/getRouteByTripId/D1345][Method:GET][Request:"D1345"][RemoteHost:172.18.0.37][IP:172.18.0.37]
+[Get Route By Trip ID] TripId:D1345
+[Travel Service][Get Route By Id] Route ID：f3d4d4ef-693b-4456-8eed-59c0d717dd08
+[Travel Service][Get Route By Id] Success.
+[Get Route By Trip ID] Success
+2023-08-31 08:22:33.826  INFO [ts-travel-service,2dcd1ae04f52dd93,3af2b0cf106e18ab,true] 1 --- [o-12346-exec-10] travel.config.HttpAspectConfig           : [Service:ts-travel-service][Response:{"status":true,"message":"Success","route":{"id":"f3d4d4ef-693b-4456-8eed-59c0d717dd08","stations":["shanghai","suzhou"],"distances":[0,50],"startStationId":"shanghai","terminalStationId":"suzhou"}}]
+c=D1345
+requestArgs="D1345"
+2023-08-31 08:22:33.841  INFO [ts-travel-service,2dcd1ae04f52dd93,6fcf825ee5319da9,true] 1 --- [io-12346-exec-2] travel.config.HttpAspectConfig           : [Service:ts-travel-service][URI:ts-travel-service/travel/getTrainTypeByTripId/D1345][Method:GET][Request:"D1345"][RemoteHost:172.18.0.37][IP:172.18.0.37]
+2023-08-31 08:22:33.851  INFO [ts-travel-service,2dcd1ae04f52dd93,6fcf825ee5319da9,true] 1 --- [io-12346-exec-2] travel.config.HttpAspectConfig           : [Service:ts-travel-service][Response:{"status":true,"message":"Success","trainType":{"id":"DongCheOne","economyClass":300,"confortClass":100,"averageSpeed":180}}]
+[Train Service]计算时间：0 时间:Fri May 03 23:00:00 UTC 2013
+[Train Service]计算时间：16 时间:Fri May 03 23:16:00 UTC 2013
+2023-08-31 08:22:33.880  INFO [ts-travel-service,2dcd1ae04f52dd93,91618327593ed572,true] 1 --- [io-12346-exec-7] travel.config.HttpAspectConfig           : [Service:ts-travel-service][Response:{"status":true,"message":"Success","tripResponse":{"tripId":{"type":"D","number":"1345"},"trainTypeId":"DongCheOne","startingStation":"Shang Hai","terminalStation":"Su Zhou","startingTime":"May 3, 2013 11:00:00 PM","endTime":"May 3, 2013 11:16:00 PM","economyClass":150,"confortClass":50,"priceForEconomyClass":"22.5","priceForConfortClass":"50.0"},"trip":{"tripId":{"type":"D","number":"1345"},"trainTypeId":"DongCheOne","routeId":"f3d4d4ef-693b-4456-8eed-59c0d717dd08","startingTime":"May 3, 2013 11:00:00 PM","startingStationId":"shanghai","stationsId":"suzhou","terminalStationId":"taiyuan","endTime":"May 4, 2013 11:59:52 AM"}}]
+c=D1345
+requestArgs="D1345"
+2023-08-31 08:22:34.010  INFO [ts-travel-service,2dcd1ae04f52dd93,dd7e84a50d5d54f9,true] 1 --- [io-12346-exec-4] travel.config.HttpAspectConfig           : [Service:ts-travel-service][URI:ts-travel-service/travel/getRouteByTripId/D1345][Method:GET][Request:"D1345"][RemoteHost:172.18.0.37][IP:172.18.0.37]
+[Get Route By Trip ID] TripId:D1345
+[Travel Service][Get Route By Id] Route ID：f3d4d4ef-693b-4456-8eed-59c0d717dd08
+[Travel Service][Get Route By Id] Success.
+[Get Route By Trip ID] Success
+2023-08-31 08:22:34.017  INFO [ts-travel-service,2dcd1ae04f52dd93,dd7e84a50d5d54f9,true] 1 --- [io-12346-exec-4] travel.config.HttpAspectConfig           : [Service:ts-travel-service][Response:{"status":true,"message":"Success","route":{"id":"f3d4d4ef-693b-4456-8eed-59c0d717dd08","stations":["shanghai","suzhou"],"distances":[0,50],"startStationId":"shanghai","terminalStationId":"suzhou"}}]
+c=D1345
+requestArgs="D1345"
+2023-08-31 08:22:34.029  INFO [ts-travel-service,2dcd1ae04f52dd93,d88841028523d01d,true] 1 --- [io-12346-exec-3] travel.config.HttpAspectConfig           : [Service:ts-travel-service][URI:ts-travel-service/travel/getTrainTypeByTripId/D1345][Method:GET][Request:"D1345"][RemoteHost:172.18.0.37][IP:172.18.0.37]
+2023-08-31 08:22:34.040  INFO [ts-travel-service,2dcd1ae04f52dd93,d88841028523d01d,true] 1 --- [io-12346-exec-3] travel.config.HttpAspectConfig           : [Service:ts-travel-service][Response:{"status":true,"message":"Success","trainType":{"id":"DongCheOne","economyClass":300,"confortClass":100,"averageSpeed":180}}]
+c=travel.domain.GetTripAllDetailInfo@3eacb29d
+requestArgs={"tripId":"D1345","travelDate":"Sep 17, 2023 12:00:00 AM","from":"Shang Hai","to":"Su Zhou"}
+2023-08-31 08:22:36.025  INFO [ts-travel-service,725967033e28b815,4273dcd44cc4b554,true] 1 --- [io-12346-exec-5] travel.config.HttpAspectConfig           : [Service:ts-travel-service][URI:ts-travel-service/travel/getTripAllDetailInfo/][Method:POST][Request:{"tripId":"D1345","travelDate":"Sep 17, 2023 12:00:00 AM","from":"Shang Hai","to":"Su Zhou"}][RemoteHost:172.18.0.8][IP:172.18.0.8]
+[TravelService] [GetTripAllDetailInfo] TripId:D1345
+[Travel Service][Get Route By Id] Route ID：f3d4d4ef-693b-4456-8eed-59c0d717dd08
+[Travel Service][Get Route By Id] Success.
+c=travel.domain.GetTripAllDetailInfo@4c3e061a
+requestArgs={"tripId":"D1345","travelDate":"Sep 17, 2023 12:00:00 AM","from":"Shang Hai","to":"Su Zhou"}
+2023-08-31 08:22:36.110  INFO [ts-travel-service,2dcd1ae04f52dd93,e1acab5cc7a0c23d,true] 1 --- [io-12346-exec-1] travel.config.HttpAspectConfig           : [Service:ts-travel-service][URI:ts-travel-service/travel/getTripAllDetailInfo/][Method:POST][Request:{"tripId":"D1345","travelDate":"Sep 17, 2023 12:00:00 AM","from":"Shang Hai","to":"Su Zhou"}][RemoteHost:172.18.0.8][IP:172.18.0.8]
+[TravelService] [GetTripAllDetailInfo] TripId:D1345
+[Travel Service][Get Route By Id] Route ID：f3d4d4ef-693b-4456-8eed-59c0d717dd08
+[Travel Service][Get Route By Id] Success.
+c=D1345
+requestArgs="D1345"
+2023-08-31 08:22:36.295  INFO [ts-travel-service,725967033e28b815,fe515e12d6343f6c,true] 1 --- [io-12346-exec-6] travel.config.HttpAspectConfig           : [Service:ts-travel-service][URI:ts-travel-service/travel/getRouteByTripId/D1345][Method:GET][Request:"D1345"][RemoteHost:172.18.0.37][IP:172.18.0.37]
+[Get Route By Trip ID] TripId:D1345
+[Travel Service][Get Route By Id] Route ID：f3d4d4ef-693b-4456-8eed-59c0d717dd08
+[Travel Service][Get Route By Id] Success.
+[Get Route By Trip ID] Success
+2023-08-31 08:22:36.308  INFO [ts-travel-service,725967033e28b815,fe515e12d6343f6c,true] 1 --- [io-12346-exec-6] travel.config.HttpAspectConfig           : [Service:ts-travel-service][Response:{"status":true,"message":"Success","route":{"id":"f3d4d4ef-693b-4456-8eed-59c0d717dd08","stations":["shanghai","suzhou"],"distances":[0,50],"startStationId":"shanghai","terminalStationId":"suzhou"}}]
+c=D1345
+requestArgs="D1345"
+2023-08-31 08:22:36.324  INFO [ts-travel-service,725967033e28b815,3a9c3e2478748395,true] 1 --- [io-12346-exec-8] travel.config.HttpAspectConfig           : [Service:ts-travel-service][URI:ts-travel-service/travel/getTrainTypeByTripId/D1345][Method:GET][Request:"D1345"][RemoteHost:172.18.0.37][IP:172.18.0.37]
+2023-08-31 08:22:36.341  INFO [ts-travel-service,725967033e28b815,3a9c3e2478748395,true] 1 --- [io-12346-exec-8] travel.config.HttpAspectConfig           : [Service:ts-travel-service][Response:{"status":true,"message":"Success","trainType":{"id":"DongCheOne","economyClass":300,"confortClass":100,"averageSpeed":180}}]
+c=D1345
+requestArgs="D1345"
+2023-08-31 08:22:36.402  INFO [ts-travel-service,725967033e28b815,402e372089cab0da,true] 1 --- [io-12346-exec-9] travel.config.HttpAspectConfig           : [Service:ts-travel-service][URI:ts-travel-service/travel/getRouteByTripId/D1345][Method:GET][Request:"D1345"][RemoteHost:172.18.0.37][IP:172.18.0.37]
+[Get Route By Trip ID] TripId:D1345
+[Travel Service][Get Route By Id] Route ID：f3d4d4ef-693b-4456-8eed-59c0d717dd08
+[Travel Service][Get Route By Id] Success.
+[Get Route By Trip ID] Success
+2023-08-31 08:22:36.410  INFO [ts-travel-service,725967033e28b815,402e372089cab0da,true] 1 --- [io-12346-exec-9] travel.config.HttpAspectConfig           : [Service:ts-travel-service][Response:{"status":true,"message":"Success","route":{"id":"f3d4d4ef-693b-4456-8eed-59c0d717dd08","stations":["shanghai","suzhou"],"distances":[0,50],"startStationId":"shanghai","terminalStationId":"suzhou"}}]
+c=D1345
+requestArgs="D1345"
+2023-08-31 08:22:36.422  INFO [ts-travel-service,725967033e28b815,77525241cff4e143,true] 1 --- [o-12346-exec-10] travel.config.HttpAspectConfig           : [Service:ts-travel-service][URI:ts-travel-service/travel/getTrainTypeByTripId/D1345][Method:GET][Request:"D1345"][RemoteHost:172.18.0.37][IP:172.18.0.37]
+2023-08-31 08:22:36.433  INFO [ts-travel-service,725967033e28b815,77525241cff4e143,true] 1 --- [o-12346-exec-10] travel.config.HttpAspectConfig           : [Service:ts-travel-service][Response:{"status":true,"message":"Success","trainType":{"id":"DongCheOne","economyClass":300,"confortClass":100,"averageSpeed":180}}]
+[Train Service]计算时间：0 时间:Fri May 03 23:00:00 UTC 2013
+[Train Service]计算时间：16 时间:Fri May 03 23:16:00 UTC 2013
+2023-08-31 08:22:36.460  INFO [ts-travel-service,725967033e28b815,4273dcd44cc4b554,true] 1 --- [io-12346-exec-5] travel.config.HttpAspectConfig           : [Service:ts-travel-service][Response:{"status":true,"message":"Success","tripResponse":{"tripId":{"type":"D","number":"1345"},"trainTypeId":"DongCheOne","startingStation":"Shang Hai","terminalStation":"Su Zhou","startingTime":"May 3, 2013 11:00:00 PM","endTime":"May 3, 2013 11:16:00 PM","economyClass":149,"confortClass":49,"priceForEconomyClass":"22.5","priceForConfortClass":"50.0"},"trip":{"tripId":{"type":"D","number":"1345"},"trainTypeId":"DongCheOne","routeId":"f3d4d4ef-693b-4456-8eed-59c0d717dd08","startingTime":"May 3, 2013 11:00:00 PM","startingStationId":"shanghai","stationsId":"suzhou","terminalStationId":"taiyuan","endTime":"May 4, 2013 11:59:52 AM"}}]
+c=D1345
+requestArgs="D1345"
+2023-08-31 08:22:36.467  INFO [ts-travel-service,2dcd1ae04f52dd93,a43c0214284c8612,true] 1 --- [io-12346-exec-2] travel.config.HttpAspectConfig           : [Service:ts-travel-service][URI:ts-travel-service/travel/getRouteByTripId/D1345][Method:GET][Request:"D1345"][RemoteHost:172.18.0.37][IP:172.18.0.37]
+[Get Route By Trip ID] TripId:D1345
+[Travel Service][Get Route By Id] Route ID：f3d4d4ef-693b-4456-8eed-59c0d717dd08
+[Travel Service][Get Route By Id] Success.
+[Get Route By Trip ID] Success
+2023-08-31 08:22:36.479  INFO [ts-travel-service,2dcd1ae04f52dd93,a43c0214284c8612,true] 1 --- [io-12346-exec-2] travel.config.HttpAspectConfig           : [Service:ts-travel-service][Response:{"status":true,"message":"Success","route":{"id":"f3d4d4ef-693b-4456-8eed-59c0d717dd08","stations":["shanghai","suzhou"],"distances":[0,50],"startStationId":"shanghai","terminalStationId":"suzhou"}}]
+c=D1345
+requestArgs="D1345"
+2023-08-31 08:22:36.493  INFO [ts-travel-service,2dcd1ae04f52dd93,d737b9a001711a16,true] 1 --- [io-12346-exec-7] travel.config.HttpAspectConfig           : [Service:ts-travel-service][URI:ts-travel-service/travel/getTrainTypeByTripId/D1345][Method:GET][Request:"D1345"][RemoteHost:172.18.0.37][IP:172.18.0.37]
+2023-08-31 08:22:36.505  INFO [ts-travel-service,2dcd1ae04f52dd93,d737b9a001711a16,true] 1 --- [io-12346-exec-7] travel.config.HttpAspectConfig           : [Service:ts-travel-service][Response:{"status":true,"message":"Success","trainType":{"id":"DongCheOne","economyClass":300,"confortClass":100,"averageSpeed":180}}]
+c=D1345
+requestArgs="D1345"
+2023-08-31 08:22:36.569  INFO [ts-travel-service,725967033e28b815,1e2b51cc7a3b2540,true] 1 --- [io-12346-exec-4] travel.config.HttpAspectConfig           : [Service:ts-travel-service][URI:ts-travel-service/travel/getRouteByTripId/D1345][Method:GET][Request:"D1345"][RemoteHost:172.18.0.37][IP:172.18.0.37]
+[Get Route By Trip ID] TripId:D1345
+[Travel Service][Get Route By Id] Route ID：f3d4d4ef-693b-4456-8eed-59c0d717dd08
+[Travel Service][Get Route By Id] Success.
+[Get Route By Trip ID] Success
+2023-08-31 08:22:36.581  INFO [ts-travel-service,725967033e28b815,1e2b51cc7a3b2540,true] 1 --- [io-12346-exec-4] travel.config.HttpAspectConfig           : [Service:ts-travel-service][Response:{"status":true,"message":"Success","route":{"id":"f3d4d4ef-693b-4456-8eed-59c0d717dd08","stations":["shanghai","suzhou"],"distances":[0,50],"startStationId":"shanghai","terminalStationId":"suzhou"}}]
+c=D1345
+requestArgs="D1345"
+2023-08-31 08:22:36.588  INFO [ts-travel-service,2dcd1ae04f52dd93,dcece10007a36576,true] 1 --- [io-12346-exec-3] travel.config.HttpAspectConfig           : [Service:ts-travel-service][URI:ts-travel-service/travel/getRouteByTripId/D1345][Method:GET][Request:"D1345"][RemoteHost:172.18.0.37][IP:172.18.0.37]
+[Get Route By Trip ID] TripId:D1345
+[Travel Service][Get Route By Id] Route ID：f3d4d4ef-693b-4456-8eed-59c0d717dd08
+c=D1345
+requestArgs="D1345"
+2023-08-31 08:22:36.596  INFO [ts-travel-service,725967033e28b815,0ed4dd7ac423e786,true] 1 --- [io-12346-exec-6] travel.config.HttpAspectConfig           : [Service:ts-travel-service][URI:ts-travel-service/travel/getTrainTypeByTripId/D1345][Method:GET][Request:"D1345"][RemoteHost:172.18.0.37][IP:172.18.0.37]
+[Travel Service][Get Route By Id] Success.
+[Get Route By Trip ID] Success
+2023-08-31 08:22:36.598  INFO [ts-travel-service,2dcd1ae04f52dd93,dcece10007a36576,true] 1 --- [io-12346-exec-3] travel.config.HttpAspectConfig           : [Service:ts-travel-service][Response:{"status":true,"message":"Success","route":{"id":"f3d4d4ef-693b-4456-8eed-59c0d717dd08","stations":["shanghai","suzhou"],"distances":[0,50],"startStationId":"shanghai","terminalStationId":"suzhou"}}]
+2023-08-31 08:22:36.606  INFO [ts-travel-service,725967033e28b815,0ed4dd7ac423e786,true] 1 --- [io-12346-exec-6] travel.config.HttpAspectConfig           : [Service:ts-travel-service][Response:{"status":true,"message":"Success","trainType":{"id":"DongCheOne","economyClass":300,"confortClass":100,"averageSpeed":180}}]
+c=D1345
+requestArgs="D1345"
+2023-08-31 08:22:36.621  INFO [ts-travel-service,2dcd1ae04f52dd93,8886e4a4d792bd5c,true] 1 --- [io-12346-exec-8] travel.config.HttpAspectConfig           : [Service:ts-travel-service][URI:ts-travel-service/travel/getTrainTypeByTripId/D1345][Method:GET][Request:"D1345"][RemoteHost:172.18.0.37][IP:172.18.0.37]
+2023-08-31 08:22:36.638  INFO [ts-travel-service,2dcd1ae04f52dd93,8886e4a4d792bd5c,true] 1 --- [io-12346-exec-8] travel.config.HttpAspectConfig           : [Service:ts-travel-service][Response:{"status":true,"message":"Success","trainType":{"id":"DongCheOne","economyClass":300,"confortClass":100,"averageSpeed":180}}]
+[Train Service]计算时间：0 时间:Fri May 03 23:00:00 UTC 2013
+[Train Service]计算时间：16 时间:Fri May 03 23:16:00 UTC 2013
+2023-08-31 08:22:36.676  INFO [ts-travel-service,2dcd1ae04f52dd93,e1acab5cc7a0c23d,true] 1 --- [io-12346-exec-1] travel.config.HttpAspectConfig           : [Service:ts-travel-service][Response:{"status":true,"message":"Success","tripResponse":{"tripId":{"type":"D","number":"1345"},"trainTypeId":"DongCheOne","startingStation":"Shang Hai","terminalStation":"Su Zhou","startingTime":"May 3, 2013 11:00:00 PM","endTime":"May 3, 2013 11:16:00 PM","economyClass":149,"confortClass":49,"priceForEconomyClass":"22.5","priceForConfortClass":"50.0"},"trip":{"tripId":{"type":"D","number":"1345"},"trainTypeId":"DongCheOne","routeId":"f3d4d4ef-693b-4456-8eed-59c0d717dd08","startingTime":"May 3, 2013 11:00:00 PM","startingStationId":"shanghai","stationsId":"suzhou","terminalStationId":"taiyuan","endTime":"May 4, 2013 11:59:52 AM"}}]
+c=D1345
+requestArgs="D1345"
+2023-08-31 08:22:36.778  INFO [ts-travel-service,2dcd1ae04f52dd93,ba397bc570961828,true] 1 --- [io-12346-exec-9] travel.config.HttpAspectConfig           : [Service:ts-travel-service][URI:ts-travel-service/travel/getRouteByTripId/D1345][Method:GET][Request:"D1345"][RemoteHost:172.18.0.37][IP:172.18.0.37]
+[Get Route By Trip ID] TripId:D1345
+[Travel Service][Get Route By Id] Route ID：f3d4d4ef-693b-4456-8eed-59c0d717dd08
+[Travel Service][Get Route By Id] Success.
+[Get Route By Trip ID] Success
+2023-08-31 08:22:36.786  INFO [ts-travel-service,2dcd1ae04f52dd93,ba397bc570961828,true] 1 --- [io-12346-exec-9] travel.config.HttpAspectConfig           : [Service:ts-travel-service][Response:{"status":true,"message":"Success","route":{"id":"f3d4d4ef-693b-4456-8eed-59c0d717dd08","stations":["shanghai","suzhou"],"distances":[0,50],"startStationId":"shanghai","terminalStationId":"suzhou"}}]
+c=D1345
+requestArgs="D1345"
+2023-08-31 08:22:36.800  INFO [ts-travel-service,2dcd1ae04f52dd93,fc995109c0eef5f3,true] 1 --- [o-12346-exec-10] travel.config.HttpAspectConfig           : [Service:ts-travel-service][URI:ts-travel-service/travel/getTrainTypeByTripId/D1345][Method:GET][Request:"D1345"][RemoteHost:172.18.0.37][IP:172.18.0.37]
+2023-08-31 08:22:36.813  INFO [ts-travel-service,2dcd1ae04f52dd93,fc995109c0eef5f3,true] 1 --- [o-12346-exec-10] travel.config.HttpAspectConfig           : [Service:ts-travel-service][Response:{"status":true,"message":"Success","trainType":{"id":"DongCheOne","economyClass":300,"confortClass":100,"averageSpeed":180}}]
+c=travel.domain.GetTripAllDetailInfo@306b4b38
+requestArgs={"tripId":"D1345","travelDate":"Sep 17, 2023 12:00:00 AM","from":"Shang Hai","to":"Su Zhou"}
+2023-08-31 08:22:54.429  INFO [ts-travel-service,725967033e28b815,0137410c2b1a0cfc,true] 1 --- [io-12346-exec-5] travel.config.HttpAspectConfig           : [Service:ts-travel-service][URI:ts-travel-service/travel/getTripAllDetailInfo/][Method:POST][Request:{"tripId":"D1345","travelDate":"Sep 17, 2023 12:00:00 AM","from":"Shang Hai","to":"Su Zhou"}][RemoteHost:172.18.0.8][IP:172.18.0.8]
+[TravelService] [GetTripAllDetailInfo] TripId:D1345
+[Travel Service][Get Route By Id] Route ID：f3d4d4ef-693b-4456-8eed-59c0d717dd08
+[Travel Service][Get Route By Id] Success.
+c=D1345
+requestArgs="D1345"
+2023-08-31 08:22:54.618  INFO [ts-travel-service,725967033e28b815,e5cdb601f12376a0,true] 1 --- [io-12346-exec-2] travel.config.HttpAspectConfig           : [Service:ts-travel-service][URI:ts-travel-service/travel/getRouteByTripId/D1345][Method:GET][Request:"D1345"][RemoteHost:172.18.0.37][IP:172.18.0.37]
+[Get Route By Trip ID] TripId:D1345
+[Travel Service][Get Route By Id] Route ID：f3d4d4ef-693b-4456-8eed-59c0d717dd08
+[Travel Service][Get Route By Id] Success.
+[Get Route By Trip ID] Success
+2023-08-31 08:22:54.627  INFO [ts-travel-service,725967033e28b815,e5cdb601f12376a0,true] 1 --- [io-12346-exec-2] travel.config.HttpAspectConfig           : [Service:ts-travel-service][Response:{"status":true,"message":"Success","route":{"id":"f3d4d4ef-693b-4456-8eed-59c0d717dd08","stations":["shanghai","suzhou"],"distances":[0,50],"startStationId":"shanghai","terminalStationId":"suzhou"}}]
+c=D1345
+requestArgs="D1345"
+2023-08-31 08:22:54.644  INFO [ts-travel-service,725967033e28b815,54390ba8c2812888,true] 1 --- [io-12346-exec-7] travel.config.HttpAspectConfig           : [Service:ts-travel-service][URI:ts-travel-service/travel/getTrainTypeByTripId/D1345][Method:GET][Request:"D1345"][RemoteHost:172.18.0.37][IP:172.18.0.37]
+2023-08-31 08:22:54.655  INFO [ts-travel-service,725967033e28b815,54390ba8c2812888,true] 1 --- [io-12346-exec-7] travel.config.HttpAspectConfig           : [Service:ts-travel-service][Response:{"status":true,"message":"Success","trainType":{"id":"DongCheOne","economyClass":300,"confortClass":100,"averageSpeed":180}}]
+c=D1345
+requestArgs="D1345"
+2023-08-31 08:22:54.708  INFO [ts-travel-service,725967033e28b815,35b041dcad4f63dc,true] 1 --- [io-12346-exec-4] travel.config.HttpAspectConfig           : [Service:ts-travel-service][URI:ts-travel-service/travel/getRouteByTripId/D1345][Method:GET][Request:"D1345"][RemoteHost:172.18.0.37][IP:172.18.0.37]
+[Get Route By Trip ID] TripId:D1345
+[Travel Service][Get Route By Id] Route ID：f3d4d4ef-693b-4456-8eed-59c0d717dd08
+[Travel Service][Get Route By Id] Success.
+[Get Route By Trip ID] Success
+2023-08-31 08:22:54.716  INFO [ts-travel-service,725967033e28b815,35b041dcad4f63dc,true] 1 --- [io-12346-exec-4] travel.config.HttpAspectConfig           : [Service:ts-travel-service][Response:{"status":true,"message":"Success","route":{"id":"f3d4d4ef-693b-4456-8eed-59c0d717dd08","stations":["shanghai","suzhou"],"distances":[0,50],"startStationId":"shanghai","terminalStationId":"suzhou"}}]
+c=D1345
+requestArgs="D1345"
+2023-08-31 08:22:54.735  INFO [ts-travel-service,725967033e28b815,702a38844dca7869,true] 1 --- [io-12346-exec-3] travel.config.HttpAspectConfig           : [Service:ts-travel-service][URI:ts-travel-service/travel/getTrainTypeByTripId/D1345][Method:GET][Request:"D1345"][RemoteHost:172.18.0.37][IP:172.18.0.37]
+2023-08-31 08:22:54.747  INFO [ts-travel-service,725967033e28b815,702a38844dca7869,true] 1 --- [io-12346-exec-3] travel.config.HttpAspectConfig           : [Service:ts-travel-service][Response:{"status":true,"message":"Success","trainType":{"id":"DongCheOne","economyClass":300,"confortClass":100,"averageSpeed":180}}]
+[Train Service]计算时间：0 时间:Fri May 03 23:00:00 UTC 2013
+[Train Service]计算时间：16 时间:Fri May 03 23:16:00 UTC 2013
+2023-08-31 08:22:54.773  INFO [ts-travel-service,725967033e28b815,0137410c2b1a0cfc,true] 1 --- [io-12346-exec-5] travel.config.HttpAspectConfig           : [Service:ts-travel-service][Response:{"status":true,"message":"Success","tripResponse":{"tripId":{"type":"D","number":"1345"},"trainTypeId":"DongCheOne","startingStation":"Shang Hai","terminalStation":"Su Zhou","startingTime":"May 3, 2013 11:00:00 PM","endTime":"May 3, 2013 11:16:00 PM","economyClass":147,"confortClass":47,"priceForEconomyClass":"22.5","priceForConfortClass":"50.0"},"trip":{"tripId":{"type":"D","number":"1345"},"trainTypeId":"DongCheOne","routeId":"f3d4d4ef-693b-4456-8eed-59c0d717dd08","startingTime":"May 3, 2013 11:00:00 PM","startingStationId":"shanghai","stationsId":"suzhou","terminalStationId":"taiyuan","endTime":"May 4, 2013 11:59:52 AM"}}]
+c=D1345
+requestArgs="D1345"
+2023-08-31 08:22:54.868  INFO [ts-travel-service,725967033e28b815,34903b2a232d4f8d,true] 1 --- [io-12346-exec-6] travel.config.HttpAspectConfig           : [Service:ts-travel-service][URI:ts-travel-service/travel/getRouteByTripId/D1345][Method:GET][Request:"D1345"][RemoteHost:172.18.0.37][IP:172.18.0.37]
+[Get Route By Trip ID] TripId:D1345
+[Travel Service][Get Route By Id] Route ID：f3d4d4ef-693b-4456-8eed-59c0d717dd08
+[Travel Service][Get Route By Id] Success.
+[Get Route By Trip ID] Success
+2023-08-31 08:22:54.877  INFO [ts-travel-service,725967033e28b815,34903b2a232d4f8d,true] 1 --- [io-12346-exec-6] travel.config.HttpAspectConfig           : [Service:ts-travel-service][Response:{"status":true,"message":"Success","route":{"id":"f3d4d4ef-693b-4456-8eed-59c0d717dd08","stations":["shanghai","suzhou"],"distances":[0,50],"startStationId":"shanghai","terminalStationId":"suzhou"}}]
+c=D1345
+requestArgs="D1345"
+2023-08-31 08:22:54.890  INFO [ts-travel-service,725967033e28b815,4f78f0dec1006851,true] 1 --- [io-12346-exec-8] travel.config.HttpAspectConfig           : [Service:ts-travel-service][URI:ts-travel-service/travel/getTrainTypeByTripId/D1345][Method:GET][Request:"D1345"][RemoteHost:172.18.0.37][IP:172.18.0.37]
+2023-08-31 08:22:54.900  INFO [ts-travel-service,725967033e28b815,4f78f0dec1006851,true] 1 --- [io-12346-exec-8] travel.config.HttpAspectConfig           : [Service:ts-travel-service][Response:{"status":true,"message":"Success","trainType":{"id":"DongCheOne","economyClass":300,"confortClass":100,"averageSpeed":180}}]

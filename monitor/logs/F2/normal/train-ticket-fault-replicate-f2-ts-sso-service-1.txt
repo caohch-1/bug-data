@@ -1,0 +1,200 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.3.RELEASE)
+
+2023-08-31 08:54:02.914  INFO [ts-sso-service,,,] 1 --- [           main] sso.AccountSsoApplication                : Starting AccountSsoApplication v1.0 on 12062c84d293 with PID 1 (/app/ts-sso-service-1.0.jar started by root in /)
+2023-08-31 08:54:02.992  INFO [ts-sso-service,,,] 1 --- [           main] sso.AccountSsoApplication                : No active profile set, falling back to default profiles: default
+2023-08-31 08:54:05.972  INFO [ts-sso-service,,,] 1 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@61e717c2: startup date [Thu Aug 31 08:54:05 UTC 2023]; root of context hierarchy
+2023-08-31 08:54:32.658  INFO [ts-sso-service,,,] 1 --- [           main] o.s.i.config.IntegrationRegistrar        : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2023-08-31 08:54:42.164  INFO [ts-sso-service,,,] 1 --- [           main] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2023-08-31 08:54:42.224  INFO [ts-sso-service,,,] 1 --- [           main] faultConfiguringBeanFactoryPostProcessor : No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2023-08-31 08:54:43.328  INFO [ts-sso-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration$DefaultAsyncConfigurerSupport' of type [org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration$DefaultAsyncConfigurerSupport$$EnhancerBySpringCGLIB$$4fe4396] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-08-31 08:54:46.766  INFO [ts-sso-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.annotation.SleuthAnnotationAutoConfiguration' of type [org.springframework.cloud.sleuth.annotation.SleuthAnnotationAutoConfiguration$$EnhancerBySpringCGLIB$$ca21ec05] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-08-31 08:54:49.515  INFO [ts-sso-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'sleuthAdvisorConfig' of type [org.springframework.cloud.sleuth.annotation.SleuthAdvisorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-08-31 08:54:50.810  INFO [ts-sso-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'integrationGlobalProperties' of type [org.springframework.beans.factory.config.PropertiesFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-08-31 08:54:51.203  INFO [ts-sso-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'integrationGlobalProperties' of type [java.util.Properties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-08-31 08:54:55.013  INFO [ts-sso-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration' of type [org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration$$EnhancerBySpringCGLIB$$afa051f2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-08-31 08:55:07.131  INFO [ts-sso-service,,,] 1 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 12349 (http)
+2023-08-31 08:55:07.679  INFO [ts-sso-service,,,] 1 --- [           main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2023-08-31 08:55:07.762  INFO [ts-sso-service,,,] 1 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.14
+2023-08-31 08:55:09.407  INFO [ts-sso-service,,,] 1 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-08-31 08:55:09.428  INFO [ts-sso-service,,,] 1 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 63489 ms
+2023-08-31 08:55:27.967  INFO [ts-sso-service,,,] 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'metricsFilter' to: [/*]
+2023-08-31 08:55:27.968  INFO [ts-sso-service,,,] 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2023-08-31 08:55:27.968  INFO [ts-sso-service,,,] 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'traceFilter' to: [/*]
+2023-08-31 08:55:27.968  INFO [ts-sso-service,,,] 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2023-08-31 08:55:27.968  INFO [ts-sso-service,,,] 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2023-08-31 08:55:28.011  INFO [ts-sso-service,,,] 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2023-08-31 08:55:28.012  INFO [ts-sso-service,,,] 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2023-08-31 08:55:28.012  INFO [ts-sso-service,,,] 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'applicationContextIdFilter' to: [/*]
+2023-08-31 08:55:28.012  INFO [ts-sso-service,,,] 1 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2023-08-31 08:55:32.544  INFO [ts-sso-service,,,] 1 --- [           main] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[ts-account-mongo:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2023-08-31 08:55:32.544  INFO [ts-sso-service,,,] 1 --- [           main] org.mongodb.driver.cluster               : Adding discovered server ts-account-mongo:27017 to client view of cluster
+2023-08-31 08:55:33.976  INFO [ts-sso-service,,,] 1 --- [unt-mongo:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:1}] to ts-account-mongo:27017
+2023-08-31 08:55:34.039  INFO [ts-sso-service,,,] 1 --- [unt-mongo:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=ts-account-mongo:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[5, 0, 10]}, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, roundTripTimeNanos=17966386}
+2023-08-31 08:55:34.102  INFO [ts-sso-service,,,] 1 --- [unt-mongo:27017] org.mongodb.driver.cluster               : Discovered cluster type of STANDALONE
+2023-08-31 08:56:11.102  INFO [ts-sso-service,,,] 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@61e717c2: startup date [Thu Aug 31 08:54:05 UTC 2023]; root of context hierarchy
+2023-08-31 08:56:16.626  INFO [ts-sso-service,,,] 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/account/register],methods=[POST]}" onto public sso.domain.RegisterResult sso.controller.AccountSsoController.createNewAccount(sso.domain.RegisterInfo)
+2023-08-31 08:56:16.658  INFO [ts-sso-service,,,] 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/logout],methods=[POST]}" onto public sso.domain.LogoutResult sso.controller.AccountSsoController.logoutDeleteToken(sso.domain.LogoutInfo)
+2023-08-31 08:56:16.659  INFO [ts-sso-service,,,] 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/verifyLoginToken/{token}],methods=[GET]}" onto public sso.domain.VerifyResult sso.controller.AccountSsoController.verifyLoginToken(java.lang.String)
+2023-08-31 08:56:16.659  INFO [ts-sso-service,,,] 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/account/findAll],methods=[GET]}" onto public sso.domain.FindAllAccountResult sso.controller.AccountSsoController.findAllAccount()
+2023-08-31 08:56:16.659  INFO [ts-sso-service,,,] 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/account/findAllLogin],methods=[GET]}" onto public sso.domain.GetLoginAccountList sso.controller.AccountSsoController.findAllLoginAccount()
+2023-08-31 08:56:16.660  INFO [ts-sso-service,,,] 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/account/findById],methods=[POST]}" onto public sso.domain.GetAccountByIdResult sso.controller.AccountSsoController.getAccountById(sso.domain.GetAccountByIdInfo)
+2023-08-31 08:56:16.660  INFO [ts-sso-service,,,] 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/account/admindelete],methods=[POST]}" onto public sso.domain.DeleteAccountResult sso.controller.AccountSsoController.adminDelete(sso.domain.AdminDeleteAccountRequest)
+2023-08-31 08:56:16.668  INFO [ts-sso-service,,,] 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/welcome],methods=[GET]}" onto public java.lang.String sso.controller.AccountSsoController.home()
+2023-08-31 08:56:16.669  INFO [ts-sso-service,,,] 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/account/modify],methods=[POST]}" onto public sso.domain.ModifyAccountResult sso.controller.AccountSsoController.modifyAccount(sso.domain.ModifyAccountInfo)
+2023-08-31 08:56:16.669  INFO [ts-sso-service,,,] 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/account/login],methods=[POST]}" onto public sso.domain.LoginResult sso.controller.AccountSsoController.login(sso.domain.LoginInfo)
+2023-08-31 08:56:16.742  INFO [ts-sso-service,,,] 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/account/adminlogin],methods=[POST]}" onto public sso.domain.Contacts sso.controller.AccountSsoController.adminLogin(sso.domain.AdminLoginInfo)
+2023-08-31 08:56:16.745  INFO [ts-sso-service,,,] 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2023-08-31 08:56:16.745  INFO [ts-sso-service,,,] 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2023-08-31 08:56:19.141  INFO [ts-sso-service,,,] 1 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2023-08-31 08:56:19.145  INFO [ts-sso-service,,,] 1 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2023-08-31 08:56:21.749  INFO [ts-sso-service,,,] 1 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2023-08-31 08:56:37.244  INFO [ts-sso-service,,,] 1 --- [           main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService  'taskScheduler'
+2023-08-31 08:56:46.460  INFO [ts-sso-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2023-08-31 08:56:46.493  INFO [ts-sso-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2023-08-31 08:56:46.498  INFO [ts-sso-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2023-08-31 08:56:46.503  INFO [ts-sso-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2023-08-31 08:56:46.507  INFO [ts-sso-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2023-08-31 08:56:46.512  INFO [ts-sso-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2023-08-31 08:56:46.515  INFO [ts-sso-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+2023-08-31 08:56:46.519  INFO [ts-sso-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2023-08-31 08:56:46.528  INFO [ts-sso-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2023-08-31 08:56:46.541  INFO [ts-sso-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2023-08-31 08:56:46.547  INFO [ts-sso-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+2023-08-31 08:56:46.559  INFO [ts-sso-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+2023-08-31 08:56:46.638  INFO [ts-sso-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2023-08-31 08:56:46.661  INFO [ts-sso-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+2023-08-31 08:56:46.679  INFO [ts-sso-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2023-08-31 08:56:46.707  INFO [ts-sso-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2023-08-31 08:56:46.707  INFO [ts-sso-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/features || /features.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2023-08-31 08:56:46.745  INFO [ts-sso-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2023-08-31 08:56:55.190  INFO [ts-sso-service,,,] 1 --- [           main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 
+2023-08-31 08:57:04.124  INFO [ts-sso-service,,,] 1 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2023-08-31 08:57:04.516  INFO [ts-sso-service,,,] 1 --- [           main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2023-08-31 08:57:06.318  INFO [ts-sso-service,,,] 1 --- [           main] o.s.i.endpoint.EventDrivenConsumer       : Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2023-08-31 08:57:06.331  INFO [ts-sso-service,,,] 1 --- [           main] o.s.i.channel.PublishSubscribeChannel    : Channel 'ts-sso-service:12349.errorChannel' has 1 subscriber(s).
+2023-08-31 08:57:06.335  INFO [ts-sso-service,,,] 1 --- [           main] o.s.i.endpoint.EventDrivenConsumer       : started _org.springframework.integration.errorLogger
+2023-08-31 08:57:07.392  INFO [ts-sso-service,,,] 1 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 12349 (http)
+2023-08-31 08:57:08.720  INFO [ts-sso-service,,,] 1 --- [           main] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:2}] to ts-account-mongo:27017
+[SSO Service][Init Account] Before:4d2a46c7-71cb-4cf1-b5bb-b68406d9da6f
+[SSO Service][Init Account] After:4d2a46c7-71cb-4cf1-b5bb-b68406d9da6f
+[SSO Service][Init Account] Before:1d1a11c1-11cb-1cf1-b1bb-b11111d1da1f
+[SSO Service][Init Account] After:1d1a11c1-11cb-1cf1-b1bb-b11111d1da1f
+2023-08-31 08:57:09.830  INFO [ts-sso-service,,,] 1 --- [           main] sso.AccountSsoApplication                : Started AccountSsoApplication in 197.965 seconds (JVM running for 200.89)
+2023-08-31 08:57:58.218  INFO [ts-sso-service,,,] 1 --- [io-12349-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2023-08-31 08:57:58.218  INFO [ts-sso-service,,,] 1 --- [io-12349-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2023-08-31 08:57:58.265  INFO [ts-sso-service,,,] 1 --- [io-12349-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 47 ms
+c=sso.domain.LoginInfo@769abde1
+requestArgs={"email":"fdse_microservices@163.com","password":"DefaultPassword","verificationCode":"abcd"}
+2023-08-31 08:57:58.344  INFO [ts-sso-service,8e002d2289610da2,9c6ef6bf8484bf48,true] 1 --- [io-12349-exec-1] sso.config.HttpAspectConfig              : [Service:ts-sso-service][URI:ts-sso-service/account/login][Method:POST][Request:{"email":"fdse_microservices@163.com","password":"DefaultPassword","verificationCode":"abcd"}][RemoteHost:172.19.0.28][IP:172.19.0.28]
+[SSO Service][Login] Success.
+[SSO Service][Login] Password Right. Put token to sso.
+[SSO Service][Login] Login Success. Id:4d2a46c7-71cb-4cf1-b5bb-b68406d9da6f Token:bd7a6066-5564-4d51-b9d3-e7d1dfe67228
+[SSO Service] PutLoginResult Status: true
+[SSO Service][Login] Post to sso:bd7a6066-5564-4d51-b9d3-e7d1dfe67228
+2023-08-31 08:57:58.374  INFO [ts-sso-service,8e002d2289610da2,9c6ef6bf8484bf48,true] 1 --- [io-12349-exec-1] sso.config.HttpAspectConfig              : [Service:ts-sso-service][Response:{"status":true,"message":"Success","account":{"id":"4d2a46c7-71cb-4cf1-b5bb-b68406d9da6f","password":"","gender":1,"name":"Default User","documentType":1,"documentNum":"DefaultDocumentNumber","email":"fdse_microservices@163.com"},"token":"bd7a6066-5564-4d51-b9d3-e7d1dfe67228"}]
+c=bd7a6066-5564-4d51-b9d3-e7d1dfe67228
+requestArgs="bd7a6066-5564-4d51-b9d3-e7d1dfe67228"
+2023-08-31 08:58:20.331  INFO [ts-sso-service,2b6c7beb6fc05a2a,5f80c0914d65ecfe,true] 1 --- [io-12349-exec-2] sso.config.HttpAspectConfig              : [Service:ts-sso-service][URI:ts-sso-service/verifyLoginToken/bd7a6066-5564-4d51-b9d3-e7d1dfe67228][Method:GET][Request:"bd7a6066-5564-4d51-b9d3-e7d1dfe67228"][RemoteHost:172.19.0.8][IP:172.19.0.8]
+[SSO Service][Verify] Verify token:bd7a6066-5564-4d51-b9d3-e7d1dfe67228
+[SSO Service][Verify] Success.Token:bd7a6066-5564-4d51-b9d3-e7d1dfe67228
+2023-08-31 08:58:20.335  INFO [ts-sso-service,2b6c7beb6fc05a2a,5f80c0914d65ecfe,true] 1 --- [io-12349-exec-2] sso.config.HttpAspectConfig              : [Service:ts-sso-service][Response:{"status":true,"message":"Verify Success."}]
+c=bd7a6066-5564-4d51-b9d3-e7d1dfe67228
+requestArgs="bd7a6066-5564-4d51-b9d3-e7d1dfe67228"
+2023-08-31 08:58:35.378  INFO [ts-sso-service,c76033b0ba1eee8c,73ae5c84562d0ee3,true] 1 --- [io-12349-exec-4] sso.config.HttpAspectConfig              : [Service:ts-sso-service][URI:ts-sso-service/verifyLoginToken/bd7a6066-5564-4d51-b9d3-e7d1dfe67228][Method:GET][Request:"bd7a6066-5564-4d51-b9d3-e7d1dfe67228"][RemoteHost:172.19.0.52][IP:172.19.0.52]
+[SSO Service][Verify] Verify token:bd7a6066-5564-4d51-b9d3-e7d1dfe67228
+[SSO Service][Verify] Success.Token:bd7a6066-5564-4d51-b9d3-e7d1dfe67228
+2023-08-31 08:58:35.380  INFO [ts-sso-service,c76033b0ba1eee8c,73ae5c84562d0ee3,true] 1 --- [io-12349-exec-4] sso.config.HttpAspectConfig              : [Service:ts-sso-service][Response:{"status":true,"message":"Verify Success."}]
+c=bd7a6066-5564-4d51-b9d3-e7d1dfe67228
+requestArgs="bd7a6066-5564-4d51-b9d3-e7d1dfe67228"
+2023-08-31 08:58:35.647  INFO [ts-sso-service,c76033b0ba1eee8c,0621d377a487fa2e,true] 1 --- [io-12349-exec-5] sso.config.HttpAspectConfig              : [Service:ts-sso-service][URI:ts-sso-service/verifyLoginToken/bd7a6066-5564-4d51-b9d3-e7d1dfe67228][Method:GET][Request:"bd7a6066-5564-4d51-b9d3-e7d1dfe67228"][RemoteHost:172.19.0.52][IP:172.19.0.52]
+[SSO Service][Verify] Verify token:bd7a6066-5564-4d51-b9d3-e7d1dfe67228
+[SSO Service][Verify] Success.Token:bd7a6066-5564-4d51-b9d3-e7d1dfe67228
+2023-08-31 08:58:35.650  INFO [ts-sso-service,c76033b0ba1eee8c,0621d377a487fa2e,true] 1 --- [io-12349-exec-5] sso.config.HttpAspectConfig              : [Service:ts-sso-service][Response:{"status":true,"message":"Verify Success."}]
+c=bd7a6066-5564-4d51-b9d3-e7d1dfe67228
+c=bd7a6066-5564-4d51-b9d3-e7d1dfe67228
+requestArgs="bd7a6066-5564-4d51-b9d3-e7d1dfe67228"
+requestArgs="bd7a6066-5564-4d51-b9d3-e7d1dfe67228"
+2023-08-31 08:58:35.989  INFO [ts-sso-service,c76033b0ba1eee8c,3bc06c103894cb2d,true] 1 --- [io-12349-exec-6] sso.config.HttpAspectConfig              : [Service:ts-sso-service][URI:ts-sso-service/verifyLoginToken/bd7a6066-5564-4d51-b9d3-e7d1dfe67228][Method:GET][Request:"bd7a6066-5564-4d51-b9d3-e7d1dfe67228"][RemoteHost:172.19.0.8][IP:172.19.0.8]
+[SSO Service][Verify] Verify token:bd7a6066-5564-4d51-b9d3-e7d1dfe67228
+2023-08-31 08:58:35.989  INFO [ts-sso-service,c76033b0ba1eee8c,d998a5165ec548d0,true] 1 --- [io-12349-exec-7] sso.config.HttpAspectConfig              : [Service:ts-sso-service][URI:ts-sso-service/verifyLoginToken/bd7a6066-5564-4d51-b9d3-e7d1dfe67228][Method:GET][Request:"bd7a6066-5564-4d51-b9d3-e7d1dfe67228"][RemoteHost:172.19.0.8][IP:172.19.0.8]
+[SSO Service][Verify] Verify token:bd7a6066-5564-4d51-b9d3-e7d1dfe67228
+2023-08-31 08:58:35.991  INFO [ts-sso-service,c76033b0ba1eee8c,d998a5165ec548d0,true] 1 --- [io-12349-exec-7] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:3, serverValue:3}] to ts-account-mongo:27017
+[SSO Service][Verify] Success.Token:bd7a6066-5564-4d51-b9d3-e7d1dfe67228
+[SSO Service][Verify] Success.Token:bd7a6066-5564-4d51-b9d3-e7d1dfe67228
+2023-08-31 08:58:35.992  INFO [ts-sso-service,c76033b0ba1eee8c,3bc06c103894cb2d,true] 1 --- [io-12349-exec-6] sso.config.HttpAspectConfig              : [Service:ts-sso-service][Response:{"status":true,"message":"Verify Success."}]
+2023-08-31 08:58:35.992  INFO [ts-sso-service,c76033b0ba1eee8c,d998a5165ec548d0,true] 1 --- [io-12349-exec-7] sso.config.HttpAspectConfig              : [Service:ts-sso-service][Response:{"status":true,"message":"Verify Success."}]
+c=bd7a6066-5564-4d51-b9d3-e7d1dfe67228
+requestArgs="bd7a6066-5564-4d51-b9d3-e7d1dfe67228"
+2023-08-31 08:58:36.726  INFO [ts-sso-service,53af54f31bbe1c41,d37e85e96c2c9a72,true] 1 --- [io-12349-exec-9] sso.config.HttpAspectConfig              : [Service:ts-sso-service][URI:ts-sso-service/verifyLoginToken/bd7a6066-5564-4d51-b9d3-e7d1dfe67228][Method:GET][Request:"bd7a6066-5564-4d51-b9d3-e7d1dfe67228"][RemoteHost:172.19.0.52][IP:172.19.0.52]
+[SSO Service][Verify] Verify token:bd7a6066-5564-4d51-b9d3-e7d1dfe67228
+[SSO Service][Verify] Success.Token:bd7a6066-5564-4d51-b9d3-e7d1dfe67228
+2023-08-31 08:58:36.729  INFO [ts-sso-service,53af54f31bbe1c41,d37e85e96c2c9a72,true] 1 --- [io-12349-exec-9] sso.config.HttpAspectConfig              : [Service:ts-sso-service][Response:{"status":true,"message":"Verify Success."}]
+c=bd7a6066-5564-4d51-b9d3-e7d1dfe67228
+requestArgs="bd7a6066-5564-4d51-b9d3-e7d1dfe67228"
+2023-08-31 08:58:36.801  INFO [ts-sso-service,53af54f31bbe1c41,23f7ca8f3648c616,true] 1 --- [o-12349-exec-10] sso.config.HttpAspectConfig              : [Service:ts-sso-service][URI:ts-sso-service/verifyLoginToken/bd7a6066-5564-4d51-b9d3-e7d1dfe67228][Method:GET][Request:"bd7a6066-5564-4d51-b9d3-e7d1dfe67228"][RemoteHost:172.19.0.8][IP:172.19.0.8]
+[SSO Service][Verify] Verify token:bd7a6066-5564-4d51-b9d3-e7d1dfe67228
+[SSO Service][Verify] Success.Token:bd7a6066-5564-4d51-b9d3-e7d1dfe67228
+2023-08-31 08:58:36.804  INFO [ts-sso-service,53af54f31bbe1c41,23f7ca8f3648c616,true] 1 --- [o-12349-exec-10] sso.config.HttpAspectConfig              : [Service:ts-sso-service][Response:{"status":true,"message":"Verify Success."}]
+c=bd7a6066-5564-4d51-b9d3-e7d1dfe67228
+requestArgs="bd7a6066-5564-4d51-b9d3-e7d1dfe67228"
+2023-08-31 08:58:36.851  INFO [ts-sso-service,c76033b0ba1eee8c,929da9b7451faf96,true] 1 --- [io-12349-exec-1] sso.config.HttpAspectConfig              : [Service:ts-sso-service][URI:ts-sso-service/verifyLoginToken/bd7a6066-5564-4d51-b9d3-e7d1dfe67228][Method:GET][Request:"bd7a6066-5564-4d51-b9d3-e7d1dfe67228"][RemoteHost:172.19.0.24][IP:172.19.0.24]
+[SSO Service][Verify] Verify token:bd7a6066-5564-4d51-b9d3-e7d1dfe67228
+c=bd7a6066-5564-4d51-b9d3-e7d1dfe67228
+requestArgs="bd7a6066-5564-4d51-b9d3-e7d1dfe67228"
+2023-08-31 08:58:36.852  INFO [ts-sso-service,c76033b0ba1eee8c,da54f6fef2b0a504,true] 1 --- [io-12349-exec-8] sso.config.HttpAspectConfig              : [Service:ts-sso-service][URI:ts-sso-service/verifyLoginToken/bd7a6066-5564-4d51-b9d3-e7d1dfe67228][Method:GET][Request:"bd7a6066-5564-4d51-b9d3-e7d1dfe67228"][RemoteHost:172.19.0.24][IP:172.19.0.24]
+[SSO Service][Verify] Verify token:bd7a6066-5564-4d51-b9d3-e7d1dfe67228
+[SSO Service][Verify] Success.Token:bd7a6066-5564-4d51-b9d3-e7d1dfe67228
+2023-08-31 08:58:36.853  INFO [ts-sso-service,c76033b0ba1eee8c,929da9b7451faf96,true] 1 --- [io-12349-exec-1] sso.config.HttpAspectConfig              : [Service:ts-sso-service][Response:{"status":true,"message":"Verify Success."}]
+[SSO Service][Verify] Success.Token:bd7a6066-5564-4d51-b9d3-e7d1dfe67228
+2023-08-31 08:58:36.857  INFO [ts-sso-service,c76033b0ba1eee8c,da54f6fef2b0a504,true] 1 --- [io-12349-exec-8] sso.config.HttpAspectConfig              : [Service:ts-sso-service][Response:{"status":true,"message":"Verify Success."}]
+c=sso.domain.GetAccountByIdInfo@694208ae
+requestArgs={"accountId":"4d2a46c7-71cb-4cf1-b5bb-b68406d9da6f"}
+2023-08-31 08:58:36.875  INFO [ts-sso-service,c76033b0ba1eee8c,bd656e9a6ce10d97,true] 1 --- [io-12349-exec-2] sso.config.HttpAspectConfig              : [Service:ts-sso-service][URI:ts-sso-service/account/findById][Method:POST][Request:{"accountId":"4d2a46c7-71cb-4cf1-b5bb-b68406d9da6f"}][RemoteHost:172.19.0.52][IP:172.19.0.52]
+[SSO Service][Find Account By Id] Account Id:4d2a46c7-71cb-4cf1-b5bb-b68406d9da6f
+2023-08-31 08:58:36.878  INFO [ts-sso-service,c76033b0ba1eee8c,bd656e9a6ce10d97,true] 1 --- [io-12349-exec-2] sso.config.HttpAspectConfig              : [Service:ts-sso-service][Response:{"status":true,"message":"Success","account":{"id":"4d2a46c7-71cb-4cf1-b5bb-b68406d9da6f","password":"DefaultPassword","gender":1,"name":"Default User","documentType":1,"documentNum":"DefaultDocumentNumber","email":"fdse_microservices@163.com"}}]
+c=sso.domain.GetAccountByIdInfo@5bc25f64
+requestArgs={"accountId":"4d2a46c7-71cb-4cf1-b5bb-b68406d9da6f"}
+2023-08-31 08:58:36.923  INFO [ts-sso-service,c76033b0ba1eee8c,8823b6accde5a8a1,true] 1 --- [io-12349-exec-3] sso.config.HttpAspectConfig              : [Service:ts-sso-service][URI:ts-sso-service/account/findById][Method:POST][Request:{"accountId":"4d2a46c7-71cb-4cf1-b5bb-b68406d9da6f"}][RemoteHost:172.19.0.52][IP:172.19.0.52]
+[SSO Service][Find Account By Id] Account Id:4d2a46c7-71cb-4cf1-b5bb-b68406d9da6f
+2023-08-31 08:58:36.932  INFO [ts-sso-service,c76033b0ba1eee8c,8823b6accde5a8a1,true] 1 --- [io-12349-exec-3] sso.config.HttpAspectConfig              : [Service:ts-sso-service][Response:{"status":true,"message":"Success","account":{"id":"4d2a46c7-71cb-4cf1-b5bb-b68406d9da6f","password":"DefaultPassword","gender":1,"name":"Default User","documentType":1,"documentNum":"DefaultDocumentNumber","email":"fdse_microservices@163.com"}}]
+c=bd7a6066-5564-4d51-b9d3-e7d1dfe67228
+requestArgs="bd7a6066-5564-4d51-b9d3-e7d1dfe67228"
+2023-08-31 08:58:37.230  INFO [ts-sso-service,53af54f31bbe1c41,589d1fb398da459b,true] 1 --- [io-12349-exec-4] sso.config.HttpAspectConfig              : [Service:ts-sso-service][URI:ts-sso-service/verifyLoginToken/bd7a6066-5564-4d51-b9d3-e7d1dfe67228][Method:GET][Request:"bd7a6066-5564-4d51-b9d3-e7d1dfe67228"][RemoteHost:172.19.0.52][IP:172.19.0.52]
+[SSO Service][Verify] Verify token:bd7a6066-5564-4d51-b9d3-e7d1dfe67228
+[SSO Service][Verify] Success.Token:bd7a6066-5564-4d51-b9d3-e7d1dfe67228
+2023-08-31 08:58:37.234  INFO [ts-sso-service,53af54f31bbe1c41,589d1fb398da459b,true] 1 --- [io-12349-exec-4] sso.config.HttpAspectConfig              : [Service:ts-sso-service][Response:{"status":true,"message":"Verify Success."}]
+c=bd7a6066-5564-4d51-b9d3-e7d1dfe67228
+requestArgs="bd7a6066-5564-4d51-b9d3-e7d1dfe67228"
+2023-08-31 08:58:37.285  INFO [ts-sso-service,53af54f31bbe1c41,054322bcf2e5580d,true] 1 --- [io-12349-exec-5] sso.config.HttpAspectConfig              : [Service:ts-sso-service][URI:ts-sso-service/verifyLoginToken/bd7a6066-5564-4d51-b9d3-e7d1dfe67228][Method:GET][Request:"bd7a6066-5564-4d51-b9d3-e7d1dfe67228"][RemoteHost:172.19.0.8][IP:172.19.0.8]
+[SSO Service][Verify] Verify token:bd7a6066-5564-4d51-b9d3-e7d1dfe67228
+[SSO Service][Verify] Success.Token:bd7a6066-5564-4d51-b9d3-e7d1dfe67228
+2023-08-31 08:58:37.287  INFO [ts-sso-service,53af54f31bbe1c41,054322bcf2e5580d,true] 1 --- [io-12349-exec-5] sso.config.HttpAspectConfig              : [Service:ts-sso-service][Response:{"status":true,"message":"Verify Success."}]
+c=bd7a6066-5564-4d51-b9d3-e7d1dfe67228
+requestArgs="bd7a6066-5564-4d51-b9d3-e7d1dfe67228"
+2023-08-31 08:58:37.484  INFO [ts-sso-service,53af54f31bbe1c41,8652148e13936b7a,true] 1 --- [io-12349-exec-6] sso.config.HttpAspectConfig              : [Service:ts-sso-service][URI:ts-sso-service/verifyLoginToken/bd7a6066-5564-4d51-b9d3-e7d1dfe67228][Method:GET][Request:"bd7a6066-5564-4d51-b9d3-e7d1dfe67228"][RemoteHost:172.19.0.24][IP:172.19.0.24]
+[SSO Service][Verify] Verify token:bd7a6066-5564-4d51-b9d3-e7d1dfe67228
+[SSO Service][Verify] Success.Token:bd7a6066-5564-4d51-b9d3-e7d1dfe67228
+2023-08-31 08:58:37.486  INFO [ts-sso-service,53af54f31bbe1c41,8652148e13936b7a,true] 1 --- [io-12349-exec-6] sso.config.HttpAspectConfig              : [Service:ts-sso-service][Response:{"status":true,"message":"Verify Success."}]
+c=sso.domain.GetAccountByIdInfo@376bbf5a
+requestArgs={"accountId":"4d2a46c7-71cb-4cf1-b5bb-b68406d9da6f"}
+2023-08-31 08:58:37.506  INFO [ts-sso-service,53af54f31bbe1c41,f4ce51c2e107aef6,true] 1 --- [io-12349-exec-7] sso.config.HttpAspectConfig              : [Service:ts-sso-service][URI:ts-sso-service/account/findById][Method:POST][Request:{"accountId":"4d2a46c7-71cb-4cf1-b5bb-b68406d9da6f"}][RemoteHost:172.19.0.52][IP:172.19.0.52]
+[SSO Service][Find Account By Id] Account Id:4d2a46c7-71cb-4cf1-b5bb-b68406d9da6f
+2023-08-31 08:58:37.509  INFO [ts-sso-service,53af54f31bbe1c41,f4ce51c2e107aef6,true] 1 --- [io-12349-exec-7] sso.config.HttpAspectConfig              : [Service:ts-sso-service][Response:{"status":true,"message":"Success","account":{"id":"4d2a46c7-71cb-4cf1-b5bb-b68406d9da6f","password":"DefaultPassword","gender":1,"name":"Default User","documentType":1,"documentNum":"DefaultDocumentNumber","email":"fdse_microservices@163.com"}}]
+c=bd7a6066-5564-4d51-b9d3-e7d1dfe67228
+requestArgs="bd7a6066-5564-4d51-b9d3-e7d1dfe67228"
+2023-08-31 08:58:37.854  INFO [ts-sso-service,53af54f31bbe1c41,24e92728df0fab93,true] 1 --- [io-12349-exec-9] sso.config.HttpAspectConfig              : [Service:ts-sso-service][URI:ts-sso-service/verifyLoginToken/bd7a6066-5564-4d51-b9d3-e7d1dfe67228][Method:GET][Request:"bd7a6066-5564-4d51-b9d3-e7d1dfe67228"][RemoteHost:172.19.0.24][IP:172.19.0.24]
+[SSO Service][Verify] Verify token:bd7a6066-5564-4d51-b9d3-e7d1dfe67228
+[SSO Service][Verify] Success.Token:bd7a6066-5564-4d51-b9d3-e7d1dfe67228
+2023-08-31 08:58:37.856  INFO [ts-sso-service,53af54f31bbe1c41,24e92728df0fab93,true] 1 --- [io-12349-exec-9] sso.config.HttpAspectConfig              : [Service:ts-sso-service][Response:{"status":true,"message":"Verify Success."}]
+c=sso.domain.GetAccountByIdInfo@b4edd83
+requestArgs={"accountId":"4d2a46c7-71cb-4cf1-b5bb-b68406d9da6f"}
+2023-08-31 08:58:37.867  INFO [ts-sso-service,53af54f31bbe1c41,1b15fa8c14aafe73,true] 1 --- [o-12349-exec-10] sso.config.HttpAspectConfig              : [Service:ts-sso-service][URI:ts-sso-service/account/findById][Method:POST][Request:{"accountId":"4d2a46c7-71cb-4cf1-b5bb-b68406d9da6f"}][RemoteHost:172.19.0.52][IP:172.19.0.52]
+[SSO Service][Find Account By Id] Account Id:4d2a46c7-71cb-4cf1-b5bb-b68406d9da6f
+2023-08-31 08:58:37.870  INFO [ts-sso-service,53af54f31bbe1c41,1b15fa8c14aafe73,true] 1 --- [o-12349-exec-10] sso.config.HttpAspectConfig              : [Service:ts-sso-service][Response:{"status":true,"message":"Success","account":{"id":"4d2a46c7-71cb-4cf1-b5bb-b68406d9da6f","password":"DefaultPassword","gender":1,"name":"Default User","documentType":1,"documentNum":"DefaultDocumentNumber","email":"fdse_microservices@163.com"}}]

@@ -1,0 +1,194 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.3.RELEASE)
+
+2023-08-31 08:54:07.677  INFO [ts-train-service,,,] 1 --- [           main] train.TrainApplication                   : Starting TrainApplication v1.0 on 1bf674f11167 with PID 1 (/app/ts-train-service-1.0.jar started by root in /)
+2023-08-31 08:54:08.184  INFO [ts-train-service,,,] 1 --- [           main] train.TrainApplication                   : No active profile set, falling back to default profiles: default
+2023-08-31 08:54:10.882  INFO [ts-train-service,,,] 1 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@61e717c2: startup date [Thu Aug 31 08:54:10 UTC 2023]; root of context hierarchy
+2023-08-31 08:54:38.008  INFO [ts-train-service,,,] 1 --- [           main] o.s.i.config.IntegrationRegistrar        : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2023-08-31 08:54:46.303  INFO [ts-train-service,,,] 1 --- [           main] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2023-08-31 08:54:46.739  INFO [ts-train-service,,,] 1 --- [           main] faultConfiguringBeanFactoryPostProcessor : No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2023-08-31 08:54:47.891  INFO [ts-train-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration$DefaultAsyncConfigurerSupport' of type [org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration$DefaultAsyncConfigurerSupport$$EnhancerBySpringCGLIB$$caf36fb5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-08-31 08:54:51.929  INFO [ts-train-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.annotation.SleuthAnnotationAutoConfiguration' of type [org.springframework.cloud.sleuth.annotation.SleuthAnnotationAutoConfiguration$$EnhancerBySpringCGLIB$$90171824] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-08-31 08:54:54.590  INFO [ts-train-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'sleuthAdvisorConfig' of type [org.springframework.cloud.sleuth.annotation.SleuthAdvisorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-08-31 08:54:55.619  INFO [ts-train-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'integrationGlobalProperties' of type [org.springframework.beans.factory.config.PropertiesFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-08-31 08:54:55.924  INFO [ts-train-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'integrationGlobalProperties' of type [java.util.Properties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-08-31 08:54:58.564  INFO [ts-train-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration' of type [org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration$$EnhancerBySpringCGLIB$$75957e11] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-08-31 08:55:12.206  INFO [ts-train-service,,,] 1 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 14567 (http)
+2023-08-31 08:55:12.518  INFO [ts-train-service,,,] 1 --- [           main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2023-08-31 08:55:12.520  INFO [ts-train-service,,,] 1 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.14
+2023-08-31 08:55:14.288  INFO [ts-train-service,,,] 1 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-08-31 08:55:14.298  INFO [ts-train-service,,,] 1 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 63875 ms
+2023-08-31 08:55:32.946  INFO [ts-train-service,,,] 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'metricsFilter' to: [/*]
+2023-08-31 08:55:32.946  INFO [ts-train-service,,,] 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2023-08-31 08:55:32.947  INFO [ts-train-service,,,] 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'traceFilter' to: [/*]
+2023-08-31 08:55:32.947  INFO [ts-train-service,,,] 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2023-08-31 08:55:32.947  INFO [ts-train-service,,,] 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2023-08-31 08:55:32.947  INFO [ts-train-service,,,] 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2023-08-31 08:55:32.947  INFO [ts-train-service,,,] 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2023-08-31 08:55:32.947  INFO [ts-train-service,,,] 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'applicationContextIdFilter' to: [/*]
+2023-08-31 08:55:32.947  INFO [ts-train-service,,,] 1 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2023-08-31 08:55:39.537  INFO [ts-train-service,,,] 1 --- [           main] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[ts-train-mongo:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2023-08-31 08:55:39.537  INFO [ts-train-service,,,] 1 --- [           main] org.mongodb.driver.cluster               : Adding discovered server ts-train-mongo:27017 to client view of cluster
+2023-08-31 08:55:41.311  INFO [ts-train-service,,,] 1 --- [ain-mongo:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:1}] to ts-train-mongo:27017
+2023-08-31 08:55:41.369  INFO [ts-train-service,,,] 1 --- [ain-mongo:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=ts-train-mongo:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[5, 0, 10]}, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, roundTripTimeNanos=3233040}
+2023-08-31 08:55:41.432  INFO [ts-train-service,,,] 1 --- [ain-mongo:27017] org.mongodb.driver.cluster               : Discovered cluster type of STANDALONE
+2023-08-31 08:56:17.806  INFO [ts-train-service,,,] 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@61e717c2: startup date [Thu Aug 31 08:54:10 UTC 2023]; root of context hierarchy
+2023-08-31 08:56:23.102  INFO [ts-train-service,,,] 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/train/retrieve],methods=[POST]}" onto public train.domain.TrainType train.controller.TrainController.retrieve(train.domain.Information2)
+2023-08-31 08:56:23.172  INFO [ts-train-service,,,] 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/train/update],methods=[POST]}" onto public boolean train.controller.TrainController.update(train.domain.Information)
+2023-08-31 08:56:23.262  INFO [ts-train-service,,,] 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/train/delete],methods=[POST]}" onto public boolean train.controller.TrainController.delete(train.domain.Information2)
+2023-08-31 08:56:23.263  INFO [ts-train-service,,,] 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/train/create],methods=[POST]}" onto public boolean train.controller.TrainController.create(train.domain.Information)
+2023-08-31 08:56:23.264  INFO [ts-train-service,,,] 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/train/query],methods=[GET]}" onto public java.util.List<train.domain.TrainType> train.controller.TrainController.query()
+2023-08-31 08:56:23.340  INFO [ts-train-service,,,] 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2023-08-31 08:56:23.394  INFO [ts-train-service,,,] 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2023-08-31 08:56:27.200  INFO [ts-train-service,,,] 1 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2023-08-31 08:56:27.200  INFO [ts-train-service,,,] 1 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2023-08-31 08:56:29.516  INFO [ts-train-service,,,] 1 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2023-08-31 08:56:42.096  INFO [ts-train-service,,,] 1 --- [           main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService  'taskScheduler'
+2023-08-31 08:56:54.371  INFO [ts-train-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2023-08-31 08:56:54.372  INFO [ts-train-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+2023-08-31 08:56:54.556  INFO [ts-train-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2023-08-31 08:56:54.557  INFO [ts-train-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2023-08-31 08:56:54.619  INFO [ts-train-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+2023-08-31 08:56:54.620  INFO [ts-train-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2023-08-31 08:56:54.632  INFO [ts-train-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+2023-08-31 08:56:54.633  INFO [ts-train-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+2023-08-31 08:56:54.633  INFO [ts-train-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2023-08-31 08:56:54.871  INFO [ts-train-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2023-08-31 08:56:54.872  INFO [ts-train-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2023-08-31 08:56:54.909  INFO [ts-train-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2023-08-31 08:56:54.910  INFO [ts-train-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2023-08-31 08:56:54.911  INFO [ts-train-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2023-08-31 08:56:54.911  INFO [ts-train-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/features || /features.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2023-08-31 08:56:54.912  INFO [ts-train-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2023-08-31 08:56:54.984  INFO [ts-train-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2023-08-31 08:56:54.986  INFO [ts-train-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2023-08-31 08:57:04.862  INFO [ts-train-service,,,] 1 --- [           main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 
+2023-08-31 08:57:10.959  INFO [ts-train-service,,,] 1 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2023-08-31 08:57:11.244  INFO [ts-train-service,,,] 1 --- [           main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2023-08-31 08:57:12.468  INFO [ts-train-service,,,] 1 --- [           main] o.s.i.endpoint.EventDrivenConsumer       : Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2023-08-31 08:57:12.469  INFO [ts-train-service,,,] 1 --- [           main] o.s.i.channel.PublishSubscribeChannel    : Channel 'ts-train-service:14567.errorChannel' has 1 subscriber(s).
+2023-08-31 08:57:12.469  INFO [ts-train-service,,,] 1 --- [           main] o.s.i.endpoint.EventDrivenConsumer       : started _org.springframework.integration.errorLogger
+2023-08-31 08:57:13.351  INFO [ts-train-service,,,] 1 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 14567 (http)
+2023-08-31 08:57:14.144  INFO [ts-train-service,,,] 1 --- [           main] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:2}] to ts-train-mongo:27017
+2023-08-31 08:57:15.268  INFO [ts-train-service,,,] 1 --- [           main] train.TrainApplication                   : Started TrainApplication in 199.058 seconds (JVM running for 203.95)
+2023-08-31 08:58:12.735  INFO [ts-train-service,,,] 1 --- [io-14567-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2023-08-31 08:58:12.735  INFO [ts-train-service,,,] 1 --- [io-14567-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2023-08-31 08:58:12.776  INFO [ts-train-service,,,] 1 --- [io-14567-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 41 ms
+c=train.domain.Information2@195cfc04
+requestArgs={"id":"DongCheOne"}
+2023-08-31 08:58:12.856  INFO [ts-train-service,7f8712bad446c71d,7b2783df553611ca,true] 1 --- [io-14567-exec-2] train.config.HttpAspectConfig            : [Service:ts-train-service][URI:ts-train-service/train/retrieve][Method:POST][Request:{"id":"DongCheOne"}][RemoteHost:172.19.0.6][IP:172.19.0.6]
+2023-08-31 08:58:12.878  INFO [ts-train-service,7f8712bad446c71d,7b2783df553611ca,true] 1 --- [io-14567-exec-2] train.config.HttpAspectConfig            : [Service:ts-train-service][Response:{"id":"DongCheOne","economyClass":300,"confortClass":100,"averageSpeed":180}]
+c=train.domain.Information2@a65998f
+requestArgs={"id":"DongCheOne"}
+2023-08-31 08:58:13.753  INFO [ts-train-service,7f8712bad446c71d,f982c94d2a503918,true] 1 --- [io-14567-exec-1] train.config.HttpAspectConfig            : [Service:ts-train-service][URI:ts-train-service/train/retrieve][Method:POST][Request:{"id":"DongCheOne"}][RemoteHost:172.19.0.25][IP:172.19.0.25]
+2023-08-31 08:58:13.755  INFO [ts-train-service,7f8712bad446c71d,f982c94d2a503918,true] 1 --- [io-14567-exec-1] train.config.HttpAspectConfig            : [Service:ts-train-service][Response:{"id":"DongCheOne","economyClass":300,"confortClass":100,"averageSpeed":180}]
+c=train.domain.Information2@2e155850
+requestArgs={"id":"DongCheOne"}
+2023-08-31 08:58:14.057  INFO [ts-train-service,7f8712bad446c71d,cd5e582cd776d059,true] 1 --- [io-14567-exec-3] train.config.HttpAspectConfig            : [Service:ts-train-service][URI:ts-train-service/train/retrieve][Method:POST][Request:{"id":"DongCheOne"}][RemoteHost:172.19.0.25][IP:172.19.0.25]
+2023-08-31 08:58:14.059  INFO [ts-train-service,7f8712bad446c71d,cd5e582cd776d059,true] 1 --- [io-14567-exec-3] train.config.HttpAspectConfig            : [Service:ts-train-service][Response:{"id":"DongCheOne","economyClass":300,"confortClass":100,"averageSpeed":180}]
+c=train.domain.Information2@41261fe4
+requestArgs={"id":"DongCheOne"}
+2023-08-31 08:58:14.085  INFO [ts-train-service,7f8712bad446c71d,cc0613fc87980701,true] 1 --- [io-14567-exec-6] train.config.HttpAspectConfig            : [Service:ts-train-service][URI:ts-train-service/train/retrieve][Method:POST][Request:{"id":"DongCheOne"}][RemoteHost:172.19.0.25][IP:172.19.0.25]
+2023-08-31 08:58:14.088  INFO [ts-train-service,7f8712bad446c71d,cc0613fc87980701,true] 1 --- [io-14567-exec-6] train.config.HttpAspectConfig            : [Service:ts-train-service][Response:{"id":"DongCheOne","economyClass":300,"confortClass":100,"averageSpeed":180}]
+c=train.domain.Information2@23fa4efd
+requestArgs={"id":"DongCheOne"}
+2023-08-31 08:58:36.145  INFO [ts-train-service,c76033b0ba1eee8c,a1c0e67cd00355de,true] 1 --- [io-14567-exec-5] train.config.HttpAspectConfig            : [Service:ts-train-service][URI:ts-train-service/train/retrieve][Method:POST][Request:{"id":"DongCheOne"}][RemoteHost:172.19.0.6][IP:172.19.0.6]
+c=train.domain.Information2@41541226
+2023-08-31 08:58:36.151  INFO [ts-train-service,c76033b0ba1eee8c,a1c0e67cd00355de,true] 1 --- [io-14567-exec-5] train.config.HttpAspectConfig            : [Service:ts-train-service][Response:{"id":"DongCheOne","economyClass":300,"confortClass":100,"averageSpeed":180}]
+requestArgs={"id":"DongCheOne"}
+2023-08-31 08:58:36.152  INFO [ts-train-service,c76033b0ba1eee8c,ef15c98e1890fd74,true] 1 --- [io-14567-exec-7] train.config.HttpAspectConfig            : [Service:ts-train-service][URI:ts-train-service/train/retrieve][Method:POST][Request:{"id":"DongCheOne"}][RemoteHost:172.19.0.6][IP:172.19.0.6]
+2023-08-31 08:58:36.155  INFO [ts-train-service,c76033b0ba1eee8c,ef15c98e1890fd74,true] 1 --- [io-14567-exec-7] train.config.HttpAspectConfig            : [Service:ts-train-service][Response:{"id":"DongCheOne","economyClass":300,"confortClass":100,"averageSpeed":180}]
+c=train.domain.Information2@579a5686
+requestArgs={"id":"DongCheOne"}
+2023-08-31 08:58:36.391  INFO [ts-train-service,c76033b0ba1eee8c,66c700c0f280e113,true] 1 --- [o-14567-exec-10] train.config.HttpAspectConfig            : [Service:ts-train-service][URI:ts-train-service/train/retrieve][Method:POST][Request:{"id":"DongCheOne"}][RemoteHost:172.19.0.25][IP:172.19.0.25]
+2023-08-31 08:58:36.395  INFO [ts-train-service,c76033b0ba1eee8c,66c700c0f280e113,true] 1 --- [o-14567-exec-10] train.config.HttpAspectConfig            : [Service:ts-train-service][Response:{"id":"DongCheOne","economyClass":300,"confortClass":100,"averageSpeed":180}]
+c=train.domain.Information2@62ac5188
+requestArgs={"id":"DongCheOne"}
+2023-08-31 08:58:36.443  INFO [ts-train-service,c76033b0ba1eee8c,6dfa1150bd61a000,true] 1 --- [io-14567-exec-4] train.config.HttpAspectConfig            : [Service:ts-train-service][URI:ts-train-service/train/retrieve][Method:POST][Request:{"id":"DongCheOne"}][RemoteHost:172.19.0.25][IP:172.19.0.25]
+2023-08-31 08:58:36.454  INFO [ts-train-service,c76033b0ba1eee8c,6dfa1150bd61a000,true] 1 --- [io-14567-exec-4] train.config.HttpAspectConfig            : [Service:ts-train-service][Response:{"id":"DongCheOne","economyClass":300,"confortClass":100,"averageSpeed":180}]
+c=train.domain.Information2@3c8a1ea4
+requestArgs={"id":"DongCheOne"}
+2023-08-31 08:58:36.531  INFO [ts-train-service,c76033b0ba1eee8c,c8fb580b1b9b81ca,true] 1 --- [io-14567-exec-9] train.config.HttpAspectConfig            : [Service:ts-train-service][URI:ts-train-service/train/retrieve][Method:POST][Request:{"id":"DongCheOne"}][RemoteHost:172.19.0.25][IP:172.19.0.25]
+2023-08-31 08:58:36.534  INFO [ts-train-service,c76033b0ba1eee8c,c8fb580b1b9b81ca,true] 1 --- [io-14567-exec-9] train.config.HttpAspectConfig            : [Service:ts-train-service][Response:{"id":"DongCheOne","economyClass":300,"confortClass":100,"averageSpeed":180}]
+c=train.domain.Information2@769bff67
+requestArgs={"id":"DongCheOne"}
+2023-08-31 08:58:36.558  INFO [ts-train-service,c76033b0ba1eee8c,d729c91c5e5a66af,true] 1 --- [io-14567-exec-8] train.config.HttpAspectConfig            : [Service:ts-train-service][URI:ts-train-service/train/retrieve][Method:POST][Request:{"id":"DongCheOne"}][RemoteHost:172.19.0.25][IP:172.19.0.25]
+2023-08-31 08:58:36.564  INFO [ts-train-service,c76033b0ba1eee8c,d729c91c5e5a66af,true] 1 --- [io-14567-exec-8] train.config.HttpAspectConfig            : [Service:ts-train-service][Response:{"id":"DongCheOne","economyClass":300,"confortClass":100,"averageSpeed":180}]
+c=train.domain.Information2@dc74b2
+requestArgs={"id":"DongCheOne"}
+2023-08-31 08:58:36.585  INFO [ts-train-service,c76033b0ba1eee8c,f2d1367a3382fc52,true] 1 --- [io-14567-exec-2] train.config.HttpAspectConfig            : [Service:ts-train-service][URI:ts-train-service/train/retrieve][Method:POST][Request:{"id":"DongCheOne"}][RemoteHost:172.19.0.25][IP:172.19.0.25]
+2023-08-31 08:58:36.592  INFO [ts-train-service,c76033b0ba1eee8c,f2d1367a3382fc52,true] 1 --- [io-14567-exec-2] train.config.HttpAspectConfig            : [Service:ts-train-service][Response:{"id":"DongCheOne","economyClass":300,"confortClass":100,"averageSpeed":180}]
+c=train.domain.Information2@4a266b3
+requestArgs={"id":"DongCheOne"}
+2023-08-31 08:58:36.616  INFO [ts-train-service,c76033b0ba1eee8c,50eda8c353e279fa,true] 1 --- [io-14567-exec-1] train.config.HttpAspectConfig            : [Service:ts-train-service][URI:ts-train-service/train/retrieve][Method:POST][Request:{"id":"DongCheOne"}][RemoteHost:172.19.0.25][IP:172.19.0.25]
+2023-08-31 08:58:36.622  INFO [ts-train-service,c76033b0ba1eee8c,50eda8c353e279fa,true] 1 --- [io-14567-exec-1] train.config.HttpAspectConfig            : [Service:ts-train-service][Response:{"id":"DongCheOne","economyClass":300,"confortClass":100,"averageSpeed":180}]
+c=train.domain.Information2@20d2b3e2
+requestArgs={"id":"DongCheOne"}
+2023-08-31 08:58:36.658  INFO [ts-train-service,c76033b0ba1eee8c,339a31e41144f5d0,true] 1 --- [io-14567-exec-3] train.config.HttpAspectConfig            : [Service:ts-train-service][URI:ts-train-service/train/retrieve][Method:POST][Request:{"id":"DongCheOne"}][RemoteHost:172.19.0.6][IP:172.19.0.6]
+2023-08-31 08:58:36.665  INFO [ts-train-service,c76033b0ba1eee8c,339a31e41144f5d0,true] 1 --- [io-14567-exec-3] train.config.HttpAspectConfig            : [Service:ts-train-service][Response:{"id":"DongCheOne","economyClass":300,"confortClass":100,"averageSpeed":180}]
+c=train.domain.Information2@4fe1f9b0
+requestArgs={"id":"DongCheOne"}
+2023-08-31 08:58:36.695  INFO [ts-train-service,c76033b0ba1eee8c,61585c383ce14487,true] 1 --- [io-14567-exec-6] train.config.HttpAspectConfig            : [Service:ts-train-service][URI:ts-train-service/train/retrieve][Method:POST][Request:{"id":"DongCheOne"}][RemoteHost:172.19.0.6][IP:172.19.0.6]
+2023-08-31 08:58:36.702  INFO [ts-train-service,c76033b0ba1eee8c,61585c383ce14487,true] 1 --- [io-14567-exec-6] train.config.HttpAspectConfig            : [Service:ts-train-service][Response:{"id":"DongCheOne","economyClass":300,"confortClass":100,"averageSpeed":180}]
+c=train.domain.Information2@2902258d
+requestArgs={"id":"DongCheOne"}
+2023-08-31 08:58:36.793  INFO [ts-train-service,c76033b0ba1eee8c,a95bc4f50b38db3e,true] 1 --- [io-14567-exec-5] train.config.HttpAspectConfig            : [Service:ts-train-service][URI:ts-train-service/train/retrieve][Method:POST][Request:{"id":"DongCheOne"}][RemoteHost:172.19.0.25][IP:172.19.0.25]
+2023-08-31 08:58:36.797  INFO [ts-train-service,c76033b0ba1eee8c,a95bc4f50b38db3e,true] 1 --- [io-14567-exec-5] train.config.HttpAspectConfig            : [Service:ts-train-service][Response:{"id":"DongCheOne","economyClass":300,"confortClass":100,"averageSpeed":180}]
+c=train.domain.Information2@6046e752
+requestArgs={"id":"DongCheOne"}
+2023-08-31 08:58:36.821  INFO [ts-train-service,c76033b0ba1eee8c,c0d8598aa5541999,true] 1 --- [io-14567-exec-7] train.config.HttpAspectConfig            : [Service:ts-train-service][URI:ts-train-service/train/retrieve][Method:POST][Request:{"id":"DongCheOne"}][RemoteHost:172.19.0.25][IP:172.19.0.25]
+2023-08-31 08:58:36.825  INFO [ts-train-service,c76033b0ba1eee8c,c0d8598aa5541999,true] 1 --- [io-14567-exec-7] train.config.HttpAspectConfig            : [Service:ts-train-service][Response:{"id":"DongCheOne","economyClass":300,"confortClass":100,"averageSpeed":180}]
+c=train.domain.Information2@595da205
+requestArgs={"id":"DongCheOne"}
+2023-08-31 08:58:36.946  INFO [ts-train-service,53af54f31bbe1c41,c9be6dbb7a8332a8,true] 1 --- [o-14567-exec-10] train.config.HttpAspectConfig            : [Service:ts-train-service][URI:ts-train-service/train/retrieve][Method:POST][Request:{"id":"DongCheOne"}][RemoteHost:172.19.0.6][IP:172.19.0.6]
+2023-08-31 08:58:36.949  INFO [ts-train-service,53af54f31bbe1c41,c9be6dbb7a8332a8,true] 1 --- [o-14567-exec-10] train.config.HttpAspectConfig            : [Service:ts-train-service][Response:{"id":"DongCheOne","economyClass":300,"confortClass":100,"averageSpeed":180}]
+c=train.domain.Information2@68543af8
+requestArgs={"id":"DongCheOne"}
+2023-08-31 08:58:37.148  INFO [ts-train-service,53af54f31bbe1c41,9b5f445a3bb7ca96,true] 1 --- [io-14567-exec-4] train.config.HttpAspectConfig            : [Service:ts-train-service][URI:ts-train-service/train/retrieve][Method:POST][Request:{"id":"DongCheOne"}][RemoteHost:172.19.0.25][IP:172.19.0.25]
+2023-08-31 08:58:37.168  INFO [ts-train-service,53af54f31bbe1c41,9b5f445a3bb7ca96,true] 1 --- [io-14567-exec-4] train.config.HttpAspectConfig            : [Service:ts-train-service][Response:{"id":"DongCheOne","economyClass":300,"confortClass":100,"averageSpeed":180}]
+c=train.domain.Information2@324de745
+requestArgs={"id":"DongCheOne"}
+2023-08-31 08:58:37.275  INFO [ts-train-service,53af54f31bbe1c41,6dd97ab1f826e98a,true] 1 --- [io-14567-exec-9] train.config.HttpAspectConfig            : [Service:ts-train-service][URI:ts-train-service/train/retrieve][Method:POST][Request:{"id":"DongCheOne"}][RemoteHost:172.19.0.25][IP:172.19.0.25]
+2023-08-31 08:58:37.279  INFO [ts-train-service,53af54f31bbe1c41,6dd97ab1f826e98a,true] 1 --- [io-14567-exec-9] train.config.HttpAspectConfig            : [Service:ts-train-service][Response:{"id":"DongCheOne","economyClass":300,"confortClass":100,"averageSpeed":180}]
+c=train.domain.Information2@785c0fc4
+requestArgs={"id":"DongCheOne"}
+2023-08-31 08:58:37.305  INFO [ts-train-service,53af54f31bbe1c41,be8acd93a75b3af5,true] 1 --- [io-14567-exec-8] train.config.HttpAspectConfig            : [Service:ts-train-service][URI:ts-train-service/train/retrieve][Method:POST][Request:{"id":"DongCheOne"}][RemoteHost:172.19.0.25][IP:172.19.0.25]
+2023-08-31 08:58:37.310  INFO [ts-train-service,53af54f31bbe1c41,be8acd93a75b3af5,true] 1 --- [io-14567-exec-8] train.config.HttpAspectConfig            : [Service:ts-train-service][Response:{"id":"DongCheOne","economyClass":300,"confortClass":100,"averageSpeed":180}]
+c=train.domain.Information2@115fcd79
+requestArgs={"id":"DongCheOne"}
+2023-08-31 08:58:37.375  INFO [ts-train-service,53af54f31bbe1c41,bd765b9cf9caedd0,true] 1 --- [io-14567-exec-2] train.config.HttpAspectConfig            : [Service:ts-train-service][URI:ts-train-service/train/retrieve][Method:POST][Request:{"id":"DongCheOne"}][RemoteHost:172.19.0.6][IP:172.19.0.6]
+2023-08-31 08:58:37.378  INFO [ts-train-service,53af54f31bbe1c41,bd765b9cf9caedd0,true] 1 --- [io-14567-exec-2] train.config.HttpAspectConfig            : [Service:ts-train-service][Response:{"id":"DongCheOne","economyClass":300,"confortClass":100,"averageSpeed":180}]
+c=train.domain.Information2@9df2ff
+requestArgs={"id":"DongCheOne"}
+2023-08-31 08:58:37.395  INFO [ts-train-service,53af54f31bbe1c41,6db0c29efb38085f,true] 1 --- [io-14567-exec-1] train.config.HttpAspectConfig            : [Service:ts-train-service][URI:ts-train-service/train/retrieve][Method:POST][Request:{"id":"DongCheOne"}][RemoteHost:172.19.0.6][IP:172.19.0.6]
+2023-08-31 08:58:37.400  INFO [ts-train-service,53af54f31bbe1c41,6db0c29efb38085f,true] 1 --- [io-14567-exec-1] train.config.HttpAspectConfig            : [Service:ts-train-service][Response:{"id":"DongCheOne","economyClass":300,"confortClass":100,"averageSpeed":180}]
+c=train.domain.Information2@24ed3320
+requestArgs={"id":"DongCheOne"}
+2023-08-31 08:58:37.467  INFO [ts-train-service,53af54f31bbe1c41,49894a503f923aef,true] 1 --- [io-14567-exec-3] train.config.HttpAspectConfig            : [Service:ts-train-service][URI:ts-train-service/train/retrieve][Method:POST][Request:{"id":"DongCheOne"}][RemoteHost:172.19.0.25][IP:172.19.0.25]
+2023-08-31 08:58:37.469  INFO [ts-train-service,53af54f31bbe1c41,49894a503f923aef,true] 1 --- [io-14567-exec-3] train.config.HttpAspectConfig            : [Service:ts-train-service][Response:{"id":"DongCheOne","economyClass":300,"confortClass":100,"averageSpeed":180}]
+c=train.domain.Information2@4bde7494
+requestArgs={"id":"DongCheOne"}
+2023-08-31 08:58:37.581  INFO [ts-train-service,53af54f31bbe1c41,677d957fdb3fc326,true] 1 --- [io-14567-exec-6] train.config.HttpAspectConfig            : [Service:ts-train-service][URI:ts-train-service/train/retrieve][Method:POST][Request:{"id":"DongCheOne"}][RemoteHost:172.19.0.25][IP:172.19.0.25]
+2023-08-31 08:58:37.587  INFO [ts-train-service,53af54f31bbe1c41,677d957fdb3fc326,true] 1 --- [io-14567-exec-6] train.config.HttpAspectConfig            : [Service:ts-train-service][Response:{"id":"DongCheOne","economyClass":300,"confortClass":100,"averageSpeed":180}]
+c=train.domain.Information2@6c00aec9
+requestArgs={"id":"DongCheOne"}
+2023-08-31 08:58:37.690  INFO [ts-train-service,53af54f31bbe1c41,0d13dc54a1e51a72,true] 1 --- [io-14567-exec-5] train.config.HttpAspectConfig            : [Service:ts-train-service][URI:ts-train-service/train/retrieve][Method:POST][Request:{"id":"DongCheOne"}][RemoteHost:172.19.0.25][IP:172.19.0.25]
+2023-08-31 08:58:37.694  INFO [ts-train-service,53af54f31bbe1c41,0d13dc54a1e51a72,true] 1 --- [io-14567-exec-5] train.config.HttpAspectConfig            : [Service:ts-train-service][Response:{"id":"DongCheOne","economyClass":300,"confortClass":100,"averageSpeed":180}]
+c=train.domain.Information2@228a60a5
+requestArgs={"id":"DongCheOne"}
+2023-08-31 08:58:37.712  INFO [ts-train-service,53af54f31bbe1c41,efa582fb9f9e3e0e,true] 1 --- [io-14567-exec-7] train.config.HttpAspectConfig            : [Service:ts-train-service][URI:ts-train-service/train/retrieve][Method:POST][Request:{"id":"DongCheOne"}][RemoteHost:172.19.0.25][IP:172.19.0.25]
+2023-08-31 08:58:37.715  INFO [ts-train-service,53af54f31bbe1c41,efa582fb9f9e3e0e,true] 1 --- [io-14567-exec-7] train.config.HttpAspectConfig            : [Service:ts-train-service][Response:{"id":"DongCheOne","economyClass":300,"confortClass":100,"averageSpeed":180}]
+c=train.domain.Information2@5d623df6
+requestArgs={"id":"DongCheOne"}
+2023-08-31 08:58:37.759  INFO [ts-train-service,53af54f31bbe1c41,85dc658514b424fe,true] 1 --- [o-14567-exec-10] train.config.HttpAspectConfig            : [Service:ts-train-service][URI:ts-train-service/train/retrieve][Method:POST][Request:{"id":"DongCheOne"}][RemoteHost:172.19.0.6][IP:172.19.0.6]
+2023-08-31 08:58:37.761  INFO [ts-train-service,53af54f31bbe1c41,85dc658514b424fe,true] 1 --- [o-14567-exec-10] train.config.HttpAspectConfig            : [Service:ts-train-service][Response:{"id":"DongCheOne","economyClass":300,"confortClass":100,"averageSpeed":180}]
+c=train.domain.Information2@2d56a996
+requestArgs={"id":"DongCheOne"}
+2023-08-31 08:58:37.839  INFO [ts-train-service,53af54f31bbe1c41,f81c1d4311409ba5,true] 1 --- [io-14567-exec-4] train.config.HttpAspectConfig            : [Service:ts-train-service][URI:ts-train-service/train/retrieve][Method:POST][Request:{"id":"DongCheOne"}][RemoteHost:172.19.0.25][IP:172.19.0.25]
+2023-08-31 08:58:37.842  INFO [ts-train-service,53af54f31bbe1c41,f81c1d4311409ba5,true] 1 --- [io-14567-exec-4] train.config.HttpAspectConfig            : [Service:ts-train-service][Response:{"id":"DongCheOne","economyClass":300,"confortClass":100,"averageSpeed":180}]
