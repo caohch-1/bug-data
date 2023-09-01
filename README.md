@@ -41,3 +41,9 @@ Now visit `localhost:8080` and you should see the UI of trainticket.
 
 ## Todo
 1. Write extractors.
+
+
+## Buggy Trigger
+1. F1 in `ts-cancel-service/src/main/java/cancel/async/AsyncTask.java`. L32-39 simulates unstable network condition. Just `sleep` is buggy version. The root cause can be [Reset Order Stauts] completes before [Drawback Money], which means the missing logic of controlling events sequence.
+2. F2 in `ts-preserve-service/src/main/java/preserve/service/PreserveServiceImpl.java`. L24-29 simulates delay which makes requests may returns at a different order with the origin. Just increase `sleep` time is buggy version. The root cause can be the missing logic of processing async responses in order. 
+3. F3 in `ts-order-service/src/main/java/order/service/OrderServiceImpl.java`. L28-33 simulates requests occupy too much memory. Meanwhile, in `ts-order-service/Dockerfile` L4 and `docker-compose.yml` L131-132, 192-193, and 255-256, JVM memory limit is bigger than the Docker memory limit. Just add `mem_limit` and `memswap_limit` is buggy version. The root cause is misconfiguration.

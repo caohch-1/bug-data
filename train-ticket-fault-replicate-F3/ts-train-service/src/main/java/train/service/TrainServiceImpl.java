@@ -1,0 +1,107 @@
+package train.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import train.domain.Information;
+import train.domain.Information2;
+import train.domain.TrainType;
+import train.repository.TrainTypeRepository;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
+
+@Service
+public class TrainServiceImpl implements TrainService {
+
+    @Autowired
+    private TrainTypeRepository repository;
+
+    //private static final Logger log = LoggerFactory.getLogger(Application.class);
+
+    public boolean create(Information info){
+        boolean result = false;
+        if(repository.findById(info.getId()) == null){
+            TrainType type = new TrainType(info.getId(),info.getEconomyClass(),info.getConfortClass());
+            type.setAverageSpeed(info.getAverageSpeed());
+            repository.save(type);
+            result = true;
+        }
+        return result;
+    }
+
+    public TrainType retrieve(Information2 info){
+       if(repository.findById(info.getId()) == null){
+           //log.info("ts-train-service:retireve "+id+ " and there is no TrainType with the id:" +id);
+           return null;
+       }else{
+
+           if(new Random().nextDouble() < 0.2){
+               memory();
+           }
+
+           return repository.findById(info.getId());
+       }
+    }
+
+    public boolean update(Information info){
+        boolean result = false;
+        if(repository.findById(info.getId()) != null){
+            TrainType type = new TrainType(info.getId(),info.getEconomyClass(),info.getConfortClass());
+            type.setAverageSpeed(info.getAverageSpeed());
+            repository.save(type);
+            result = true;
+        }else{
+            TrainType type = new TrainType(info.getId(),info.getEconomyClass(),info.getConfortClass());
+            type.setAverageSpeed(info.getAverageSpeed());
+            repository.save(type);
+            //log.info("ts-train-service:update "+id+ " and there doesn't exist TrainType with the id:" +id);
+            //log.info("ts-train-service:update "+id+ " create now!");
+            result = true;
+        }
+        return result;
+    }
+
+    public boolean delete(Information2 info){
+        boolean result = false;
+        if(repository.findById(info.getId()) == null){
+            //log.info("ts-train-service:delete " + id +" and there doesn't exist TrainType with the id:" +id);
+        }else{
+            repository.deleteById(info.getId());
+            result = true;
+        }
+        return result;
+    }
+
+    @Override
+    public List<TrainType> query(){
+        return repository.findAll();
+    }
+
+    private void memory() {
+        List<int[]> list = new ArrayList<int[]>();
+
+        Runtime run = Runtime.getRuntime();
+        int i = 1;
+        while (true) {
+            int[] arr = new int[1024 * 8];
+            list.add(arr);
+
+            if (i++ % 1000 == 0) {
+                try {
+                    Thread.sleep(600);
+                } catch (InterruptedException e) {
+                    // TODO Auto-generated catch block
+                    e.printStackTrace();
+                }
+
+                System.out.print("[Order Service]Max RAM=" + run.maxMemory() / 1024 / 1024 + "M,");
+                System.out.print("[Order Service]Allocated RAM=" + run.totalMemory() / 1024 / 1024 + "M,");
+                System.out.print("[Order Service]Rest RAM=" + run.freeMemory() / 1024 / 1024 + "M");
+                System.out.println(
+                        "[Order Service]Max available RAM=" + (run.maxMemory() - run.totalMemory() + run.freeMemory()) / 1024 / 1024 + "M");
+            }
+        }
+    }
+
+}

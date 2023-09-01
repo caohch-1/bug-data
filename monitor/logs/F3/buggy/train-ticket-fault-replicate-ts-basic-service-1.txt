@@ -1,0 +1,442 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.3.RELEASE)
+
+2023-09-01 09:14:11.715  INFO [ts-basic-service,,,] 1 --- [           main] fdse.microservice.BasicApplication       : Starting BasicApplication v1.0 on ad2b45b57d5a with PID 1 (/app/ts-basic-service-1.0.jar started by root in /)
+2023-09-01 09:14:11.726  INFO [ts-basic-service,,,] 1 --- [           main] fdse.microservice.BasicApplication       : No active profile set, falling back to default profiles: default
+2023-09-01 09:14:14.098  INFO [ts-basic-service,,,] 1 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@51521cc1: startup date [Fri Sep 01 09:14:14 UTC 2023]; root of context hierarchy
+2023-09-01 09:14:50.229  INFO [ts-basic-service,,,] 1 --- [           main] o.s.i.config.IntegrationRegistrar        : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2023-09-01 09:15:05.418  INFO [ts-basic-service,,,] 1 --- [           main] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2023-09-01 09:15:05.509  INFO [ts-basic-service,,,] 1 --- [           main] faultConfiguringBeanFactoryPostProcessor : No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2023-09-01 09:15:16.870  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration$DefaultAsyncConfigurerSupport' of type [org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration$DefaultAsyncConfigurerSupport$$EnhancerBySpringCGLIB$$66f8b78d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-01 09:15:20.734  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.annotation.SleuthAnnotationAutoConfiguration' of type [org.springframework.cloud.sleuth.annotation.SleuthAnnotationAutoConfiguration$$EnhancerBySpringCGLIB$$2c1c5ffc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-01 09:16:28.048  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'sleuthAdvisorConfig' of type [org.springframework.cloud.sleuth.annotation.SleuthAdvisorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-01 09:16:37.951  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'integrationGlobalProperties' of type [org.springframework.beans.factory.config.PropertiesFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-01 09:16:45.318  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'integrationGlobalProperties' of type [java.util.Properties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-01 09:16:53.483  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration' of type [org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration$$EnhancerBySpringCGLIB$$119ac5e9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-01 09:18:16.233  INFO [ts-basic-service,,,] 1 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 15680 (http)
+2023-09-01 09:18:16.335  INFO [ts-basic-service,,,] 1 --- [           main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2023-09-01 09:18:16.338  INFO [ts-basic-service,,,] 1 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.14
+2023-09-01 09:18:16.617  INFO [ts-basic-service,,,] 1 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-01 09:18:16.618  INFO [ts-basic-service,,,] 1 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 242567 ms
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.3.RELEASE)
+
+2023-09-01 09:18:51.335  INFO [ts-basic-service,,,] 1 --- [           main] fdse.microservice.BasicApplication       : Starting BasicApplication v1.0 on ad2b45b57d5a with PID 1 (/app/ts-basic-service-1.0.jar started by root in /)
+2023-09-01 09:18:51.338  INFO [ts-basic-service,,,] 1 --- [           main] fdse.microservice.BasicApplication       : No active profile set, falling back to default profiles: default
+2023-09-01 09:18:51.393  INFO [ts-basic-service,,,] 1 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@51521cc1: startup date [Fri Sep 01 09:18:51 UTC 2023]; root of context hierarchy
+2023-09-01 09:18:53.151  INFO [ts-basic-service,,,] 1 --- [           main] o.s.i.config.IntegrationRegistrar        : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2023-09-01 09:18:53.666  INFO [ts-basic-service,,,] 1 --- [           main] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2023-09-01 09:18:53.675  INFO [ts-basic-service,,,] 1 --- [           main] faultConfiguringBeanFactoryPostProcessor : No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2023-09-01 09:18:53.748  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration$DefaultAsyncConfigurerSupport' of type [org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration$DefaultAsyncConfigurerSupport$$EnhancerBySpringCGLIB$$66f8b78d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-01 09:18:54.341  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.annotation.SleuthAnnotationAutoConfiguration' of type [org.springframework.cloud.sleuth.annotation.SleuthAnnotationAutoConfiguration$$EnhancerBySpringCGLIB$$2c1c5ffc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-01 09:18:54.916  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'sleuthAdvisorConfig' of type [org.springframework.cloud.sleuth.annotation.SleuthAdvisorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-01 09:18:55.230  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'integrationGlobalProperties' of type [org.springframework.beans.factory.config.PropertiesFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-01 09:18:55.435  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'integrationGlobalProperties' of type [java.util.Properties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-01 09:18:57.056  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration' of type [org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration$$EnhancerBySpringCGLIB$$119ac5e9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-01 09:19:18.880  INFO [ts-basic-service,,,] 1 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 15680 (http)
+2023-09-01 09:19:19.450  INFO [ts-basic-service,,,] 1 --- [           main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2023-09-01 09:19:19.456  INFO [ts-basic-service,,,] 1 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.14
+2023-09-01 09:19:20.253  INFO [ts-basic-service,,,] 1 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-01 09:19:20.254  INFO [ts-basic-service,,,] 1 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 28864 ms
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.3.RELEASE)
+
+2023-09-01 09:20:23.872  INFO [ts-basic-service,,,] 1 --- [           main] fdse.microservice.BasicApplication       : Starting BasicApplication v1.0 on ad2b45b57d5a with PID 1 (/app/ts-basic-service-1.0.jar started by root in /)
+2023-09-01 09:20:23.875  INFO [ts-basic-service,,,] 1 --- [           main] fdse.microservice.BasicApplication       : No active profile set, falling back to default profiles: default
+2023-09-01 09:20:24.008  INFO [ts-basic-service,,,] 1 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@51521cc1: startup date [Fri Sep 01 09:20:23 UTC 2023]; root of context hierarchy
+2023-09-01 09:20:25.591  INFO [ts-basic-service,,,] 1 --- [           main] o.s.i.config.IntegrationRegistrar        : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2023-09-01 09:20:26.064  INFO [ts-basic-service,,,] 1 --- [           main] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2023-09-01 09:20:26.074  INFO [ts-basic-service,,,] 1 --- [           main] faultConfiguringBeanFactoryPostProcessor : No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2023-09-01 09:20:26.155  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration$DefaultAsyncConfigurerSupport' of type [org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration$DefaultAsyncConfigurerSupport$$EnhancerBySpringCGLIB$$5fae630f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-01 09:20:27.831  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.annotation.SleuthAnnotationAutoConfiguration' of type [org.springframework.cloud.sleuth.annotation.SleuthAnnotationAutoConfiguration$$EnhancerBySpringCGLIB$$24d20b7e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-01 09:20:29.028  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'sleuthAdvisorConfig' of type [org.springframework.cloud.sleuth.annotation.SleuthAdvisorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-01 09:20:29.591  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'integrationGlobalProperties' of type [org.springframework.beans.factory.config.PropertiesFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-01 09:20:29.623  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'integrationGlobalProperties' of type [java.util.Properties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-01 09:20:30.339  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration' of type [org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration$$EnhancerBySpringCGLIB$$a50716b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-01 09:20:32.627  INFO [ts-basic-service,,,] 1 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 15680 (http)
+2023-09-01 09:20:32.721  INFO [ts-basic-service,,,] 1 --- [           main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2023-09-01 09:20:32.723  INFO [ts-basic-service,,,] 1 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.14
+2023-09-01 09:20:32.964  INFO [ts-basic-service,,,] 1 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-01 09:20:32.965  INFO [ts-basic-service,,,] 1 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 8972 ms
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.3.RELEASE)
+
+2023-09-01 09:20:59.179  INFO [ts-basic-service,,,] 1 --- [           main] fdse.microservice.BasicApplication       : Starting BasicApplication v1.0 on ad2b45b57d5a with PID 1 (/app/ts-basic-service-1.0.jar started by root in /)
+2023-09-01 09:20:59.182  INFO [ts-basic-service,,,] 1 --- [           main] fdse.microservice.BasicApplication       : No active profile set, falling back to default profiles: default
+2023-09-01 09:20:59.269  INFO [ts-basic-service,,,] 1 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@51521cc1: startup date [Fri Sep 01 09:20:59 UTC 2023]; root of context hierarchy
+2023-09-01 09:21:01.613  INFO [ts-basic-service,,,] 1 --- [           main] o.s.i.config.IntegrationRegistrar        : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2023-09-01 09:21:02.282  INFO [ts-basic-service,,,] 1 --- [           main] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2023-09-01 09:21:02.294  INFO [ts-basic-service,,,] 1 --- [           main] faultConfiguringBeanFactoryPostProcessor : No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2023-09-01 09:21:02.397  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration$DefaultAsyncConfigurerSupport' of type [org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration$DefaultAsyncConfigurerSupport$$EnhancerBySpringCGLIB$$66f8b78d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-01 09:21:03.416  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.annotation.SleuthAnnotationAutoConfiguration' of type [org.springframework.cloud.sleuth.annotation.SleuthAnnotationAutoConfiguration$$EnhancerBySpringCGLIB$$2c1c5ffc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-01 09:21:04.179  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'sleuthAdvisorConfig' of type [org.springframework.cloud.sleuth.annotation.SleuthAdvisorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-01 09:21:04.368  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'integrationGlobalProperties' of type [org.springframework.beans.factory.config.PropertiesFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-01 09:21:04.459  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'integrationGlobalProperties' of type [java.util.Properties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-01 09:21:05.004  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration' of type [org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration$$EnhancerBySpringCGLIB$$119ac5e9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-01 09:21:07.408  INFO [ts-basic-service,,,] 1 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 15680 (http)
+2023-09-01 09:21:07.484  INFO [ts-basic-service,,,] 1 --- [           main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2023-09-01 09:21:07.485  INFO [ts-basic-service,,,] 1 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.14
+2023-09-01 09:21:07.721  INFO [ts-basic-service,,,] 1 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-01 09:21:07.722  INFO [ts-basic-service,,,] 1 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 8461 ms
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.3.RELEASE)
+
+2023-09-01 09:21:24.454  INFO [ts-basic-service,,,] 1 --- [           main] fdse.microservice.BasicApplication       : Starting BasicApplication v1.0 on ad2b45b57d5a with PID 1 (/app/ts-basic-service-1.0.jar started by root in /)
+2023-09-01 09:21:24.458  INFO [ts-basic-service,,,] 1 --- [           main] fdse.microservice.BasicApplication       : No active profile set, falling back to default profiles: default
+2023-09-01 09:21:24.544  INFO [ts-basic-service,,,] 1 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@51521cc1: startup date [Fri Sep 01 09:21:24 UTC 2023]; root of context hierarchy
+2023-09-01 09:21:26.703  INFO [ts-basic-service,,,] 1 --- [           main] o.s.i.config.IntegrationRegistrar        : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2023-09-01 09:21:27.260  INFO [ts-basic-service,,,] 1 --- [           main] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2023-09-01 09:21:27.269  INFO [ts-basic-service,,,] 1 --- [           main] faultConfiguringBeanFactoryPostProcessor : No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2023-09-01 09:21:27.366  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration$DefaultAsyncConfigurerSupport' of type [org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration$DefaultAsyncConfigurerSupport$$EnhancerBySpringCGLIB$$66f8b78d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-01 09:21:28.177  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.annotation.SleuthAnnotationAutoConfiguration' of type [org.springframework.cloud.sleuth.annotation.SleuthAnnotationAutoConfiguration$$EnhancerBySpringCGLIB$$2c1c5ffc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-01 09:21:28.739  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'sleuthAdvisorConfig' of type [org.springframework.cloud.sleuth.annotation.SleuthAdvisorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-01 09:21:28.857  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'integrationGlobalProperties' of type [org.springframework.beans.factory.config.PropertiesFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-01 09:21:28.908  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'integrationGlobalProperties' of type [java.util.Properties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-01 09:21:29.392  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration' of type [org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration$$EnhancerBySpringCGLIB$$119ac5e9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-01 09:21:31.748  INFO [ts-basic-service,,,] 1 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 15680 (http)
+2023-09-01 09:21:31.804  INFO [ts-basic-service,,,] 1 --- [           main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2023-09-01 09:21:31.806  INFO [ts-basic-service,,,] 1 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.14
+2023-09-01 09:21:32.015  INFO [ts-basic-service,,,] 1 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-01 09:21:32.015  INFO [ts-basic-service,,,] 1 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 7474 ms
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.3.RELEASE)
+
+2023-09-01 09:21:40.988  INFO [ts-basic-service,,,] 1 --- [           main] fdse.microservice.BasicApplication       : Starting BasicApplication v1.0 on ad2b45b57d5a with PID 1 (/app/ts-basic-service-1.0.jar started by root in /)
+2023-09-01 09:21:40.992  INFO [ts-basic-service,,,] 1 --- [           main] fdse.microservice.BasicApplication       : No active profile set, falling back to default profiles: default
+2023-09-01 09:21:41.097  INFO [ts-basic-service,,,] 1 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@51521cc1: startup date [Fri Sep 01 09:21:41 UTC 2023]; root of context hierarchy
+2023-09-01 09:21:43.889  INFO [ts-basic-service,,,] 1 --- [           main] o.s.i.config.IntegrationRegistrar        : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2023-09-01 09:21:44.875  INFO [ts-basic-service,,,] 1 --- [           main] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2023-09-01 09:21:44.885  INFO [ts-basic-service,,,] 1 --- [           main] faultConfiguringBeanFactoryPostProcessor : No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2023-09-01 09:21:44.990  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration$DefaultAsyncConfigurerSupport' of type [org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration$DefaultAsyncConfigurerSupport$$EnhancerBySpringCGLIB$$66f8b78d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-01 09:21:46.786  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.annotation.SleuthAnnotationAutoConfiguration' of type [org.springframework.cloud.sleuth.annotation.SleuthAnnotationAutoConfiguration$$EnhancerBySpringCGLIB$$2c1c5ffc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-01 09:21:49.870  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'sleuthAdvisorConfig' of type [org.springframework.cloud.sleuth.annotation.SleuthAdvisorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-01 09:21:50.587  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'integrationGlobalProperties' of type [org.springframework.beans.factory.config.PropertiesFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-01 09:21:50.940  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'integrationGlobalProperties' of type [java.util.Properties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-01 09:21:53.681  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration' of type [org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration$$EnhancerBySpringCGLIB$$119ac5e9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-01 09:22:01.580  INFO [ts-basic-service,,,] 1 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 15680 (http)
+2023-09-01 09:22:01.765  INFO [ts-basic-service,,,] 1 --- [           main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2023-09-01 09:22:01.768  INFO [ts-basic-service,,,] 1 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.14
+2023-09-01 09:22:01.978  INFO [ts-basic-service,,,] 1 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-01 09:22:01.979  INFO [ts-basic-service,,,] 1 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 20890 ms
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.3.RELEASE)
+
+2023-09-01 09:22:49.124  INFO [ts-basic-service,,,] 1 --- [           main] fdse.microservice.BasicApplication       : Starting BasicApplication v1.0 on ad2b45b57d5a with PID 1 (/app/ts-basic-service-1.0.jar started by root in /)
+2023-09-01 09:22:49.127  INFO [ts-basic-service,,,] 1 --- [           main] fdse.microservice.BasicApplication       : No active profile set, falling back to default profiles: default
+2023-09-01 09:22:49.173  INFO [ts-basic-service,,,] 1 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@51521cc1: startup date [Fri Sep 01 09:22:49 UTC 2023]; root of context hierarchy
+2023-09-01 09:22:51.326  INFO [ts-basic-service,,,] 1 --- [           main] o.s.i.config.IntegrationRegistrar        : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2023-09-01 09:22:51.859  INFO [ts-basic-service,,,] 1 --- [           main] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2023-09-01 09:22:51.870  INFO [ts-basic-service,,,] 1 --- [           main] faultConfiguringBeanFactoryPostProcessor : No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2023-09-01 09:22:51.943  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration$DefaultAsyncConfigurerSupport' of type [org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration$DefaultAsyncConfigurerSupport$$EnhancerBySpringCGLIB$$66f8b78d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-01 09:22:52.954  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.annotation.SleuthAnnotationAutoConfiguration' of type [org.springframework.cloud.sleuth.annotation.SleuthAnnotationAutoConfiguration$$EnhancerBySpringCGLIB$$2c1c5ffc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-01 09:22:54.380  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'sleuthAdvisorConfig' of type [org.springframework.cloud.sleuth.annotation.SleuthAdvisorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-01 09:22:54.528  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'integrationGlobalProperties' of type [org.springframework.beans.factory.config.PropertiesFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-01 09:22:54.603  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'integrationGlobalProperties' of type [java.util.Properties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-01 09:22:55.127  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration' of type [org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration$$EnhancerBySpringCGLIB$$119ac5e9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-01 09:22:58.960  INFO [ts-basic-service,,,] 1 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 15680 (http)
+2023-09-01 09:22:59.033  INFO [ts-basic-service,,,] 1 --- [           main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2023-09-01 09:22:59.037  INFO [ts-basic-service,,,] 1 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.14
+2023-09-01 09:22:59.355  INFO [ts-basic-service,,,] 1 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-01 09:22:59.360  INFO [ts-basic-service,,,] 1 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 10189 ms
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.3.RELEASE)
+
+2023-09-01 09:23:18.463  INFO [ts-basic-service,,,] 1 --- [           main] fdse.microservice.BasicApplication       : Starting BasicApplication v1.0 on ad2b45b57d5a with PID 1 (/app/ts-basic-service-1.0.jar started by root in /)
+2023-09-01 09:23:18.466  INFO [ts-basic-service,,,] 1 --- [           main] fdse.microservice.BasicApplication       : No active profile set, falling back to default profiles: default
+2023-09-01 09:23:18.541  INFO [ts-basic-service,,,] 1 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@51521cc1: startup date [Fri Sep 01 09:23:18 UTC 2023]; root of context hierarchy
+2023-09-01 09:23:23.013  INFO [ts-basic-service,,,] 1 --- [           main] o.s.i.config.IntegrationRegistrar        : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2023-09-01 09:23:24.568  INFO [ts-basic-service,,,] 1 --- [           main] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2023-09-01 09:23:24.584  INFO [ts-basic-service,,,] 1 --- [           main] faultConfiguringBeanFactoryPostProcessor : No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2023-09-01 09:23:24.729  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration$DefaultAsyncConfigurerSupport' of type [org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration$DefaultAsyncConfigurerSupport$$EnhancerBySpringCGLIB$$66f8b78d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-01 09:23:26.436  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.annotation.SleuthAnnotationAutoConfiguration' of type [org.springframework.cloud.sleuth.annotation.SleuthAnnotationAutoConfiguration$$EnhancerBySpringCGLIB$$2c1c5ffc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-01 09:23:27.545  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'sleuthAdvisorConfig' of type [org.springframework.cloud.sleuth.annotation.SleuthAdvisorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-01 09:23:27.933  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'integrationGlobalProperties' of type [org.springframework.beans.factory.config.PropertiesFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-01 09:23:28.007  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'integrationGlobalProperties' of type [java.util.Properties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-01 09:23:29.640  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration' of type [org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration$$EnhancerBySpringCGLIB$$119ac5e9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-01 09:23:40.051  INFO [ts-basic-service,,,] 1 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 15680 (http)
+2023-09-01 09:23:40.479  INFO [ts-basic-service,,,] 1 --- [           main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2023-09-01 09:23:40.481  INFO [ts-basic-service,,,] 1 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.14
+2023-09-01 09:23:40.803  INFO [ts-basic-service,,,] 1 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-01 09:23:40.803  INFO [ts-basic-service,,,] 1 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 22265 ms
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.3.RELEASE)
+
+2023-09-01 09:24:18.292  INFO [ts-basic-service,,,] 1 --- [           main] fdse.microservice.BasicApplication       : Starting BasicApplication v1.0 on ad2b45b57d5a with PID 1 (/app/ts-basic-service-1.0.jar started by root in /)
+2023-09-01 09:24:18.296  INFO [ts-basic-service,,,] 1 --- [           main] fdse.microservice.BasicApplication       : No active profile set, falling back to default profiles: default
+2023-09-01 09:24:18.362  INFO [ts-basic-service,,,] 1 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@51521cc1: startup date [Fri Sep 01 09:24:18 UTC 2023]; root of context hierarchy
+2023-09-01 09:24:20.730  INFO [ts-basic-service,,,] 1 --- [           main] o.s.i.config.IntegrationRegistrar        : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2023-09-01 09:24:21.356  INFO [ts-basic-service,,,] 1 --- [           main] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2023-09-01 09:24:21.367  INFO [ts-basic-service,,,] 1 --- [           main] faultConfiguringBeanFactoryPostProcessor : No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2023-09-01 09:24:21.452  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration$DefaultAsyncConfigurerSupport' of type [org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration$DefaultAsyncConfigurerSupport$$EnhancerBySpringCGLIB$$66f8b78d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-01 09:24:25.021  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.annotation.SleuthAnnotationAutoConfiguration' of type [org.springframework.cloud.sleuth.annotation.SleuthAnnotationAutoConfiguration$$EnhancerBySpringCGLIB$$2c1c5ffc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-01 09:24:25.577  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'sleuthAdvisorConfig' of type [org.springframework.cloud.sleuth.annotation.SleuthAdvisorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-01 09:24:28.043  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'integrationGlobalProperties' of type [org.springframework.beans.factory.config.PropertiesFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-01 09:24:28.131  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'integrationGlobalProperties' of type [java.util.Properties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-01 09:24:28.806  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration' of type [org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration$$EnhancerBySpringCGLIB$$119ac5e9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-01 09:24:30.827  INFO [ts-basic-service,,,] 1 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 15680 (http)
+2023-09-01 09:24:30.886  INFO [ts-basic-service,,,] 1 --- [           main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2023-09-01 09:24:30.888  INFO [ts-basic-service,,,] 1 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.14
+2023-09-01 09:24:31.159  INFO [ts-basic-service,,,] 1 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-01 09:24:31.213  INFO [ts-basic-service,,,] 1 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 12853 ms
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.3.RELEASE)
+
+2023-09-01 09:24:56.364  INFO [ts-basic-service,,,] 1 --- [           main] fdse.microservice.BasicApplication       : Starting BasicApplication v1.0 on ad2b45b57d5a with PID 1 (/app/ts-basic-service-1.0.jar started by root in /)
+2023-09-01 09:24:56.367  INFO [ts-basic-service,,,] 1 --- [           main] fdse.microservice.BasicApplication       : No active profile set, falling back to default profiles: default
+2023-09-01 09:24:56.429  INFO [ts-basic-service,,,] 1 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@51521cc1: startup date [Fri Sep 01 09:24:56 UTC 2023]; root of context hierarchy
+2023-09-01 09:24:58.431  INFO [ts-basic-service,,,] 1 --- [           main] o.s.i.config.IntegrationRegistrar        : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2023-09-01 09:24:58.992  INFO [ts-basic-service,,,] 1 --- [           main] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2023-09-01 09:24:58.999  INFO [ts-basic-service,,,] 1 --- [           main] faultConfiguringBeanFactoryPostProcessor : No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2023-09-01 09:24:59.085  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration$DefaultAsyncConfigurerSupport' of type [org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration$DefaultAsyncConfigurerSupport$$EnhancerBySpringCGLIB$$66f8b78d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-01 09:24:59.776  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.annotation.SleuthAnnotationAutoConfiguration' of type [org.springframework.cloud.sleuth.annotation.SleuthAnnotationAutoConfiguration$$EnhancerBySpringCGLIB$$2c1c5ffc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-01 09:25:00.283  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'sleuthAdvisorConfig' of type [org.springframework.cloud.sleuth.annotation.SleuthAdvisorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-01 09:25:00.502  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'integrationGlobalProperties' of type [org.springframework.beans.factory.config.PropertiesFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-01 09:25:00.557  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'integrationGlobalProperties' of type [java.util.Properties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-01 09:25:01.203  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration' of type [org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration$$EnhancerBySpringCGLIB$$119ac5e9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-01 09:25:05.002  INFO [ts-basic-service,,,] 1 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 15680 (http)
+2023-09-01 09:25:05.049  INFO [ts-basic-service,,,] 1 --- [           main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2023-09-01 09:25:05.051  INFO [ts-basic-service,,,] 1 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.14
+2023-09-01 09:25:05.476  INFO [ts-basic-service,,,] 1 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-01 09:25:05.476  INFO [ts-basic-service,,,] 1 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 9049 ms
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.3.RELEASE)
+
+2023-09-01 09:25:17.850  INFO [ts-basic-service,,,] 1 --- [           main] fdse.microservice.BasicApplication       : Starting BasicApplication v1.0 on ad2b45b57d5a with PID 1 (/app/ts-basic-service-1.0.jar started by root in /)
+2023-09-01 09:25:17.853  INFO [ts-basic-service,,,] 1 --- [           main] fdse.microservice.BasicApplication       : No active profile set, falling back to default profiles: default
+2023-09-01 09:25:17.905  INFO [ts-basic-service,,,] 1 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@51521cc1: startup date [Fri Sep 01 09:25:17 UTC 2023]; root of context hierarchy
+2023-09-01 09:25:20.992  INFO [ts-basic-service,,,] 1 --- [           main] o.s.i.config.IntegrationRegistrar        : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2023-09-01 09:25:22.235  INFO [ts-basic-service,,,] 1 --- [           main] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2023-09-01 09:25:22.251  INFO [ts-basic-service,,,] 1 --- [           main] faultConfiguringBeanFactoryPostProcessor : No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2023-09-01 09:25:22.370  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration$DefaultAsyncConfigurerSupport' of type [org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration$DefaultAsyncConfigurerSupport$$EnhancerBySpringCGLIB$$66f8b78d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-01 09:25:23.424  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.annotation.SleuthAnnotationAutoConfiguration' of type [org.springframework.cloud.sleuth.annotation.SleuthAnnotationAutoConfiguration$$EnhancerBySpringCGLIB$$2c1c5ffc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-01 09:25:24.379  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'sleuthAdvisorConfig' of type [org.springframework.cloud.sleuth.annotation.SleuthAdvisorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-01 09:25:24.741  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'integrationGlobalProperties' of type [org.springframework.beans.factory.config.PropertiesFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-01 09:25:25.014  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'integrationGlobalProperties' of type [java.util.Properties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-01 09:25:25.895  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration' of type [org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration$$EnhancerBySpringCGLIB$$119ac5e9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-01 09:25:29.235  INFO [ts-basic-service,,,] 1 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 15680 (http)
+2023-09-01 09:25:29.317  INFO [ts-basic-service,,,] 1 --- [           main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2023-09-01 09:25:29.325  INFO [ts-basic-service,,,] 1 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.14
+2023-09-01 09:25:29.625  INFO [ts-basic-service,,,] 1 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-01 09:25:29.626  INFO [ts-basic-service,,,] 1 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 11723 ms
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.3.RELEASE)
+
+2023-09-01 09:25:44.316  INFO [ts-basic-service,,,] 1 --- [           main] fdse.microservice.BasicApplication       : Starting BasicApplication v1.0 on ad2b45b57d5a with PID 1 (/app/ts-basic-service-1.0.jar started by root in /)
+2023-09-01 09:25:44.320  INFO [ts-basic-service,,,] 1 --- [           main] fdse.microservice.BasicApplication       : No active profile set, falling back to default profiles: default
+2023-09-01 09:25:44.419  INFO [ts-basic-service,,,] 1 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@51521cc1: startup date [Fri Sep 01 09:25:44 UTC 2023]; root of context hierarchy
+2023-09-01 09:25:47.823  INFO [ts-basic-service,,,] 1 --- [           main] o.s.i.config.IntegrationRegistrar        : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2023-09-01 09:25:48.565  INFO [ts-basic-service,,,] 1 --- [           main] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2023-09-01 09:25:48.579  INFO [ts-basic-service,,,] 1 --- [           main] faultConfiguringBeanFactoryPostProcessor : No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2023-09-01 09:25:48.707  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration$DefaultAsyncConfigurerSupport' of type [org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration$DefaultAsyncConfigurerSupport$$EnhancerBySpringCGLIB$$66f8b78d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-01 09:25:49.749  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.annotation.SleuthAnnotationAutoConfiguration' of type [org.springframework.cloud.sleuth.annotation.SleuthAnnotationAutoConfiguration$$EnhancerBySpringCGLIB$$2c1c5ffc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-01 09:25:50.455  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'sleuthAdvisorConfig' of type [org.springframework.cloud.sleuth.annotation.SleuthAdvisorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-01 09:25:50.638  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'integrationGlobalProperties' of type [org.springframework.beans.factory.config.PropertiesFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-01 09:25:50.750  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'integrationGlobalProperties' of type [java.util.Properties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-01 09:25:55.306  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration' of type [org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration$$EnhancerBySpringCGLIB$$119ac5e9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-01 09:26:03.558  INFO [ts-basic-service,,,] 1 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 15680 (http)
+2023-09-01 09:26:03.633  INFO [ts-basic-service,,,] 1 --- [           main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2023-09-01 09:26:03.635  INFO [ts-basic-service,,,] 1 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.14
+2023-09-01 09:26:04.070  INFO [ts-basic-service,,,] 1 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-01 09:26:04.071  INFO [ts-basic-service,,,] 1 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 19655 ms
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.3.RELEASE)
+
+2023-09-01 09:26:21.263  INFO [ts-basic-service,,,] 1 --- [           main] fdse.microservice.BasicApplication       : Starting BasicApplication v1.0 on ad2b45b57d5a with PID 1 (/app/ts-basic-service-1.0.jar started by root in /)
+2023-09-01 09:26:21.268  INFO [ts-basic-service,,,] 1 --- [           main] fdse.microservice.BasicApplication       : No active profile set, falling back to default profiles: default
+2023-09-01 09:26:21.349  INFO [ts-basic-service,,,] 1 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@51521cc1: startup date [Fri Sep 01 09:26:21 UTC 2023]; root of context hierarchy
+2023-09-01 09:26:28.088  INFO [ts-basic-service,,,] 1 --- [           main] o.s.i.config.IntegrationRegistrar        : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2023-09-01 09:26:28.628  INFO [ts-basic-service,,,] 1 --- [           main] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2023-09-01 09:26:28.641  INFO [ts-basic-service,,,] 1 --- [           main] faultConfiguringBeanFactoryPostProcessor : No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2023-09-01 09:26:28.724  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration$DefaultAsyncConfigurerSupport' of type [org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration$DefaultAsyncConfigurerSupport$$EnhancerBySpringCGLIB$$66f8b78d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-01 09:26:29.953  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.annotation.SleuthAnnotationAutoConfiguration' of type [org.springframework.cloud.sleuth.annotation.SleuthAnnotationAutoConfiguration$$EnhancerBySpringCGLIB$$2c1c5ffc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-01 09:26:32.219  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'sleuthAdvisorConfig' of type [org.springframework.cloud.sleuth.annotation.SleuthAdvisorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-01 09:26:32.568  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'integrationGlobalProperties' of type [org.springframework.beans.factory.config.PropertiesFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-01 09:26:32.662  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'integrationGlobalProperties' of type [java.util.Properties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-01 09:26:34.785  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration' of type [org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration$$EnhancerBySpringCGLIB$$119ac5e9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-01 09:26:41.283  INFO [ts-basic-service,,,] 1 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 15680 (http)
+2023-09-01 09:26:41.368  INFO [ts-basic-service,,,] 1 --- [           main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2023-09-01 09:26:41.371  INFO [ts-basic-service,,,] 1 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.14
+2023-09-01 09:26:43.255  INFO [ts-basic-service,,,] 1 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-01 09:26:43.269  INFO [ts-basic-service,,,] 1 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 21922 ms
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.3.RELEASE)
+
+2023-09-01 09:27:06.177  INFO [ts-basic-service,,,] 1 --- [           main] fdse.microservice.BasicApplication       : Starting BasicApplication v1.0 on ad2b45b57d5a with PID 1 (/app/ts-basic-service-1.0.jar started by root in /)
+2023-09-01 09:27:06.181  INFO [ts-basic-service,,,] 1 --- [           main] fdse.microservice.BasicApplication       : No active profile set, falling back to default profiles: default
+2023-09-01 09:27:06.271  INFO [ts-basic-service,,,] 1 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@51521cc1: startup date [Fri Sep 01 09:27:06 UTC 2023]; root of context hierarchy
+2023-09-01 09:27:08.710  INFO [ts-basic-service,,,] 1 --- [           main] o.s.i.config.IntegrationRegistrar        : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2023-09-01 09:27:09.708  INFO [ts-basic-service,,,] 1 --- [           main] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2023-09-01 09:27:09.767  INFO [ts-basic-service,,,] 1 --- [           main] faultConfiguringBeanFactoryPostProcessor : No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2023-09-01 09:27:10.313  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration$DefaultAsyncConfigurerSupport' of type [org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration$DefaultAsyncConfigurerSupport$$EnhancerBySpringCGLIB$$66f8b78d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-01 09:27:13.925  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.annotation.SleuthAnnotationAutoConfiguration' of type [org.springframework.cloud.sleuth.annotation.SleuthAnnotationAutoConfiguration$$EnhancerBySpringCGLIB$$2c1c5ffc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-01 09:27:16.488  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'sleuthAdvisorConfig' of type [org.springframework.cloud.sleuth.annotation.SleuthAdvisorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-01 09:27:16.616  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'integrationGlobalProperties' of type [org.springframework.beans.factory.config.PropertiesFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-01 09:27:16.728  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'integrationGlobalProperties' of type [java.util.Properties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-01 09:27:17.110  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration' of type [org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration$$EnhancerBySpringCGLIB$$119ac5e9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-01 09:27:19.492  INFO [ts-basic-service,,,] 1 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 15680 (http)
+2023-09-01 09:27:19.600  INFO [ts-basic-service,,,] 1 --- [           main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2023-09-01 09:27:19.604  INFO [ts-basic-service,,,] 1 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.14
+2023-09-01 09:27:19.762  INFO [ts-basic-service,,,] 1 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-01 09:27:19.764  INFO [ts-basic-service,,,] 1 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 13497 ms
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.3.RELEASE)
+
+2023-09-01 09:27:33.906  INFO [ts-basic-service,,,] 1 --- [           main] fdse.microservice.BasicApplication       : Starting BasicApplication v1.0 on ad2b45b57d5a with PID 1 (/app/ts-basic-service-1.0.jar started by root in /)
+2023-09-01 09:27:33.913  INFO [ts-basic-service,,,] 1 --- [           main] fdse.microservice.BasicApplication       : No active profile set, falling back to default profiles: default
+2023-09-01 09:27:34.013  INFO [ts-basic-service,,,] 1 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@51521cc1: startup date [Fri Sep 01 09:27:34 UTC 2023]; root of context hierarchy
+2023-09-01 09:27:39.533  INFO [ts-basic-service,,,] 1 --- [           main] o.s.i.config.IntegrationRegistrar        : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2023-09-01 09:27:40.275  INFO [ts-basic-service,,,] 1 --- [           main] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2023-09-01 09:27:40.286  INFO [ts-basic-service,,,] 1 --- [           main] faultConfiguringBeanFactoryPostProcessor : No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2023-09-01 09:27:40.540  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration$DefaultAsyncConfigurerSupport' of type [org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration$DefaultAsyncConfigurerSupport$$EnhancerBySpringCGLIB$$66f8b78d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-01 09:27:43.533  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.annotation.SleuthAnnotationAutoConfiguration' of type [org.springframework.cloud.sleuth.annotation.SleuthAnnotationAutoConfiguration$$EnhancerBySpringCGLIB$$2c1c5ffc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-01 09:27:47.087  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'sleuthAdvisorConfig' of type [org.springframework.cloud.sleuth.annotation.SleuthAdvisorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-01 09:27:47.510  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'integrationGlobalProperties' of type [org.springframework.beans.factory.config.PropertiesFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-01 09:27:47.773  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'integrationGlobalProperties' of type [java.util.Properties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-01 09:27:49.979  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration' of type [org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration$$EnhancerBySpringCGLIB$$119ac5e9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-01 09:27:53.481  INFO [ts-basic-service,,,] 1 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 15680 (http)
+2023-09-01 09:27:53.533  INFO [ts-basic-service,,,] 1 --- [           main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2023-09-01 09:27:53.535  INFO [ts-basic-service,,,] 1 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.14
+2023-09-01 09:27:53.786  INFO [ts-basic-service,,,] 1 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-01 09:27:53.787  INFO [ts-basic-service,,,] 1 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 19778 ms
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.3.RELEASE)
+
+2023-09-01 09:28:10.283  INFO [ts-basic-service,,,] 1 --- [           main] fdse.microservice.BasicApplication       : Starting BasicApplication v1.0 on ad2b45b57d5a with PID 1 (/app/ts-basic-service-1.0.jar started by root in /)
+2023-09-01 09:28:10.287  INFO [ts-basic-service,,,] 1 --- [           main] fdse.microservice.BasicApplication       : No active profile set, falling back to default profiles: default
+2023-09-01 09:28:10.365  INFO [ts-basic-service,,,] 1 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@51521cc1: startup date [Fri Sep 01 09:28:10 UTC 2023]; root of context hierarchy
+2023-09-01 09:28:16.492  INFO [ts-basic-service,,,] 1 --- [           main] o.s.i.config.IntegrationRegistrar        : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2023-09-01 09:28:18.424  INFO [ts-basic-service,,,] 1 --- [           main] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2023-09-01 09:28:18.436  INFO [ts-basic-service,,,] 1 --- [           main] faultConfiguringBeanFactoryPostProcessor : No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2023-09-01 09:28:18.774  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration$DefaultAsyncConfigurerSupport' of type [org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration$DefaultAsyncConfigurerSupport$$EnhancerBySpringCGLIB$$66f8b78d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-01 09:28:28.781  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.annotation.SleuthAnnotationAutoConfiguration' of type [org.springframework.cloud.sleuth.annotation.SleuthAnnotationAutoConfiguration$$EnhancerBySpringCGLIB$$2c1c5ffc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-01 09:28:39.752  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'sleuthAdvisorConfig' of type [org.springframework.cloud.sleuth.annotation.SleuthAdvisorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-01 09:28:39.871  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'integrationGlobalProperties' of type [org.springframework.beans.factory.config.PropertiesFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-01 09:28:39.916  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'integrationGlobalProperties' of type [java.util.Properties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-01 09:28:40.322  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration' of type [org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration$$EnhancerBySpringCGLIB$$119ac5e9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-01 09:28:46.721  INFO [ts-basic-service,,,] 1 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 15680 (http)
+2023-09-01 09:28:47.450  INFO [ts-basic-service,,,] 1 --- [           main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2023-09-01 09:28:47.465  INFO [ts-basic-service,,,] 1 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.14
+2023-09-01 09:28:48.805  INFO [ts-basic-service,,,] 1 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-01 09:28:48.806  INFO [ts-basic-service,,,] 1 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 38443 ms
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.3.RELEASE)
+
+2023-09-01 09:29:03.852  INFO [ts-basic-service,,,] 1 --- [           main] fdse.microservice.BasicApplication       : Starting BasicApplication v1.0 on ad2b45b57d5a with PID 1 (/app/ts-basic-service-1.0.jar started by root in /)
+2023-09-01 09:29:03.857  INFO [ts-basic-service,,,] 1 --- [           main] fdse.microservice.BasicApplication       : No active profile set, falling back to default profiles: default
+2023-09-01 09:29:03.969  INFO [ts-basic-service,,,] 1 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@51521cc1: startup date [Fri Sep 01 09:29:03 UTC 2023]; root of context hierarchy
+2023-09-01 09:29:06.832  INFO [ts-basic-service,,,] 1 --- [           main] o.s.i.config.IntegrationRegistrar        : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2023-09-01 09:29:07.465  INFO [ts-basic-service,,,] 1 --- [           main] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2023-09-01 09:29:07.475  INFO [ts-basic-service,,,] 1 --- [           main] faultConfiguringBeanFactoryPostProcessor : No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2023-09-01 09:29:07.568  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration$DefaultAsyncConfigurerSupport' of type [org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration$DefaultAsyncConfigurerSupport$$EnhancerBySpringCGLIB$$66f8b78d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-01 09:29:08.499  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.annotation.SleuthAnnotationAutoConfiguration' of type [org.springframework.cloud.sleuth.annotation.SleuthAnnotationAutoConfiguration$$EnhancerBySpringCGLIB$$2c1c5ffc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-01 09:29:09.075  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'sleuthAdvisorConfig' of type [org.springframework.cloud.sleuth.annotation.SleuthAdvisorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-01 09:29:09.187  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'integrationGlobalProperties' of type [org.springframework.beans.factory.config.PropertiesFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-01 09:29:09.238  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'integrationGlobalProperties' of type [java.util.Properties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-01 09:29:09.615  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration' of type [org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration$$EnhancerBySpringCGLIB$$119ac5e9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-01 09:29:13.354  INFO [ts-basic-service,,,] 1 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 15680 (http)
+2023-09-01 09:29:13.386  INFO [ts-basic-service,,,] 1 --- [           main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2023-09-01 09:29:13.388  INFO [ts-basic-service,,,] 1 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.14
+2023-09-01 09:29:15.157  INFO [ts-basic-service,,,] 1 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-01 09:29:15.158  INFO [ts-basic-service,,,] 1 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 11193 ms

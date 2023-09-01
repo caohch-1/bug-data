@@ -1,0 +1,331 @@
+[
+  [
+    {
+      "traceId": "63bf8e64eb465e25",
+      "parentId": "83571579409e043a",
+      "id": "f435adb7cf4e98ad",
+      "kind": "CLIENT",
+      "name": "http:/basic/queryforstationid",
+      "timestamp": 1693560419455000,
+      "duration": 10000,
+      "localEndpoint": {
+        "serviceName": "ts-ticketinfo-service",
+        "ipv4": "172.18.0.51",
+        "port": 15681
+      },
+      "tags": {
+        "error": "Connection refused (Connection refused)",
+        "http.host": "ts-basic-service",
+        "http.method": "POST",
+        "http.path": "/basic/queryForStationId",
+        "http.url": "http://ts-basic-service:15680/basic/queryForStationId",
+        "spring.instance_id": "687be1fc5e39:ts-ticketinfo-service:15681"
+      }
+    },
+    {
+      "traceId": "63bf8e64eb465e25",
+      "parentId": "63bf8e64eb465e25",
+      "id": "83571579409e043a",
+      "kind": "SERVER",
+      "name": "http:/ticketinfo/queryforstationid",
+      "timestamp": 1693560419375000,
+      "duration": 108000,
+      "localEndpoint": {
+        "serviceName": "ts-ticketinfo-service",
+        "ipv4": "172.18.0.51",
+        "port": 15681
+      },
+      "tags": {
+        "error": "Request processing failed; nested exception is org.springframework.web.client.ResourceAccessException: I/O error on POST request for \"http://ts-basic-service:15680/basic/queryForStationId\": Connection refused (Connection refused); nested exception is java.net.ConnectException: Connection refused (Connection refused)",
+        "http.status_code": "500",
+        "mvc.controller.class": "TicketInfoController",
+        "mvc.controller.method": "queryForStationId",
+        "spring.instance_id": "687be1fc5e39:ts-ticketinfo-service:15681"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "63bf8e64eb465e25",
+      "parentId": "63bf8e64eb465e25",
+      "id": "83571579409e043a",
+      "kind": "CLIENT",
+      "name": "http:/ticketinfo/queryforstationid",
+      "timestamp": 1693560419277000,
+      "duration": 231000,
+      "localEndpoint": {
+        "serviceName": "ts-travel-service",
+        "ipv4": "172.18.0.5",
+        "port": 12346
+      },
+      "tags": {
+        "http.host": "ts-ticketinfo-service",
+        "http.method": "POST",
+        "http.path": "/ticketinfo/queryForStationId",
+        "http.url": "http://ts-ticketinfo-service:15681/ticketinfo/queryForStationId",
+        "spring.instance_id": "c7e52fd91e0b:ts-travel-service:12346"
+      }
+    },
+    {
+      "traceId": "63bf8e64eb465e25",
+      "id": "63bf8e64eb465e25",
+      "kind": "SERVER",
+      "name": "http:/travel/query",
+      "timestamp": 1693560419172000,
+      "duration": 359028,
+      "localEndpoint": {
+        "serviceName": "ts-travel-service",
+        "ipv4": "172.18.0.5",
+        "port": 12346
+      },
+      "tags": {
+        "error": "Request processing failed; nested exception is org.springframework.web.client.HttpServerErrorException: 500 null",
+        "http.status_code": "500",
+        "mvc.controller.class": "TravelController",
+        "mvc.controller.method": "query",
+        "spring.instance_id": "c7e52fd91e0b:ts-travel-service:12346"
+      }
+    },
+    {
+      "traceId": "63bf8e64eb465e25",
+      "id": "63bf8e64eb465e25",
+      "kind": "SERVER",
+      "name": "http:/travel/query",
+      "timestamp": 1693560419172000,
+      "duration": 359028,
+      "localEndpoint": {
+        "serviceName": "ts-travel-service",
+        "ipv4": "172.18.0.5",
+        "port": 12346
+      },
+      "tags": {
+        "error": "Request processing failed; nested exception is org.springframework.web.client.HttpServerErrorException: 500 null",
+        "http.status_code": "500",
+        "mvc.controller.class": "BasicErrorController",
+        "mvc.controller.method": "error",
+        "spring.instance_id": "c7e52fd91e0b:ts-travel-service:12346"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "0315a813a7578d54",
+      "parentId": "0315a813a7578d54",
+      "id": "695a2579850a17c7",
+      "kind": "CLIENT",
+      "name": "http:/verification/verify",
+      "timestamp": 1693560413700000,
+      "duration": 51000,
+      "localEndpoint": {
+        "serviceName": "ts-login-service",
+        "ipv4": "172.18.0.39",
+        "port": 12342
+      },
+      "tags": {
+        "http.host": "ts-verification-code-service",
+        "http.method": "POST",
+        "http.path": "/verification/verify",
+        "http.url": "http://ts-verification-code-service:15678/verification/verify",
+        "spring.instance_id": "da0bb49d2338:ts-login-service:12342"
+      }
+    },
+    {
+      "traceId": "0315a813a7578d54",
+      "parentId": "0315a813a7578d54",
+      "id": "695a2579850a17c7",
+      "kind": "SERVER",
+      "name": "http:/verification/verify",
+      "timestamp": 1693560413718000,
+      "duration": 30000,
+      "localEndpoint": {
+        "serviceName": "ts-verification-code-service",
+        "ipv4": "172.18.0.15",
+        "port": 15678
+      },
+      "tags": {
+        "mvc.controller.class": "VerificationCodeController",
+        "mvc.controller.method": "verifyCode",
+        "spring.instance_id": "021c36915f40:ts-verification-code-service:15678"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "0315a813a7578d54",
+      "parentId": "0315a813a7578d54",
+      "id": "ed1c35231ab8b900",
+      "kind": "SERVER",
+      "name": "http:/account/login",
+      "timestamp": 1693560413896000,
+      "duration": 382000,
+      "localEndpoint": {
+        "serviceName": "ts-sso-service",
+        "ipv4": "172.18.0.48",
+        "port": 12349
+      },
+      "tags": {
+        "mvc.controller.class": "AccountSsoController",
+        "mvc.controller.method": "login",
+        "spring.instance_id": "4698902a27ac:ts-sso-service:12349"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "0315a813a7578d54",
+      "parentId": "0315a813a7578d54",
+      "id": "ed1c35231ab8b900",
+      "kind": "CLIENT",
+      "name": "http:/account/login",
+      "timestamp": 1693560413787000,
+      "duration": 495000,
+      "localEndpoint": {
+        "serviceName": "ts-login-service",
+        "ipv4": "172.18.0.39",
+        "port": 12342
+      },
+      "tags": {
+        "http.host": "ts-sso-service",
+        "http.method": "POST",
+        "http.path": "/account/login",
+        "http.url": "http://ts-sso-service:12349/account/login",
+        "spring.instance_id": "da0bb49d2338:ts-login-service:12342"
+      }
+    },
+    {
+      "traceId": "0315a813a7578d54",
+      "id": "0315a813a7578d54",
+      "kind": "SERVER",
+      "name": "http:/login",
+      "timestamp": 1693560413621000,
+      "duration": 676577,
+      "localEndpoint": {
+        "serviceName": "ts-login-service",
+        "ipv4": "172.18.0.39",
+        "port": 12342
+      },
+      "tags": {
+        "mvc.controller.class": "AccountLoginController",
+        "mvc.controller.method": "login",
+        "spring.instance_id": "da0bb49d2338:ts-login-service:12342"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "0a0c38424644c8c3",
+      "id": "0a0c38424644c8c3",
+      "kind": "SERVER",
+      "name": "http:/assurance/getallassurancetype",
+      "timestamp": 1693560412669000,
+      "duration": 4302,
+      "localEndpoint": {
+        "serviceName": "ts-assurance-service",
+        "ipv4": "172.18.0.44",
+        "port": 18888
+      },
+      "tags": {
+        "mvc.controller.class": "AssuranceController",
+        "mvc.controller.method": "getAllAssuranceType",
+        "spring.instance_id": "b5101714b895:ts-assurance-service:18888"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "72ae50df713e3655",
+      "id": "72ae50df713e3655",
+      "kind": "SERVER",
+      "name": "http:/assurance/getallassurancetype",
+      "timestamp": 1693560412657000,
+      "duration": 7901,
+      "localEndpoint": {
+        "serviceName": "ts-assurance-service",
+        "ipv4": "172.18.0.44",
+        "port": 18888
+      },
+      "tags": {
+        "mvc.controller.class": "AssuranceController",
+        "mvc.controller.method": "getAllAssuranceType",
+        "spring.instance_id": "b5101714b895:ts-assurance-service:18888"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "fdc13f1dac6dda06",
+      "id": "fdc13f1dac6dda06",
+      "kind": "SERVER",
+      "name": "http:/verification/generate",
+      "timestamp": 1693560411488000,
+      "duration": 19817,
+      "localEndpoint": {
+        "serviceName": "ts-verification-code-service",
+        "ipv4": "172.18.0.15",
+        "port": 15678
+      },
+      "tags": {
+        "mvc.controller.class": "VerificationCodeController",
+        "mvc.controller.method": "imagecode",
+        "spring.instance_id": "021c36915f40:ts-verification-code-service:15678"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "e6740b3d1b7dfbec",
+      "id": "e6740b3d1b7dfbec",
+      "kind": "SERVER",
+      "name": "http:/assurance/getallassurancetype",
+      "timestamp": 1693559873394000,
+      "duration": 4761,
+      "localEndpoint": {
+        "serviceName": "ts-assurance-service",
+        "ipv4": "172.18.0.44",
+        "port": 18888
+      },
+      "tags": {
+        "mvc.controller.class": "AssuranceController",
+        "mvc.controller.method": "getAllAssuranceType",
+        "spring.instance_id": "b5101714b895:ts-assurance-service:18888"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "d4df86d12df4359f",
+      "id": "d4df86d12df4359f",
+      "kind": "SERVER",
+      "name": "http:/assurance/getallassurancetype",
+      "timestamp": 1693559873285000,
+      "duration": 78065,
+      "localEndpoint": {
+        "serviceName": "ts-assurance-service",
+        "ipv4": "172.18.0.44",
+        "port": 18888
+      },
+      "tags": {
+        "mvc.controller.class": "AssuranceController",
+        "mvc.controller.method": "getAllAssuranceType",
+        "spring.instance_id": "b5101714b895:ts-assurance-service:18888"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "09afc7bb129462fa",
+      "id": "09afc7bb129462fa",
+      "kind": "SERVER",
+      "name": "http:/verification/generate",
+      "timestamp": 1693559873214000,
+      "duration": 12495313,
+      "localEndpoint": {
+        "serviceName": "ts-verification-code-service",
+        "ipv4": "172.18.0.15",
+        "port": 15678
+      },
+      "tags": {
+        "mvc.controller.class": "VerificationCodeController",
+        "mvc.controller.method": "imagecode",
+        "spring.instance_id": "021c36915f40:ts-verification-code-service:15678"
+      }
+    }
+  ]
+]

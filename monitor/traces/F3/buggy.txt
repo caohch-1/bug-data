@@ -1,0 +1,24 @@
+SpanID: 63bf8e64eb465e25, SpanName: http:/travel/query, SpanKind: SERVER, Timestamp:1693560419172000, SpanDuration: 359.028ms
+--SpanID: 83571579409e043a, SpanName: http:/ticketinfo/queryforstationid, SpanKind: CLIENT, Timestamp:1693560419277000, SpanDuration: 231.0ms
+----SpanID: f435adb7cf4e98ad, SpanName: http:/basic/queryforstationid, SpanKind: CLIENT, Timestamp:1693560419455000, SpanDuration: 10.0ms
+--SpanID: 83571579409e043a, SpanName: http:/ticketinfo/queryforstationid, SpanKind: SERVER, Timestamp:1693560419375000, SpanDuration: 108.0ms
+----SpanID: f435adb7cf4e98ad, SpanName: http:/basic/queryforstationid, SpanKind: CLIENT, Timestamp:1693560419455000, SpanDuration: 10.0ms
+==================================
+SpanID: 0315a813a7578d54, SpanName: http:/login, SpanKind: SERVER, Timestamp:1693560413621000, SpanDuration: 676.577ms
+--SpanID: 695a2579850a17c7, SpanName: http:/verification/verify, SpanKind: CLIENT, Timestamp:1693560413700000, SpanDuration: 51.0ms
+--SpanID: 695a2579850a17c7, SpanName: http:/verification/verify, SpanKind: SERVER, Timestamp:1693560413718000, SpanDuration: 30.0ms
+--SpanID: ed1c35231ab8b900, SpanName: http:/account/login, SpanKind: CLIENT, Timestamp:1693560413787000, SpanDuration: 495.0ms
+--SpanID: ed1c35231ab8b900, SpanName: http:/account/login, SpanKind: SERVER, Timestamp:1693560413896000, SpanDuration: 382.0ms
+==================================
+SpanID: 0a0c38424644c8c3, SpanName: http:/assurance/getallassurancetype, SpanKind: SERVER, Timestamp:1693560412669000, SpanDuration: 4.302ms
+==================================
+SpanID: 72ae50df713e3655, SpanName: http:/assurance/getallassurancetype, SpanKind: SERVER, Timestamp:1693560412657000, SpanDuration: 7.901ms
+==================================
+SpanID: fdc13f1dac6dda06, SpanName: http:/verification/generate, SpanKind: SERVER, Timestamp:1693560411488000, SpanDuration: 19.817ms
+==================================
+SpanID: e6740b3d1b7dfbec, SpanName: http:/assurance/getallassurancetype, SpanKind: SERVER, Timestamp:1693559873394000, SpanDuration: 4.761ms
+==================================
+SpanID: d4df86d12df4359f, SpanName: http:/assurance/getallassurancetype, SpanKind: SERVER, Timestamp:1693559873285000, SpanDuration: 78.065ms
+==================================
+SpanID: 09afc7bb129462fa, SpanName: http:/verification/generate, SpanKind: SERVER, Timestamp:1693559873214000, SpanDuration: 12495.313ms
+==================================

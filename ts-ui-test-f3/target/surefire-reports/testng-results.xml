@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="TestFlowKill" duration-ms="54544" started-at="2023-09-01T10:04:49Z" finished-at="2023-09-01T10:05:44Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="54544" started-at="2023-09-01T10:04:49Z" finished-at="2023-09-01T10:05:44Z">
+      <class name="TestFlowKill">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:TestFlowKill@5315b42e]" name="setUp" is-config="true" duration-ms="4895" started-at="2023-09-01T18:04:50Z" finished-at="2023-09-01T18:04:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testLogin()[pri:0, instance:TestFlowKill@5315b42e]" name="testLogin" duration-ms="31399" started-at="2023-09-01T18:04:54Z" finished-at="2023-09-01T18:05:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="testBooking()[pri:0, instance:TestFlowKill@5315b42e]" name="testBooking" duration-ms="17941" started-at="2023-09-01T18:05:26Z" depends-on-methods="TestFlowKill.testLogin" finished-at="2023-09-01T18:05:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBooking -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:TestFlowKill@5315b42e]" name="tearDown" is-config="true" duration-ms="279" started-at="2023-09-01T18:05:44Z" finished-at="2023-09-01T18:05:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- TestFlowKill -->
+    </test> <!-- Command line test -->
+  </suite> <!-- TestFlowKill -->
+</testng-results>

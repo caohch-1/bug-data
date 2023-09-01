@@ -1,0 +1,6 @@
+FROM openjdk:8-jre
+
+ADD ./target/ts-travel-plan-service-1.0.jar /app/
+CMD ["java", "-Xmx100m", "-jar", "/app/ts-travel-plan-service-1.0.jar"]
+
+EXPOSE 14322
