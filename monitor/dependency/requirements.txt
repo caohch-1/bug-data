@@ -1,0 +1,20 @@
+appdirs==1.4.4
+asn1crypto @ file:///opt/conda/conda-bld/asn1crypto_1652362642176/work
+brotlipy==0.7.0
+certifi @ file:///croot/certifi_1690232220950/work/certifi
+cffi @ file:///croot/cffi_1670423208954/work
+charset-normalizer @ file:///tmp/build/80754af9/charset-normalizer_1630003229654/work
+cryptography @ file:///croot/cryptography_1689373676338/work
+docker @ file:///home/builder/ci_310/docker-py_1640811918786/work
+docker-pycreds @ file:///Users/ktietz/demo/mc3/conda-bld/docker-pycreds_1630654474270/work
+idna @ file:///croot/idna_1666125576474/work
+packaging @ file:///croot/packaging_1678965309396/work
+pycparser @ file:///tmp/build/80754af9/pycparser_1636541352034/work
+pyOpenSSL @ file:///croot/pyopenssl_1690223430423/work
+pyparsing @ file:///opt/conda/conda-bld/pyparsing_1661452539315/work
+PySocks @ file:///home/builder/ci_310/pysocks_1640793678128/work
+requests @ file:///croot/requests_1690400202158/work
+selenium @ file:///home/builder/ci_310/selenium_1640794525077/work
+six @ file:///tmp/build/80754af9/six_1644875935023/work
+urllib3 @ file:///croot/urllib3_1686163155763/work
+websocket-client @ file:///home/builder/ci_310/websocket-client_1640795866898/work
