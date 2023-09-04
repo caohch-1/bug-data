@@ -1,0 +1,10 @@
+consignprice/init/InitData.class
+consignprice/service/ConsignPriceService.class
+consignprice/config/HttpAspect.class
+consignprice/config/SslConfiguration.class
+consignprice/ConsignPriceApplication.class
+consignprice/repository/ConsignPriceConfigRepository.class
+consignprice/domain/GetPriceDomain.class
+consignprice/service/ConsignPriceServiceImpl.class
+consignprice/domain/PriceConfig.class
+consignprice/controller/ConsignPriceController.class

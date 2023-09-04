@@ -1,0 +1,11 @@
+consign/config/SslConfiguration.class
+consign/domain/GetPriceDomain.class
+consign/config/HttpAspect.class
+consign/ConsignApplication.class
+consign/service/ConsignServiceImpl.class
+consign/service/ConsignService.class
+consign/domain/ConsignRecord.class
+consign/domain/InsertConsignRecordResult.class
+consign/controller/ConsignController.class
+consign/domain/ConsignRequest.class
+consign/repository/ConsignRepository.class

@@ -1,0 +1,10 @@
+/home/caohch1/Desktop/train-ticket-fault-replicate/ts-consign-price-service/src/main/java/consignprice/service/ConsignPriceServiceImpl.java
+/home/caohch1/Desktop/train-ticket-fault-replicate/ts-consign-price-service/src/main/java/consignprice/domain/PriceConfig.java
+/home/caohch1/Desktop/train-ticket-fault-replicate/ts-consign-price-service/src/main/java/consignprice/controller/ConsignPriceController.java
+/home/caohch1/Desktop/train-ticket-fault-replicate/ts-consign-price-service/src/main/java/consignprice/ConsignPriceApplication.java
+/home/caohch1/Desktop/train-ticket-fault-replicate/ts-consign-price-service/src/main/java/consignprice/service/ConsignPriceService.java
+/home/caohch1/Desktop/train-ticket-fault-replicate/ts-consign-price-service/src/main/java/consignprice/config/SslConfiguration.java
+/home/caohch1/Desktop/train-ticket-fault-replicate/ts-consign-price-service/src/main/java/consignprice/domain/GetPriceDomain.java
+/home/caohch1/Desktop/train-ticket-fault-replicate/ts-consign-price-service/src/main/java/consignprice/repository/ConsignPriceConfigRepository.java
+/home/caohch1/Desktop/train-ticket-fault-replicate/ts-consign-price-service/src/main/java/consignprice/config/HttpAspect.java
+/home/caohch1/Desktop/train-ticket-fault-replicate/ts-consign-price-service/src/main/java/consignprice/init/InitData.java

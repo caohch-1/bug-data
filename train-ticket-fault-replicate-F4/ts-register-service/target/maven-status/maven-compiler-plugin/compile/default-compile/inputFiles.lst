@@ -1,0 +1,12 @@
+/home/caohch1/Desktop/train-ticket-fault-replicate/ts-register-service/src/main/java/register/controller/AccountRegisterController.java
+/home/caohch1/Desktop/train-ticket-fault-replicate/ts-register-service/src/main/java/register/RegisterApplication.java
+/home/caohch1/Desktop/train-ticket-fault-replicate/ts-register-service/src/main/java/register/domain/Gender.java
+/home/caohch1/Desktop/train-ticket-fault-replicate/ts-register-service/src/main/java/register/domain/RegisterResult.java
+/home/caohch1/Desktop/train-ticket-fault-replicate/ts-register-service/src/main/java/register/domain/RegisterInfo.java
+/home/caohch1/Desktop/train-ticket-fault-replicate/ts-register-service/src/main/java/register/service/RegisterService.java
+/home/caohch1/Desktop/train-ticket-fault-replicate/ts-register-service/src/main/java/register/domain/DocumentType.java
+/home/caohch1/Desktop/train-ticket-fault-replicate/ts-register-service/src/main/java/register/config/SslConfiguration.java
+/home/caohch1/Desktop/train-ticket-fault-replicate/ts-register-service/src/main/java/register/domain/CreateAccountInfo.java
+/home/caohch1/Desktop/train-ticket-fault-replicate/ts-register-service/src/main/java/register/config/HttpAspect.java
+/home/caohch1/Desktop/train-ticket-fault-replicate/ts-register-service/src/main/java/register/service/RegisterServiceImpl.java
+/home/caohch1/Desktop/train-ticket-fault-replicate/ts-register-service/src/main/java/register/domain/Account.java

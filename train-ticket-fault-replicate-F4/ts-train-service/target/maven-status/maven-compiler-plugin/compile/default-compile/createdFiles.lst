@@ -1,0 +1,11 @@
+train/repository/TrainTypeRepository.class
+train/domain/Information2.class
+train/service/TrainServiceImpl.class
+train/config/SslConfiguration.class
+train/TrainApplication.class
+train/controller/TrainController.class
+train/domain/TrainType.class
+train/init/InitData.class
+train/service/TrainService.class
+train/conf/HttpAspect.class
+train/domain/Information.class

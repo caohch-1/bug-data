@@ -1,0 +1,14 @@
+/home/caohch1/Desktop/train-ticket-fault-replicate/ts-price-service/src/main/java/price/domain/ReturnSinglePriceConfigResult.java
+/home/caohch1/Desktop/train-ticket-fault-replicate/ts-price-service/src/main/java/price/service/PriceServiceImpl.java
+/home/caohch1/Desktop/train-ticket-fault-replicate/ts-price-service/src/main/java/price/domain/ReturnManyPriceConfigResult.java
+/home/caohch1/Desktop/train-ticket-fault-replicate/ts-price-service/src/main/java/price/domain/PriceConfig.java
+/home/caohch1/Desktop/train-ticket-fault-replicate/ts-price-service/src/main/java/price/service/PriceService.java
+/home/caohch1/Desktop/train-ticket-fault-replicate/ts-price-service/src/main/java/price/init/InitData.java
+/home/caohch1/Desktop/train-ticket-fault-replicate/ts-price-service/src/main/java/price/domain/QueryPriceConfigByTrainAndRoute.java
+/home/caohch1/Desktop/train-ticket-fault-replicate/ts-price-service/src/main/java/price/domain/TrainType.java
+/home/caohch1/Desktop/train-ticket-fault-replicate/ts-price-service/src/main/java/price/repository/PriceConfigRepository.java
+/home/caohch1/Desktop/train-ticket-fault-replicate/ts-price-service/src/main/java/price/PriceApplication.java
+/home/caohch1/Desktop/train-ticket-fault-replicate/ts-price-service/src/main/java/price/config/HttpAspect.java
+/home/caohch1/Desktop/train-ticket-fault-replicate/ts-price-service/src/main/java/price/domain/CreateAndModifyPriceConfig.java
+/home/caohch1/Desktop/train-ticket-fault-replicate/ts-price-service/src/main/java/price/controller/PriceController.java
+/home/caohch1/Desktop/train-ticket-fault-replicate/ts-price-service/src/main/java/price/config/SslConfiguration.java
