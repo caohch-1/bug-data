@@ -1,0 +1,120 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.3.RELEASE)
+
+2023-09-05 09:25:16.421  INFO [ts-cancel-service,,,] 1 --- [           main] cancel.CancelApplication                 : Starting CancelApplication v1.0 on 1ad4abfe55df with PID 1 (/app/ts-cancel-service-1.0.jar started by root in /)
+2023-09-05 09:25:16.512  INFO [ts-cancel-service,,,] 1 --- [           main] cancel.CancelApplication                 : No active profile set, falling back to default profiles: default
+2023-09-05 09:25:20.444  INFO [ts-cancel-service,,,] 1 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@51521cc1: startup date [Tue Sep 05 09:25:20 UTC 2023]; root of context hierarchy
+2023-09-05 09:25:54.310  INFO [ts-cancel-service,,,] 1 --- [           main] o.s.i.config.IntegrationRegistrar        : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2023-09-05 09:26:04.313  INFO [ts-cancel-service,,,] 1 --- [           main] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2023-09-05 09:26:04.478  INFO [ts-cancel-service,,,] 1 --- [           main] faultConfiguringBeanFactoryPostProcessor : No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2023-09-05 09:26:05.612  INFO [ts-cancel-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration$DefaultAsyncConfigurerSupport' of type [org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration$DefaultAsyncConfigurerSupport$$EnhancerBySpringCGLIB$$10f6e203] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-05 09:26:09.498  INFO [ts-cancel-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.annotation.SleuthAnnotationAutoConfiguration' of type [org.springframework.cloud.sleuth.annotation.SleuthAnnotationAutoConfiguration$$EnhancerBySpringCGLIB$$d61a8a72] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-05 09:26:13.600  INFO [ts-cancel-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'sleuthAdvisorConfig' of type [org.springframework.cloud.sleuth.annotation.SleuthAdvisorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-05 09:26:14.495  INFO [ts-cancel-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'integrationGlobalProperties' of type [org.springframework.beans.factory.config.PropertiesFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-05 09:26:15.045  INFO [ts-cancel-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'integrationGlobalProperties' of type [java.util.Properties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-05 09:26:18.017  INFO [ts-cancel-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration' of type [org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration$$EnhancerBySpringCGLIB$$bb98f05f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-05 09:26:28.841  INFO [ts-cancel-service,,,] 1 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 18885 (http)
+2023-09-05 09:26:29.355  INFO [ts-cancel-service,,,] 1 --- [           main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2023-09-05 09:26:29.387  INFO [ts-cancel-service,,,] 1 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.14
+2023-09-05 09:26:31.597  INFO [ts-cancel-service,,,] 1 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-05 09:26:31.606  INFO [ts-cancel-service,,,] 1 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 71499 ms
+2023-09-05 09:26:52.379  INFO [ts-cancel-service,,,] 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'metricsFilter' to: [/*]
+2023-09-05 09:26:52.379  INFO [ts-cancel-service,,,] 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2023-09-05 09:26:52.380  INFO [ts-cancel-service,,,] 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'traceFilter' to: [/*]
+2023-09-05 09:26:52.380  INFO [ts-cancel-service,,,] 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2023-09-05 09:26:52.380  INFO [ts-cancel-service,,,] 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2023-09-05 09:26:52.410  INFO [ts-cancel-service,,,] 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2023-09-05 09:26:52.411  INFO [ts-cancel-service,,,] 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2023-09-05 09:26:52.411  INFO [ts-cancel-service,,,] 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'applicationContextIdFilter' to: [/*]
+2023-09-05 09:26:52.411  INFO [ts-cancel-service,,,] 1 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2023-09-05 09:27:08.930  INFO [ts-cancel-service,,,] 1 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 
+2023-09-05 09:27:09.072  INFO [ts-cancel-service,,,] 1 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService  'mySimpleAsync'
+2023-09-05 09:27:10.079  INFO [ts-cancel-service,,,] 1 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 
+2023-09-05 09:27:10.123  INFO [ts-cancel-service,,,] 1 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService  'myAsync'
+2023-09-05 09:27:17.094  INFO [ts-cancel-service,,,] 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@51521cc1: startup date [Tue Sep 05 09:25:20 UTC 2023]; root of context hierarchy
+2023-09-05 09:27:22.362  INFO [ts-cancel-service,,,] 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/cancelOrder],methods=[POST]}" onto public cancel.domain.CancelOrderResult cancel.controller.CancelController.cancelTicket(cancel.domain.CancelOrderInfo,java.lang.String,java.lang.String)
+2023-09-05 09:27:22.437  INFO [ts-cancel-service,,,] 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/cancelCalculateRefund],methods=[POST]}" onto public cancel.domain.CalculateRefundResult cancel.controller.CancelController.calculate(cancel.domain.CancelOrderInfo)
+2023-09-05 09:27:22.531  INFO [ts-cancel-service,,,] 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2023-09-05 09:27:22.532  INFO [ts-cancel-service,,,] 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2023-09-05 09:27:27.162  INFO [ts-cancel-service,,,] 1 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2023-09-05 09:27:27.162  INFO [ts-cancel-service,,,] 1 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2023-09-05 09:27:29.768  INFO [ts-cancel-service,,,] 1 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2023-09-05 09:27:39.859  INFO [ts-cancel-service,,,] 1 --- [           main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService  'taskScheduler'
+2023-09-05 09:27:52.815  INFO [ts-cancel-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2023-09-05 09:27:52.886  INFO [ts-cancel-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2023-09-05 09:27:52.911  INFO [ts-cancel-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2023-09-05 09:27:52.932  INFO [ts-cancel-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/features || /features.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2023-09-05 09:27:52.945  INFO [ts-cancel-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2023-09-05 09:27:53.094  INFO [ts-cancel-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+2023-09-05 09:27:53.114  INFO [ts-cancel-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+2023-09-05 09:27:53.150  INFO [ts-cancel-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2023-09-05 09:27:53.156  INFO [ts-cancel-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2023-09-05 09:27:53.187  INFO [ts-cancel-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2023-09-05 09:27:53.204  INFO [ts-cancel-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2023-09-05 09:27:53.244  INFO [ts-cancel-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2023-09-05 09:27:53.254  INFO [ts-cancel-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2023-09-05 09:27:53.291  INFO [ts-cancel-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2023-09-05 09:27:53.300  INFO [ts-cancel-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+2023-09-05 09:27:53.307  INFO [ts-cancel-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+2023-09-05 09:27:53.341  INFO [ts-cancel-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2023-09-05 09:27:53.346  INFO [ts-cancel-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2023-09-05 09:28:02.668  INFO [ts-cancel-service,,,] 1 --- [           main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 
+2023-09-05 09:28:10.398  INFO [ts-cancel-service,,,] 1 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2023-09-05 09:28:10.995  INFO [ts-cancel-service,,,] 1 --- [           main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2023-09-05 09:28:12.762  INFO [ts-cancel-service,,,] 1 --- [           main] o.s.i.endpoint.EventDrivenConsumer       : Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2023-09-05 09:28:12.762  INFO [ts-cancel-service,,,] 1 --- [           main] o.s.i.channel.PublishSubscribeChannel    : Channel 'ts-cancel-service:18885.errorChannel' has 1 subscriber(s).
+2023-09-05 09:28:12.762  INFO [ts-cancel-service,,,] 1 --- [           main] o.s.i.endpoint.EventDrivenConsumer       : started _org.springframework.integration.errorLogger
+2023-09-05 09:28:14.950  INFO [ts-cancel-service,,,] 1 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 18885 (http)
+2023-09-05 09:28:15.088  INFO [ts-cancel-service,,,] 1 --- [           main] cancel.CancelApplication                 : Started CancelApplication in 186.903 seconds (JVM running for 190.414)
+2023-09-05 09:29:20.455  INFO [ts-cancel-service,,,] 1 --- [io-18885-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2023-09-05 09:29:20.455  INFO [ts-cancel-service,,,] 1 --- [io-18885-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2023-09-05 09:29:20.479  INFO [ts-cancel-service,,,] 1 --- [io-18885-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 24 ms
+c=cancel.domain.CancelOrderInfo@3d23efe8
+requestArgs={"orderId":"5ad7750b-a68b-44c0-a9c0-32776b027703"}
+2023-09-05 09:29:20.547  INFO [ts-cancel-service,e410827fec9bef9a,e410827fec9bef9a,true] 1 --- [io-18885-exec-2] cancel.conf.HttpAspect                   : [Service:ts-cancel-service][URI:ts-cancel-service/cancelCalculateRefund][Method:POST][Request:{"orderId":"5ad7750b-a68b-44c0-a9c0-32776b027703"}][RemoteHost:172.18.0.69][IP:172.18.0.69]
+[Cancel Order Service][Calculate Cancel Refund] OrderId:5ad7750b-a68b-44c0-a9c0-32776b027703
+[Cancel Order Service][Get Order] Getting....
+[Cancel Order Service][Get Order] Getting....
+[Cancel Order] Order Travel Date:Sat Jul 28 16:00:00 UTC 2018
+[Cancel Order] nowDate  :Tue Sep 05 09:29:20 UTC 2023
+[Cancel Order] startTime:Sun Jul 28 01:02:00 UTC 3918
+[Cancel Order]calculate refund - 80.00
+[Cancel Order][Refund Price] From Order Other Service.Paid.
+2023-09-05 09:29:20.639  INFO [ts-cancel-service,e410827fec9bef9a,e410827fec9bef9a,true] 1 --- [io-18885-exec-2] cancel.conf.HttpAspect                   : [Service:ts-cancel-service][Response:{"status":true,"message":"Success","refund":"80.00"}]
+c=cancel.domain.CancelOrderInfo@3f0ed074
+requestArgs={"orderId":"5ad7750b-a68b-44c0-a9c0-32776b027703"}
+c=3a773122-fb2a-4b1c-a952-86601c6ac125
+requestArgs={"orderId":"5ad7750b-a68b-44c0-a9c0-32776b027703"}"3a773122-fb2a-4b1c-a952-86601c6ac125"
+c=4d2a46c7-71cb-4cf1-b5bb-b68406d9da6f
+requestArgs={"orderId":"5ad7750b-a68b-44c0-a9c0-32776b027703"}"3a773122-fb2a-4b1c-a952-86601c6ac125""4d2a46c7-71cb-4cf1-b5bb-b68406d9da6f"
+2023-09-05 09:29:21.629  INFO [ts-cancel-service,37295ac553510f56,37295ac553510f56,true] 1 --- [io-18885-exec-1] cancel.conf.HttpAspect                   : [Service:ts-cancel-service][URI:ts-cancel-service/cancelOrder][Method:POST][Request:{"orderId":"5ad7750b-a68b-44c0-a9c0-32776b027703"}"3a773122-fb2a-4b1c-a952-86601c6ac125""4d2a46c7-71cb-4cf1-b5bb-b68406d9da6f"][RemoteHost:172.18.0.69][IP:172.18.0.69]
+[Cancel Order Service][Cancel Ticket] info:5ad7750b-a68b-44c0-a9c0-32776b027703
+[Cancel Order Service][Cancel Order] order ID:5ad7750b-a68b-44c0-a9c0-32776b027703  loginToken:3a773122-fb2a-4b1c-a952-86601c6ac125
+[Cancel Order Service][Verify Login] Verifying....
+[Cancel Order Service][Cancel Ticket] Verify Success
+[Cancel Order Service][Get Order] Getting....
+[Cancel Order Service][Get Order] Getting....
+[Cancel Order Service][Cancel Order] Order found Z|K|Other
+[Cancel Order Service][Cancel Order] Order status ok
+[Cancel Order Service][Change Order Status] Changing....
+第0次
+[Handle Voucher] Message:{"voucher_id": 1, "order_id": "5ad7750b-a68b-44c0-a9c0-32776b027703", "travelDate": "1532793600000", "contactName": "Contacts_One", "train_number": "Z1234", "seat_number": "30", "start_station": "shanghai", "dest_station": "nanjing", "price": 100.0}
+Contain Retry
+第1次
+[Handle Voucher] Message:{"status": true, "message": "Success."}
+Success
+[Handle Voucher] Success.
+[Cancel Order Service][Cancel Order] Success.
+[Cancel Order] Order Travel Date:Sat Jul 28 16:00:00 UTC 2018
+[Cancel Order] nowDate  :Tue Sep 05 09:29:26 UTC 2023
+[Cancel Order] startTime:Sun Jul 28 01:02:00 UTC 3918
+[Cancel Order]calculate refund - 80.00
+[Cancel Order Service][Draw Back Money] Draw back money...
+[Cancel Order Service][Draw Back Money] Success.
+2023-09-05 09:29:26.915  INFO [ts-cancel-service,37295ac553510f56,37295ac553510f56,true] 1 --- [io-18885-exec-1] cancel.conf.HttpAspect                   : [Service:ts-cancel-service][Response:{"status":true,"message":"Success."}]

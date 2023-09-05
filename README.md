@@ -36,8 +36,9 @@ Now visit `localhost:8080` and you should see the UI of trainticket.
 
 ### How to run test scripts
 1. Download Chromedriver accroding to your Chrome version.
-2. Change the chromedriver location of `System.setProperty("webdriver.chrome.driver", "/usr/local/share/chromedriver");` in the code.
-3. `mvn clean test` is all you need.
+2. Change version of `selenium-server` in `pom.xml` to `3.9.0`.
+3. Change the chromedriver location of `System.setProperty("webdriver.chrome.driver", "/usr/local/share/chromedriver");` in the code.
+4. `mvn clean test` is all you need.
 
 
 *Note*: If your chrome driver is in the dir that need sudo premission, execute something like `sudo chmod +x /usr/local/share/chromedriver`.
@@ -54,3 +55,5 @@ Now visit `localhost:8080` and you should see the UI of trainticket.
 2. F2 in `ts-preserve-service/src/main/java/preserve/service/PreserveServiceImpl.java`. L24-29 simulates delay which makes requests may returns at a different order with the origin. Just increase `sleep` time is buggy version. The root cause can be the missing logic of processing async responses in order. 
 3. F3 in `ts-order-service/src/main/java/order/service/OrderServiceImpl.java`. L28-33 simulates requests occupy too much memory. Meanwhile, in `ts-order-service/Dockerfile` L4 and `docker-compose.yml` L131-132, 192-193, and 255-256, JVM memory limit is bigger than the Docker memory limit. Just add `mem_limit` and `memswap_limit` is buggy version. The root cause is misconfiguration.
 4. F4 in `ts-xxx-service/src/main/java/xxx/service/xxxServiceImpl.java`. All `http` are repaced by `https`. However, I failed to reproduce the buggy result. Authors mentioned that "if the response time is very long, then it fails and the fault occurs", but it seems that the response time of the buggy version is acceptable. Thus, for F4, the buggy logs and traces are just the results extracted under buggy version instaed of "the fault occurs".
+5. F5 in `ts-ticketinfo-service/src/main/java/ticketinfo/async/ExecutorConfig.java`. L13-18 set the thread pool capacity. I cannot reproduce the bug by its test scripts, but I follow its readme and get the buggy result (i.e.,  visit `http://loaclhost:15345/click/occupy` and then visit `http://localhost:15345/click/auto` in another explorer tab quickly).
+6. F6 in `ts-voucher-service/server.py`. L70 `voucherId` is a wrong SQL arg. Not sure how to reproduce normal version without change source code.

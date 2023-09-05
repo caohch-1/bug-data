@@ -1,0 +1,15 @@
+/home/caohch1/Desktop/bug-data/train-ticket-fault-replicate-F6/ts-food-map-service/src/main/java/food/domain/QueryFoodStoresInfo.java
+/home/caohch1/Desktop/bug-data/train-ticket-fault-replicate-F6/ts-food-map-service/src/main/java/food/domain/TrainFood.java
+/home/caohch1/Desktop/bug-data/train-ticket-fault-replicate-F6/ts-food-map-service/src/main/java/food/domain/GetFoodStoresListResult.java
+/home/caohch1/Desktop/bug-data/train-ticket-fault-replicate-F6/ts-food-map-service/src/main/java/food/domain/QueryTrainFoodInfo.java
+/home/caohch1/Desktop/bug-data/train-ticket-fault-replicate-F6/ts-food-map-service/src/main/java/food/FoodMapApplication.java
+/home/caohch1/Desktop/bug-data/train-ticket-fault-replicate-F6/ts-food-map-service/src/main/java/food/domain/Food.java
+/home/caohch1/Desktop/bug-data/train-ticket-fault-replicate-F6/ts-food-map-service/src/main/java/food/init/InitData.java
+/home/caohch1/Desktop/bug-data/train-ticket-fault-replicate-F6/ts-food-map-service/src/main/java/food/domain/FoodStore.java
+/home/caohch1/Desktop/bug-data/train-ticket-fault-replicate-F6/ts-food-map-service/src/main/java/food/controller/FoodMapController.java
+/home/caohch1/Desktop/bug-data/train-ticket-fault-replicate-F6/ts-food-map-service/src/main/java/food/service/FoodMapService.java
+/home/caohch1/Desktop/bug-data/train-ticket-fault-replicate-F6/ts-food-map-service/src/main/java/food/conf/HttpAspect.java
+/home/caohch1/Desktop/bug-data/train-ticket-fault-replicate-F6/ts-food-map-service/src/main/java/food/repository/TrainFoodRepository.java
+/home/caohch1/Desktop/bug-data/train-ticket-fault-replicate-F6/ts-food-map-service/src/main/java/food/repository/FoodStoreRepository.java
+/home/caohch1/Desktop/bug-data/train-ticket-fault-replicate-F6/ts-food-map-service/src/main/java/food/domain/GetTrainFoodListResult.java
+/home/caohch1/Desktop/bug-data/train-ticket-fault-replicate-F6/ts-food-map-service/src/main/java/food/service/FoodMapServiceImpl.java

@@ -1,0 +1,187 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.3.RELEASE)
+
+2023-09-05 08:19:41.073  INFO [ts-ticketinfo-service,,,] 1 --- [           main] ticketinfo.TicketInfoApplication         : Starting TicketInfoApplication v1.0 on 5ec80d981836 with PID 1 (/app/ts-ticketinfo-service-1.0.jar started by root in /)
+2023-09-05 08:19:41.563  INFO [ts-ticketinfo-service,,,] 1 --- [           main] ticketinfo.TicketInfoApplication         : No active profile set, falling back to default profiles: default
+2023-09-05 08:19:44.604  INFO [ts-ticketinfo-service,,,] 1 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@51521cc1: startup date [Tue Sep 05 08:19:44 UTC 2023]; root of context hierarchy
+2023-09-05 08:20:14.976  INFO [ts-ticketinfo-service,,,] 1 --- [           main] o.s.i.config.IntegrationRegistrar        : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2023-09-05 08:20:19.996  INFO [ts-ticketinfo-service,,,] 1 --- [           main] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2023-09-05 08:20:20.241  INFO [ts-ticketinfo-service,,,] 1 --- [           main] faultConfiguringBeanFactoryPostProcessor : No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2023-09-05 08:20:21.353  INFO [ts-ticketinfo-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration$DefaultAsyncConfigurerSupport' of type [org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration$DefaultAsyncConfigurerSupport$$EnhancerBySpringCGLIB$$6d246fa6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-05 08:20:23.643  INFO [ts-ticketinfo-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.annotation.SleuthAnnotationAutoConfiguration' of type [org.springframework.cloud.sleuth.annotation.SleuthAnnotationAutoConfiguration$$EnhancerBySpringCGLIB$$32481815] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-05 08:20:26.204  INFO [ts-ticketinfo-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'sleuthAdvisorConfig' of type [org.springframework.cloud.sleuth.annotation.SleuthAdvisorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-05 08:20:26.785  INFO [ts-ticketinfo-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'integrationGlobalProperties' of type [org.springframework.beans.factory.config.PropertiesFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-05 08:20:26.948  INFO [ts-ticketinfo-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'integrationGlobalProperties' of type [java.util.Properties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-05 08:20:29.005  INFO [ts-ticketinfo-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration' of type [org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration$$EnhancerBySpringCGLIB$$17c67e02] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-05 08:20:40.838  INFO [ts-ticketinfo-service,,,] 1 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 15681 (http)
+2023-09-05 08:20:41.244  INFO [ts-ticketinfo-service,,,] 1 --- [           main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2023-09-05 08:20:41.283  INFO [ts-ticketinfo-service,,,] 1 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.14
+2023-09-05 08:20:43.756  INFO [ts-ticketinfo-service,,,] 1 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-05 08:20:43.788  INFO [ts-ticketinfo-service,,,] 1 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 59223 ms
+2023-09-05 08:21:02.655  INFO [ts-ticketinfo-service,,,] 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'metricsFilter' to: [/*]
+2023-09-05 08:21:02.656  INFO [ts-ticketinfo-service,,,] 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2023-09-05 08:21:02.656  INFO [ts-ticketinfo-service,,,] 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'traceFilter' to: [/*]
+2023-09-05 08:21:02.656  INFO [ts-ticketinfo-service,,,] 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2023-09-05 08:21:02.656  INFO [ts-ticketinfo-service,,,] 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2023-09-05 08:21:02.657  INFO [ts-ticketinfo-service,,,] 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2023-09-05 08:21:02.671  INFO [ts-ticketinfo-service,,,] 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2023-09-05 08:21:02.672  INFO [ts-ticketinfo-service,,,] 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'applicationContextIdFilter' to: [/*]
+2023-09-05 08:21:02.672  INFO [ts-ticketinfo-service,,,] 1 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2023-09-05 08:21:23.446  INFO [ts-ticketinfo-service,,,] 1 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 
+2023-09-05 08:21:23.687  INFO [ts-ticketinfo-service,,,] 1 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService  'mySimpleAsync'
+2023-09-05 08:21:34.331  INFO [ts-ticketinfo-service,,,] 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@51521cc1: startup date [Tue Sep 05 08:19:44 UTC 2023]; root of context hierarchy
+2023-09-05 08:21:41.829  INFO [ts-ticketinfo-service,,,] 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/ticketinfo/queryForStationId],methods=[POST]}" onto public java.lang.String ticketinfo.controller.TicketInfoController.queryForStationId(ticketinfo.domain.QueryForStationId)
+2023-09-05 08:21:41.835  INFO [ts-ticketinfo-service,,,] 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/ticketinfo/queryForTravel],methods=[POST]}" onto public ticketinfo.domain.ResultForTravel ticketinfo.controller.TicketInfoController.queryForTravel(ticketinfo.domain.QueryForTravel)
+2023-09-05 08:21:41.927  INFO [ts-ticketinfo-service,,,] 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2023-09-05 08:21:41.928  INFO [ts-ticketinfo-service,,,] 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2023-09-05 08:21:47.058  INFO [ts-ticketinfo-service,,,] 1 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2023-09-05 08:21:47.059  INFO [ts-ticketinfo-service,,,] 1 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2023-09-05 08:21:49.736  INFO [ts-ticketinfo-service,,,] 1 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2023-09-05 08:21:59.990  INFO [ts-ticketinfo-service,,,] 1 --- [           main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService  'taskScheduler'
+2023-09-05 08:22:11.797  INFO [ts-ticketinfo-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2023-09-05 08:22:11.797  INFO [ts-ticketinfo-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2023-09-05 08:22:11.798  INFO [ts-ticketinfo-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2023-09-05 08:22:11.910  INFO [ts-ticketinfo-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+2023-09-05 08:22:11.911  INFO [ts-ticketinfo-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/features || /features.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2023-09-05 08:22:11.912  INFO [ts-ticketinfo-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+2023-09-05 08:22:12.021  INFO [ts-ticketinfo-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2023-09-05 08:22:12.090  INFO [ts-ticketinfo-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+2023-09-05 08:22:12.090  INFO [ts-ticketinfo-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+2023-09-05 08:22:12.091  INFO [ts-ticketinfo-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2023-09-05 08:22:12.203  INFO [ts-ticketinfo-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2023-09-05 08:22:12.204  INFO [ts-ticketinfo-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2023-09-05 08:22:12.204  INFO [ts-ticketinfo-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2023-09-05 08:22:12.205  INFO [ts-ticketinfo-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2023-09-05 08:22:12.304  INFO [ts-ticketinfo-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2023-09-05 08:22:12.305  INFO [ts-ticketinfo-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2023-09-05 08:22:12.305  INFO [ts-ticketinfo-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2023-09-05 08:22:12.306  INFO [ts-ticketinfo-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2023-09-05 08:22:23.513  INFO [ts-ticketinfo-service,,,] 1 --- [           main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 
+2023-09-05 08:22:32.745  INFO [ts-ticketinfo-service,,,] 1 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2023-09-05 08:22:33.197  INFO [ts-ticketinfo-service,,,] 1 --- [           main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2023-09-05 08:22:34.614  INFO [ts-ticketinfo-service,,,] 1 --- [           main] o.s.i.endpoint.EventDrivenConsumer       : Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2023-09-05 08:22:34.667  INFO [ts-ticketinfo-service,,,] 1 --- [           main] o.s.i.channel.PublishSubscribeChannel    : Channel 'ts-ticketinfo-service:15681.errorChannel' has 1 subscriber(s).
+2023-09-05 08:22:34.678  INFO [ts-ticketinfo-service,,,] 1 --- [           main] o.s.i.endpoint.EventDrivenConsumer       : started _org.springframework.integration.errorLogger
+2023-09-05 08:22:36.107  INFO [ts-ticketinfo-service,,,] 1 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 15681 (http)
+2023-09-05 08:22:36.193  INFO [ts-ticketinfo-service,,,] 1 --- [           main] ticketinfo.TicketInfoApplication         : Started TicketInfoApplication in 187.959 seconds (JVM running for 194.921)
+2023-09-05 08:23:29.231  INFO [ts-ticketinfo-service,,,] 1 --- [io-15681-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2023-09-05 08:23:29.232  INFO [ts-ticketinfo-service,,,] 1 --- [io-15681-exec-3] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2023-09-05 08:23:29.256  INFO [ts-ticketinfo-service,,,] 1 --- [io-15681-exec-3] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 24 ms
+c=ticketinfo.domain.QueryForStationId@7aa880f8
+c=ticketinfo.domain.QueryForStationId@3e200876
+c=ticketinfo.domain.QueryForStationId@d136b66
+c=ticketinfo.domain.QueryForStationId@3f427481
+c=ticketinfo.domain.QueryForStationId@67b6671d
+c=ticketinfo.domain.QueryForStationId@5b9ddb45
+requestArgs={"name":"Shang Hai"}
+requestArgs={"name":"Shang Hai"}
+requestArgs={"name":"Shang Hai"}
+requestArgs={"name":"Shang Hai"}
+requestArgs={"name":"Shang Hai"}
+2023-09-05 08:23:29.326  INFO [ts-ticketinfo-service,2f6c3e815f505939,f14f3062b1b8548a,true] 1 --- [io-15681-exec-1] ticketinfo.conf.HttpAspect               : [Service:ts-ticketinfo-service][URI:ts-ticketinfo-service/ticketinfo/queryForStationId][Method:POST][Request:{"name":"Shang Hai"}][RemoteHost:172.18.0.25][IP:172.18.0.25]
+2023-09-05 08:23:29.326  INFO [ts-ticketinfo-service,2f6c3e815f505939,7ddca25d30eeaf72,true] 1 --- [io-15681-exec-2] ticketinfo.conf.HttpAspect               : [Service:ts-ticketinfo-service][URI:ts-ticketinfo-service/ticketinfo/queryForStationId][Method:POST][Request:{"name":"Shang Hai"}][RemoteHost:172.18.0.25][IP:172.18.0.25]
+requestArgs={"name":"Shang Hai"}
+2023-09-05 08:23:29.326  INFO [ts-ticketinfo-service,2f6c3e815f505939,4e041885fb015f76,true] 1 --- [io-15681-exec-4] ticketinfo.conf.HttpAspect               : [Service:ts-ticketinfo-service][URI:ts-ticketinfo-service/ticketinfo/queryForStationId][Method:POST][Request:{"name":"Shang Hai"}][RemoteHost:172.18.0.25][IP:172.18.0.25]
+2023-09-05 08:23:29.327  INFO [ts-ticketinfo-service,2f6c3e815f505939,f41c6e65041a59ee,true] 1 --- [io-15681-exec-5] ticketinfo.conf.HttpAspect               : [Service:ts-ticketinfo-service][URI:ts-ticketinfo-service/ticketinfo/queryForStationId][Method:POST][Request:{"name":"Shang Hai"}][RemoteHost:172.18.0.25][IP:172.18.0.25]
+2023-09-05 08:23:29.326  INFO [ts-ticketinfo-service,2f6c3e815f505939,090ca0cdc7025b55,true] 1 --- [io-15681-exec-6] ticketinfo.conf.HttpAspect               : [Service:ts-ticketinfo-service][URI:ts-ticketinfo-service/ticketinfo/queryForStationId][Method:POST][Request:{"name":"Shang Hai"}][RemoteHost:172.18.0.25][IP:172.18.0.25]
+2023-09-05 08:23:29.326  INFO [ts-ticketinfo-service,2f6c3e815f505939,1438428e11e8e5ec,true] 1 --- [io-15681-exec-3] ticketinfo.conf.HttpAspect               : [Service:ts-ticketinfo-service][URI:ts-ticketinfo-service/ticketinfo/queryForStationId][Method:POST][Request:{"name":"Shang Hai"}][RemoteHost:172.18.0.25][IP:172.18.0.25]
+2023-09-05 08:23:29.823  INFO [ts-ticketinfo-service,2f6c3e815f505939,090ca0cdc7025b55,true] 1 --- [io-15681-exec-6] ticketinfo.conf.HttpAspect               : [Service:ts-ticketinfo-service][Response:"shanghai"]
+2023-09-05 08:23:29.823  INFO [ts-ticketinfo-service,2f6c3e815f505939,7ddca25d30eeaf72,true] 1 --- [io-15681-exec-2] ticketinfo.conf.HttpAspect               : [Service:ts-ticketinfo-service][Response:"shanghai"]
+2023-09-05 08:23:29.823  INFO [ts-ticketinfo-service,2f6c3e815f505939,4e041885fb015f76,true] 1 --- [io-15681-exec-4] ticketinfo.conf.HttpAspect               : [Service:ts-ticketinfo-service][Response:"shanghai"]
+2023-09-05 08:23:29.823  INFO [ts-ticketinfo-service,2f6c3e815f505939,1438428e11e8e5ec,true] 1 --- [io-15681-exec-3] ticketinfo.conf.HttpAspect               : [Service:ts-ticketinfo-service][Response:"shanghai"]
+2023-09-05 08:23:29.823  INFO [ts-ticketinfo-service,2f6c3e815f505939,f14f3062b1b8548a,true] 1 --- [io-15681-exec-1] ticketinfo.conf.HttpAspect               : [Service:ts-ticketinfo-service][Response:"shanghai"]
+2023-09-05 08:23:29.823  INFO [ts-ticketinfo-service,2f6c3e815f505939,f41c6e65041a59ee,true] 1 --- [io-15681-exec-5] ticketinfo.conf.HttpAspect               : [Service:ts-ticketinfo-service][Response:"shanghai"]
+c=ticketinfo.domain.QueryForStationId@51ed3828
+requestArgs={"name":"Nan Jing"}
+2023-09-05 08:23:29.856  INFO [ts-ticketinfo-service,2f6c3e815f505939,a8671bd2da676280,true] 1 --- [io-15681-exec-7] ticketinfo.conf.HttpAspect               : [Service:ts-ticketinfo-service][URI:ts-ticketinfo-service/ticketinfo/queryForStationId][Method:POST][Request:{"name":"Nan Jing"}][RemoteHost:172.18.0.25][IP:172.18.0.25]
+c=ticketinfo.domain.QueryForStationId@aa43105
+requestArgs={"name":"Nan Jing"}
+2023-09-05 08:23:29.857  INFO [ts-ticketinfo-service,2f6c3e815f505939,79fb8109a3d7e081,true] 1 --- [o-15681-exec-10] ticketinfo.conf.HttpAspect               : [Service:ts-ticketinfo-service][URI:ts-ticketinfo-service/ticketinfo/queryForStationId][Method:POST][Request:{"name":"Nan Jing"}][RemoteHost:172.18.0.25][IP:172.18.0.25]
+c=ticketinfo.domain.QueryForStationId@67ba232d
+c=ticketinfo.domain.QueryForStationId@4c70dfe4
+requestArgs={"name":"Nan Jing"}
+requestArgs={"name":"Nan Jing"}
+c=ticketinfo.domain.QueryForStationId@7d286c12
+requestArgs={"name":"Nan Jing"}
+2023-09-05 08:23:29.859  INFO [ts-ticketinfo-service,2f6c3e815f505939,72fa89afd0dc5ae5,true] 1 --- [io-15681-exec-5] ticketinfo.conf.HttpAspect               : [Service:ts-ticketinfo-service][URI:ts-ticketinfo-service/ticketinfo/queryForStationId][Method:POST][Request:{"name":"Nan Jing"}][RemoteHost:172.18.0.25][IP:172.18.0.25]
+2023-09-05 08:23:29.860  INFO [ts-ticketinfo-service,2f6c3e815f505939,945756755a248bc6,true] 1 --- [io-15681-exec-9] ticketinfo.conf.HttpAspect               : [Service:ts-ticketinfo-service][URI:ts-ticketinfo-service/ticketinfo/queryForStationId][Method:POST][Request:{"name":"Nan Jing"}][RemoteHost:172.18.0.25][IP:172.18.0.25]
+2023-09-05 08:23:29.860  INFO [ts-ticketinfo-service,2f6c3e815f505939,5660bc5ebf4b7b77,true] 1 --- [io-15681-exec-1] ticketinfo.conf.HttpAspect               : [Service:ts-ticketinfo-service][URI:ts-ticketinfo-service/ticketinfo/queryForStationId][Method:POST][Request:{"name":"Nan Jing"}][RemoteHost:172.18.0.25][IP:172.18.0.25]
+c=ticketinfo.domain.QueryForStationId@38c9dfb2
+requestArgs={"name":"Nan Jing"}
+2023-09-05 08:23:29.871  INFO [ts-ticketinfo-service,2f6c3e815f505939,1c50c02956af090b,true] 1 --- [io-15681-exec-2] ticketinfo.conf.HttpAspect               : [Service:ts-ticketinfo-service][URI:ts-ticketinfo-service/ticketinfo/queryForStationId][Method:POST][Request:{"name":"Nan Jing"}][RemoteHost:172.18.0.25][IP:172.18.0.25]
+2023-09-05 08:23:29.880  INFO [ts-ticketinfo-service,2f6c3e815f505939,79fb8109a3d7e081,true] 1 --- [o-15681-exec-10] ticketinfo.conf.HttpAspect               : [Service:ts-ticketinfo-service][Response:"nanjing"]
+2023-09-05 08:23:29.893  INFO [ts-ticketinfo-service,2f6c3e815f505939,a8671bd2da676280,true] 1 --- [io-15681-exec-7] ticketinfo.conf.HttpAspect               : [Service:ts-ticketinfo-service][Response:"nanjing"]
+2023-09-05 08:23:29.902  INFO [ts-ticketinfo-service,2f6c3e815f505939,945756755a248bc6,true] 1 --- [io-15681-exec-9] ticketinfo.conf.HttpAspect               : [Service:ts-ticketinfo-service][Response:"nanjing"]
+2023-09-05 08:23:29.905  INFO [ts-ticketinfo-service,2f6c3e815f505939,5660bc5ebf4b7b77,true] 1 --- [io-15681-exec-1] ticketinfo.conf.HttpAspect               : [Service:ts-ticketinfo-service][Response:"nanjing"]
+2023-09-05 08:23:29.915  INFO [ts-ticketinfo-service,2f6c3e815f505939,72fa89afd0dc5ae5,true] 1 --- [io-15681-exec-5] ticketinfo.conf.HttpAspect               : [Service:ts-ticketinfo-service][Response:"nanjing"]
+2023-09-05 08:23:29.926  INFO [ts-ticketinfo-service,2f6c3e815f505939,1c50c02956af090b,true] 1 --- [io-15681-exec-2] ticketinfo.conf.HttpAspect               : [Service:ts-ticketinfo-service][Response:"nanjing"]
+c=ticketinfo.domain.QueryForStationId@355a84f3
+requestArgs={"name":"Shang Hai"}
+2023-09-05 08:23:30.121  INFO [ts-ticketinfo-service,22ea04823ba4a0b6,2a623c51f13fd94e,true] 1 --- [io-15681-exec-3] ticketinfo.conf.HttpAspect               : [Service:ts-ticketinfo-service][URI:ts-ticketinfo-service/ticketinfo/queryForStationId][Method:POST][Request:{"name":"Shang Hai"}][RemoteHost:172.18.0.25][IP:172.18.0.25]
+2023-09-05 08:23:30.141  INFO [ts-ticketinfo-service,22ea04823ba4a0b6,2a623c51f13fd94e,true] 1 --- [io-15681-exec-3] ticketinfo.conf.HttpAspect               : [Service:ts-ticketinfo-service][Response:"shanghai"]
+c=ticketinfo.domain.QueryForStationId@49844c15
+requestArgs={"name":"Nan Jing"}
+2023-09-05 08:23:30.148  INFO [ts-ticketinfo-service,22ea04823ba4a0b6,5ad6c26012e306e6,true] 1 --- [io-15681-exec-6] ticketinfo.conf.HttpAspect               : [Service:ts-ticketinfo-service][URI:ts-ticketinfo-service/ticketinfo/queryForStationId][Method:POST][Request:{"name":"Nan Jing"}][RemoteHost:172.18.0.25][IP:172.18.0.25]
+2023-09-05 08:23:30.165  INFO [ts-ticketinfo-service,22ea04823ba4a0b6,5ad6c26012e306e6,true] 1 --- [io-15681-exec-6] ticketinfo.conf.HttpAspect               : [Service:ts-ticketinfo-service][Response:"nanjing"]
+c=ticketinfo.domain.QueryForStationId@6c68ba5c
+requestArgs={"name":"Shang Hai"}
+2023-09-05 08:23:30.473  INFO [ts-ticketinfo-service,2f6c3e815f505939,94c411475815de28,true] 1 --- [io-15681-exec-4] ticketinfo.conf.HttpAspect               : [Service:ts-ticketinfo-service][URI:ts-ticketinfo-service/ticketinfo/queryForStationId][Method:POST][Request:{"name":"Shang Hai"}][RemoteHost:172.18.0.51][IP:172.18.0.51]
+c=ticketinfo.domain.QueryForStationId@4104814
+requestArgs={"name":"Shang Hai"}
+2023-09-05 08:23:30.473  INFO [ts-ticketinfo-service,2f6c3e815f505939,b0110c26c8f398a7,true] 1 --- [io-15681-exec-5] ticketinfo.conf.HttpAspect               : [Service:ts-ticketinfo-service][URI:ts-ticketinfo-service/ticketinfo/queryForStationId][Method:POST][Request:{"name":"Shang Hai"}][RemoteHost:172.18.0.51][IP:172.18.0.51]
+c=ticketinfo.domain.QueryForStationId@1e17c65e
+requestArgs={"name":"Shang Hai"}
+2023-09-05 08:23:30.474  INFO [ts-ticketinfo-service,22ea04823ba4a0b6,274e6b4d36c14400,true] 1 --- [io-15681-exec-7] ticketinfo.conf.HttpAspect               : [Service:ts-ticketinfo-service][URI:ts-ticketinfo-service/ticketinfo/queryForStationId][Method:POST][Request:{"name":"Shang Hai"}][RemoteHost:172.18.0.51][IP:172.18.0.51]
+c=ticketinfo.domain.QueryForStationId@4688b494
+requestArgs={"name":"Shang Hai"}
+2023-09-05 08:23:30.476  INFO [ts-ticketinfo-service,2f6c3e815f505939,47740df145315488,true] 1 --- [io-15681-exec-9] ticketinfo.conf.HttpAspect               : [Service:ts-ticketinfo-service][URI:ts-ticketinfo-service/ticketinfo/queryForStationId][Method:POST][Request:{"name":"Shang Hai"}][RemoteHost:172.18.0.51][IP:172.18.0.51]
+c=ticketinfo.domain.QueryForStationId@455ec41a
+requestArgs={"name":"Shang Hai"}
+2023-09-05 08:23:30.476  INFO [ts-ticketinfo-service,2f6c3e815f505939,445cccd9f2e63c94,true] 1 --- [o-15681-exec-10] ticketinfo.conf.HttpAspect               : [Service:ts-ticketinfo-service][URI:ts-ticketinfo-service/ticketinfo/queryForStationId][Method:POST][Request:{"name":"Shang Hai"}][RemoteHost:172.18.0.51][IP:172.18.0.51]
+c=ticketinfo.domain.QueryForStationId@4a4baf40
+requestArgs={"name":"Shang Hai"}
+c=ticketinfo.domain.QueryForStationId@ed3cdaf
+2023-09-05 08:23:30.477  INFO [ts-ticketinfo-service,2f6c3e815f505939,237f287167a0473e,true] 1 --- [io-15681-exec-1] ticketinfo.conf.HttpAspect               : [Service:ts-ticketinfo-service][URI:ts-ticketinfo-service/ticketinfo/queryForStationId][Method:POST][Request:{"name":"Shang Hai"}][RemoteHost:172.18.0.51][IP:172.18.0.51]
+requestArgs={"name":"Shang Hai"}
+2023-09-05 08:23:30.477  INFO [ts-ticketinfo-service,2f6c3e815f505939,0743effa4a6233e6,true] 1 --- [io-15681-exec-8] ticketinfo.conf.HttpAspect               : [Service:ts-ticketinfo-service][URI:ts-ticketinfo-service/ticketinfo/queryForStationId][Method:POST][Request:{"name":"Shang Hai"}][RemoteHost:172.18.0.51][IP:172.18.0.51]
+2023-09-05 08:23:30.492  INFO [ts-ticketinfo-service,2f6c3e815f505939,94c411475815de28,true] 1 --- [io-15681-exec-4] ticketinfo.conf.HttpAspect               : [Service:ts-ticketinfo-service][Response:"shanghai"]
+2023-09-05 08:23:30.493  INFO [ts-ticketinfo-service,22ea04823ba4a0b6,274e6b4d36c14400,true] 1 --- [io-15681-exec-7] ticketinfo.conf.HttpAspect               : [Service:ts-ticketinfo-service][Response:"shanghai"]
+2023-09-05 08:23:30.504  INFO [ts-ticketinfo-service,2f6c3e815f505939,0743effa4a6233e6,true] 1 --- [io-15681-exec-8] ticketinfo.conf.HttpAspect               : [Service:ts-ticketinfo-service][Response:"shanghai"]
+2023-09-05 08:23:30.508  INFO [ts-ticketinfo-service,2f6c3e815f505939,47740df145315488,true] 1 --- [io-15681-exec-9] ticketinfo.conf.HttpAspect               : [Service:ts-ticketinfo-service][Response:"shanghai"]
+2023-09-05 08:23:30.516  INFO [ts-ticketinfo-service,2f6c3e815f505939,b0110c26c8f398a7,true] 1 --- [io-15681-exec-5] ticketinfo.conf.HttpAspect               : [Service:ts-ticketinfo-service][Response:"shanghai"]
+2023-09-05 08:23:30.519  INFO [ts-ticketinfo-service,2f6c3e815f505939,445cccd9f2e63c94,true] 1 --- [o-15681-exec-10] ticketinfo.conf.HttpAspect               : [Service:ts-ticketinfo-service][Response:"shanghai"]
+2023-09-05 08:23:30.525  INFO [ts-ticketinfo-service,2f6c3e815f505939,237f287167a0473e,true] 1 --- [io-15681-exec-1] ticketinfo.conf.HttpAspect               : [Service:ts-ticketinfo-service][Response:"shanghai"]
+c=ticketinfo.domain.QueryForStationId@bcb6de0
+c=ticketinfo.domain.QueryForStationId@1499f91d
+requestArgs={"name":"Nan Jing"}
+requestArgs={"name":"Nan Jing"}
+2023-09-05 08:23:30.532  INFO [ts-ticketinfo-service,2f6c3e815f505939,e2899a1c8d8276b5,true] 1 --- [io-15681-exec-3] ticketinfo.conf.HttpAspect               : [Service:ts-ticketinfo-service][URI:ts-ticketinfo-service/ticketinfo/queryForStationId][Method:POST][Request:{"name":"Nan Jing"}][RemoteHost:172.18.0.51][IP:172.18.0.51]
+2023-09-05 08:23:30.532  INFO [ts-ticketinfo-service,2f6c3e815f505939,fbc352e0157d2e1a,true] 1 --- [io-15681-exec-2] ticketinfo.conf.HttpAspect               : [Service:ts-ticketinfo-service][URI:ts-ticketinfo-service/ticketinfo/queryForStationId][Method:POST][Request:{"name":"Nan Jing"}][RemoteHost:172.18.0.51][IP:172.18.0.51]
+c=ticketinfo.domain.QueryForStationId@56bb437a
+requestArgs={"name":"Nan Jing"}
+2023-09-05 08:23:30.535  INFO [ts-ticketinfo-service,2f6c3e815f505939,ea8b2c87fc18cf47,true] 1 --- [io-15681-exec-6] ticketinfo.conf.HttpAspect               : [Service:ts-ticketinfo-service][URI:ts-ticketinfo-service/ticketinfo/queryForStationId][Method:POST][Request:{"name":"Nan Jing"}][RemoteHost:172.18.0.51][IP:172.18.0.51]
+c=ticketinfo.domain.QueryForStationId@6f4ad3f3
+c=ticketinfo.domain.QueryForStationId@2fc3388d
+c=ticketinfo.domain.QueryForStationId@4bd14211
+requestArgs={"name":"Nan Jing"}
+requestArgs={"name":"Nan Jing"}
+2023-09-05 08:23:30.538  INFO [ts-ticketinfo-service,2f6c3e815f505939,b542ab3d01fab54b,true] 1 --- [io-15681-exec-7] ticketinfo.conf.HttpAspect               : [Service:ts-ticketinfo-service][URI:ts-ticketinfo-service/ticketinfo/queryForStationId][Method:POST][Request:{"name":"Nan Jing"}][RemoteHost:172.18.0.51][IP:172.18.0.51]
+2023-09-05 08:23:30.538  INFO [ts-ticketinfo-service,2f6c3e815f505939,09d4fdbbf1e6e944,true] 1 --- [io-15681-exec-4] ticketinfo.conf.HttpAspect               : [Service:ts-ticketinfo-service][URI:ts-ticketinfo-service/ticketinfo/queryForStationId][Method:POST][Request:{"name":"Nan Jing"}][RemoteHost:172.18.0.51][IP:172.18.0.51]
+requestArgs={"name":"Nan Jing"}
+2023-09-05 08:23:30.539  INFO [ts-ticketinfo-service,22ea04823ba4a0b6,a83a26474194b1a4,true] 1 --- [io-15681-exec-8] ticketinfo.conf.HttpAspect               : [Service:ts-ticketinfo-service][URI:ts-ticketinfo-service/ticketinfo/queryForStationId][Method:POST][Request:{"name":"Nan Jing"}][RemoteHost:172.18.0.51][IP:172.18.0.51]
+c=ticketinfo.domain.QueryForStationId@38a3221
+requestArgs={"name":"Nan Jing"}
+2023-09-05 08:23:30.546  INFO [ts-ticketinfo-service,2f6c3e815f505939,cd1ab220b546f982,true] 1 --- [io-15681-exec-9] ticketinfo.conf.HttpAspect               : [Service:ts-ticketinfo-service][URI:ts-ticketinfo-service/ticketinfo/queryForStationId][Method:POST][Request:{"name":"Nan Jing"}][RemoteHost:172.18.0.51][IP:172.18.0.51]
+2023-09-05 08:23:30.556  INFO [ts-ticketinfo-service,2f6c3e815f505939,e2899a1c8d8276b5,true] 1 --- [io-15681-exec-3] ticketinfo.conf.HttpAspect               : [Service:ts-ticketinfo-service][Response:"nanjing"]
+2023-09-05 08:23:30.562  INFO [ts-ticketinfo-service,2f6c3e815f505939,09d4fdbbf1e6e944,true] 1 --- [io-15681-exec-4] ticketinfo.conf.HttpAspect               : [Service:ts-ticketinfo-service][Response:"nanjing"]
+2023-09-05 08:23:30.562  INFO [ts-ticketinfo-service,2f6c3e815f505939,b542ab3d01fab54b,true] 1 --- [io-15681-exec-7] ticketinfo.conf.HttpAspect               : [Service:ts-ticketinfo-service][Response:"nanjing"]
+2023-09-05 08:23:30.564  INFO [ts-ticketinfo-service,2f6c3e815f505939,ea8b2c87fc18cf47,true] 1 --- [io-15681-exec-6] ticketinfo.conf.HttpAspect               : [Service:ts-ticketinfo-service][Response:"nanjing"]
+2023-09-05 08:23:30.569  INFO [ts-ticketinfo-service,2f6c3e815f505939,fbc352e0157d2e1a,true] 1 --- [io-15681-exec-2] ticketinfo.conf.HttpAspect               : [Service:ts-ticketinfo-service][Response:"nanjing"]
+2023-09-05 08:23:30.576  INFO [ts-ticketinfo-service,22ea04823ba4a0b6,a83a26474194b1a4,true] 1 --- [io-15681-exec-8] ticketinfo.conf.HttpAspect               : [Service:ts-ticketinfo-service][Response:"nanjing"]
+2023-09-05 08:23:30.608  INFO [ts-ticketinfo-service,2f6c3e815f505939,cd1ab220b546f982,true] 1 --- [io-15681-exec-9] ticketinfo.conf.HttpAspect               : [Service:ts-ticketinfo-service][Response:"nanjing"]
