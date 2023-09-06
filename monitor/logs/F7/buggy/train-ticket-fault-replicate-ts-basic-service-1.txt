@@ -1,0 +1,189 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.3.RELEASE)
+
+2023-09-06 07:33:41.363  INFO [ts-basic-service,,,] 1 --- [           main] fdse.microservice.BasicApplication       : Starting BasicApplication v1.0 on e0549131e6b5 with PID 1 (/app/ts-basic-service-1.0.jar started by root in /)
+2023-09-06 07:33:41.424  INFO [ts-basic-service,,,] 1 --- [           main] fdse.microservice.BasicApplication       : No active profile set, falling back to default profiles: default
+2023-09-06 07:33:43.220  INFO [ts-basic-service,,,] 1 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@51521cc1: startup date [Wed Sep 06 07:33:42 UTC 2023]; root of context hierarchy
+2023-09-06 07:34:19.436  INFO [ts-basic-service,,,] 1 --- [           main] o.s.i.config.IntegrationRegistrar        : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2023-09-06 07:34:30.183  INFO [ts-basic-service,,,] 1 --- [           main] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2023-09-06 07:34:30.373  INFO [ts-basic-service,,,] 1 --- [           main] faultConfiguringBeanFactoryPostProcessor : No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2023-09-06 07:34:31.235  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration$DefaultAsyncConfigurerSupport' of type [org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration$DefaultAsyncConfigurerSupport$$EnhancerBySpringCGLIB$$3f673ab9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-06 07:34:34.758  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.annotation.SleuthAnnotationAutoConfiguration' of type [org.springframework.cloud.sleuth.annotation.SleuthAnnotationAutoConfiguration$$EnhancerBySpringCGLIB$$48ae328] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-06 07:34:38.082  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'sleuthAdvisorConfig' of type [org.springframework.cloud.sleuth.annotation.SleuthAdvisorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-06 07:34:39.578  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'integrationGlobalProperties' of type [org.springframework.beans.factory.config.PropertiesFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-06 07:34:39.895  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'integrationGlobalProperties' of type [java.util.Properties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-06 07:34:41.530  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration' of type [org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration$$EnhancerBySpringCGLIB$$ea094915] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-06 07:34:54.707  INFO [ts-basic-service,,,] 1 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 15680 (http)
+2023-09-06 07:34:55.028  INFO [ts-basic-service,,,] 1 --- [           main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2023-09-06 07:34:55.166  INFO [ts-basic-service,,,] 1 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.14
+2023-09-06 07:34:57.418  INFO [ts-basic-service,,,] 1 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-06 07:34:57.429  INFO [ts-basic-service,,,] 1 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 74459 ms
+2023-09-06 07:35:13.717  INFO [ts-basic-service,,,] 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'metricsFilter' to: [/*]
+2023-09-06 07:35:13.738  INFO [ts-basic-service,,,] 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2023-09-06 07:35:13.739  INFO [ts-basic-service,,,] 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'traceFilter' to: [/*]
+2023-09-06 07:35:13.739  INFO [ts-basic-service,,,] 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2023-09-06 07:35:13.739  INFO [ts-basic-service,,,] 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2023-09-06 07:35:13.739  INFO [ts-basic-service,,,] 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2023-09-06 07:35:13.739  INFO [ts-basic-service,,,] 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2023-09-06 07:35:13.742  INFO [ts-basic-service,,,] 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'applicationContextIdFilter' to: [/*]
+2023-09-06 07:35:13.747  INFO [ts-basic-service,,,] 1 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2023-09-06 07:35:34.976  INFO [ts-basic-service,,,] 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@51521cc1: startup date [Wed Sep 06 07:33:42 UTC 2023]; root of context hierarchy
+2023-09-06 07:35:40.174  INFO [ts-basic-service,,,] 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/basic/queryForTravel],methods=[POST]}" onto public fdse.microservice.domain.ResultForTravel fdse.microservice.controller.BasicController.queryForTravel(fdse.microservice.domain.QueryForTravel)
+2023-09-06 07:35:40.176  INFO [ts-basic-service,,,] 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/basic/queryForStationId],methods=[POST]}" onto public java.lang.String fdse.microservice.controller.BasicController.queryForStationId(fdse.microservice.domain.QueryStation)
+2023-09-06 07:35:40.303  INFO [ts-basic-service,,,] 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2023-09-06 07:35:40.303  INFO [ts-basic-service,,,] 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2023-09-06 07:35:44.343  INFO [ts-basic-service,,,] 1 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2023-09-06 07:35:44.344  INFO [ts-basic-service,,,] 1 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2023-09-06 07:35:47.553  INFO [ts-basic-service,,,] 1 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2023-09-06 07:35:54.581  INFO [ts-basic-service,,,] 1 --- [           main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService  'taskScheduler'
+2023-09-06 07:36:04.238  INFO [ts-basic-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2023-09-06 07:36:04.275  INFO [ts-basic-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+2023-09-06 07:36:04.276  INFO [ts-basic-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+2023-09-06 07:36:04.277  INFO [ts-basic-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2023-09-06 07:36:04.278  INFO [ts-basic-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2023-09-06 07:36:04.328  INFO [ts-basic-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+2023-09-06 07:36:04.359  INFO [ts-basic-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+2023-09-06 07:36:04.359  INFO [ts-basic-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2023-09-06 07:36:04.360  INFO [ts-basic-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2023-09-06 07:36:04.361  INFO [ts-basic-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2023-09-06 07:36:04.396  INFO [ts-basic-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2023-09-06 07:36:04.397  INFO [ts-basic-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2023-09-06 07:36:04.443  INFO [ts-basic-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2023-09-06 07:36:04.443  INFO [ts-basic-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2023-09-06 07:36:04.444  INFO [ts-basic-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/features || /features.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2023-09-06 07:36:04.520  INFO [ts-basic-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2023-09-06 07:36:04.521  INFO [ts-basic-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2023-09-06 07:36:04.522  INFO [ts-basic-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2023-09-06 07:36:15.184  INFO [ts-basic-service,,,] 1 --- [           main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 
+2023-09-06 07:36:24.276  INFO [ts-basic-service,,,] 1 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2023-09-06 07:36:24.777  INFO [ts-basic-service,,,] 1 --- [           main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2023-09-06 07:36:26.646  INFO [ts-basic-service,,,] 1 --- [           main] o.s.i.endpoint.EventDrivenConsumer       : Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2023-09-06 07:36:26.646  INFO [ts-basic-service,,,] 1 --- [           main] o.s.i.channel.PublishSubscribeChannel    : Channel 'ts-basic-service:15680.errorChannel' has 1 subscriber(s).
+2023-09-06 07:36:26.647  INFO [ts-basic-service,,,] 1 --- [           main] o.s.i.endpoint.EventDrivenConsumer       : started _org.springframework.integration.errorLogger
+2023-09-06 07:36:28.798  INFO [ts-basic-service,,,] 1 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 15680 (http)
+2023-09-06 07:36:28.906  INFO [ts-basic-service,,,] 1 --- [           main] fdse.microservice.BasicApplication       : Started BasicApplication in 174.59 seconds (JVM running for 178.291)
+2023-09-06 07:37:47.846  INFO [ts-basic-service,,,] 1 --- [io-15680-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2023-09-06 07:37:47.846  INFO [ts-basic-service,,,] 1 --- [io-15680-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2023-09-06 07:37:47.880  INFO [ts-basic-service,,,] 1 --- [io-15680-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 34 ms
+c=fdse.microservice.domain.QueryStation@8deea8e
+requestArgs={"name":"Shang Hai"}
+2023-09-06 07:37:47.956  INFO [ts-basic-service,38e24e35723d09c8,83aae3d20dc30993,true] 1 --- [io-15680-exec-1] fdse.microservice.conf.HttpAspect        : [Service:ts-basic-service][URI:ts-basic-service/basic/queryForStationId][Method:POST][Request:{"name":"Shang Hai"}][RemoteHost:172.18.0.14][IP:172.18.0.14]
+[Basic Information Service][Query For Station Id] Station Id:Shang Hai
+2023-09-06 07:37:48.222  INFO [ts-basic-service,38e24e35723d09c8,83aae3d20dc30993,true] 1 --- [io-15680-exec-1] fdse.microservice.conf.HttpAspect        : [Service:ts-basic-service][Response:"shanghai"]
+c=fdse.microservice.domain.QueryStation@3656052e
+requestArgs={"name":"Nan Jing"}
+2023-09-06 07:37:48.286  INFO [ts-basic-service,38e24e35723d09c8,b4d00e9c68595299,true] 1 --- [io-15680-exec-2] fdse.microservice.conf.HttpAspect        : [Service:ts-basic-service][URI:ts-basic-service/basic/queryForStationId][Method:POST][Request:{"name":"Nan Jing"}][RemoteHost:172.18.0.14][IP:172.18.0.14]
+[Basic Information Service][Query For Station Id] Station Id:Nan Jing
+2023-09-06 07:37:48.298  INFO [ts-basic-service,38e24e35723d09c8,b4d00e9c68595299,true] 1 --- [io-15680-exec-2] fdse.microservice.conf.HttpAspect        : [Service:ts-basic-service][Response:"nanjing"]
+c=fdse.microservice.domain.QueryForTravel@39f4cdd6
+requestArgs={"trip":{"tripId":{"type":"Z","number":"1234"},"trainTypeId":"ZhiDa","routeId":"0b23bd3e-876a-4af3-b920-c50a90c90b04","startingStationId":"shanghai","stationsId":"nanjing","terminalStationId":"beijing","startingTime":"May 4, 2013 1:51:52 AM","endTime":"May 4, 2013 7:51:52 AM"},"startingPlace":"Shang Hai","endPlace":"Nan Jing","departureTime":"Sep 26, 2023 12:00:00 AM"}
+2023-09-06 07:37:48.536  INFO [ts-basic-service,38e24e35723d09c8,d6af8fdc23a2b39e,true] 1 --- [io-15680-exec-3] fdse.microservice.conf.HttpAspect        : [Service:ts-basic-service][URI:ts-basic-service/basic/queryForTravel][Method:POST][Request:{"trip":{"tripId":{"type":"Z","number":"1234"},"trainTypeId":"ZhiDa","routeId":"0b23bd3e-876a-4af3-b920-c50a90c90b04","startingStationId":"shanghai","stationsId":"nanjing","terminalStationId":"beijing","startingTime":"May 4, 2013 1:51:52 AM","endTime":"May 4, 2013 7:51:52 AM"},"startingPlace":"Shang Hai","endPlace":"Nan Jing","departureTime":"Sep 26, 2023 12:00:00 AM"}][RemoteHost:172.18.0.14][IP:172.18.0.14]
+[Basic Information Service][Check Station Exists] Station Name:Shang Hai
+[Basic Information Service][Check Station Exists] Station Name:Nan Jing
+[Basic Information Service][Query Train Type] Train Type:ZhiDa
+[Basic Information Service][Get Route By Id] Route ID：0b23bd3e-876a-4af3-b920-c50a90c90b04
+[Basic Information Service][Get Route By Id] Success.
+[Basic Information Service][Query For Price Config] RouteId:0b23bd3e-876a-4af3-b920-c50a90c90b04TrainType:ZhiDa
+[Basic Information Service][Query For Station Id] Station Id:Shang Hai
+[Basic Information Service][Query For Station Id] Station Id:Nan Jing
+2023-09-06 07:37:48.963  INFO [ts-basic-service,38e24e35723d09c8,d6af8fdc23a2b39e,true] 1 --- [io-15680-exec-3] fdse.microservice.conf.HttpAspect        : [Service:ts-basic-service][Response:{"status":true,"percent":1.0,"trainType":{"id":"ZhiDa","economyClass":120,"confortClass":60,"averageSpeed":120},"prices":{"confortClass":"350.0","economyClass":"122.49999999999999"}}]
+c=fdse.microservice.domain.QueryStation@3d0ce13d
+requestArgs={"name":"Shang Hai"}
+2023-09-06 07:37:49.225  INFO [ts-basic-service,38e24e35723d09c8,82d1e95dd1b9bfba,true] 1 --- [io-15680-exec-4] fdse.microservice.conf.HttpAspect        : [Service:ts-basic-service][URI:ts-basic-service/basic/queryForStationId][Method:POST][Request:{"name":"Shang Hai"}][RemoteHost:172.18.0.14][IP:172.18.0.14]
+[Basic Information Service][Query For Station Id] Station Id:Shang Hai
+2023-09-06 07:37:49.233  INFO [ts-basic-service,38e24e35723d09c8,82d1e95dd1b9bfba,true] 1 --- [io-15680-exec-4] fdse.microservice.conf.HttpAspect        : [Service:ts-basic-service][Response:"shanghai"]
+c=fdse.microservice.domain.QueryStation@6deee593
+requestArgs={"name":"Nan Jing"}
+2023-09-06 07:37:49.247  INFO [ts-basic-service,38e24e35723d09c8,761f7c3ffcdd3dee,true] 1 --- [io-15680-exec-6] fdse.microservice.conf.HttpAspect        : [Service:ts-basic-service][URI:ts-basic-service/basic/queryForStationId][Method:POST][Request:{"name":"Nan Jing"}][RemoteHost:172.18.0.14][IP:172.18.0.14]
+[Basic Information Service][Query For Station Id] Station Id:Nan Jing
+2023-09-06 07:37:49.256  INFO [ts-basic-service,38e24e35723d09c8,761f7c3ffcdd3dee,true] 1 --- [io-15680-exec-6] fdse.microservice.conf.HttpAspect        : [Service:ts-basic-service][Response:"nanjing"]
+c=fdse.microservice.domain.QueryStation@7c9b9bf6
+requestArgs={"name":"Shang Hai"}
+2023-09-06 07:37:49.269  INFO [ts-basic-service,38e24e35723d09c8,32a7f09054e1bea2,true] 1 --- [io-15680-exec-7] fdse.microservice.conf.HttpAspect        : [Service:ts-basic-service][URI:ts-basic-service/basic/queryForStationId][Method:POST][Request:{"name":"Shang Hai"}][RemoteHost:172.18.0.14][IP:172.18.0.14]
+[Basic Information Service][Query For Station Id] Station Id:Shang Hai
+2023-09-06 07:37:49.277  INFO [ts-basic-service,38e24e35723d09c8,32a7f09054e1bea2,true] 1 --- [io-15680-exec-7] fdse.microservice.conf.HttpAspect        : [Service:ts-basic-service][Response:"shanghai"]
+c=fdse.microservice.domain.QueryStation@44f45503
+requestArgs={"name":"Nan Jing"}
+2023-09-06 07:37:49.291  INFO [ts-basic-service,38e24e35723d09c8,e2a3eccf435af3a4,true] 1 --- [io-15680-exec-8] fdse.microservice.conf.HttpAspect        : [Service:ts-basic-service][URI:ts-basic-service/basic/queryForStationId][Method:POST][Request:{"name":"Nan Jing"}][RemoteHost:172.18.0.14][IP:172.18.0.14]
+[Basic Information Service][Query For Station Id] Station Id:Nan Jing
+2023-09-06 07:37:49.298  INFO [ts-basic-service,38e24e35723d09c8,e2a3eccf435af3a4,true] 1 --- [io-15680-exec-8] fdse.microservice.conf.HttpAspect        : [Service:ts-basic-service][Response:"nanjing"]
+c=fdse.microservice.domain.QueryStation@59c89e20
+requestArgs={"name":"Shang Hai"}
+2023-09-06 07:37:49.792  INFO [ts-basic-service,38e24e35723d09c8,3d608465731cd919,true] 1 --- [io-15680-exec-9] fdse.microservice.conf.HttpAspect        : [Service:ts-basic-service][URI:ts-basic-service/basic/queryForStationId][Method:POST][Request:{"name":"Shang Hai"}][RemoteHost:172.18.0.14][IP:172.18.0.14]
+[Basic Information Service][Query For Station Id] Station Id:Shang Hai
+2023-09-06 07:37:49.801  INFO [ts-basic-service,38e24e35723d09c8,3d608465731cd919,true] 1 --- [io-15680-exec-9] fdse.microservice.conf.HttpAspect        : [Service:ts-basic-service][Response:"shanghai"]
+c=fdse.microservice.domain.QueryStation@71146a61
+requestArgs={"name":"Nan Jing"}
+2023-09-06 07:37:49.814  INFO [ts-basic-service,38e24e35723d09c8,930bef47c04aa7f2,true] 1 --- [io-15680-exec-5] fdse.microservice.conf.HttpAspect        : [Service:ts-basic-service][URI:ts-basic-service/basic/queryForStationId][Method:POST][Request:{"name":"Nan Jing"}][RemoteHost:172.18.0.14][IP:172.18.0.14]
+[Basic Information Service][Query For Station Id] Station Id:Nan Jing
+2023-09-06 07:37:49.823  INFO [ts-basic-service,38e24e35723d09c8,930bef47c04aa7f2,true] 1 --- [io-15680-exec-5] fdse.microservice.conf.HttpAspect        : [Service:ts-basic-service][Response:"nanjing"]
+c=fdse.microservice.domain.QueryStation@6b22b193
+requestArgs={"name":"Shang Hai"}
+2023-09-06 07:37:53.021  INFO [ts-basic-service,a767acb5daee0aa0,4fa55a5a1ecd1ee4,true] 1 --- [o-15680-exec-10] fdse.microservice.conf.HttpAspect        : [Service:ts-basic-service][URI:ts-basic-service/basic/queryForStationId][Method:POST][Request:{"name":"Shang Hai"}][RemoteHost:172.18.0.14][IP:172.18.0.14]
+[Basic Information Service][Query For Station Id] Station Id:Shang Hai
+2023-09-06 07:37:53.028  INFO [ts-basic-service,a767acb5daee0aa0,4fa55a5a1ecd1ee4,true] 1 --- [o-15680-exec-10] fdse.microservice.conf.HttpAspect        : [Service:ts-basic-service][Response:"shanghai"]
+c=fdse.microservice.domain.QueryStation@34b99a22
+requestArgs={"name":"Nan Jing"}
+2023-09-06 07:37:53.041  INFO [ts-basic-service,a767acb5daee0aa0,e5293f561bebfcfe,true] 1 --- [io-15680-exec-1] fdse.microservice.conf.HttpAspect        : [Service:ts-basic-service][URI:ts-basic-service/basic/queryForStationId][Method:POST][Request:{"name":"Nan Jing"}][RemoteHost:172.18.0.14][IP:172.18.0.14]
+[Basic Information Service][Query For Station Id] Station Id:Nan Jing
+2023-09-06 07:37:53.048  INFO [ts-basic-service,a767acb5daee0aa0,e5293f561bebfcfe,true] 1 --- [io-15680-exec-1] fdse.microservice.conf.HttpAspect        : [Service:ts-basic-service][Response:"nanjing"]
+c=fdse.microservice.domain.QueryForTravel@3891ed94
+requestArgs={"trip":{"tripId":{"type":"Z","number":"1234"},"trainTypeId":"ZhiDa","routeId":"0b23bd3e-876a-4af3-b920-c50a90c90b04","startingStationId":"shanghai","stationsId":"nanjing","terminalStationId":"beijing","startingTime":"May 4, 2013 1:51:52 AM","endTime":"May 4, 2013 7:51:52 AM"},"startingPlace":"Shang Hai","endPlace":"Nan Jing","departureTime":"Sep 26, 2023 12:00:00 AM"}
+2023-09-06 07:37:53.068  INFO [ts-basic-service,a767acb5daee0aa0,c0bc844231a72147,true] 1 --- [io-15680-exec-2] fdse.microservice.conf.HttpAspect        : [Service:ts-basic-service][URI:ts-basic-service/basic/queryForTravel][Method:POST][Request:{"trip":{"tripId":{"type":"Z","number":"1234"},"trainTypeId":"ZhiDa","routeId":"0b23bd3e-876a-4af3-b920-c50a90c90b04","startingStationId":"shanghai","stationsId":"nanjing","terminalStationId":"beijing","startingTime":"May 4, 2013 1:51:52 AM","endTime":"May 4, 2013 7:51:52 AM"},"startingPlace":"Shang Hai","endPlace":"Nan Jing","departureTime":"Sep 26, 2023 12:00:00 AM"}][RemoteHost:172.18.0.14][IP:172.18.0.14]
+[Basic Information Service][Check Station Exists] Station Name:Shang Hai
+[Basic Information Service][Check Station Exists] Station Name:Nan Jing
+[Basic Information Service][Query Train Type] Train Type:ZhiDa
+[Basic Information Service][Get Route By Id] Route ID：0b23bd3e-876a-4af3-b920-c50a90c90b04
+[Basic Information Service][Get Route By Id] Success.
+[Basic Information Service][Query For Price Config] RouteId:0b23bd3e-876a-4af3-b920-c50a90c90b04TrainType:ZhiDa
+[Basic Information Service][Query For Station Id] Station Id:Shang Hai
+[Basic Information Service][Query For Station Id] Station Id:Nan Jing
+2023-09-06 07:37:53.122  INFO [ts-basic-service,a767acb5daee0aa0,c0bc844231a72147,true] 1 --- [io-15680-exec-2] fdse.microservice.conf.HttpAspect        : [Service:ts-basic-service][Response:{"status":true,"percent":1.0,"trainType":{"id":"ZhiDa","economyClass":120,"confortClass":60,"averageSpeed":120},"prices":{"confortClass":"350.0","economyClass":"122.49999999999999"}}]
+c=fdse.microservice.domain.QueryStation@6ebe271
+requestArgs={"name":"Shang Hai"}
+2023-09-06 07:37:53.141  INFO [ts-basic-service,a767acb5daee0aa0,af02f5bbd57cb50b,true] 1 --- [io-15680-exec-3] fdse.microservice.conf.HttpAspect        : [Service:ts-basic-service][URI:ts-basic-service/basic/queryForStationId][Method:POST][Request:{"name":"Shang Hai"}][RemoteHost:172.18.0.14][IP:172.18.0.14]
+[Basic Information Service][Query For Station Id] Station Id:Shang Hai
+2023-09-06 07:37:53.148  INFO [ts-basic-service,a767acb5daee0aa0,af02f5bbd57cb50b,true] 1 --- [io-15680-exec-3] fdse.microservice.conf.HttpAspect        : [Service:ts-basic-service][Response:"shanghai"]
+c=fdse.microservice.domain.QueryStation@33cb18ec
+requestArgs={"name":"Nan Jing"}
+2023-09-06 07:37:53.164  INFO [ts-basic-service,a767acb5daee0aa0,5eaa549e1fb3a2ca,true] 1 --- [io-15680-exec-4] fdse.microservice.conf.HttpAspect        : [Service:ts-basic-service][URI:ts-basic-service/basic/queryForStationId][Method:POST][Request:{"name":"Nan Jing"}][RemoteHost:172.18.0.14][IP:172.18.0.14]
+[Basic Information Service][Query For Station Id] Station Id:Nan Jing
+2023-09-06 07:37:53.171  INFO [ts-basic-service,a767acb5daee0aa0,5eaa549e1fb3a2ca,true] 1 --- [io-15680-exec-4] fdse.microservice.conf.HttpAspect        : [Service:ts-basic-service][Response:"nanjing"]
+c=fdse.microservice.domain.QueryStation@6329165e
+requestArgs={"name":"Shang Hai"}
+2023-09-06 07:37:53.182  INFO [ts-basic-service,a767acb5daee0aa0,fb2776ce794771da,true] 1 --- [io-15680-exec-6] fdse.microservice.conf.HttpAspect        : [Service:ts-basic-service][URI:ts-basic-service/basic/queryForStationId][Method:POST][Request:{"name":"Shang Hai"}][RemoteHost:172.18.0.14][IP:172.18.0.14]
+[Basic Information Service][Query For Station Id] Station Id:Shang Hai
+2023-09-06 07:37:53.189  INFO [ts-basic-service,a767acb5daee0aa0,fb2776ce794771da,true] 1 --- [io-15680-exec-6] fdse.microservice.conf.HttpAspect        : [Service:ts-basic-service][Response:"shanghai"]
+c=fdse.microservice.domain.QueryStation@7663f086
+requestArgs={"name":"Nan Jing"}
+2023-09-06 07:37:53.201  INFO [ts-basic-service,a767acb5daee0aa0,da9cb431cc55ff40,true] 1 --- [io-15680-exec-7] fdse.microservice.conf.HttpAspect        : [Service:ts-basic-service][URI:ts-basic-service/basic/queryForStationId][Method:POST][Request:{"name":"Nan Jing"}][RemoteHost:172.18.0.14][IP:172.18.0.14]
+[Basic Information Service][Query For Station Id] Station Id:Nan Jing
+2023-09-06 07:37:53.209  INFO [ts-basic-service,a767acb5daee0aa0,da9cb431cc55ff40,true] 1 --- [io-15680-exec-7] fdse.microservice.conf.HttpAspect        : [Service:ts-basic-service][Response:"nanjing"]
+c=fdse.microservice.domain.QueryStation@4a33a3ed
+requestArgs={"name":"Shang Hai"}
+2023-09-06 07:37:53.282  INFO [ts-basic-service,a767acb5daee0aa0,d98a542211d4864e,true] 1 --- [io-15680-exec-8] fdse.microservice.conf.HttpAspect        : [Service:ts-basic-service][URI:ts-basic-service/basic/queryForStationId][Method:POST][Request:{"name":"Shang Hai"}][RemoteHost:172.18.0.14][IP:172.18.0.14]
+[Basic Information Service][Query For Station Id] Station Id:Shang Hai
+2023-09-06 07:37:53.289  INFO [ts-basic-service,a767acb5daee0aa0,d98a542211d4864e,true] 1 --- [io-15680-exec-8] fdse.microservice.conf.HttpAspect        : [Service:ts-basic-service][Response:"shanghai"]
+c=fdse.microservice.domain.QueryStation@b96d42a
+requestArgs={"name":"Nan Jing"}
+2023-09-06 07:37:53.303  INFO [ts-basic-service,a767acb5daee0aa0,523dbcd3cd029004,true] 1 --- [io-15680-exec-9] fdse.microservice.conf.HttpAspect        : [Service:ts-basic-service][URI:ts-basic-service/basic/queryForStationId][Method:POST][Request:{"name":"Nan Jing"}][RemoteHost:172.18.0.14][IP:172.18.0.14]
+[Basic Information Service][Query For Station Id] Station Id:Nan Jing
+2023-09-06 07:37:53.309  INFO [ts-basic-service,a767acb5daee0aa0,523dbcd3cd029004,true] 1 --- [io-15680-exec-9] fdse.microservice.conf.HttpAspect        : [Service:ts-basic-service][Response:"nanjing"]
+c=fdse.microservice.domain.QueryForTravel@7fd39a33
+requestArgs={"trip":{"tripId":{"type":"Z","number":"1234"},"trainTypeId":"ZhiDa","routeId":"0b23bd3e-876a-4af3-b920-c50a90c90b04","startingStationId":"shanghai","stationsId":"nanjing","terminalStationId":"beijing","startingTime":"May 4, 2013 1:51:52 AM","endTime":"May 4, 2013 7:51:52 AM"},"startingPlace":"Shang Hai","endPlace":"Nan Jing","departureTime":"Sep 6, 2023 7:37:53 AM"}
+2023-09-06 07:37:53.423  INFO [ts-basic-service,a767acb5daee0aa0,0bf215870e23be4e,true] 1 --- [io-15680-exec-5] fdse.microservice.conf.HttpAspect        : [Service:ts-basic-service][URI:ts-basic-service/basic/queryForTravel][Method:POST][Request:{"trip":{"tripId":{"type":"Z","number":"1234"},"trainTypeId":"ZhiDa","routeId":"0b23bd3e-876a-4af3-b920-c50a90c90b04","startingStationId":"shanghai","stationsId":"nanjing","terminalStationId":"beijing","startingTime":"May 4, 2013 1:51:52 AM","endTime":"May 4, 2013 7:51:52 AM"},"startingPlace":"Shang Hai","endPlace":"Nan Jing","departureTime":"Sep 6, 2023 7:37:53 AM"}][RemoteHost:172.18.0.14][IP:172.18.0.14]
+[Basic Information Service][Check Station Exists] Station Name:Shang Hai
+[Basic Information Service][Check Station Exists] Station Name:Nan Jing
+[Basic Information Service][Query Train Type] Train Type:ZhiDa
+[Basic Information Service][Get Route By Id] Route ID：0b23bd3e-876a-4af3-b920-c50a90c90b04
+[Basic Information Service][Get Route By Id] Success.
+[Basic Information Service][Query For Price Config] RouteId:0b23bd3e-876a-4af3-b920-c50a90c90b04TrainType:ZhiDa
+[Basic Information Service][Query For Station Id] Station Id:Shang Hai
+[Basic Information Service][Query For Station Id] Station Id:Nan Jing
+2023-09-06 07:37:53.478  INFO [ts-basic-service,a767acb5daee0aa0,0bf215870e23be4e,true] 1 --- [io-15680-exec-5] fdse.microservice.conf.HttpAspect        : [Service:ts-basic-service][Response:{"status":true,"percent":1.0,"trainType":{"id":"ZhiDa","economyClass":120,"confortClass":60,"averageSpeed":120},"prices":{"confortClass":"350.0","economyClass":"122.49999999999999"}}]

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="TestFlowOne" duration-ms="24461" started-at="2023-09-06T08:25:57Z" finished-at="2023-09-06T08:26:22Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="24461" started-at="2023-09-06T08:25:57Z" finished-at="2023-09-06T08:26:22Z">
+      <class name="TestFlowOne">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:TestFlowOne@5315b42e]" name="setUp" is-config="true" duration-ms="1338" started-at="2023-09-06T16:25:57Z" finished-at="2023-09-06T16:25:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testLogin()[pri:0, instance:TestFlowOne@5315b42e]" name="testLogin" duration-ms="1545" started-at="2023-09-06T16:25:59Z" finished-at="2023-09-06T16:26:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="testBooking()[pri:0, instance:TestFlowOne@5315b42e]" name="testBooking" duration-ms="4080" started-at="2023-09-06T16:26:00Z" depends-on-methods="TestFlowOne.testLogin" finished-at="2023-09-06T16:26:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBooking -->
+        <test-method status="PASS" signature="testSelectContacts()[pri:0, instance:TestFlowOne@5315b42e]" name="testSelectContacts" duration-ms="1089" started-at="2023-09-06T16:26:04Z" depends-on-methods="TestFlowOne.testBooking" finished-at="2023-09-06T16:26:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSelectContacts -->
+        <test-method status="PASS" signature="testTicketConfirm()[pri:0, instance:TestFlowOne@5315b42e]" name="testTicketConfirm" duration-ms="8202" started-at="2023-09-06T16:26:05Z" depends-on-methods="TestFlowOne.testBooking" finished-at="2023-09-06T16:26:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTicketConfirm -->
+        <test-method status="PASS" signature="testTicketPay()[pri:0, instance:TestFlowOne@5315b42e]" name="testTicketPay" duration-ms="8123" started-at="2023-09-06T16:26:14Z" depends-on-methods="TestFlowOne.testTicketConfirm" finished-at="2023-09-06T16:26:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTicketPay -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:TestFlowOne@5315b42e]" name="tearDown" is-config="true" duration-ms="69" started-at="2023-09-06T16:26:22Z" finished-at="2023-09-06T16:26:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- TestFlowOne -->
+    </test> <!-- Command line test -->
+  </suite> <!-- TestFlowOne -->
+</testng-results>

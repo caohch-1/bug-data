@@ -10,7 +10,7 @@ limit = 100
 
 trace_extractor.get_traces(start_time, end_time, limit)
 trace_extractor.process_traces()
-trace_extractor.save_traces("./traces/F6/normal")
+trace_extractor.save_traces("./traces/F8/normal")
     
 log_extractor = LogExtractor()
-log_extractor.extract_all("./logs/F6/normal")
+log_extractor.extract_all("./logs/F8/normal")

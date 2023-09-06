@@ -1,0 +1,20 @@
+
+> ts-ticket-office-service@0.0.0 start /app
+> node bin/www
+
+initMongo连接上数据库啦！
+init data successful!
+getRegionList=[{"province":"Shanghai","cities":[{"city":"Shanghai","regions":[{"region":"Pudong New Area"}]}]},{"province":"Anhui","cities":[{"city":"Hefei","regions":[{"region":"Heifei Downtown Area"},{"region":"Feixi County"}]},{"city":"Anqing","regions":[{"region":"Anqing Downtown Area"}]}]}]
+[0mGET /office/getRegionList [36m304 [0m6.889 ms - -[0m
+getRegionList=[{"province":"Shanghai","cities":[{"city":"Shanghai","regions":[{"region":"Pudong New Area"}]}]},{"province":"Anhui","cities":[{"city":"Hefei","regions":[{"region":"Heifei Downtown Area"},{"region":"Feixi County"}]},{"city":"Anqing","regions":[{"region":"Anqing Downtown Area"}]}]}]
+[0mGET /office/getRegionList [36m304 [0m1.762 ms - -[0m
+getRegionList=[{"province":"Shanghai","cities":[{"city":"Shanghai","regions":[{"region":"Pudong New Area"}]}]},{"province":"Anhui","cities":[{"city":"Hefei","regions":[{"region":"Heifei Downtown Area"},{"region":"Feixi County"}]},{"city":"Anqing","regions":[{"region":"Anqing Downtown Area"}]}]}]
+[0mGET /office/getRegionList [36m304 [0m1.260 ms - -[0m
+getRegionList=[{"province":"Shanghai","cities":[{"city":"Shanghai","regions":[{"region":"Pudong New Area"}]}]},{"province":"Anhui","cities":[{"city":"Hefei","regions":[{"region":"Heifei Downtown Area"},{"region":"Feixi County"}]},{"city":"Anqing","regions":[{"region":"Anqing Downtown Area"}]}]}]
+[0mGET /office/getRegionList [36m304 [0m1.315 ms - -[0m
+getRegionList=[{"province":"Shanghai","cities":[{"city":"Shanghai","regions":[{"region":"Pudong New Area"}]}]},{"province":"Anhui","cities":[{"city":"Hefei","regions":[{"region":"Heifei Downtown Area"},{"region":"Feixi County"}]},{"city":"Anqing","regions":[{"region":"Anqing Downtown Area"}]}]}]
+[0mGET /office/getRegionList [36m304 [0m1.286 ms - -[0m
+getRegionList=[{"province":"Shanghai","cities":[{"city":"Shanghai","regions":[{"region":"Pudong New Area"}]}]},{"province":"Anhui","cities":[{"city":"Hefei","regions":[{"region":"Heifei Downtown Area"},{"region":"Feixi County"}]},{"city":"Anqing","regions":[{"region":"Anqing Downtown Area"}]}]}]
+[0mGET /office/getRegionList [36m304 [0m0.555 ms - -[0m
+getRegionList=[{"province":"Shanghai","cities":[{"city":"Shanghai","regions":[{"region":"Pudong New Area"}]}]},{"province":"Anhui","cities":[{"city":"Hefei","regions":[{"region":"Heifei Downtown Area"},{"region":"Feixi County"}]},{"city":"Anqing","regions":[{"region":"Anqing Downtown Area"}]}]}]
+[0mGET /office/getRegionList [32m200 [0m2.106 ms - 282[0m
