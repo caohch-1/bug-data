@@ -1,5 +1,6 @@
 # Bug Data
  Replication of train-ticket and collect logs, traces and metrics.
+ Admin account is `adminroot` and pwd is same.
 
 ## Done
 ### How deploy trainticket
@@ -59,3 +60,5 @@ Now visit `localhost:8080` and you should see the UI of trainticket.
 6. F6 in `ts-voucher-service/server.py`. L70 `voucherId` is a wrong SQL arg. Not sure how to reproduce normal version without change source code.
 7. F7 in `ts-inside-payment-service/src/main/java/inside_payment/service/InsidePaymentServiceImpl.java`. L93-110 simulates the thrid party service timeout. However, even I set L97 to 6000 the bug still exists. I cannot reproduce the normal run. Here normal run result use L91-92.
 8. F8 in `ts-cancel-service/src/main/java/cancel/controller/CancelController.java`. L59-65 process "VIP" incorrectly. Authors provide scripts for buggy and normal run. I still feel difference between "buggy" and "normal" run is unclear.
+9. F9 `ts-ui-dashboard/static/css/style.css`. A frontend bug and I don't know how to get a normal run result without changing source code.
+10. F10 failed to reproduce. Lack of test scripts. Authors upload wrong test scripts zip and the fault cannot be reproduced by following trigger steps...

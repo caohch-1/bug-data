@@ -1,0 +1,11 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.3.RELEASE)
+
+c=notification.domain.NotifyInfo@1eafcdaf
+requestArgs={"email":"fdse_microservices@163.com","orderNumber":"fc145657-e0c0-49c9-9882-b0282ba26ba6","username":"Default User","startingPlace":"shanghai","endPlace":"taiyuan","startingTime":"Sat May 04 00:31:52 UTC 2013","date":"Fri Sep 08 07:04:08 UTC 2023","seatClass":"二等座","seatNumber":"95","price":"390.0"}

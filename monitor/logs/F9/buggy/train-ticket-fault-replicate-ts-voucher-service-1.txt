@@ -1,0 +1,138 @@
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/pymysql/connections.py", line 644, in connect
+    sock = socket.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/socket.py", line 851, in create_connection
+    raise exceptions[0]
+  File "/usr/local/lib/python3.11/socket.py", line 836, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/app/server.py", line 154, in <module>
+    initDatabase()
+  File "/app/server.py", line 113, in initDatabase
+    connect = pymysql.connect(**config)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/pymysql/connections.py", line 358, in __init__
+    self.connect()
+  File "/usr/local/lib/python3.11/site-packages/pymysql/connections.py", line 711, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on 'ts-voucher-mysql' ([Errno 111] Connection refused)")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/pymysql/connections.py", line 644, in connect
+    sock = socket.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/socket.py", line 851, in create_connection
+    raise exceptions[0]
+  File "/usr/local/lib/python3.11/socket.py", line 836, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/app/server.py", line 154, in <module>
+    initDatabase()
+  File "/app/server.py", line 113, in initDatabase
+    connect = pymysql.connect(**config)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/pymysql/connections.py", line 358, in __init__
+    self.connect()
+  File "/usr/local/lib/python3.11/site-packages/pymysql/connections.py", line 711, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on 'ts-voucher-mysql' ([Errno 111] Connection refused)")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/pymysql/connections.py", line 644, in connect
+    sock = socket.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/socket.py", line 851, in create_connection
+    raise exceptions[0]
+  File "/usr/local/lib/python3.11/socket.py", line 836, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/app/server.py", line 154, in <module>
+    initDatabase()
+  File "/app/server.py", line 113, in initDatabase
+    connect = pymysql.connect(**config)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/pymysql/connections.py", line 358, in __init__
+    self.connect()
+  File "/usr/local/lib/python3.11/site-packages/pymysql/connections.py", line 711, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on 'ts-voucher-mysql' ([Errno 111] Connection refused)")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/pymysql/connections.py", line 644, in connect
+    sock = socket.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/socket.py", line 851, in create_connection
+    raise exceptions[0]
+  File "/usr/local/lib/python3.11/socket.py", line 836, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/app/server.py", line 154, in <module>
+    initDatabase()
+  File "/app/server.py", line 113, in initDatabase
+    connect = pymysql.connect(**config)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/pymysql/connections.py", line 358, in __init__
+    self.connect()
+  File "/usr/local/lib/python3.11/site-packages/pymysql/connections.py", line 711, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on 'ts-voucher-mysql' ([Errno 111] Connection refused)")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/pymysql/connections.py", line 644, in connect
+    sock = socket.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/socket.py", line 851, in create_connection
+    raise exceptions[0]
+  File "/usr/local/lib/python3.11/socket.py", line 836, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/app/server.py", line 154, in <module>
+    initDatabase()
+  File "/app/server.py", line 113, in initDatabase
+    connect = pymysql.connect(**config)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/pymysql/connections.py", line 358, in __init__
+    self.connect()
+  File "/usr/local/lib/python3.11/site-packages/pymysql/connections.py", line 711, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on 'ts-voucher-mysql' ([Errno 111] Connection refused)")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/pymysql/connections.py", line 644, in connect
+    sock = socket.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/socket.py", line 851, in create_connection
+    raise exceptions[0]
+  File "/usr/local/lib/python3.11/socket.py", line 836, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/app/server.py", line 154, in <module>
+    initDatabase()
+  File "/app/server.py", line 113, in initDatabase
+    connect = pymysql.connect(**config)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/pymysql/connections.py", line 358, in __init__
+    self.connect()
+  File "/usr/local/lib/python3.11/site-packages/pymysql/connections.py", line 711, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on 'ts-voucher-mysql' ([Errno 111] Connection refused)")
