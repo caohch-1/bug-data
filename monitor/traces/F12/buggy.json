@@ -1,0 +1,1795 @@
+[
+  [
+    {
+      "traceId": "9fd700271e29eebc",
+      "parentId": "9fd700271e29eebc",
+      "id": "c6bca466b2da29eb",
+      "kind": "SERVER",
+      "name": "http:/verifylogintoken/422e0da6-7df9-4715-9a9a-fab",
+      "timestamp": 1694504023345000,
+      "duration": 4000,
+      "localEndpoint": {
+        "serviceName": "ts-sso-service",
+        "ipv4": "172.18.0.68",
+        "port": 12349
+      },
+      "tags": {
+        "mvc.controller.class": "AccountSsoController",
+        "mvc.controller.method": "verifyLoginToken",
+        "spring.instance_id": "7ef38c1ec305:ts-sso-service:12349"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "9fd700271e29eebc",
+      "parentId": "c44cdd24804a0b79",
+      "id": "506a463f303a13ff",
+      "kind": "SERVER",
+      "name": "http:/verifylogintoken/422e0da6-7df9-4715-9a9a-fab",
+      "timestamp": 1694504023386000,
+      "duration": 4000,
+      "localEndpoint": {
+        "serviceName": "ts-sso-service",
+        "ipv4": "172.18.0.68",
+        "port": 12349
+      },
+      "tags": {
+        "mvc.controller.class": "AccountSsoController",
+        "mvc.controller.method": "verifyLoginToken",
+        "spring.instance_id": "7ef38c1ec305:ts-sso-service:12349"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "9fd700271e29eebc",
+      "parentId": "9fd700271e29eebc",
+      "id": "7130203dcb34d185",
+      "kind": "SERVER",
+      "name": "http:/order/getbyid/",
+      "timestamp": 1694504023355000,
+      "duration": 5000,
+      "localEndpoint": {
+        "serviceName": "ts-order-service",
+        "ipv4": "172.18.0.9",
+        "port": 12031
+      },
+      "tags": {
+        "mvc.controller.class": "OrderController",
+        "mvc.controller.method": "getOrderById",
+        "spring.instance_id": "50ce62ad7179:ts-order-service:12031"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "9fd700271e29eebc",
+      "parentId": "9fd700271e29eebc",
+      "id": "197b5b0064e78282",
+      "kind": "SERVER",
+      "name": "http:/orderother/getbyid/",
+      "timestamp": 1694504023365000,
+      "duration": 5000,
+      "localEndpoint": {
+        "serviceName": "ts-order-other-service",
+        "ipv4": "172.18.0.64",
+        "port": 12032
+      },
+      "tags": {
+        "controller_state": "(Eastern/JiangSuProvince)",
+        "mvc.controller.class": "OrderOtherController",
+        "mvc.controller.method": "getOrderById",
+        "spring.instance_id": "11344f2a07e6:ts-order-other-service:12032"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "9fd700271e29eebc",
+      "parentId": "c44cdd24804a0b79",
+      "id": "506a463f303a13ff",
+      "kind": "CLIENT",
+      "name": "http:/verifylogintoken/422e0da6-7df9-4715-9a9a-fab",
+      "timestamp": 1694504023385000,
+      "duration": 5000,
+      "localEndpoint": {
+        "serviceName": "ts-order-other-service",
+        "ipv4": "172.18.0.64",
+        "port": 12032
+      },
+      "tags": {
+        "controller_state": "(Eastern/JiangSuProvince)",
+        "http.host": "ts-sso-service",
+        "http.method": "GET",
+        "http.path": "/verifyLoginToken/422e0da6-7df9-4715-9a9a-fabe96e7cfee",
+        "http.url": "http://ts-sso-service:12349/verifyLoginToken/422e0da6-7df9-4715-9a9a-fabe96e7cfee",
+        "spring.instance_id": "11344f2a07e6:ts-order-other-service:12032"
+      }
+    },
+    {
+      "traceId": "9fd700271e29eebc",
+      "parentId": "c44cdd24804a0b79",
+      "id": "c5db495eb4dc9464",
+      "kind": "SERVER",
+      "name": "http:/orderother/getsuspendstationarea",
+      "timestamp": 1694504023394000,
+      "duration": 2000,
+      "localEndpoint": {
+        "serviceName": "ts-order-other-service",
+        "ipv4": "172.18.0.64",
+        "port": 12032
+      },
+      "tags": {
+        "controller_state": "(Eastern/JiangSuProvince)",
+        "mvc.controller.class": "OrderOtherController",
+        "mvc.controller.method": "getSuspendStationArea",
+        "spring.instance_id": "11344f2a07e6:ts-order-other-service:12032"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "9fd700271e29eebc",
+      "parentId": "c44cdd24804a0b79",
+      "id": "c5db495eb4dc9464",
+      "kind": "CLIENT",
+      "name": "http:/orderother/getsuspendstationarea",
+      "timestamp": 1694504023392000,
+      "duration": 3000,
+      "localEndpoint": {
+        "serviceName": "ts-order-other-service",
+        "ipv4": "172.18.0.64",
+        "port": 12032
+      },
+      "tags": {
+        "controller_state": "(Eastern/JiangSuProvince)",
+        "http.host": "ts-order-other-service",
+        "http.method": "GET",
+        "http.path": "/orderOther/getSuspendStationArea",
+        "http.url": "http://ts-order-other-service:12032/orderOther/getSuspendStationArea",
+        "spring.instance_id": "11344f2a07e6:ts-order-other-service:12032"
+      }
+    },
+    {
+      "traceId": "9fd700271e29eebc",
+      "parentId": "c44cdd24804a0b79",
+      "id": "7e49acdd7c50d7a5",
+      "kind": "CLIENT",
+      "name": "http:/orderother/getsuspendstationarea",
+      "timestamp": 1694504023397000,
+      "duration": 3000,
+      "localEndpoint": {
+        "serviceName": "ts-order-other-service",
+        "ipv4": "172.18.0.64",
+        "port": 12032
+      },
+      "tags": {
+        "controller_state": "(Eastern/JiangSuProvince)",
+        "http.host": "ts-order-other-service",
+        "http.method": "GET",
+        "http.path": "/orderOther/getSuspendStationArea",
+        "http.url": "http://ts-order-other-service:12032/orderOther/getSuspendStationArea",
+        "spring.instance_id": "11344f2a07e6:ts-order-other-service:12032"
+      }
+    },
+    {
+      "traceId": "9fd700271e29eebc",
+      "parentId": "c44cdd24804a0b79",
+      "id": "7e49acdd7c50d7a5",
+      "kind": "SERVER",
+      "name": "http:/orderother/getsuspendstationarea",
+      "timestamp": 1694504023398000,
+      "duration": 2000,
+      "localEndpoint": {
+        "serviceName": "ts-order-other-service",
+        "ipv4": "172.18.0.64",
+        "port": 12032
+      },
+      "tags": {
+        "controller_state": "(Eastern/JiangSuProvince)",
+        "mvc.controller.class": "OrderOtherController",
+        "mvc.controller.method": "getSuspendStationArea",
+        "spring.instance_id": "11344f2a07e6:ts-order-other-service:12032"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "9fd700271e29eebc",
+      "parentId": "c44cdd24804a0b79",
+      "id": "626ca23a4fbaa150",
+      "kind": "SERVER",
+      "name": "http:/orderother/getsuspendstationarea",
+      "timestamp": 1694504023402000,
+      "duration": 1000,
+      "localEndpoint": {
+        "serviceName": "ts-order-other-service",
+        "ipv4": "172.18.0.64",
+        "port": 12032
+      },
+      "tags": {
+        "controller_state": "(Eastern/JiangSuProvince)",
+        "mvc.controller.class": "OrderOtherController",
+        "mvc.controller.method": "getSuspendStationArea",
+        "spring.instance_id": "11344f2a07e6:ts-order-other-service:12032"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "9fd700271e29eebc",
+      "parentId": "c44cdd24804a0b79",
+      "id": "626ca23a4fbaa150",
+      "kind": "CLIENT",
+      "name": "http:/orderother/getsuspendstationarea",
+      "timestamp": 1694504023401000,
+      "duration": 2000,
+      "localEndpoint": {
+        "serviceName": "ts-order-other-service",
+        "ipv4": "172.18.0.64",
+        "port": 12032
+      },
+      "tags": {
+        "controller_state": "(Eastern/JiangSuProvince)",
+        "http.host": "ts-order-other-service",
+        "http.method": "GET",
+        "http.path": "/orderOther/getSuspendStationArea",
+        "http.url": "http://ts-order-other-service:12032/orderOther/getSuspendStationArea",
+        "spring.instance_id": "11344f2a07e6:ts-order-other-service:12032"
+      }
+    },
+    {
+      "traceId": "9fd700271e29eebc",
+      "parentId": "c44cdd24804a0b79",
+      "id": "5ac8a993e5272775",
+      "kind": "SERVER",
+      "name": "http:/orderother/getsuspendstationarea",
+      "timestamp": 1694504023405000,
+      "duration": 1000,
+      "localEndpoint": {
+        "serviceName": "ts-order-other-service",
+        "ipv4": "172.18.0.64",
+        "port": 12032
+      },
+      "tags": {
+        "controller_state": "(Eastern/JiangSuProvince)",
+        "mvc.controller.class": "OrderOtherController",
+        "mvc.controller.method": "getSuspendStationArea",
+        "spring.instance_id": "11344f2a07e6:ts-order-other-service:12032"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "9fd700271e29eebc",
+      "parentId": "c44cdd24804a0b79",
+      "id": "5ac8a993e5272775",
+      "kind": "CLIENT",
+      "name": "http:/orderother/getsuspendstationarea",
+      "timestamp": 1694504023404000,
+      "duration": 3000,
+      "localEndpoint": {
+        "serviceName": "ts-order-other-service",
+        "ipv4": "172.18.0.64",
+        "port": 12032
+      },
+      "tags": {
+        "controller_state": "(Eastern/JiangSuProvince)",
+        "http.host": "ts-order-other-service",
+        "http.method": "GET",
+        "http.path": "/orderOther/getSuspendStationArea",
+        "http.url": "http://ts-order-other-service:12032/orderOther/getSuspendStationArea",
+        "spring.instance_id": "11344f2a07e6:ts-order-other-service:12032"
+      }
+    },
+    {
+      "traceId": "9fd700271e29eebc",
+      "parentId": "c44cdd24804a0b79",
+      "id": "2c6d3a607a9a2283",
+      "kind": "SERVER",
+      "name": "http:/orderother/getsuspendstationarea",
+      "timestamp": 1694504023409000,
+      "duration": 1000,
+      "localEndpoint": {
+        "serviceName": "ts-order-other-service",
+        "ipv4": "172.18.0.64",
+        "port": 12032
+      },
+      "tags": {
+        "controller_state": "(Eastern/JiangSuProvince)",
+        "mvc.controller.class": "OrderOtherController",
+        "mvc.controller.method": "getSuspendStationArea",
+        "spring.instance_id": "11344f2a07e6:ts-order-other-service:12032"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "9fd700271e29eebc",
+      "parentId": "c44cdd24804a0b79",
+      "id": "2c6d3a607a9a2283",
+      "kind": "CLIENT",
+      "name": "http:/orderother/getsuspendstationarea",
+      "timestamp": 1694504023408000,
+      "duration": 2000,
+      "localEndpoint": {
+        "serviceName": "ts-order-other-service",
+        "ipv4": "172.18.0.64",
+        "port": 12032
+      },
+      "tags": {
+        "controller_state": "(Eastern/JiangSuProvince)",
+        "http.host": "ts-order-other-service",
+        "http.method": "GET",
+        "http.path": "/orderOther/getSuspendStationArea",
+        "http.url": "http://ts-order-other-service:12032/orderOther/getSuspendStationArea",
+        "spring.instance_id": "11344f2a07e6:ts-order-other-service:12032"
+      }
+    },
+    {
+      "traceId": "9fd700271e29eebc",
+      "parentId": "c44cdd24804a0b79",
+      "id": "09c208f06d0401d9",
+      "kind": "SERVER",
+      "name": "http:/orderother/getsuspendstationarea",
+      "timestamp": 1694504023412000,
+      "duration": 1000,
+      "localEndpoint": {
+        "serviceName": "ts-order-other-service",
+        "ipv4": "172.18.0.64",
+        "port": 12032
+      },
+      "tags": {
+        "controller_state": "(Eastern/JiangSuProvince)",
+        "mvc.controller.class": "OrderOtherController",
+        "mvc.controller.method": "getSuspendStationArea",
+        "spring.instance_id": "11344f2a07e6:ts-order-other-service:12032"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "9fd700271e29eebc",
+      "parentId": "c44cdd24804a0b79",
+      "id": "09c208f06d0401d9",
+      "kind": "CLIENT",
+      "name": "http:/orderother/getsuspendstationarea",
+      "timestamp": 1694504023411000,
+      "duration": 3000,
+      "localEndpoint": {
+        "serviceName": "ts-order-other-service",
+        "ipv4": "172.18.0.64",
+        "port": 12032
+      },
+      "tags": {
+        "controller_state": "(Eastern/JiangSuProvince)",
+        "http.host": "ts-order-other-service",
+        "http.method": "GET",
+        "http.path": "/orderOther/getSuspendStationArea",
+        "http.url": "http://ts-order-other-service:12032/orderOther/getSuspendStationArea",
+        "spring.instance_id": "11344f2a07e6:ts-order-other-service:12032"
+      }
+    },
+    {
+      "traceId": "9fd700271e29eebc",
+      "parentId": "c44cdd24804a0b79",
+      "id": "2dbbf15c73a716ed",
+      "kind": "SERVER",
+      "name": "http:/orderother/getsuspendstationarea",
+      "timestamp": 1694504023416000,
+      "duration": 2000,
+      "localEndpoint": {
+        "serviceName": "ts-order-other-service",
+        "ipv4": "172.18.0.64",
+        "port": 12032
+      },
+      "tags": {
+        "controller_state": "(Eastern/JiangSuProvince)",
+        "mvc.controller.class": "OrderOtherController",
+        "mvc.controller.method": "getSuspendStationArea",
+        "spring.instance_id": "11344f2a07e6:ts-order-other-service:12032"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "9fd700271e29eebc",
+      "parentId": "c44cdd24804a0b79",
+      "id": "2dbbf15c73a716ed",
+      "kind": "CLIENT",
+      "name": "http:/orderother/getsuspendstationarea",
+      "timestamp": 1694504023415000,
+      "duration": 3000,
+      "localEndpoint": {
+        "serviceName": "ts-order-other-service",
+        "ipv4": "172.18.0.64",
+        "port": 12032
+      },
+      "tags": {
+        "controller_state": "(Eastern/JiangSuProvince)",
+        "http.host": "ts-order-other-service",
+        "http.method": "GET",
+        "http.path": "/orderOther/getSuspendStationArea",
+        "http.url": "http://ts-order-other-service:12032/orderOther/getSuspendStationArea",
+        "spring.instance_id": "11344f2a07e6:ts-order-other-service:12032"
+      }
+    },
+    {
+      "traceId": "9fd700271e29eebc",
+      "parentId": "c44cdd24804a0b79",
+      "id": "2eea578cb001df38",
+      "kind": "SERVER",
+      "name": "http:/orderother/getsuspendstationarea",
+      "timestamp": 1694504023420000,
+      "duration": 2000,
+      "localEndpoint": {
+        "serviceName": "ts-order-other-service",
+        "ipv4": "172.18.0.64",
+        "port": 12032
+      },
+      "tags": {
+        "controller_state": "(Eastern/JiangSuProvince)",
+        "mvc.controller.class": "OrderOtherController",
+        "mvc.controller.method": "getSuspendStationArea",
+        "spring.instance_id": "11344f2a07e6:ts-order-other-service:12032"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "9fd700271e29eebc",
+      "parentId": "c44cdd24804a0b79",
+      "id": "2eea578cb001df38",
+      "kind": "CLIENT",
+      "name": "http:/orderother/getsuspendstationarea",
+      "timestamp": 1694504023419000,
+      "duration": 3000,
+      "localEndpoint": {
+        "serviceName": "ts-order-other-service",
+        "ipv4": "172.18.0.64",
+        "port": 12032
+      },
+      "tags": {
+        "controller_state": "(Eastern/JiangSuProvince)",
+        "http.host": "ts-order-other-service",
+        "http.method": "GET",
+        "http.path": "/orderOther/getSuspendStationArea",
+        "http.url": "http://ts-order-other-service:12032/orderOther/getSuspendStationArea",
+        "spring.instance_id": "11344f2a07e6:ts-order-other-service:12032"
+      }
+    },
+    {
+      "traceId": "9fd700271e29eebc",
+      "parentId": "c44cdd24804a0b79",
+      "id": "20c0057757e67547",
+      "kind": "SERVER",
+      "name": "http:/orderother/getsuspendstationarea",
+      "timestamp": 1694504023424000,
+      "duration": 2000,
+      "localEndpoint": {
+        "serviceName": "ts-order-other-service",
+        "ipv4": "172.18.0.64",
+        "port": 12032
+      },
+      "tags": {
+        "controller_state": "(Eastern/JiangSuProvince)",
+        "mvc.controller.class": "OrderOtherController",
+        "mvc.controller.method": "getSuspendStationArea",
+        "spring.instance_id": "11344f2a07e6:ts-order-other-service:12032"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "9fd700271e29eebc",
+      "parentId": "c44cdd24804a0b79",
+      "id": "20c0057757e67547",
+      "kind": "CLIENT",
+      "name": "http:/orderother/getsuspendstationarea",
+      "timestamp": 1694504023423000,
+      "duration": 3000,
+      "localEndpoint": {
+        "serviceName": "ts-order-other-service",
+        "ipv4": "172.18.0.64",
+        "port": 12032
+      },
+      "tags": {
+        "controller_state": "(Eastern/JiangSuProvince)",
+        "http.host": "ts-order-other-service",
+        "http.method": "GET",
+        "http.path": "/orderOther/getSuspendStationArea",
+        "http.url": "http://ts-order-other-service:12032/orderOther/getSuspendStationArea",
+        "spring.instance_id": "11344f2a07e6:ts-order-other-service:12032"
+      }
+    },
+    {
+      "traceId": "9fd700271e29eebc",
+      "parentId": "c44cdd24804a0b79",
+      "id": "93108bc7e2feab9f",
+      "kind": "SERVER",
+      "name": "http:/orderother/getsuspendstationarea",
+      "timestamp": 1694504023428000,
+      "duration": 1000,
+      "localEndpoint": {
+        "serviceName": "ts-order-other-service",
+        "ipv4": "172.18.0.64",
+        "port": 12032
+      },
+      "tags": {
+        "controller_state": "(Eastern/JiangSuProvince)",
+        "mvc.controller.class": "OrderOtherController",
+        "mvc.controller.method": "getSuspendStationArea",
+        "spring.instance_id": "11344f2a07e6:ts-order-other-service:12032"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "9fd700271e29eebc",
+      "parentId": "c44cdd24804a0b79",
+      "id": "93108bc7e2feab9f",
+      "kind": "CLIENT",
+      "name": "http:/orderother/getsuspendstationarea",
+      "timestamp": 1694504023427000,
+      "duration": 2000,
+      "localEndpoint": {
+        "serviceName": "ts-order-other-service",
+        "ipv4": "172.18.0.64",
+        "port": 12032
+      },
+      "tags": {
+        "controller_state": "(Eastern/JiangSuProvince)",
+        "http.host": "ts-order-other-service",
+        "http.method": "GET",
+        "http.path": "/orderOther/getSuspendStationArea",
+        "http.url": "http://ts-order-other-service:12032/orderOther/getSuspendStationArea",
+        "spring.instance_id": "11344f2a07e6:ts-order-other-service:12032"
+      }
+    },
+    {
+      "traceId": "9fd700271e29eebc",
+      "parentId": "c44cdd24804a0b79",
+      "id": "f20fb69100e3f857",
+      "kind": "SERVER",
+      "name": "http:/orderother/getsuspendstationarea",
+      "timestamp": 1694504023431000,
+      "duration": 1000,
+      "localEndpoint": {
+        "serviceName": "ts-order-other-service",
+        "ipv4": "172.18.0.64",
+        "port": 12032
+      },
+      "tags": {
+        "controller_state": "(Eastern/JiangSuProvince)",
+        "mvc.controller.class": "OrderOtherController",
+        "mvc.controller.method": "getSuspendStationArea",
+        "spring.instance_id": "11344f2a07e6:ts-order-other-service:12032"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "9fd700271e29eebc",
+      "parentId": "c44cdd24804a0b79",
+      "id": "f20fb69100e3f857",
+      "kind": "CLIENT",
+      "name": "http:/orderother/getsuspendstationarea",
+      "timestamp": 1694504023430000,
+      "duration": 3000,
+      "localEndpoint": {
+        "serviceName": "ts-order-other-service",
+        "ipv4": "172.18.0.64",
+        "port": 12032
+      },
+      "tags": {
+        "controller_state": "(Eastern/JiangSuProvince)",
+        "http.host": "ts-order-other-service",
+        "http.method": "GET",
+        "http.path": "/orderOther/getSuspendStationArea",
+        "http.url": "http://ts-order-other-service:12032/orderOther/getSuspendStationArea",
+        "spring.instance_id": "11344f2a07e6:ts-order-other-service:12032"
+      }
+    },
+    {
+      "traceId": "9fd700271e29eebc",
+      "parentId": "9fd700271e29eebc",
+      "id": "c44cdd24804a0b79",
+      "kind": "SERVER",
+      "name": "http:/orderother/update",
+      "timestamp": 1694504023378000,
+      "duration": 58000,
+      "localEndpoint": {
+        "serviceName": "ts-order-other-service",
+        "ipv4": "172.18.0.64",
+        "port": 12032
+      },
+      "tags": {
+        "controller_state": "(Eastern/JiangSuProvince)",
+        "mvc.controller.class": "OrderOtherController",
+        "mvc.controller.method": "saveOrderInfo",
+        "spring.instance_id": "11344f2a07e6:ts-order-other-service:12032"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "9fd700271e29eebc",
+      "parentId": "9fd700271e29eebc",
+      "id": "c6bca466b2da29eb",
+      "kind": "CLIENT",
+      "name": "http:/verifylogintoken/422e0da6-7df9-4715-9a9a-fab",
+      "timestamp": 1694504023343000,
+      "duration": 6000,
+      "localEndpoint": {
+        "serviceName": "ts-cancel-service",
+        "ipv4": "172.18.0.39",
+        "port": 18885
+      },
+      "tags": {
+        "http.host": "ts-sso-service",
+        "http.method": "GET",
+        "http.path": "/verifyLoginToken/422e0da6-7df9-4715-9a9a-fabe96e7cfee",
+        "http.url": "http://ts-sso-service:12349/verifyLoginToken/422e0da6-7df9-4715-9a9a-fabe96e7cfee",
+        "spring.instance_id": "df7615ccd96e:ts-cancel-service:18885"
+      }
+    },
+    {
+      "traceId": "9fd700271e29eebc",
+      "parentId": "9fd700271e29eebc",
+      "id": "7130203dcb34d185",
+      "kind": "CLIENT",
+      "name": "http:/order/getbyid/",
+      "timestamp": 1694504023352000,
+      "duration": 9000,
+      "localEndpoint": {
+        "serviceName": "ts-cancel-service",
+        "ipv4": "172.18.0.39",
+        "port": 18885
+      },
+      "tags": {
+        "http.host": "ts-order-service",
+        "http.method": "POST",
+        "http.path": "/order/getById/",
+        "http.url": "http://ts-order-service:12031/order/getById/",
+        "spring.instance_id": "df7615ccd96e:ts-cancel-service:18885"
+      }
+    },
+    {
+      "traceId": "9fd700271e29eebc",
+      "parentId": "9fd700271e29eebc",
+      "id": "197b5b0064e78282",
+      "kind": "CLIENT",
+      "name": "http:/orderother/getbyid/",
+      "timestamp": 1694504023362000,
+      "duration": 9000,
+      "localEndpoint": {
+        "serviceName": "ts-cancel-service",
+        "ipv4": "172.18.0.39",
+        "port": 18885
+      },
+      "tags": {
+        "http.host": "ts-order-other-service",
+        "http.method": "POST",
+        "http.path": "/orderOther/getById/",
+        "http.url": "http://ts-order-other-service:12032/orderOther/getById/",
+        "spring.instance_id": "df7615ccd96e:ts-cancel-service:18885"
+      }
+    },
+    {
+      "traceId": "9fd700271e29eebc",
+      "parentId": "9fd700271e29eebc",
+      "id": "c44cdd24804a0b79",
+      "kind": "CLIENT",
+      "name": "http:/orderother/update",
+      "timestamp": 1694504023377000,
+      "duration": 59000,
+      "localEndpoint": {
+        "serviceName": "ts-cancel-service",
+        "ipv4": "172.18.0.39",
+        "port": 18885
+      },
+      "tags": {
+        "http.host": "ts-order-other-service",
+        "http.method": "POST",
+        "http.path": "/orderOther/update",
+        "http.url": "http://ts-order-other-service:12032/orderOther/update",
+        "spring.instance_id": "df7615ccd96e:ts-cancel-service:18885"
+      }
+    },
+    {
+      "traceId": "9fd700271e29eebc",
+      "parentId": "9fd700271e29eebc",
+      "id": "c8fa5236c29a3c6a",
+      "kind": "CLIENT",
+      "name": "http:/inside_payment/drawback",
+      "timestamp": 1694504023439000,
+      "duration": 159000,
+      "localEndpoint": {
+        "serviceName": "ts-cancel-service",
+        "ipv4": "172.18.0.39",
+        "port": 18885
+      },
+      "tags": {
+        "http.host": "ts-inside-payment-service",
+        "http.method": "POST",
+        "http.path": "/inside_payment/drawBack",
+        "http.url": "http://ts-inside-payment-service:18673/inside_payment/drawBack",
+        "spring.instance_id": "df7615ccd96e:ts-cancel-service:18885"
+      }
+    },
+    {
+      "traceId": "9fd700271e29eebc",
+      "id": "9fd700271e29eebc",
+      "kind": "SERVER",
+      "name": "http:/cancelorder",
+      "timestamp": 1694504023337000,
+      "duration": 265073,
+      "localEndpoint": {
+        "serviceName": "ts-cancel-service",
+        "ipv4": "172.18.0.39",
+        "port": 18885
+      },
+      "tags": {
+        "mvc.controller.class": "CancelController",
+        "mvc.controller.method": "cancelTicket",
+        "spring.instance_id": "df7615ccd96e:ts-cancel-service:18885"
+      }
+    },
+    {
+      "traceId": "9fd700271e29eebc",
+      "parentId": "9fd700271e29eebc",
+      "id": "c8fa5236c29a3c6a",
+      "kind": "SERVER",
+      "name": "http:/inside_payment/drawback",
+      "timestamp": 1694504023502000,
+      "duration": 75000,
+      "localEndpoint": {
+        "serviceName": "ts-inside-payment-service",
+        "ipv4": "172.18.0.35",
+        "port": 18673
+      },
+      "tags": {
+        "mvc.controller.class": "InsidePaymentController",
+        "mvc.controller.method": "drawBack",
+        "spring.instance_id": "66fc64159174:ts-inside-payment-service:18673"
+      },
+      "shared": true
+    }
+  ],
+  [
+    {
+      "traceId": "78bf2eb30c008375",
+      "parentId": "78bf2eb30c008375",
+      "id": "b2b5d9bd3d73113b",
+      "kind": "CLIENT",
+      "name": "http:/order/getbyid/",
+      "timestamp": 1694504022023000,
+      "duration": 27000,
+      "localEndpoint": {
+        "serviceName": "ts-cancel-service",
+        "ipv4": "172.18.0.39",
+        "port": 18885
+      },
+      "tags": {
+        "http.host": "ts-order-service",
+        "http.method": "POST",
+        "http.path": "/order/getById/",
+        "http.url": "http://ts-order-service:12031/order/getById/",
+        "spring.instance_id": "df7615ccd96e:ts-cancel-service:18885"
+      }
+    },
+    {
+      "traceId": "78bf2eb30c008375",
+      "parentId": "78bf2eb30c008375",
+      "id": "0ffb70046be84ff3",
+      "kind": "CLIENT",
+      "name": "http:/orderother/getbyid/",
+      "timestamp": 1694504022063000,
+      "duration": 15000,
+      "localEndpoint": {
+        "serviceName": "ts-cancel-service",
+        "ipv4": "172.18.0.39",
+        "port": 18885
+      },
+      "tags": {
+        "http.host": "ts-order-other-service",
+        "http.method": "POST",
+        "http.path": "/orderOther/getById/",
+        "http.url": "http://ts-order-other-service:12032/orderOther/getById/",
+        "spring.instance_id": "df7615ccd96e:ts-cancel-service:18885"
+      }
+    },
+    {
+      "traceId": "78bf2eb30c008375",
+      "id": "78bf2eb30c008375",
+      "kind": "SERVER",
+      "name": "http:/cancelcalculaterefund",
+      "timestamp": 1694504021923000,
+      "duration": 164091,
+      "localEndpoint": {
+        "serviceName": "ts-cancel-service",
+        "ipv4": "172.18.0.39",
+        "port": 18885
+      },
+      "tags": {
+        "mvc.controller.class": "CancelController",
+        "mvc.controller.method": "calculate",
+        "spring.instance_id": "df7615ccd96e:ts-cancel-service:18885"
+      }
+    },
+    {
+      "traceId": "78bf2eb30c008375",
+      "parentId": "78bf2eb30c008375",
+      "id": "b2b5d9bd3d73113b",
+      "kind": "SERVER",
+      "name": "http:/order/getbyid/",
+      "timestamp": 1694504022035000,
+      "duration": 12000,
+      "localEndpoint": {
+        "serviceName": "ts-order-service",
+        "ipv4": "172.18.0.9",
+        "port": 12031
+      },
+      "tags": {
+        "mvc.controller.class": "OrderController",
+        "mvc.controller.method": "getOrderById",
+        "spring.instance_id": "50ce62ad7179:ts-order-service:12031"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "78bf2eb30c008375",
+      "parentId": "78bf2eb30c008375",
+      "id": "0ffb70046be84ff3",
+      "kind": "SERVER",
+      "name": "http:/orderother/getbyid/",
+      "timestamp": 1694504022065000,
+      "duration": 11000,
+      "localEndpoint": {
+        "serviceName": "ts-order-other-service",
+        "ipv4": "172.18.0.64",
+        "port": 12032
+      },
+      "tags": {
+        "controller_state": "(Eastern/JiangSuProvince)",
+        "mvc.controller.class": "OrderOtherController",
+        "mvc.controller.method": "getOrderById",
+        "spring.instance_id": "11344f2a07e6:ts-order-other-service:12032"
+      },
+      "shared": true
+    }
+  ],
+  [
+    {
+      "traceId": "ec1d3e6800f257b5",
+      "id": "ec1d3e6800f257b5",
+      "kind": "SERVER",
+      "name": "http:/station/querybyid",
+      "timestamp": 1694504017316000,
+      "duration": 4528,
+      "localEndpoint": {
+        "serviceName": "ts-station-service",
+        "ipv4": "172.18.0.14",
+        "port": 12345
+      },
+      "tags": {
+        "mvc.controller.class": "StationController",
+        "mvc.controller.method": "queryById",
+        "spring.instance_id": "c6cdf247ce57:ts-station-service:12345"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "dab43e93d0be44b9",
+      "id": "dab43e93d0be44b9",
+      "kind": "SERVER",
+      "name": "http:/station/querybyid",
+      "timestamp": 1694504017305000,
+      "duration": 5992,
+      "localEndpoint": {
+        "serviceName": "ts-station-service",
+        "ipv4": "172.18.0.14",
+        "port": 12345
+      },
+      "tags": {
+        "mvc.controller.class": "StationController",
+        "mvc.controller.method": "queryById",
+        "spring.instance_id": "c6cdf247ce57:ts-station-service:12345"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "db71e2b34cd91ce5",
+      "id": "db71e2b34cd91ce5",
+      "kind": "SERVER",
+      "name": "http:/station/querybyid",
+      "timestamp": 1694504017295000,
+      "duration": 4965,
+      "localEndpoint": {
+        "serviceName": "ts-station-service",
+        "ipv4": "172.18.0.14",
+        "port": 12345
+      },
+      "tags": {
+        "mvc.controller.class": "StationController",
+        "mvc.controller.method": "queryById",
+        "spring.instance_id": "c6cdf247ce57:ts-station-service:12345"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "3a3474fac1fd4cd7",
+      "id": "3a3474fac1fd4cd7",
+      "kind": "SERVER",
+      "name": "http:/station/querybyid",
+      "timestamp": 1694504017284000,
+      "duration": 6186,
+      "localEndpoint": {
+        "serviceName": "ts-station-service",
+        "ipv4": "172.18.0.14",
+        "port": 12345
+      },
+      "tags": {
+        "mvc.controller.class": "StationController",
+        "mvc.controller.method": "queryById",
+        "spring.instance_id": "c6cdf247ce57:ts-station-service:12345"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "15a0279e3403815a",
+      "id": "15a0279e3403815a",
+      "kind": "SERVER",
+      "name": "http:/station/querybyid",
+      "timestamp": 1694504017273000,
+      "duration": 6164,
+      "localEndpoint": {
+        "serviceName": "ts-station-service",
+        "ipv4": "172.18.0.14",
+        "port": 12345
+      },
+      "tags": {
+        "mvc.controller.class": "StationController",
+        "mvc.controller.method": "queryById",
+        "spring.instance_id": "c6cdf247ce57:ts-station-service:12345"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "bc3452c7fd780a52",
+      "id": "bc3452c7fd780a52",
+      "kind": "SERVER",
+      "name": "http:/station/querybyid",
+      "timestamp": 1694504017264000,
+      "duration": 4912,
+      "localEndpoint": {
+        "serviceName": "ts-station-service",
+        "ipv4": "172.18.0.14",
+        "port": 12345
+      },
+      "tags": {
+        "mvc.controller.class": "StationController",
+        "mvc.controller.method": "queryById",
+        "spring.instance_id": "c6cdf247ce57:ts-station-service:12345"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "eda6d548aa493bde",
+      "id": "eda6d548aa493bde",
+      "kind": "SERVER",
+      "name": "http:/station/querybyid",
+      "timestamp": 1694504017250000,
+      "duration": 6606,
+      "localEndpoint": {
+        "serviceName": "ts-station-service",
+        "ipv4": "172.18.0.14",
+        "port": 12345
+      },
+      "tags": {
+        "mvc.controller.class": "StationController",
+        "mvc.controller.method": "queryById",
+        "spring.instance_id": "c6cdf247ce57:ts-station-service:12345"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "aab2ac1d368ab99c",
+      "id": "aab2ac1d368ab99c",
+      "kind": "SERVER",
+      "name": "http:/station/querybyid",
+      "timestamp": 1694504017113000,
+      "duration": 118555,
+      "localEndpoint": {
+        "serviceName": "ts-station-service",
+        "ipv4": "172.18.0.14",
+        "port": 12345
+      },
+      "tags": {
+        "mvc.controller.class": "StationController",
+        "mvc.controller.method": "queryById",
+        "spring.instance_id": "c6cdf247ce57:ts-station-service:12345"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "55b6b99398cc71a6",
+      "parentId": "55b6b99398cc71a6",
+      "id": "b4f8d9f48efa380b",
+      "kind": "SERVER",
+      "name": "http:/verifylogintoken/422e0da6-7df9-4715-9a9a-fab",
+      "timestamp": 1694504017031000,
+      "duration": 4000,
+      "localEndpoint": {
+        "serviceName": "ts-sso-service",
+        "ipv4": "172.18.0.68",
+        "port": 12349
+      },
+      "tags": {
+        "mvc.controller.class": "AccountSsoController",
+        "mvc.controller.method": "verifyLoginToken",
+        "spring.instance_id": "7ef38c1ec305:ts-sso-service:12349"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "55b6b99398cc71a6",
+      "parentId": "55b6b99398cc71a6",
+      "id": "b4f8d9f48efa380b",
+      "kind": "CLIENT",
+      "name": "http:/verifylogintoken/422e0da6-7df9-4715-9a9a-fab",
+      "timestamp": 1694504017027000,
+      "duration": 9000,
+      "localEndpoint": {
+        "serviceName": "ts-order-service",
+        "ipv4": "172.18.0.9",
+        "port": 12031
+      },
+      "tags": {
+        "http.host": "ts-sso-service",
+        "http.method": "GET",
+        "http.path": "/verifyLoginToken/422e0da6-7df9-4715-9a9a-fabe96e7cfee",
+        "http.url": "http://ts-sso-service:12349/verifyLoginToken/422e0da6-7df9-4715-9a9a-fabe96e7cfee",
+        "spring.instance_id": "50ce62ad7179:ts-order-service:12031"
+      }
+    },
+    {
+      "traceId": "55b6b99398cc71a6",
+      "id": "55b6b99398cc71a6",
+      "kind": "SERVER",
+      "name": "http:/order/query",
+      "timestamp": 1694504016980000,
+      "duration": 73107,
+      "localEndpoint": {
+        "serviceName": "ts-order-service",
+        "ipv4": "172.18.0.9",
+        "port": 12031
+      },
+      "tags": {
+        "mvc.controller.class": "OrderController",
+        "mvc.controller.method": "queryOrders",
+        "spring.instance_id": "50ce62ad7179:ts-order-service:12031"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "c59132c8f0c3f0b2",
+      "parentId": "c59132c8f0c3f0b2",
+      "id": "9253d173bdd5a492",
+      "kind": "SERVER",
+      "name": "http:/verifylogintoken/422e0da6-7df9-4715-9a9a-fab",
+      "timestamp": 1694504017022000,
+      "duration": 9000,
+      "localEndpoint": {
+        "serviceName": "ts-sso-service",
+        "ipv4": "172.18.0.68",
+        "port": 12349
+      },
+      "tags": {
+        "mvc.controller.class": "AccountSsoController",
+        "mvc.controller.method": "verifyLoginToken",
+        "spring.instance_id": "7ef38c1ec305:ts-sso-service:12349"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "c59132c8f0c3f0b2",
+      "parentId": "c59132c8f0c3f0b2",
+      "id": "9253d173bdd5a492",
+      "kind": "CLIENT",
+      "name": "http:/verifylogintoken/422e0da6-7df9-4715-9a9a-fab",
+      "timestamp": 1694504017019000,
+      "duration": 12000,
+      "localEndpoint": {
+        "serviceName": "ts-order-other-service",
+        "ipv4": "172.18.0.64",
+        "port": 12032
+      },
+      "tags": {
+        "controller_state": "(Eastern/JiangSuProvince)",
+        "http.host": "ts-sso-service",
+        "http.method": "GET",
+        "http.path": "/verifyLoginToken/422e0da6-7df9-4715-9a9a-fabe96e7cfee",
+        "http.url": "http://ts-sso-service:12349/verifyLoginToken/422e0da6-7df9-4715-9a9a-fabe96e7cfee",
+        "spring.instance_id": "11344f2a07e6:ts-order-other-service:12032"
+      }
+    },
+    {
+      "traceId": "c59132c8f0c3f0b2",
+      "id": "c59132c8f0c3f0b2",
+      "kind": "SERVER",
+      "name": "http:/orderother/query",
+      "timestamp": 1694504016977000,
+      "duration": 64000,
+      "localEndpoint": {
+        "serviceName": "ts-order-other-service",
+        "ipv4": "172.18.0.64",
+        "port": 12032
+      },
+      "tags": {
+        "controller_state": "(Eastern/JiangSuProvince)",
+        "mvc.controller.class": "OrderOtherController",
+        "mvc.controller.method": "queryOrders",
+        "spring.instance_id": "11344f2a07e6:ts-order-other-service:12032"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "f316717eb7f2dd9c",
+      "id": "f316717eb7f2dd9c",
+      "kind": "SERVER",
+      "name": "http:/orderother/asyncviewallorder",
+      "timestamp": 1694504014973000,
+      "duration": 16000,
+      "localEndpoint": {
+        "serviceName": "ts-order-other-service",
+        "ipv4": "172.18.0.64",
+        "port": 12032
+      },
+      "tags": {
+        "controller_state": "(Eastern/JiangSuProvince)",
+        "mvc.controller.class": "OrderOtherController",
+        "mvc.controller.method": "asyncViewAllOrder",
+        "spring.instance_id": "11344f2a07e6:ts-order-other-service:12032"
+      }
+    },
+    {
+      "traceId": "f316717eb7f2dd9c",
+      "parentId": "f316717eb7f2dd9c",
+      "id": "f64241efed681b65",
+      "name": "view-all-order-async",
+      "timestamp": 1694504014983000,
+      "duration": 10012000,
+      "localEndpoint": {
+        "serviceName": "ts-order-other-service",
+        "ipv4": "172.18.0.64",
+        "port": 12032
+      },
+      "tags": {
+        "class": "AsyncTask",
+        "controller_state": "(Eastern/JiangSuProvince)",
+        "lc": "async",
+        "method": "viewAllOrderAsync"
+      }
+    },
+    {
+      "traceId": "f316717eb7f2dd9c",
+      "parentId": "f316717eb7f2dd9c",
+      "id": "98c06425b1cfac07",
+      "name": "view-all-order-async",
+      "timestamp": 1694504014983000,
+      "duration": 10019000,
+      "localEndpoint": {
+        "serviceName": "ts-order-other-service",
+        "ipv4": "172.18.0.64",
+        "port": 12032
+      },
+      "tags": {
+        "class": "AsyncTask",
+        "controller_state": "(Eastern/JiangSuProvince)",
+        "lc": "async",
+        "method": "viewAllOrderAsync"
+      }
+    },
+    {
+      "traceId": "f316717eb7f2dd9c",
+      "parentId": "f316717eb7f2dd9c",
+      "id": "75cd70f63b690aae",
+      "name": "view-all-order-async",
+      "timestamp": 1694504014983000,
+      "duration": 10016000,
+      "localEndpoint": {
+        "serviceName": "ts-order-other-service",
+        "ipv4": "172.18.0.64",
+        "port": 12032
+      },
+      "tags": {
+        "class": "AsyncTask",
+        "controller_state": "(Eastern/JiangSuProvince)",
+        "lc": "async",
+        "method": "viewAllOrderAsync"
+      }
+    },
+    {
+      "traceId": "f316717eb7f2dd9c",
+      "parentId": "f316717eb7f2dd9c",
+      "id": "2f5c299eef1eec51",
+      "name": "view-all-order-async",
+      "timestamp": 1694504014983000,
+      "duration": 10022000,
+      "localEndpoint": {
+        "serviceName": "ts-order-other-service",
+        "ipv4": "172.18.0.64",
+        "port": 12032
+      },
+      "tags": {
+        "class": "AsyncTask",
+        "controller_state": "(Eastern/JiangSuProvince)",
+        "lc": "async",
+        "method": "viewAllOrderAsync"
+      }
+    },
+    {
+      "traceId": "f316717eb7f2dd9c",
+      "parentId": "f316717eb7f2dd9c",
+      "id": "9dfc6739c15da726",
+      "name": "view-all-order-async",
+      "timestamp": 1694504014983000,
+      "duration": 10023000,
+      "localEndpoint": {
+        "serviceName": "ts-order-other-service",
+        "ipv4": "172.18.0.64",
+        "port": 12032
+      },
+      "tags": {
+        "class": "AsyncTask",
+        "controller_state": "(Eastern/JiangSuProvince)",
+        "lc": "async",
+        "method": "viewAllOrderAsync"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "15851f0f0b7f0eb3",
+      "parentId": "15851f0f0b7f0eb3",
+      "id": "16db977cc04b9e70",
+      "kind": "SERVER",
+      "name": "http:/verification/verify",
+      "timestamp": 1694504007671000,
+      "duration": 24000,
+      "localEndpoint": {
+        "serviceName": "ts-verification-code-service",
+        "ipv4": "172.18.0.52",
+        "port": 15678
+      },
+      "tags": {
+        "mvc.controller.class": "VerificationCodeController",
+        "mvc.controller.method": "verifyCode",
+        "spring.instance_id": "ef31422cb324:ts-verification-code-service:15678"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "15851f0f0b7f0eb3",
+      "parentId": "15851f0f0b7f0eb3",
+      "id": "16db977cc04b9e70",
+      "kind": "CLIENT",
+      "name": "http:/verification/verify",
+      "timestamp": 1694504007659000,
+      "duration": 40000,
+      "localEndpoint": {
+        "serviceName": "ts-login-service",
+        "ipv4": "172.18.0.37",
+        "port": 12342
+      },
+      "tags": {
+        "http.host": "ts-verification-code-service",
+        "http.method": "POST",
+        "http.path": "/verification/verify",
+        "http.url": "http://ts-verification-code-service:15678/verification/verify",
+        "spring.instance_id": "a02471b99349:ts-login-service:12342"
+      }
+    },
+    {
+      "traceId": "15851f0f0b7f0eb3",
+      "parentId": "15851f0f0b7f0eb3",
+      "id": "ddd37dbd99a6d019",
+      "kind": "CLIENT",
+      "name": "http:/account/login",
+      "timestamp": 1694504007735000,
+      "duration": 39000,
+      "localEndpoint": {
+        "serviceName": "ts-login-service",
+        "ipv4": "172.18.0.37",
+        "port": 12342
+      },
+      "tags": {
+        "http.host": "ts-sso-service",
+        "http.method": "POST",
+        "http.path": "/account/login",
+        "http.url": "http://ts-sso-service:12349/account/login",
+        "spring.instance_id": "a02471b99349:ts-login-service:12342"
+      }
+    },
+    {
+      "traceId": "15851f0f0b7f0eb3",
+      "id": "15851f0f0b7f0eb3",
+      "kind": "SERVER",
+      "name": "http:/login",
+      "timestamp": 1694504007578000,
+      "duration": 209295,
+      "localEndpoint": {
+        "serviceName": "ts-login-service",
+        "ipv4": "172.18.0.37",
+        "port": 12342
+      },
+      "tags": {
+        "mvc.controller.class": "AccountLoginController",
+        "mvc.controller.method": "login",
+        "spring.instance_id": "a02471b99349:ts-login-service:12342"
+      }
+    },
+    {
+      "traceId": "15851f0f0b7f0eb3",
+      "parentId": "15851f0f0b7f0eb3",
+      "id": "ddd37dbd99a6d019",
+      "kind": "SERVER",
+      "name": "http:/account/login",
+      "timestamp": 1694504007738000,
+      "duration": 32000,
+      "localEndpoint": {
+        "serviceName": "ts-sso-service",
+        "ipv4": "172.18.0.68",
+        "port": 12349
+      },
+      "tags": {
+        "mvc.controller.class": "AccountSsoController",
+        "mvc.controller.method": "login",
+        "spring.instance_id": "7ef38c1ec305:ts-sso-service:12349"
+      },
+      "shared": true
+    }
+  ],
+  [
+    {
+      "traceId": "98d9610feb49f84f",
+      "id": "98d9610feb49f84f",
+      "kind": "SERVER",
+      "name": "http:/assurance/getallassurancetype",
+      "timestamp": 1694504001807000,
+      "duration": 3427,
+      "localEndpoint": {
+        "serviceName": "ts-assurance-service",
+        "ipv4": "172.18.0.28",
+        "port": 18888
+      },
+      "tags": {
+        "mvc.controller.class": "AssuranceController",
+        "mvc.controller.method": "getAllAssuranceType",
+        "spring.instance_id": "12feafeb0f8a:ts-assurance-service:18888"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "24087e74aa2c74ea",
+      "id": "24087e74aa2c74ea",
+      "kind": "SERVER",
+      "name": "http:/assurance/getallassurancetype",
+      "timestamp": 1694504001799000,
+      "duration": 4424,
+      "localEndpoint": {
+        "serviceName": "ts-assurance-service",
+        "ipv4": "172.18.0.28",
+        "port": 18888
+      },
+      "tags": {
+        "mvc.controller.class": "AssuranceController",
+        "mvc.controller.method": "getAllAssuranceType",
+        "spring.instance_id": "12feafeb0f8a:ts-assurance-service:18888"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "23c6f71caaa283dc",
+      "id": "23c6f71caaa283dc",
+      "kind": "SERVER",
+      "name": "http:/verification/generate",
+      "timestamp": 1694504001758000,
+      "duration": 8352,
+      "localEndpoint": {
+        "serviceName": "ts-verification-code-service",
+        "ipv4": "172.18.0.52",
+        "port": 15678
+      },
+      "tags": {
+        "mvc.controller.class": "VerificationCodeController",
+        "mvc.controller.method": "imagecode",
+        "spring.instance_id": "ef31422cb324:ts-verification-code-service:15678"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "def909e6c9c053a3",
+      "parentId": "def909e6c9c053a3",
+      "id": "61da4bc85a666a38",
+      "kind": "SERVER",
+      "name": "http:/orderother/suspend/shanghai/nanjing",
+      "timestamp": 1694503998728000,
+      "duration": 5000,
+      "localEndpoint": {
+        "serviceName": "ts-order-other-service",
+        "ipv4": "172.18.0.64",
+        "port": 12032
+      },
+      "tags": {
+        "controller_state": "(Eastern/JiangSuProvince)",
+        "mvc.controller.class": "OrderOtherController",
+        "mvc.controller.method": "setSuspendStation",
+        "spring.instance_id": "11344f2a07e6:ts-order-other-service:12032"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "def909e6c9c053a3",
+      "parentId": "def909e6c9c053a3",
+      "id": "61da4bc85a666a38",
+      "kind": "CLIENT",
+      "name": "http:/orderother/suspend/shanghai/nanjing",
+      "timestamp": 1694503998726000,
+      "duration": 9000,
+      "localEndpoint": {
+        "serviceName": "ts-admin-order-service",
+        "ipv4": "172.18.0.8",
+        "port": 16112
+      },
+      "tags": {
+        "http.host": "ts-order-other-service",
+        "http.method": "GET",
+        "http.path": "/orderOther/suspend/shanghai/nanjing",
+        "http.url": "http://ts-order-other-service:12032/orderOther/suspend/shanghai/nanjing",
+        "spring.instance_id": "44feddff2718:ts-admin-order-service:16112"
+      }
+    },
+    {
+      "traceId": "def909e6c9c053a3",
+      "id": "def909e6c9c053a3",
+      "kind": "SERVER",
+      "name": "http:/adminorder/suspendorder/shanghai/nanjing",
+      "timestamp": 1694503998720000,
+      "duration": 18970,
+      "localEndpoint": {
+        "serviceName": "ts-admin-order-service",
+        "ipv4": "172.18.0.8",
+        "port": 16112
+      },
+      "tags": {
+        "mvc.controller.class": "AdminOrderController",
+        "mvc.controller.method": "suspendOder",
+        "spring.instance_id": "44feddff2718:ts-admin-order-service:16112"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "cc2f25c0fc6accc8",
+      "id": "cc2f25c0fc6accc8",
+      "kind": "SERVER",
+      "name": "http:/orderother/getordersbyfromandto/shanghai/nan",
+      "timestamp": 1694503998721000,
+      "duration": 21000,
+      "localEndpoint": {
+        "serviceName": "ts-order-other-service",
+        "ipv4": "172.18.0.64",
+        "port": 12032
+      },
+      "tags": {
+        "controller_state": "(Eastern/JiangSuProvince)",
+        "mvc.controller.class": "OrderOtherController",
+        "mvc.controller.method": "getOrdersByFromIdAndToId",
+        "spring.instance_id": "11344f2a07e6:ts-order-other-service:12032"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "59998e779a0d2964",
+      "parentId": "59998e779a0d2964",
+      "id": "c263803a7a129b8b",
+      "kind": "CLIENT",
+      "name": "http:/order/findall",
+      "timestamp": 1694503992882000,
+      "duration": 210000,
+      "localEndpoint": {
+        "serviceName": "ts-admin-order-service",
+        "ipv4": "172.18.0.8",
+        "port": 16112
+      },
+      "tags": {
+        "http.host": "ts-order-service",
+        "http.method": "GET",
+        "http.path": "/order/findAll",
+        "http.url": "http://ts-order-service:12031/order/findAll",
+        "spring.instance_id": "44feddff2718:ts-admin-order-service:16112"
+      }
+    },
+    {
+      "traceId": "59998e779a0d2964",
+      "parentId": "59998e779a0d2964",
+      "id": "0a778297f88ee2bf",
+      "kind": "CLIENT",
+      "name": "http:/orderother/findall",
+      "timestamp": 1694503993113000,
+      "duration": 136000,
+      "localEndpoint": {
+        "serviceName": "ts-admin-order-service",
+        "ipv4": "172.18.0.8",
+        "port": 16112
+      },
+      "tags": {
+        "http.host": "ts-order-other-service",
+        "http.method": "GET",
+        "http.path": "/orderOther/findAll",
+        "http.url": "http://ts-order-other-service:12032/orderOther/findAll",
+        "spring.instance_id": "44feddff2718:ts-admin-order-service:16112"
+      }
+    },
+    {
+      "traceId": "59998e779a0d2964",
+      "id": "59998e779a0d2964",
+      "kind": "SERVER",
+      "name": "http:/adminorder/findall/1d1a11c1-11cb-1cf1-b1bb-b",
+      "timestamp": 1694503992811000,
+      "duration": 469892,
+      "localEndpoint": {
+        "serviceName": "ts-admin-order-service",
+        "ipv4": "172.18.0.8",
+        "port": 16112
+      },
+      "tags": {
+        "mvc.controller.class": "AdminOrderController",
+        "mvc.controller.method": "getAllOrders",
+        "spring.instance_id": "44feddff2718:ts-admin-order-service:16112"
+      }
+    },
+    {
+      "traceId": "59998e779a0d2964",
+      "parentId": "59998e779a0d2964",
+      "id": "c263803a7a129b8b",
+      "kind": "SERVER",
+      "name": "http:/order/findall",
+      "timestamp": 1694503992983000,
+      "duration": 106000,
+      "localEndpoint": {
+        "serviceName": "ts-order-service",
+        "ipv4": "172.18.0.9",
+        "port": 12031
+      },
+      "tags": {
+        "mvc.controller.class": "OrderController",
+        "mvc.controller.method": "findAllOrder",
+        "spring.instance_id": "50ce62ad7179:ts-order-service:12031"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "59998e779a0d2964",
+      "parentId": "59998e779a0d2964",
+      "id": "0a778297f88ee2bf",
+      "kind": "SERVER",
+      "name": "http:/orderother/findall",
+      "timestamp": 1694503993177000,
+      "duration": 69000,
+      "localEndpoint": {
+        "serviceName": "ts-order-other-service",
+        "ipv4": "172.18.0.64",
+        "port": 12032
+      },
+      "tags": {
+        "controller_state": "(/)",
+        "mvc.controller.class": "OrderOtherController",
+        "mvc.controller.method": "findAllOrder",
+        "spring.instance_id": "11344f2a07e6:ts-order-other-service:12032"
+      },
+      "shared": true
+    }
+  ],
+  [
+    {
+      "traceId": "e6a869acdfc00dc2",
+      "id": "e6a869acdfc00dc2",
+      "kind": "SERVER",
+      "name": "http:/account/adminlogin",
+      "timestamp": 1694503992552000,
+      "duration": 108529,
+      "localEndpoint": {
+        "serviceName": "ts-sso-service",
+        "ipv4": "172.18.0.68",
+        "port": 12349
+      },
+      "tags": {
+        "mvc.controller.class": "AccountSsoController",
+        "mvc.controller.method": "adminLogin",
+        "spring.instance_id": "7ef38c1ec305:ts-sso-service:12349"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "d39cacce00a1983a",
+      "id": "d39cacce00a1983a",
+      "kind": "SERVER",
+      "name": "http:/assurance/getallassurancetype",
+      "timestamp": 1694503989057000,
+      "duration": 3564,
+      "localEndpoint": {
+        "serviceName": "ts-assurance-service",
+        "ipv4": "172.18.0.28",
+        "port": 18888
+      },
+      "tags": {
+        "mvc.controller.class": "AssuranceController",
+        "mvc.controller.method": "getAllAssuranceType",
+        "spring.instance_id": "12feafeb0f8a:ts-assurance-service:18888"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "c431eefa28ebad92",
+      "id": "c431eefa28ebad92",
+      "kind": "SERVER",
+      "name": "http:/assurance/getallassurancetype",
+      "timestamp": 1694503989050000,
+      "duration": 3739,
+      "localEndpoint": {
+        "serviceName": "ts-assurance-service",
+        "ipv4": "172.18.0.28",
+        "port": 18888
+      },
+      "tags": {
+        "mvc.controller.class": "AssuranceController",
+        "mvc.controller.method": "getAllAssuranceType",
+        "spring.instance_id": "12feafeb0f8a:ts-assurance-service:18888"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "9da217b9f2decc7e",
+      "id": "9da217b9f2decc7e",
+      "kind": "SERVER",
+      "name": "http:/verification/generate",
+      "timestamp": 1694503988945000,
+      "duration": 26471,
+      "localEndpoint": {
+        "serviceName": "ts-verification-code-service",
+        "ipv4": "172.18.0.52",
+        "port": 15678
+      },
+      "tags": {
+        "mvc.controller.class": "VerificationCodeController",
+        "mvc.controller.method": "imagecode",
+        "spring.instance_id": "ef31422cb324:ts-verification-code-service:15678"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "e9dfb3456879aa73",
+      "id": "e9dfb3456879aa73",
+      "kind": "SERVER",
+      "name": "http:/assurance/getallassurancetype",
+      "timestamp": 1694503952672000,
+      "duration": 14925,
+      "localEndpoint": {
+        "serviceName": "ts-assurance-service",
+        "ipv4": "172.18.0.28",
+        "port": 18888
+      },
+      "tags": {
+        "mvc.controller.class": "AssuranceController",
+        "mvc.controller.method": "getAllAssuranceType",
+        "spring.instance_id": "12feafeb0f8a:ts-assurance-service:18888"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "f81648c13fbb6510",
+      "id": "f81648c13fbb6510",
+      "kind": "SERVER",
+      "name": "http:/assurance/getallassurancetype",
+      "timestamp": 1694503952648000,
+      "duration": 12687,
+      "localEndpoint": {
+        "serviceName": "ts-assurance-service",
+        "ipv4": "172.18.0.28",
+        "port": 18888
+      },
+      "tags": {
+        "mvc.controller.class": "AssuranceController",
+        "mvc.controller.method": "getAllAssuranceType",
+        "spring.instance_id": "12feafeb0f8a:ts-assurance-service:18888"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "3d2b6f124e1930bd",
+      "id": "3d2b6f124e1930bd",
+      "kind": "SERVER",
+      "name": "http:/verification/generate",
+      "timestamp": 1694503952593000,
+      "duration": 30440,
+      "localEndpoint": {
+        "serviceName": "ts-verification-code-service",
+        "ipv4": "172.18.0.52",
+        "port": 15678
+      },
+      "tags": {
+        "mvc.controller.class": "VerificationCodeController",
+        "mvc.controller.method": "imagecode",
+        "spring.instance_id": "ef31422cb324:ts-verification-code-service:15678"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "ce7495d3551b2c67",
+      "id": "ce7495d3551b2c67",
+      "kind": "SERVER",
+      "name": "http:/assurance/getallassurancetype",
+      "timestamp": 1694503947173000,
+      "duration": 6575,
+      "localEndpoint": {
+        "serviceName": "ts-assurance-service",
+        "ipv4": "172.18.0.28",
+        "port": 18888
+      },
+      "tags": {
+        "mvc.controller.class": "AssuranceController",
+        "mvc.controller.method": "getAllAssuranceType",
+        "spring.instance_id": "12feafeb0f8a:ts-assurance-service:18888"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "cad7bdb3cec7093b",
+      "id": "cad7bdb3cec7093b",
+      "kind": "SERVER",
+      "name": "http:/assurance/getallassurancetype",
+      "timestamp": 1694503947088000,
+      "duration": 61908,
+      "localEndpoint": {
+        "serviceName": "ts-assurance-service",
+        "ipv4": "172.18.0.28",
+        "port": 18888
+      },
+      "tags": {
+        "mvc.controller.class": "AssuranceController",
+        "mvc.controller.method": "getAllAssuranceType",
+        "spring.instance_id": "12feafeb0f8a:ts-assurance-service:18888"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "cd4d96b3b170cf7d",
+      "id": "cd4d96b3b170cf7d",
+      "kind": "SERVER",
+      "name": "http:/verification/generate",
+      "timestamp": 1694503947023000,
+      "duration": 239660,
+      "localEndpoint": {
+        "serviceName": "ts-verification-code-service",
+        "ipv4": "172.18.0.52",
+        "port": 15678
+      },
+      "tags": {
+        "mvc.controller.class": "VerificationCodeController",
+        "mvc.controller.method": "imagecode",
+        "spring.instance_id": "ef31422cb324:ts-verification-code-service:15678"
+      }
+    }
+  ]
+]

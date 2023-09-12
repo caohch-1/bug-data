@@ -1,0 +1,938 @@
+[
+  [
+    {
+      "traceId": "470dd584b83e9c0f",
+      "parentId": "470dd584b83e9c0f",
+      "id": "79e103878eb8d61a",
+      "kind": "SERVER",
+      "name": "http:/verifylogintoken/01c73d5e-b07b-487a-a8e4-676",
+      "timestamp": 1694501484574000,
+      "duration": 5000,
+      "localEndpoint": {
+        "serviceName": "ts-sso-service",
+        "ipv4": "172.19.0.3",
+        "port": 12349
+      },
+      "tags": {
+        "mvc.controller.class": "AccountSsoController",
+        "mvc.controller.method": "verifyLoginToken",
+        "spring.instance_id": "a8ebac96de2c:ts-sso-service:12349"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "470dd584b83e9c0f",
+      "parentId": "470dd584b83e9c0f",
+      "id": "79e103878eb8d61a",
+      "kind": "CLIENT",
+      "name": "http:/verifylogintoken/01c73d5e-b07b-487a-a8e4-676",
+      "timestamp": 1694501484572000,
+      "duration": 8000,
+      "localEndpoint": {
+        "serviceName": "ts-cancel-service",
+        "ipv4": "172.19.0.67",
+        "port": 18885
+      },
+      "tags": {
+        "http.host": "ts-sso-service",
+        "http.method": "GET",
+        "http.path": "/verifyLoginToken/01c73d5e-b07b-487a-a8e4-6762fa3261c3",
+        "http.url": "http://ts-sso-service:12349/verifyLoginToken/01c73d5e-b07b-487a-a8e4-6762fa3261c3",
+        "spring.instance_id": "ba90518bf195:ts-cancel-service:18885"
+      }
+    },
+    {
+      "traceId": "470dd584b83e9c0f",
+      "parentId": "470dd584b83e9c0f",
+      "id": "fd20f5145e6983ba",
+      "kind": "CLIENT",
+      "name": "http:/order/getbyid/",
+      "timestamp": 1694501484581000,
+      "duration": 12000,
+      "localEndpoint": {
+        "serviceName": "ts-cancel-service",
+        "ipv4": "172.19.0.67",
+        "port": 18885
+      },
+      "tags": {
+        "http.host": "ts-order-service",
+        "http.method": "POST",
+        "http.path": "/order/getById/",
+        "http.url": "http://ts-order-service:12031/order/getById/",
+        "spring.instance_id": "ba90518bf195:ts-cancel-service:18885"
+      }
+    },
+    {
+      "traceId": "470dd584b83e9c0f",
+      "parentId": "470dd584b83e9c0f",
+      "id": "26fc262dfc83e21d",
+      "kind": "CLIENT",
+      "name": "http:/orderother/getbyid/",
+      "timestamp": 1694501484594000,
+      "duration": 10000,
+      "localEndpoint": {
+        "serviceName": "ts-cancel-service",
+        "ipv4": "172.19.0.67",
+        "port": 18885
+      },
+      "tags": {
+        "http.host": "ts-order-other-service",
+        "http.method": "POST",
+        "http.path": "/orderOther/getById/",
+        "http.url": "http://ts-order-other-service:12032/orderOther/getById/",
+        "spring.instance_id": "ba90518bf195:ts-cancel-service:18885"
+      }
+    },
+    {
+      "traceId": "470dd584b83e9c0f",
+      "parentId": "470dd584b83e9c0f",
+      "id": "fd20f5145e6983ba",
+      "kind": "SERVER",
+      "name": "http:/order/getbyid/",
+      "timestamp": 1694501484584000,
+      "duration": 8000,
+      "localEndpoint": {
+        "serviceName": "ts-order-service",
+        "ipv4": "172.19.0.46",
+        "port": 12031
+      },
+      "tags": {
+        "mvc.controller.class": "OrderController",
+        "mvc.controller.method": "getOrderById",
+        "spring.instance_id": "6cc5a0b70817:ts-order-service:12031"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "470dd584b83e9c0f",
+      "parentId": "470dd584b83e9c0f",
+      "id": "26fc262dfc83e21d",
+      "kind": "SERVER",
+      "name": "http:/orderother/getbyid/",
+      "timestamp": 1694501484597000,
+      "duration": 6000,
+      "localEndpoint": {
+        "serviceName": "ts-order-other-service",
+        "ipv4": "172.19.0.19",
+        "port": 12032
+      },
+      "tags": {
+        "mvc.controller.class": "OrderOtherController",
+        "mvc.controller.method": "getOrderById",
+        "spring.instance_id": "2eed64c480fc:ts-order-other-service:12032"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "470dd584b83e9c0f",
+      "parentId": "2e7fd148669e1e2a",
+      "id": "e7709f8861b0b8bc",
+      "kind": "CLIENT",
+      "name": "http:/inside_payment/drawback",
+      "timestamp": 1694501486619000,
+      "duration": 256000,
+      "localEndpoint": {
+        "serviceName": "ts-cancel-service",
+        "ipv4": "172.19.0.67",
+        "port": 18885
+      },
+      "tags": {
+        "http.host": "ts-inside-payment-service",
+        "http.method": "POST",
+        "http.path": "/inside_payment/drawBack",
+        "http.url": "http://ts-inside-payment-service:18673/inside_payment/drawBack",
+        "spring.instance_id": "ba90518bf195:ts-cancel-service:18885"
+      }
+    },
+    {
+      "traceId": "470dd584b83e9c0f",
+      "parentId": "470dd584b83e9c0f",
+      "id": "2e7fd148669e1e2a",
+      "name": "draw-back-money",
+      "timestamp": 1694501484610000,
+      "duration": 2265689,
+      "localEndpoint": {
+        "serviceName": "ts-cancel-service",
+        "ipv4": "172.19.0.67",
+        "port": 18885
+      },
+      "tags": {
+        "class": "AsyncTask",
+        "lc": "async",
+        "method": "drawBackMoney"
+      }
+    },
+    {
+      "traceId": "470dd584b83e9c0f",
+      "parentId": "470dd584b83e9c0f",
+      "id": "2bb999e9eb0f170d",
+      "name": "cancelling",
+      "timestamp": 1694501484610000,
+      "duration": 4050010,
+      "localEndpoint": {
+        "serviceName": "ts-cancel-service",
+        "ipv4": "172.19.0.67",
+        "port": 18885
+      },
+      "tags": {
+        "class": "AsyncTask",
+        "lc": "async",
+        "method": "cancelling"
+      }
+    },
+    {
+      "traceId": "470dd584b83e9c0f",
+      "parentId": "e7709f8861b0b8bc",
+      "id": "55927e96aeea379d",
+      "kind": "SERVER",
+      "name": "http:/orderother/getbyid/",
+      "timestamp": 1694501486786000,
+      "duration": 6000,
+      "localEndpoint": {
+        "serviceName": "ts-order-other-service",
+        "ipv4": "172.19.0.19",
+        "port": 12032
+      },
+      "tags": {
+        "mvc.controller.class": "OrderOtherController",
+        "mvc.controller.method": "getOrderById",
+        "spring.instance_id": "2eed64c480fc:ts-order-other-service:12032"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "470dd584b83e9c0f",
+      "parentId": "de32ce61f936aff6",
+      "id": "ef8172faaefcdbd6",
+      "kind": "CLIENT",
+      "name": "http:/verifylogintoken/01c73d5e-b07b-487a-a8e4-676",
+      "timestamp": 1694501486824000,
+      "duration": 7000,
+      "localEndpoint": {
+        "serviceName": "ts-order-other-service",
+        "ipv4": "172.19.0.19",
+        "port": 12032
+      },
+      "tags": {
+        "http.host": "ts-sso-service",
+        "http.method": "GET",
+        "http.path": "/verifyLoginToken/01c73d5e-b07b-487a-a8e4-6762fa3261c3",
+        "http.url": "http://ts-sso-service:12349/verifyLoginToken/01c73d5e-b07b-487a-a8e4-6762fa3261c3",
+        "spring.instance_id": "2eed64c480fc:ts-order-other-service:12032"
+      }
+    },
+    {
+      "traceId": "470dd584b83e9c0f",
+      "parentId": "e7709f8861b0b8bc",
+      "id": "de32ce61f936aff6",
+      "kind": "SERVER",
+      "name": "http:/orderother/update",
+      "timestamp": 1694501486818000,
+      "duration": 20000,
+      "localEndpoint": {
+        "serviceName": "ts-order-other-service",
+        "ipv4": "172.19.0.19",
+        "port": 12032
+      },
+      "tags": {
+        "mvc.controller.class": "OrderOtherController",
+        "mvc.controller.method": "saveOrderInfo",
+        "spring.instance_id": "2eed64c480fc:ts-order-other-service:12032"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "470dd584b83e9c0f",
+      "parentId": "e7709f8861b0b8bc",
+      "id": "55927e96aeea379d",
+      "kind": "CLIENT",
+      "name": "http:/orderother/getbyid/",
+      "timestamp": 1694501486777000,
+      "duration": 19000,
+      "localEndpoint": {
+        "serviceName": "ts-inside-payment-service",
+        "ipv4": "172.19.0.16",
+        "port": 18673
+      },
+      "tags": {
+        "controller_state": "NotInit",
+        "http.host": "ts-order-other-service",
+        "http.method": "POST",
+        "http.path": "/orderOther/getById/",
+        "http.url": "http://ts-order-other-service:12032/orderOther/getById/",
+        "spring.instance_id": "2d9a6beea179:ts-inside-payment-service:18673"
+      }
+    },
+    {
+      "traceId": "470dd584b83e9c0f",
+      "parentId": "e7709f8861b0b8bc",
+      "id": "de32ce61f936aff6",
+      "kind": "CLIENT",
+      "name": "http:/orderother/update",
+      "timestamp": 1694501486815000,
+      "duration": 24000,
+      "localEndpoint": {
+        "serviceName": "ts-inside-payment-service",
+        "ipv4": "172.19.0.16",
+        "port": 18673
+      },
+      "tags": {
+        "controller_state": "NotInit",
+        "http.host": "ts-order-other-service",
+        "http.method": "POST",
+        "http.path": "/orderOther/update",
+        "http.url": "http://ts-order-other-service:12032/orderOther/update",
+        "spring.instance_id": "2d9a6beea179:ts-inside-payment-service:18673"
+      }
+    },
+    {
+      "traceId": "470dd584b83e9c0f",
+      "parentId": "2e7fd148669e1e2a",
+      "id": "e7709f8861b0b8bc",
+      "kind": "SERVER",
+      "name": "http:/inside_payment/drawback",
+      "timestamp": 1694501486698000,
+      "duration": 172000,
+      "localEndpoint": {
+        "serviceName": "ts-inside-payment-service",
+        "ipv4": "172.19.0.16",
+        "port": 18673
+      },
+      "tags": {
+        "controller_state": "NotInit",
+        "mvc.controller.class": "InsidePaymentController",
+        "mvc.controller.method": "drawBack",
+        "spring.instance_id": "2d9a6beea179:ts-inside-payment-service:18673"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "470dd584b83e9c0f",
+      "parentId": "de32ce61f936aff6",
+      "id": "ef8172faaefcdbd6",
+      "kind": "SERVER",
+      "name": "http:/verifylogintoken/01c73d5e-b07b-487a-a8e4-676",
+      "timestamp": 1694501486827000,
+      "duration": 4000,
+      "localEndpoint": {
+        "serviceName": "ts-sso-service",
+        "ipv4": "172.19.0.3",
+        "port": 12349
+      },
+      "tags": {
+        "mvc.controller.class": "AccountSsoController",
+        "mvc.controller.method": "verifyLoginToken",
+        "spring.instance_id": "a8ebac96de2c:ts-sso-service:12349"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "470dd584b83e9c0f",
+      "parentId": "0d88e2ad120d0d59",
+      "id": "c6e86dcf23111069",
+      "kind": "SERVER",
+      "name": "http:/verifylogintoken/01c73d5e-b07b-487a-a8e4-676",
+      "timestamp": 1694501488648000,
+      "duration": 4000,
+      "localEndpoint": {
+        "serviceName": "ts-sso-service",
+        "ipv4": "172.19.0.3",
+        "port": 12349
+      },
+      "tags": {
+        "mvc.controller.class": "AccountSsoController",
+        "mvc.controller.method": "verifyLoginToken",
+        "spring.instance_id": "a8ebac96de2c:ts-sso-service:12349"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "470dd584b83e9c0f",
+      "parentId": "2bb999e9eb0f170d",
+      "id": "fb9a8f1c0a5f9801",
+      "kind": "CLIENT",
+      "name": "http:/orderother/getbyid/",
+      "timestamp": 1694501488614000,
+      "duration": 16000,
+      "localEndpoint": {
+        "serviceName": "ts-cancel-service",
+        "ipv4": "172.19.0.67",
+        "port": 18885
+      },
+      "tags": {
+        "http.host": "ts-order-other-service",
+        "http.method": "POST",
+        "http.path": "/orderOther/getById/",
+        "http.url": "http://ts-order-other-service:12032/orderOther/getById/",
+        "spring.instance_id": "ba90518bf195:ts-cancel-service:18885"
+      }
+    },
+    {
+      "traceId": "470dd584b83e9c0f",
+      "parentId": "2bb999e9eb0f170d",
+      "id": "0d88e2ad120d0d59",
+      "kind": "CLIENT",
+      "name": "http:/orderother/update",
+      "timestamp": 1694501488641000,
+      "duration": 18000,
+      "localEndpoint": {
+        "serviceName": "ts-cancel-service",
+        "ipv4": "172.19.0.67",
+        "port": 18885
+      },
+      "tags": {
+        "http.host": "ts-order-other-service",
+        "http.method": "POST",
+        "http.path": "/orderOther/update",
+        "http.url": "http://ts-order-other-service:12032/orderOther/update",
+        "spring.instance_id": "ba90518bf195:ts-cancel-service:18885"
+      }
+    },
+    {
+      "traceId": "470dd584b83e9c0f",
+      "parentId": "470dd584b83e9c0f",
+      "id": "9059efc5aa0af0cf",
+      "kind": "CLIENT",
+      "name": "http:/orderother/getbyid/",
+      "timestamp": 1694501488661000,
+      "duration": 6000,
+      "localEndpoint": {
+        "serviceName": "ts-cancel-service",
+        "ipv4": "172.19.0.67",
+        "port": 18885
+      },
+      "tags": {
+        "http.host": "ts-order-other-service",
+        "http.method": "POST",
+        "http.path": "/orderOther/getById/",
+        "http.url": "http://ts-order-other-service:12032/orderOther/getById/",
+        "spring.instance_id": "ba90518bf195:ts-cancel-service:18885"
+      }
+    },
+    {
+      "traceId": "470dd584b83e9c0f",
+      "id": "470dd584b83e9c0f",
+      "kind": "SERVER",
+      "name": "http:/cancelorder",
+      "timestamp": 1694501484564000,
+      "duration": 4106198,
+      "localEndpoint": {
+        "serviceName": "ts-cancel-service",
+        "ipv4": "172.19.0.67",
+        "port": 18885
+      },
+      "tags": {
+        "mvc.controller.class": "CancelController",
+        "mvc.controller.method": "cancelTicket",
+        "spring.instance_id": "ba90518bf195:ts-cancel-service:18885"
+      }
+    },
+    {
+      "traceId": "470dd584b83e9c0f",
+      "parentId": "2bb999e9eb0f170d",
+      "id": "fb9a8f1c0a5f9801",
+      "kind": "SERVER",
+      "name": "http:/orderother/getbyid/",
+      "timestamp": 1694501488619000,
+      "duration": 11000,
+      "localEndpoint": {
+        "serviceName": "ts-order-other-service",
+        "ipv4": "172.19.0.19",
+        "port": 12032
+      },
+      "tags": {
+        "mvc.controller.class": "OrderOtherController",
+        "mvc.controller.method": "getOrderById",
+        "spring.instance_id": "2eed64c480fc:ts-order-other-service:12032"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "470dd584b83e9c0f",
+      "parentId": "0d88e2ad120d0d59",
+      "id": "c6e86dcf23111069",
+      "kind": "CLIENT",
+      "name": "http:/verifylogintoken/01c73d5e-b07b-487a-a8e4-676",
+      "timestamp": 1694501488646000,
+      "duration": 7000,
+      "localEndpoint": {
+        "serviceName": "ts-order-other-service",
+        "ipv4": "172.19.0.19",
+        "port": 12032
+      },
+      "tags": {
+        "http.host": "ts-sso-service",
+        "http.method": "GET",
+        "http.path": "/verifyLoginToken/01c73d5e-b07b-487a-a8e4-6762fa3261c3",
+        "http.url": "http://ts-sso-service:12349/verifyLoginToken/01c73d5e-b07b-487a-a8e4-6762fa3261c3",
+        "spring.instance_id": "2eed64c480fc:ts-order-other-service:12032"
+      }
+    },
+    {
+      "traceId": "470dd584b83e9c0f",
+      "parentId": "2bb999e9eb0f170d",
+      "id": "0d88e2ad120d0d59",
+      "kind": "SERVER",
+      "name": "http:/orderother/update",
+      "timestamp": 1694501488643000,
+      "duration": 15000,
+      "localEndpoint": {
+        "serviceName": "ts-order-other-service",
+        "ipv4": "172.19.0.19",
+        "port": 12032
+      },
+      "tags": {
+        "mvc.controller.class": "OrderOtherController",
+        "mvc.controller.method": "saveOrderInfo",
+        "spring.instance_id": "2eed64c480fc:ts-order-other-service:12032"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "470dd584b83e9c0f",
+      "parentId": "470dd584b83e9c0f",
+      "id": "9059efc5aa0af0cf",
+      "kind": "SERVER",
+      "name": "http:/orderother/getbyid/",
+      "timestamp": 1694501488662000,
+      "duration": 4000,
+      "localEndpoint": {
+        "serviceName": "ts-order-other-service",
+        "ipv4": "172.19.0.19",
+        "port": 12032
+      },
+      "tags": {
+        "mvc.controller.class": "OrderOtherController",
+        "mvc.controller.method": "getOrderById",
+        "spring.instance_id": "2eed64c480fc:ts-order-other-service:12032"
+      },
+      "shared": true
+    }
+  ],
+  [
+    {
+      "traceId": "769507374237339c",
+      "parentId": "769507374237339c",
+      "id": "e7c0e9794676c3ff",
+      "kind": "CLIENT",
+      "name": "http:/order/getbyid/",
+      "timestamp": 1694501482643000,
+      "duration": 30000,
+      "localEndpoint": {
+        "serviceName": "ts-cancel-service",
+        "ipv4": "172.19.0.67",
+        "port": 18885
+      },
+      "tags": {
+        "http.host": "ts-order-service",
+        "http.method": "POST",
+        "http.path": "/order/getById/",
+        "http.url": "http://ts-order-service:12031/order/getById/",
+        "spring.instance_id": "ba90518bf195:ts-cancel-service:18885"
+      }
+    },
+    {
+      "traceId": "769507374237339c",
+      "parentId": "769507374237339c",
+      "id": "da32b7ca7dc1ef7a",
+      "kind": "CLIENT",
+      "name": "http:/orderother/getbyid/",
+      "timestamp": 1694501482689000,
+      "duration": 14000,
+      "localEndpoint": {
+        "serviceName": "ts-cancel-service",
+        "ipv4": "172.19.0.67",
+        "port": 18885
+      },
+      "tags": {
+        "http.host": "ts-order-other-service",
+        "http.method": "POST",
+        "http.path": "/orderOther/getById/",
+        "http.url": "http://ts-order-other-service:12032/orderOther/getById/",
+        "spring.instance_id": "ba90518bf195:ts-cancel-service:18885"
+      }
+    },
+    {
+      "traceId": "769507374237339c",
+      "id": "769507374237339c",
+      "kind": "SERVER",
+      "name": "http:/cancelcalculaterefund",
+      "timestamp": 1694501482562000,
+      "duration": 150030,
+      "localEndpoint": {
+        "serviceName": "ts-cancel-service",
+        "ipv4": "172.19.0.67",
+        "port": 18885
+      },
+      "tags": {
+        "mvc.controller.class": "CancelController",
+        "mvc.controller.method": "calculate",
+        "spring.instance_id": "ba90518bf195:ts-cancel-service:18885"
+      }
+    },
+    {
+      "traceId": "769507374237339c",
+      "parentId": "769507374237339c",
+      "id": "e7c0e9794676c3ff",
+      "kind": "SERVER",
+      "name": "http:/order/getbyid/",
+      "timestamp": 1694501482654000,
+      "duration": 16000,
+      "localEndpoint": {
+        "serviceName": "ts-order-service",
+        "ipv4": "172.19.0.46",
+        "port": 12031
+      },
+      "tags": {
+        "mvc.controller.class": "OrderController",
+        "mvc.controller.method": "getOrderById",
+        "spring.instance_id": "6cc5a0b70817:ts-order-service:12031"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "769507374237339c",
+      "parentId": "769507374237339c",
+      "id": "da32b7ca7dc1ef7a",
+      "kind": "SERVER",
+      "name": "http:/orderother/getbyid/",
+      "timestamp": 1694501482692000,
+      "duration": 9000,
+      "localEndpoint": {
+        "serviceName": "ts-order-other-service",
+        "ipv4": "172.19.0.19",
+        "port": 12032
+      },
+      "tags": {
+        "mvc.controller.class": "OrderOtherController",
+        "mvc.controller.method": "getOrderById",
+        "spring.instance_id": "2eed64c480fc:ts-order-other-service:12032"
+      },
+      "shared": true
+    }
+  ],
+  [
+    {
+      "traceId": "672bf9668b0ed1e0",
+      "id": "672bf9668b0ed1e0",
+      "kind": "SERVER",
+      "name": "http:/station/querybyid",
+      "timestamp": 1694501477534000,
+      "duration": 6250,
+      "localEndpoint": {
+        "serviceName": "ts-station-service",
+        "ipv4": "172.19.0.6",
+        "port": 12345
+      },
+      "tags": {
+        "mvc.controller.class": "StationController",
+        "mvc.controller.method": "queryById",
+        "spring.instance_id": "2d18f5f40c5e:ts-station-service:12345"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "494498e6c53e6d3e",
+      "id": "494498e6c53e6d3e",
+      "kind": "SERVER",
+      "name": "http:/station/querybyid",
+      "timestamp": 1694501477413000,
+      "duration": 104170,
+      "localEndpoint": {
+        "serviceName": "ts-station-service",
+        "ipv4": "172.19.0.6",
+        "port": 12345
+      },
+      "tags": {
+        "mvc.controller.class": "StationController",
+        "mvc.controller.method": "queryById",
+        "spring.instance_id": "2d18f5f40c5e:ts-station-service:12345"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "9ab59b9b98d10d87",
+      "parentId": "9ab59b9b98d10d87",
+      "id": "61eb3cf36d4b16e9",
+      "kind": "CLIENT",
+      "name": "http:/verifylogintoken/01c73d5e-b07b-487a-a8e4-676",
+      "timestamp": 1694501477241000,
+      "duration": 24000,
+      "localEndpoint": {
+        "serviceName": "ts-order-other-service",
+        "ipv4": "172.19.0.19",
+        "port": 12032
+      },
+      "tags": {
+        "http.host": "ts-sso-service",
+        "http.method": "GET",
+        "http.path": "/verifyLoginToken/01c73d5e-b07b-487a-a8e4-6762fa3261c3",
+        "http.url": "http://ts-sso-service:12349/verifyLoginToken/01c73d5e-b07b-487a-a8e4-6762fa3261c3",
+        "spring.instance_id": "2eed64c480fc:ts-order-other-service:12032"
+      }
+    },
+    {
+      "traceId": "9ab59b9b98d10d87",
+      "id": "9ab59b9b98d10d87",
+      "kind": "SERVER",
+      "name": "http:/orderother/query",
+      "timestamp": 1694501477159000,
+      "duration": 159880,
+      "localEndpoint": {
+        "serviceName": "ts-order-other-service",
+        "ipv4": "172.19.0.19",
+        "port": 12032
+      },
+      "tags": {
+        "mvc.controller.class": "OrderOtherController",
+        "mvc.controller.method": "queryOrders",
+        "spring.instance_id": "2eed64c480fc:ts-order-other-service:12032"
+      }
+    },
+    {
+      "traceId": "9ab59b9b98d10d87",
+      "parentId": "9ab59b9b98d10d87",
+      "id": "61eb3cf36d4b16e9",
+      "kind": "SERVER",
+      "name": "http:/verifylogintoken/01c73d5e-b07b-487a-a8e4-676",
+      "timestamp": 1694501477252000,
+      "duration": 8000,
+      "localEndpoint": {
+        "serviceName": "ts-sso-service",
+        "ipv4": "172.19.0.3",
+        "port": 12349
+      },
+      "tags": {
+        "mvc.controller.class": "AccountSsoController",
+        "mvc.controller.method": "verifyLoginToken",
+        "spring.instance_id": "a8ebac96de2c:ts-sso-service:12349"
+      },
+      "shared": true
+    }
+  ],
+  [
+    {
+      "traceId": "f987c9e614b330b6",
+      "parentId": "f987c9e614b330b6",
+      "id": "6d4f46b8c8462fd3",
+      "kind": "SERVER",
+      "name": "http:/verifylogintoken/01c73d5e-b07b-487a-a8e4-676",
+      "timestamp": 1694501477232000,
+      "duration": 15000,
+      "localEndpoint": {
+        "serviceName": "ts-sso-service",
+        "ipv4": "172.19.0.3",
+        "port": 12349
+      },
+      "tags": {
+        "mvc.controller.class": "AccountSsoController",
+        "mvc.controller.method": "verifyLoginToken",
+        "spring.instance_id": "a8ebac96de2c:ts-sso-service:12349"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "f987c9e614b330b6",
+      "parentId": "f987c9e614b330b6",
+      "id": "6d4f46b8c8462fd3",
+      "kind": "CLIENT",
+      "name": "http:/verifylogintoken/01c73d5e-b07b-487a-a8e4-676",
+      "timestamp": 1694501477223000,
+      "duration": 31000,
+      "localEndpoint": {
+        "serviceName": "ts-order-service",
+        "ipv4": "172.19.0.46",
+        "port": 12031
+      },
+      "tags": {
+        "http.host": "ts-sso-service",
+        "http.method": "GET",
+        "http.path": "/verifyLoginToken/01c73d5e-b07b-487a-a8e4-6762fa3261c3",
+        "http.url": "http://ts-sso-service:12349/verifyLoginToken/01c73d5e-b07b-487a-a8e4-6762fa3261c3",
+        "spring.instance_id": "6cc5a0b70817:ts-order-service:12031"
+      }
+    },
+    {
+      "traceId": "f987c9e614b330b6",
+      "id": "f987c9e614b330b6",
+      "kind": "SERVER",
+      "name": "http:/order/query",
+      "timestamp": 1694501477148000,
+      "duration": 187953,
+      "localEndpoint": {
+        "serviceName": "ts-order-service",
+        "ipv4": "172.19.0.46",
+        "port": 12031
+      },
+      "tags": {
+        "mvc.controller.class": "OrderController",
+        "mvc.controller.method": "queryOrders",
+        "spring.instance_id": "6cc5a0b70817:ts-order-service:12031"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "a8d5d4d15df86567",
+      "parentId": "a8d5d4d15df86567",
+      "id": "3dc35739b0840087",
+      "kind": "SERVER",
+      "name": "http:/account/login",
+      "timestamp": 1694501470546000,
+      "duration": 101000,
+      "localEndpoint": {
+        "serviceName": "ts-sso-service",
+        "ipv4": "172.19.0.3",
+        "port": 12349
+      },
+      "tags": {
+        "mvc.controller.class": "AccountSsoController",
+        "mvc.controller.method": "login",
+        "spring.instance_id": "a8ebac96de2c:ts-sso-service:12349"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "a8d5d4d15df86567",
+      "parentId": "a8d5d4d15df86567",
+      "id": "c36f0673c97ea31c",
+      "kind": "SERVER",
+      "name": "http:/verification/verify",
+      "timestamp": 1694501470409000,
+      "duration": 30000,
+      "localEndpoint": {
+        "serviceName": "ts-verification-code-service",
+        "ipv4": "172.19.0.62",
+        "port": 15678
+      },
+      "tags": {
+        "mvc.controller.class": "VerificationCodeController",
+        "mvc.controller.method": "verifyCode",
+        "spring.instance_id": "3b884554f35f:ts-verification-code-service:15678"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "a8d5d4d15df86567",
+      "parentId": "a8d5d4d15df86567",
+      "id": "c36f0673c97ea31c",
+      "kind": "CLIENT",
+      "name": "http:/verification/verify",
+      "timestamp": 1694501470398000,
+      "duration": 47000,
+      "localEndpoint": {
+        "serviceName": "ts-login-service",
+        "ipv4": "172.19.0.61",
+        "port": 12342
+      },
+      "tags": {
+        "http.host": "ts-verification-code-service",
+        "http.method": "POST",
+        "http.path": "/verification/verify",
+        "http.url": "http://ts-verification-code-service:15678/verification/verify",
+        "spring.instance_id": "5ee74ba253c8:ts-login-service:12342"
+      }
+    },
+    {
+      "traceId": "a8d5d4d15df86567",
+      "parentId": "a8d5d4d15df86567",
+      "id": "3dc35739b0840087",
+      "kind": "CLIENT",
+      "name": "http:/account/login",
+      "timestamp": 1694501470481000,
+      "duration": 169000,
+      "localEndpoint": {
+        "serviceName": "ts-login-service",
+        "ipv4": "172.19.0.61",
+        "port": 12342
+      },
+      "tags": {
+        "http.host": "ts-sso-service",
+        "http.method": "POST",
+        "http.path": "/account/login",
+        "http.url": "http://ts-sso-service:12349/account/login",
+        "spring.instance_id": "5ee74ba253c8:ts-login-service:12342"
+      }
+    },
+    {
+      "traceId": "a8d5d4d15df86567",
+      "id": "a8d5d4d15df86567",
+      "kind": "SERVER",
+      "name": "http:/login",
+      "timestamp": 1694501470327000,
+      "duration": 335619,
+      "localEndpoint": {
+        "serviceName": "ts-login-service",
+        "ipv4": "172.19.0.61",
+        "port": 12342
+      },
+      "tags": {
+        "mvc.controller.class": "AccountLoginController",
+        "mvc.controller.method": "login",
+        "spring.instance_id": "5ee74ba253c8:ts-login-service:12342"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "318df8a716939a2e",
+      "id": "318df8a716939a2e",
+      "kind": "SERVER",
+      "name": "http:/assurance/getallassurancetype",
+      "timestamp": 1694501469484000,
+      "duration": 6783,
+      "localEndpoint": {
+        "serviceName": "ts-assurance-service",
+        "ipv4": "172.19.0.35",
+        "port": 18888
+      },
+      "tags": {
+        "mvc.controller.class": "AssuranceController",
+        "mvc.controller.method": "getAllAssuranceType",
+        "spring.instance_id": "bc09e0a61199:ts-assurance-service:18888"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "8579a35434c61eb9",
+      "id": "8579a35434c61eb9",
+      "kind": "SERVER",
+      "name": "http:/assurance/getallassurancetype",
+      "timestamp": 1694501469391000,
+      "duration": 74607,
+      "localEndpoint": {
+        "serviceName": "ts-assurance-service",
+        "ipv4": "172.19.0.35",
+        "port": 18888
+      },
+      "tags": {
+        "mvc.controller.class": "AssuranceController",
+        "mvc.controller.method": "getAllAssuranceType",
+        "spring.instance_id": "bc09e0a61199:ts-assurance-service:18888"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "971144a90af8a376",
+      "id": "971144a90af8a376",
+      "kind": "SERVER",
+      "name": "http:/verification/generate",
+      "timestamp": 1694501469248000,
+      "duration": 232805,
+      "localEndpoint": {
+        "serviceName": "ts-verification-code-service",
+        "ipv4": "172.19.0.62",
+        "port": 15678
+      },
+      "tags": {
+        "mvc.controller.class": "VerificationCodeController",
+        "mvc.controller.method": "imagecode",
+        "spring.instance_id": "3b884554f35f:ts-verification-code-service:15678"
+      }
+    }
+  ]
+]

@@ -62,3 +62,5 @@ Now visit `localhost:8080` and you should see the UI of trainticket.
 8. F8 in `ts-cancel-service/src/main/java/cancel/controller/CancelController.java`. L59-65 process "VIP" incorrectly. Authors provide scripts for buggy and normal run. I still feel difference between "buggy" and "normal" run is unclear.
 9. F9 `ts-ui-dashboard/static/css/style.css`. A frontend bug and I don't know how to get a normal run result without changing source code.
 10. F10 failed to reproduce. Lack of test scripts. Authors upload wrong test scripts zip and the fault cannot be reproduced by following trigger steps...
+11. F11 in `ts-cancel-service/src/main/java/cancel/service/CancelServiceImpl.java`. L129-138 implements the logic that lacks of sequence control. The trigger script somethimes can reproduce buggy and sometimes normal.
+12. F12 in `ts-order-other-service/src/main/java/other/service/OrderOtherServiceImpl.java`. Two scripts, one for normal and the other for buggy.

@@ -1,0 +1,10 @@
+/home/caohch1/Desktop/train-ticket-fault-replicate/ts-train-service/src/main/java/train/domain/TrainType.java
+/home/caohch1/Desktop/train-ticket-fault-replicate/ts-train-service/src/main/java/train/controller/TrainController.java
+/home/caohch1/Desktop/train-ticket-fault-replicate/ts-train-service/src/main/java/train/init/InitData.java
+/home/caohch1/Desktop/train-ticket-fault-replicate/ts-train-service/src/main/java/train/domain/Information2.java
+/home/caohch1/Desktop/train-ticket-fault-replicate/ts-train-service/src/main/java/train/TrainApplication.java
+/home/caohch1/Desktop/train-ticket-fault-replicate/ts-train-service/src/main/java/train/service/TrainServiceImpl.java
+/home/caohch1/Desktop/train-ticket-fault-replicate/ts-train-service/src/main/java/train/config/HttpAspectConfig.java
+/home/caohch1/Desktop/train-ticket-fault-replicate/ts-train-service/src/main/java/train/domain/Information.java
+/home/caohch1/Desktop/train-ticket-fault-replicate/ts-train-service/src/main/java/train/repository/TrainTypeRepository.java
+/home/caohch1/Desktop/train-ticket-fault-replicate/ts-train-service/src/main/java/train/service/TrainService.java
