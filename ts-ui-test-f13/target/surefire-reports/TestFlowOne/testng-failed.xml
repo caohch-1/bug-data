@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [TestFlowOne]">
+  <test name="Command line test(failed)">
+    <classes>
+      <class name="TestFlowOne">
+        <methods>
+          <include name="tearDown"/>
+          <include name="testLogin"/>
+          <include name="setUp"/>
+          <include name="testClickOrderCancel"/>
+          <include name="testBooking"/>
+          <include name="testViewOrders"/>
+          <include name="testRegist"/>
+          <include name="testSelectContacts"/>
+          <include name="testTicketConfirm"/>
+          <include name="testTicketPay"/>
+        </methods>
+      </class> <!-- TestFlowOne -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [TestFlowOne] -->

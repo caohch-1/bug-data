@@ -1,0 +1,8 @@
+
+> ts-ticket-office-service@0.0.0 start /app
+> node bin/www
+
+initMongo连接上数据库啦！
+init data successful!
+getRegionList=[{"province":"Shanghai","cities":[{"city":"Shanghai","regions":[{"region":"Pudong New Area"}]}]},{"province":"Anhui","cities":[{"city":"Hefei","regions":[{"region":"Heifei Downtown Area"},{"region":"Feixi County"}]},{"city":"Anqing","regions":[{"region":"Anqing Downtown Area"}]}]}]
+[0mGET /office/getRegionList [36m304 [0m5.161 ms - -[0m

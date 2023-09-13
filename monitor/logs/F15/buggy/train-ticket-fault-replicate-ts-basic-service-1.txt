@@ -1,0 +1,136 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.3.RELEASE)
+
+2023-09-13 06:48:28.479  INFO [ts-basic-service,,,] 1 --- [           main] fdse.microservice.BasicApplication       : Starting BasicApplication v1.0 on 923bffed0325 with PID 1 (/app/ts-basic-service-1.0.jar started by root in /)
+2023-09-13 06:48:28.588  INFO [ts-basic-service,,,] 1 --- [           main] fdse.microservice.BasicApplication       : No active profile set, falling back to default profiles: default
+2023-09-13 06:48:33.543  INFO [ts-basic-service,,,] 1 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@51521cc1: startup date [Wed Sep 13 06:48:33 UTC 2023]; root of context hierarchy
+2023-09-13 06:49:03.526  INFO [ts-basic-service,,,] 1 --- [           main] o.s.i.config.IntegrationRegistrar        : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2023-09-13 06:49:14.717  INFO [ts-basic-service,,,] 1 --- [           main] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2023-09-13 06:49:14.836  INFO [ts-basic-service,,,] 1 --- [           main] faultConfiguringBeanFactoryPostProcessor : No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2023-09-13 06:49:15.757  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration$DefaultAsyncConfigurerSupport' of type [org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration$DefaultAsyncConfigurerSupport$$EnhancerBySpringCGLIB$$59abe83f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-13 06:49:22.072  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.annotation.SleuthAnnotationAutoConfiguration' of type [org.springframework.cloud.sleuth.annotation.SleuthAnnotationAutoConfiguration$$EnhancerBySpringCGLIB$$1ecf90ae] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-13 06:49:27.039  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'sleuthAdvisorConfig' of type [org.springframework.cloud.sleuth.annotation.SleuthAdvisorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-13 06:49:28.075  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'integrationGlobalProperties' of type [org.springframework.beans.factory.config.PropertiesFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-13 06:49:28.449  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'integrationGlobalProperties' of type [java.util.Properties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-13 06:49:32.559  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration' of type [org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration$$EnhancerBySpringCGLIB$$44df69b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-13 06:49:32.965  INFO [ts-basic-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.instrument.web.client.TraceWebClientAutoConfiguration' of type [org.springframework.cloud.sleuth.instrument.web.client.TraceWebClientAutoConfiguration$$EnhancerBySpringCGLIB$$c8fd15fb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-13 06:49:44.325  INFO [ts-basic-service,,,] 1 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 15680 (http)
+2023-09-13 06:49:45.060  INFO [ts-basic-service,,,] 1 --- [           main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2023-09-13 06:49:45.062  INFO [ts-basic-service,,,] 1 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.14
+2023-09-13 06:49:45.865  INFO [ts-basic-service,,,] 1 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-13 06:49:45.869  INFO [ts-basic-service,,,] 1 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 72533 ms
+2023-09-13 06:50:02.293  INFO [ts-basic-service,,,] 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'metricsFilter' to: [/*]
+2023-09-13 06:50:02.294  INFO [ts-basic-service,,,] 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2023-09-13 06:50:02.294  INFO [ts-basic-service,,,] 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'traceFilter' to: [/*]
+2023-09-13 06:50:02.294  INFO [ts-basic-service,,,] 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2023-09-13 06:50:02.295  INFO [ts-basic-service,,,] 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2023-09-13 06:50:02.295  INFO [ts-basic-service,,,] 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2023-09-13 06:50:02.295  INFO [ts-basic-service,,,] 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2023-09-13 06:50:02.295  INFO [ts-basic-service,,,] 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'applicationContextIdFilter' to: [/*]
+2023-09-13 06:50:02.295  INFO [ts-basic-service,,,] 1 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2023-09-13 06:50:44.594  INFO [ts-basic-service,,,] 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@51521cc1: startup date [Wed Sep 13 06:48:33 UTC 2023]; root of context hierarchy
+2023-09-13 06:50:51.172  INFO [ts-basic-service,,,] 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/basic/queryForStationId],methods=[POST]}" onto public java.lang.String fdse.microservice.controller.BasicController.queryForStationId(fdse.microservice.domain.QueryStation)
+2023-09-13 06:50:51.199  INFO [ts-basic-service,,,] 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/basic/queryForTravel],methods=[POST]}" onto public fdse.microservice.domain.ResultForTravel fdse.microservice.controller.BasicController.queryForTravel(fdse.microservice.domain.QueryForTravel)
+2023-09-13 06:50:51.255  INFO [ts-basic-service,,,] 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2023-09-13 06:50:51.256  INFO [ts-basic-service,,,] 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2023-09-13 06:50:53.999  INFO [ts-basic-service,,,] 1 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2023-09-13 06:50:53.999  INFO [ts-basic-service,,,] 1 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2023-09-13 06:50:58.033  INFO [ts-basic-service,,,] 1 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2023-09-13 06:51:13.148  INFO [ts-basic-service,,,] 1 --- [           main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService  'taskScheduler'
+2023-09-13 06:51:26.520  INFO [ts-basic-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2023-09-13 06:51:26.522  INFO [ts-basic-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+2023-09-13 06:51:26.619  INFO [ts-basic-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2023-09-13 06:51:26.620  INFO [ts-basic-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2023-09-13 06:51:26.621  INFO [ts-basic-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+2023-09-13 06:51:26.622  INFO [ts-basic-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2023-09-13 06:51:26.659  INFO [ts-basic-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2023-09-13 06:51:26.660  INFO [ts-basic-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2023-09-13 06:51:26.663  INFO [ts-basic-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/features || /features.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2023-09-13 06:51:26.773  INFO [ts-basic-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+2023-09-13 06:51:26.774  INFO [ts-basic-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+2023-09-13 06:51:26.774  INFO [ts-basic-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2023-09-13 06:51:26.775  INFO [ts-basic-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2023-09-13 06:51:26.776  INFO [ts-basic-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2023-09-13 06:51:26.874  INFO [ts-basic-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2023-09-13 06:51:26.874  INFO [ts-basic-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2023-09-13 06:51:26.875  INFO [ts-basic-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2023-09-13 06:51:26.893  INFO [ts-basic-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2023-09-13 06:51:39.895  INFO [ts-basic-service,,,] 1 --- [           main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 
+2023-09-13 06:51:50.035  INFO [ts-basic-service,,,] 1 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2023-09-13 06:51:50.807  INFO [ts-basic-service,,,] 1 --- [           main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2023-09-13 06:51:52.799  INFO [ts-basic-service,,,] 1 --- [           main] o.s.i.endpoint.EventDrivenConsumer       : Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2023-09-13 06:51:52.800  INFO [ts-basic-service,,,] 1 --- [           main] o.s.i.channel.PublishSubscribeChannel    : Channel 'ts-basic-service:15680.errorChannel' has 1 subscriber(s).
+2023-09-13 06:51:52.800  INFO [ts-basic-service,,,] 1 --- [           main] o.s.i.endpoint.EventDrivenConsumer       : started _org.springframework.integration.errorLogger
+2023-09-13 06:51:54.666  INFO [ts-basic-service,,,] 1 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 15680 (http)
+2023-09-13 06:51:54.814  INFO [ts-basic-service,,,] 1 --- [           main] fdse.microservice.BasicApplication       : Started BasicApplication in 218.664 seconds (JVM running for 227.791)
+2023-09-13 07:00:02.627  INFO [ts-basic-service,,,] 1 --- [io-15680-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2023-09-13 07:00:02.627  INFO [ts-basic-service,,,] 1 --- [io-15680-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2023-09-13 07:00:02.660  INFO [ts-basic-service,,,] 1 --- [io-15680-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 33 ms
+c=fdse.microservice.domain.QueryStation@3d774b2a
+c=fdse.microservice.domain.QueryStation@2e230b0f
+requestArgs={"name":"Shang Hai"}
+requestArgs={"name":"Shang Hai"}
+2023-09-13 07:00:02.733  INFO [ts-basic-service,d5e38c674870563d,7df7c14ff3d6e30b,true] 1 --- [io-15680-exec-1] fdse.microservice.conf.HttpAspect        : [Service:ts-basic-service][URI:ts-basic-service/basic/queryForStationId][Method:POST][Request:{"name":"Shang Hai"}][RemoteHost:172.18.0.47][IP:172.18.0.47]
+2023-09-13 07:00:02.733  INFO [ts-basic-service,faf5f16f3aac821f,b033a162430b4141,true] 1 --- [io-15680-exec-2] fdse.microservice.conf.HttpAspect        : [Service:ts-basic-service][URI:ts-basic-service/basic/queryForStationId][Method:POST][Request:{"name":"Shang Hai"}][RemoteHost:172.18.0.47][IP:172.18.0.47]
+[Basic Information Service][Query For Station Id] Station Id:Shang Hai
+[Basic Information Service][Query For Station Id] Station Id:Shang Hai
+2023-09-13 07:00:03.014  INFO [ts-basic-service,d5e38c674870563d,7df7c14ff3d6e30b,true] 1 --- [io-15680-exec-1] fdse.microservice.conf.HttpAspect        : [Service:ts-basic-service][Response:"shanghai"]
+2023-09-13 07:00:03.014  INFO [ts-basic-service,faf5f16f3aac821f,b033a162430b4141,true] 1 --- [io-15680-exec-2] fdse.microservice.conf.HttpAspect        : [Service:ts-basic-service][Response:"shanghai"]
+c=fdse.microservice.domain.QueryStation@611b92f4
+requestArgs={"name":"Su Zhou"}
+2023-09-13 07:00:03.077  INFO [ts-basic-service,d5e38c674870563d,d5aac92e7ac630c9,true] 1 --- [io-15680-exec-3] fdse.microservice.conf.HttpAspect        : [Service:ts-basic-service][URI:ts-basic-service/basic/queryForStationId][Method:POST][Request:{"name":"Su Zhou"}][RemoteHost:172.18.0.47][IP:172.18.0.47]
+[Basic Information Service][Query For Station Id] Station Id:Su Zhou
+c=fdse.microservice.domain.QueryStation@24b603
+requestArgs={"name":"Su Zhou"}
+2023-09-13 07:00:03.080  INFO [ts-basic-service,faf5f16f3aac821f,6be064a3ba474d03,true] 1 --- [io-15680-exec-4] fdse.microservice.conf.HttpAspect        : [Service:ts-basic-service][URI:ts-basic-service/basic/queryForStationId][Method:POST][Request:{"name":"Su Zhou"}][RemoteHost:172.18.0.47][IP:172.18.0.47]
+[Basic Information Service][Query For Station Id] Station Id:Su Zhou
+2023-09-13 07:00:03.088  INFO [ts-basic-service,d5e38c674870563d,d5aac92e7ac630c9,true] 1 --- [io-15680-exec-3] fdse.microservice.conf.HttpAspect        : [Service:ts-basic-service][Response:"suzhou"]
+2023-09-13 07:00:03.089  INFO [ts-basic-service,faf5f16f3aac821f,6be064a3ba474d03,true] 1 --- [io-15680-exec-4] fdse.microservice.conf.HttpAspect        : [Service:ts-basic-service][Response:"suzhou"]
+c=fdse.microservice.domain.QueryForTravel@4c77cd89
+requestArgs={"trip":{"tripId":{"type":"D","number":"1345"},"trainTypeId":"DongCheOne","routeId":"f3d4d4ef-693b-4456-8eed-59c0d717dd08","startingStationId":"shanghai","stationsId":"suzhou","terminalStationId":"taiyuan","startingTime":"May 3, 2013 11:00:00 PM","endTime":"May 4, 2013 11:59:52 AM"},"startingPlace":"Shang Hai","endPlace":"Su Zhou","departureTime":"Sep 24, 2023 12:00:00 AM"}
+2023-09-13 07:00:03.421  INFO [ts-basic-service,d5e38c674870563d,b67ad7368f6bf767,true] 1 --- [io-15680-exec-5] fdse.microservice.conf.HttpAspect        : [Service:ts-basic-service][URI:ts-basic-service/basic/queryForTravel][Method:POST][Request:{"trip":{"tripId":{"type":"D","number":"1345"},"trainTypeId":"DongCheOne","routeId":"f3d4d4ef-693b-4456-8eed-59c0d717dd08","startingStationId":"shanghai","stationsId":"suzhou","terminalStationId":"taiyuan","startingTime":"May 3, 2013 11:00:00 PM","endTime":"May 4, 2013 11:59:52 AM"},"startingPlace":"Shang Hai","endPlace":"Su Zhou","departureTime":"Sep 24, 2023 12:00:00 AM"}][RemoteHost:172.18.0.47][IP:172.18.0.47]
+[Basic Information Service][Check Station Exists] Station Name:Shang Hai
+[Basic Information Service][Check Station Exists] Station Name:Su Zhou
+[Basic Information Service][Query Train Type] Train Type:DongCheOne
+[Basic Information Service][Get Route By Id] Route ID：f3d4d4ef-693b-4456-8eed-59c0d717dd08
+[Basic Information Service][Get Route By Id] Success.
+[Basic Information Service][Query For Price Config] RouteId:f3d4d4ef-693b-4456-8eed-59c0d717dd08TrainType:DongCheOne
+[Basic Information Service][Query For Station Id] Station Id:Shang Hai
+[Basic Information Service][Query For Station Id] Station Id:Su Zhou
+2023-09-13 07:00:03.884  INFO [ts-basic-service,d5e38c674870563d,b67ad7368f6bf767,true] 1 --- [io-15680-exec-5] fdse.microservice.conf.HttpAspect        : [Service:ts-basic-service][Response:{"status":true,"percent":1.0,"trainType":{"id":"DongCheOne","economyClass":300,"confortClass":100,"averageSpeed":180},"prices":{"confortClass":"50.0","economyClass":"22.5"}}]
+c=fdse.microservice.domain.QueryStation@6d453043
+requestArgs={"name":"Shang Hai"}
+2023-09-13 07:00:04.118  INFO [ts-basic-service,d5e38c674870563d,14636c03120b4017,true] 1 --- [io-15680-exec-6] fdse.microservice.conf.HttpAspect        : [Service:ts-basic-service][URI:ts-basic-service/basic/queryForStationId][Method:POST][Request:{"name":"Shang Hai"}][RemoteHost:172.18.0.47][IP:172.18.0.47]
+[Basic Information Service][Query For Station Id] Station Id:Shang Hai
+2023-09-13 07:00:04.125  INFO [ts-basic-service,d5e38c674870563d,14636c03120b4017,true] 1 --- [io-15680-exec-6] fdse.microservice.conf.HttpAspect        : [Service:ts-basic-service][Response:"shanghai"]
+c=fdse.microservice.domain.QueryStation@2a1dd596
+requestArgs={"name":"Su Zhou"}
+2023-09-13 07:00:04.136  INFO [ts-basic-service,d5e38c674870563d,de6f4d24b97f63cf,true] 1 --- [io-15680-exec-8] fdse.microservice.conf.HttpAspect        : [Service:ts-basic-service][URI:ts-basic-service/basic/queryForStationId][Method:POST][Request:{"name":"Su Zhou"}][RemoteHost:172.18.0.47][IP:172.18.0.47]
+[Basic Information Service][Query For Station Id] Station Id:Su Zhou
+2023-09-13 07:00:04.143  INFO [ts-basic-service,d5e38c674870563d,de6f4d24b97f63cf,true] 1 --- [io-15680-exec-8] fdse.microservice.conf.HttpAspect        : [Service:ts-basic-service][Response:"suzhou"]
+c=fdse.microservice.domain.QueryStation@6f4d8724
+requestArgs={"name":"Shang Hai"}
+2023-09-13 07:00:04.162  INFO [ts-basic-service,d5e38c674870563d,bfa98b7c97d5325b,true] 1 --- [io-15680-exec-7] fdse.microservice.conf.HttpAspect        : [Service:ts-basic-service][URI:ts-basic-service/basic/queryForStationId][Method:POST][Request:{"name":"Shang Hai"}][RemoteHost:172.18.0.47][IP:172.18.0.47]
+[Basic Information Service][Query For Station Id] Station Id:Shang Hai
+2023-09-13 07:00:04.170  INFO [ts-basic-service,d5e38c674870563d,bfa98b7c97d5325b,true] 1 --- [io-15680-exec-7] fdse.microservice.conf.HttpAspect        : [Service:ts-basic-service][Response:"shanghai"]
+c=fdse.microservice.domain.QueryStation@4318c178
+requestArgs={"name":"Su Zhou"}
+2023-09-13 07:00:04.181  INFO [ts-basic-service,d5e38c674870563d,7ccf5eb466e6e848,true] 1 --- [io-15680-exec-9] fdse.microservice.conf.HttpAspect        : [Service:ts-basic-service][URI:ts-basic-service/basic/queryForStationId][Method:POST][Request:{"name":"Su Zhou"}][RemoteHost:172.18.0.47][IP:172.18.0.47]
+[Basic Information Service][Query For Station Id] Station Id:Su Zhou
+2023-09-13 07:00:04.191  INFO [ts-basic-service,d5e38c674870563d,7ccf5eb466e6e848,true] 1 --- [io-15680-exec-9] fdse.microservice.conf.HttpAspect        : [Service:ts-basic-service][Response:"suzhou"]
+c=fdse.microservice.domain.QueryStation@4b0d504f
+requestArgs={"name":"Shang Hai"}
+2023-09-13 07:00:04.715  INFO [ts-basic-service,d5e38c674870563d,2c01e18074de6fde,true] 1 --- [o-15680-exec-10] fdse.microservice.conf.HttpAspect        : [Service:ts-basic-service][URI:ts-basic-service/basic/queryForStationId][Method:POST][Request:{"name":"Shang Hai"}][RemoteHost:172.18.0.47][IP:172.18.0.47]
+[Basic Information Service][Query For Station Id] Station Id:Shang Hai
+2023-09-13 07:00:04.721  INFO [ts-basic-service,d5e38c674870563d,2c01e18074de6fde,true] 1 --- [o-15680-exec-10] fdse.microservice.conf.HttpAspect        : [Service:ts-basic-service][Response:"shanghai"]
+c=fdse.microservice.domain.QueryStation@525bd52b
+requestArgs={"name":"Su Zhou"}
+2023-09-13 07:00:04.730  INFO [ts-basic-service,d5e38c674870563d,d420ce2644e63d4d,true] 1 --- [io-15680-exec-1] fdse.microservice.conf.HttpAspect        : [Service:ts-basic-service][URI:ts-basic-service/basic/queryForStationId][Method:POST][Request:{"name":"Su Zhou"}][RemoteHost:172.18.0.47][IP:172.18.0.47]
+[Basic Information Service][Query For Station Id] Station Id:Su Zhou
+2023-09-13 07:00:04.736  INFO [ts-basic-service,d5e38c674870563d,d420ce2644e63d4d,true] 1 --- [io-15680-exec-1] fdse.microservice.conf.HttpAspect        : [Service:ts-basic-service][Response:"suzhou"]

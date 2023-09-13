@@ -64,3 +64,6 @@ Now visit `localhost:8080` and you should see the UI of trainticket.
 10. F10 failed to reproduce. Lack of test scripts. Authors upload wrong test scripts zip and the fault cannot be reproduced by following trigger steps...
 11. F11 in `ts-cancel-service/src/main/java/cancel/service/CancelServiceImpl.java`. L129-138 implements the logic that lacks of sequence control. The trigger script somethimes can reproduce buggy and sometimes normal.
 12. F12 in `ts-order-other-service/src/main/java/other/service/OrderOtherServiceImpl.java`. Two scripts, one for normal and the other for buggy.
+13. F13 failed to reproduce. Test script has bugs.
+14. F14 in `ts-basic-service/src/main/java/fdse/microservice/service/BasicServiceImpl.java`. L87-90 set the prices of diffeent classes. Cannot have normal run without changing codes.
+15. F15 in `ts-ui-dashboard/nginx.conf`. L317,324 set the `client_max_body_size` which makes requests with food and consign information cannot be sent and cause the bug. Not sure the normal run should run without food and consign or increase `client_max_body_size`.
