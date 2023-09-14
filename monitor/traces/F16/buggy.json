@@ -1,0 +1,122 @@
+[
+  [
+    {
+      "traceId": "bb5eb776f18a6f93",
+      "id": "bb5eb776f18a6f93",
+      "kind": "SERVER",
+      "name": "http:/assurance/getallassurancetype",
+      "timestamp": 1694668136169000,
+      "duration": 4591,
+      "localEndpoint": {
+        "serviceName": "ts-assurance-service",
+        "ipv4": "172.18.0.5",
+        "port": 18888
+      },
+      "tags": {
+        "mvc.controller.class": "AssuranceController",
+        "mvc.controller.method": "getAllAssuranceType",
+        "spring.instance_id": "2a5621dc027d:ts-assurance-service:18888"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "fc733a023f6afb50",
+      "id": "fc733a023f6afb50",
+      "kind": "SERVER",
+      "name": "http:/assurance/getallassurancetype",
+      "timestamp": 1694668136157000,
+      "duration": 4729,
+      "localEndpoint": {
+        "serviceName": "ts-assurance-service",
+        "ipv4": "172.18.0.5",
+        "port": 18888
+      },
+      "tags": {
+        "mvc.controller.class": "AssuranceController",
+        "mvc.controller.method": "getAllAssuranceType",
+        "spring.instance_id": "2a5621dc027d:ts-assurance-service:18888"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "38a5de49769fb42d",
+      "id": "38a5de49769fb42d",
+      "kind": "SERVER",
+      "name": "http:/verification/generate",
+      "timestamp": 1694668136104000,
+      "duration": 30186,
+      "localEndpoint": {
+        "serviceName": "ts-verification-code-service",
+        "ipv4": "172.18.0.27",
+        "port": 15678
+      },
+      "tags": {
+        "mvc.controller.class": "VerificationCodeController",
+        "mvc.controller.method": "imagecode",
+        "spring.instance_id": "54e088b2117f:ts-verification-code-service:15678"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "076f2dcfb3bf81cf",
+      "id": "076f2dcfb3bf81cf",
+      "kind": "SERVER",
+      "name": "http:/assurance/getallassurancetype",
+      "timestamp": 1694668119172000,
+      "duration": 35487,
+      "localEndpoint": {
+        "serviceName": "ts-assurance-service",
+        "ipv4": "172.18.0.5",
+        "port": 18888
+      },
+      "tags": {
+        "mvc.controller.class": "AssuranceController",
+        "mvc.controller.method": "getAllAssuranceType",
+        "spring.instance_id": "2a5621dc027d:ts-assurance-service:18888"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "df148c8f10bbdb4a",
+      "id": "df148c8f10bbdb4a",
+      "kind": "SERVER",
+      "name": "http:/assurance/getallassurancetype",
+      "timestamp": 1694668118833000,
+      "duration": 270801,
+      "localEndpoint": {
+        "serviceName": "ts-assurance-service",
+        "ipv4": "172.18.0.5",
+        "port": 18888
+      },
+      "tags": {
+        "mvc.controller.class": "AssuranceController",
+        "mvc.controller.method": "getAllAssuranceType",
+        "spring.instance_id": "2a5621dc027d:ts-assurance-service:18888"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "4c47324d2f3e135f",
+      "id": "4c47324d2f3e135f",
+      "kind": "SERVER",
+      "name": "http:/verification/generate",
+      "timestamp": 1694668118681000,
+      "duration": 903336,
+      "localEndpoint": {
+        "serviceName": "ts-verification-code-service",
+        "ipv4": "172.18.0.27",
+        "port": 15678
+      },
+      "tags": {
+        "mvc.controller.class": "VerificationCodeController",
+        "mvc.controller.method": "imagecode",
+        "spring.instance_id": "54e088b2117f:ts-verification-code-service:15678"
+      }
+    }
+  ]
+]

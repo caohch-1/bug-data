@@ -1,0 +1,37 @@
+
+> ts-ticket-office-service@0.0.0 start /app
+> node bin/www
+
+initMongo连接上数据库啦！
+/app/node_modules/mongodb/lib/mongo_client.js:421
+          throw err
+          ^
+
+TypeError: Cannot read property 'collection' of null
+    at initData (/app/bin/db.js:11:26)
+    at /app/bin/db.js:133:9
+    at connectCallback (/app/node_modules/mongodb/lib/mongo_client.js:515:5)
+    at /app/node_modules/mongodb/lib/mongo_client.js:418:11
+    at processTicksAndRejections (internal/process/task_queues.js:79:11)
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! ts-ticket-office-service@0.0.0 start: `node bin/www`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the ts-ticket-office-service@0.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /root/.npm/_logs/2023-09-14T05_16_01_131Z-debug.log
+
+> ts-ticket-office-service@0.0.0 start /app
+> node bin/www
+
+initMongo连接上数据库啦！
+init data successful!
+getRegionList=[{"province":"Shanghai","cities":[{"city":"Shanghai","regions":[{"region":"Pudong New Area"}]}]},{"province":"Anhui","cities":[{"city":"Hefei","regions":[{"region":"Heifei Downtown Area"},{"region":"Feixi County"}]},{"city":"Anqing","regions":[{"region":"Anqing Downtown Area"}]}]}]
+[0mGET /office/getRegionList [36m304 [0m18.532 ms - -[0m
+getRegionList=[{"province":"Shanghai","cities":[{"city":"Shanghai","regions":[{"region":"Pudong New Area"}]}]},{"province":"Anhui","cities":[{"city":"Hefei","regions":[{"region":"Heifei Downtown Area"},{"region":"Feixi County"}]},{"city":"Anqing","regions":[{"region":"Anqing Downtown Area"}]}]}]
+[0mGET /office/getRegionList [36m304 [0m1.820 ms - -[0m
+getRegionList=[{"province":"Shanghai","cities":[{"city":"Shanghai","regions":[{"region":"Pudong New Area"}]}]},{"province":"Anhui","cities":[{"city":"Hefei","regions":[{"region":"Heifei Downtown Area"},{"region":"Feixi County"}]},{"city":"Anqing","regions":[{"region":"Anqing Downtown Area"}]}]}]
+[0mGET /office/getRegionList [36m304 [0m1.826 ms - -[0m

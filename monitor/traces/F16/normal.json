@@ -1,0 +1,82 @@
+[
+  [
+    {
+      "traceId": "33639b8e2eea060b",
+      "id": "33639b8e2eea060b",
+      "kind": "SERVER",
+      "name": "http:/adminroute/upload",
+      "timestamp": 1694668847613000,
+      "duration": 94704,
+      "localEndpoint": {
+        "serviceName": "ts-admin-route-service",
+        "ipv4": "172.18.0.23",
+        "port": 16113
+      },
+      "tags": {
+        "mvc.controller.class": "AdminRouteController",
+        "mvc.controller.method": "upload",
+        "spring.instance_id": "92dd398e6b0d:ts-admin-route-service:16113"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "3aef26bb22d13066",
+      "id": "3aef26bb22d13066",
+      "kind": "SERVER",
+      "name": "http:/assurance/getallassurancetype",
+      "timestamp": 1694668840787000,
+      "duration": 5296,
+      "localEndpoint": {
+        "serviceName": "ts-assurance-service",
+        "ipv4": "172.18.0.48",
+        "port": 18888
+      },
+      "tags": {
+        "mvc.controller.class": "AssuranceController",
+        "mvc.controller.method": "getAllAssuranceType",
+        "spring.instance_id": "4ac83e3f0e19:ts-assurance-service:18888"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "de2fda1497871840",
+      "id": "de2fda1497871840",
+      "kind": "SERVER",
+      "name": "http:/assurance/getallassurancetype",
+      "timestamp": 1694668840693000,
+      "duration": 73294,
+      "localEndpoint": {
+        "serviceName": "ts-assurance-service",
+        "ipv4": "172.18.0.48",
+        "port": 18888
+      },
+      "tags": {
+        "mvc.controller.class": "AssuranceController",
+        "mvc.controller.method": "getAllAssuranceType",
+        "spring.instance_id": "4ac83e3f0e19:ts-assurance-service:18888"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "d022e00c1063ab64",
+      "id": "d022e00c1063ab64",
+      "kind": "SERVER",
+      "name": "http:/verification/generate",
+      "timestamp": 1694668840635000,
+      "duration": 159559,
+      "localEndpoint": {
+        "serviceName": "ts-verification-code-service",
+        "ipv4": "172.18.0.28",
+        "port": 15678
+      },
+      "tags": {
+        "mvc.controller.class": "VerificationCodeController",
+        "mvc.controller.method": "imagecode",
+        "spring.instance_id": "e6aa78bc3e84:ts-verification-code-service:15678"
+      }
+    }
+  ]
+]

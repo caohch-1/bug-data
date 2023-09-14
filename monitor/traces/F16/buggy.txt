@@ -1,0 +1,12 @@
+SpanID: bb5eb776f18a6f93, SpanName: http:/assurance/getallassurancetype, SpanKind: SERVER, Timestamp:1694668136169000, SpanDuration: 4.591ms
+==================================
+SpanID: fc733a023f6afb50, SpanName: http:/assurance/getallassurancetype, SpanKind: SERVER, Timestamp:1694668136157000, SpanDuration: 4.729ms
+==================================
+SpanID: 38a5de49769fb42d, SpanName: http:/verification/generate, SpanKind: SERVER, Timestamp:1694668136104000, SpanDuration: 30.186ms
+==================================
+SpanID: 076f2dcfb3bf81cf, SpanName: http:/assurance/getallassurancetype, SpanKind: SERVER, Timestamp:1694668119172000, SpanDuration: 35.487ms
+==================================
+SpanID: df148c8f10bbdb4a, SpanName: http:/assurance/getallassurancetype, SpanKind: SERVER, Timestamp:1694668118833000, SpanDuration: 270.801ms
+==================================
+SpanID: 4c47324d2f3e135f, SpanName: http:/verification/generate, SpanKind: SERVER, Timestamp:1694668118681000, SpanDuration: 903.336ms
+==================================

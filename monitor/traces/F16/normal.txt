@@ -1,0 +1,8 @@
+SpanID: 33639b8e2eea060b, SpanName: http:/adminroute/upload, SpanKind: SERVER, Timestamp:1694668847613000, SpanDuration: 94.704ms
+==================================
+SpanID: 3aef26bb22d13066, SpanName: http:/assurance/getallassurancetype, SpanKind: SERVER, Timestamp:1694668840787000, SpanDuration: 5.296ms
+==================================
+SpanID: de2fda1497871840, SpanName: http:/assurance/getallassurancetype, SpanKind: SERVER, Timestamp:1694668840693000, SpanDuration: 73.294ms
+==================================
+SpanID: d022e00c1063ab64, SpanName: http:/verification/generate, SpanKind: SERVER, Timestamp:1694668840635000, SpanDuration: 159.559ms
+==================================

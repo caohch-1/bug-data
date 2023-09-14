@@ -67,3 +67,5 @@ Now visit `localhost:8080` and you should see the UI of trainticket.
 13. F13 failed to reproduce. Test script has bugs.
 14. F14 in `ts-basic-service/src/main/java/fdse/microservice/service/BasicServiceImpl.java`. L87-90 set the prices of diffeent classes. Cannot have normal run without changing codes.
 15. F15 in `ts-ui-dashboard/nginx.conf`. L317,324 set the `client_max_body_size` which makes requests with food and consign information cannot be sent and cause the bug. Not sure the normal run should run without food and consign or increase `client_max_body_size`.
+16. F16 in `ts-admin-route-service/src/main/resources/application.yml`. L12-16 set `maxFileSize` small. Here normal run is uploading a small file.
+17. F17 in `ts-voucher-service/server.py`. L133-141 simulate the nested select clauses by `select sleep(10)`. Since the front stage has a 5s limit of network request, the query of one order's voucher will be out of time. Here normal run change sleep time to 2.

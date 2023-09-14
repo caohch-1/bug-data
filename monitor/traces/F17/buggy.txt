@@ -1,0 +1,34 @@
+SpanID: 0196694f5c297c7d, SpanName: http:/order/getbyid, SpanKind: SERVER, Timestamp:1694672674538000, SpanDuration: 13.345ms
+==================================
+SpanID: ed257fd74ad496c7, SpanName: http:/station/querybyid, SpanKind: SERVER, Timestamp:1694672655727000, SpanDuration: 4.893ms
+==================================
+SpanID: e84c4663b9521ece, SpanName: http:/station/querybyid, SpanKind: SERVER, Timestamp:1694672655709000, SpanDuration: 7.069ms
+==================================
+SpanID: f68d889cdc18cd09, SpanName: http:/station/querybyid, SpanKind: SERVER, Timestamp:1694672655691000, SpanDuration: 5.293ms
+==================================
+SpanID: 9632ad1a9588542b, SpanName: http:/station/querybyid, SpanKind: SERVER, Timestamp:1694672655667000, SpanDuration: 6.628ms
+==================================
+SpanID: 0d76eb6507b05f10, SpanName: http:/station/querybyid, SpanKind: SERVER, Timestamp:1694672655647000, SpanDuration: 5.691ms
+==================================
+SpanID: 26b3921a3c47dc88, SpanName: http:/station/querybyid, SpanKind: SERVER, Timestamp:1694672655532000, SpanDuration: 90.166ms
+==================================
+SpanID: 1f0e6d15aeaa6186, SpanName: http:/orderother/query, SpanKind: SERVER, Timestamp:1694672655255000, SpanDuration: 208.629ms
+--SpanID: 1c4a1869d4c1a4ac, SpanName: http:/verifylogintoken/13186011-498f-4826-b33d-d23, SpanKind: CLIENT, Timestamp:1694672655343000, SpanDuration: 31.0ms
+--SpanID: 1c4a1869d4c1a4ac, SpanName: http:/verifylogintoken/13186011-498f-4826-b33d-d23, SpanKind: SERVER, Timestamp:1694672655361000, SpanDuration: 7.0ms
+==================================
+SpanID: c4f01f628b340d51, SpanName: http:/order/query, SpanKind: SERVER, Timestamp:1694672655249000, SpanDuration: 187.583ms
+--SpanID: 25eea4f2b24d7ce6, SpanName: http:/verifylogintoken/13186011-498f-4826-b33d-d23, SpanKind: CLIENT, Timestamp:1694672655334000, SpanDuration: 39.0ms
+--SpanID: 25eea4f2b24d7ce6, SpanName: http:/verifylogintoken/13186011-498f-4826-b33d-d23, SpanKind: SERVER, Timestamp:1694672655346000, SpanDuration: 19.0ms
+==================================
+SpanID: c7d3abd036caaa08, SpanName: http:/login, SpanKind: SERVER, Timestamp:1694672646490000, SpanDuration: 370.215ms
+--SpanID: 7f5982b327782d12, SpanName: http:/verification/verify, SpanKind: CLIENT, Timestamp:1694672646568000, SpanDuration: 47.0ms
+--SpanID: 7f5982b327782d12, SpanName: http:/verification/verify, SpanKind: SERVER, Timestamp:1694672646579000, SpanDuration: 30.0ms
+--SpanID: f45e154e08bd9404, SpanName: http:/account/login, SpanKind: CLIENT, Timestamp:1694672646668000, SpanDuration: 175.0ms
+--SpanID: f45e154e08bd9404, SpanName: http:/account/login, SpanKind: SERVER, Timestamp:1694672646740000, SpanDuration: 98.0ms
+==================================
+SpanID: a41f014c35a4b400, SpanName: http:/assurance/getallassurancetype, SpanKind: SERVER, Timestamp:1694672614383000, SpanDuration: 4.536ms
+==================================
+SpanID: d57b68212d8d0b88, SpanName: http:/assurance/getallassurancetype, SpanKind: SERVER, Timestamp:1694672614281000, SpanDuration: 81.074ms
+==================================
+SpanID: 4b43d7568c74bb1d, SpanName: http:/verification/generate, SpanKind: SERVER, Timestamp:1694672614216000, SpanDuration: 269.294ms
+==================================
