@@ -69,3 +69,6 @@ Now visit `localhost:8080` and you should see the UI of trainticket.
 15. F15 in `ts-ui-dashboard/nginx.conf`. L317,324 set the `client_max_body_size` which makes requests with food and consign information cannot be sent and cause the bug. Not sure the normal run should run without food and consign or increase `client_max_body_size`.
 16. F16 in `ts-admin-route-service/src/main/resources/application.yml`. L12-16 set `maxFileSize` small. Here normal run is uploading a small file.
 17. F17 in `ts-voucher-service/server.py`. L133-141 simulate the nested select clauses by `select sleep(10)`. Since the front stage has a 5s limit of network request, the query of one order's voucher will be out of time. Here normal run change sleep time to 2.
+18. F18 in `ts-ui-dashboard/static/js/flowPreserve.js`. L257-260 lacks of the case for null value. Here normal run is select a train which has train food (Terminal is Su Zhou).
+19. F19 in `ts-consign-price-service/src/main/java/consignprice/service/ConsignPriceServiceImpl.java`. L46 set french price format incorrectly. Here normal run is query generman format.
+20. F20 in `ts-cancel-service/pom.xml`. L47 use wrong vesion lib. Since a lot od codes are changed. Cannot reproduce normal run without changing code.

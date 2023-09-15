@@ -1,0 +1,5123 @@
+[
+  [
+    {
+      "traceId": "34163a3b547cccb6",
+      "parentId": "34163a3b547cccb6",
+      "id": "4bece02aaeaffc08",
+      "kind": "SERVER",
+      "name": "http:/foodmap/gettrainfoodoftrip",
+      "timestamp": 1694755178574000,
+      "duration": 216000,
+      "localEndpoint": {
+        "serviceName": "ts-food-map-service",
+        "ipv4": "172.18.0.37",
+        "port": 18855
+      },
+      "tags": {
+        "mvc.controller.class": "FoodMapController",
+        "mvc.controller.method": "getTrainFoodOfTrip",
+        "spring.instance_id": "303466af9a27:ts-food-map-service:18855"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "34163a3b547cccb6",
+      "parentId": "34163a3b547cccb6",
+      "id": "222868e2f08c85d3",
+      "kind": "SERVER",
+      "name": "http:/station/queryforid",
+      "timestamp": 1694755183030000,
+      "duration": 3000,
+      "localEndpoint": {
+        "serviceName": "ts-station-service",
+        "ipv4": "172.18.0.7",
+        "port": 12345
+      },
+      "tags": {
+        "mvc.controller.class": "StationController",
+        "mvc.controller.method": "queryForId",
+        "spring.instance_id": "bfd1f61e8c8c:ts-station-service:12345"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "34163a3b547cccb6",
+      "parentId": "b7f00332c2a4845f",
+      "id": "427988f773758669",
+      "kind": "CLIENT",
+      "name": "http:/route/querybyid/0b23bd3e-876a-4af3-b920-c50a",
+      "timestamp": 1694755183012000,
+      "duration": 10000,
+      "localEndpoint": {
+        "serviceName": "ts-travel2-service",
+        "ipv4": "172.18.0.32",
+        "port": 16346
+      },
+      "tags": {
+        "http.host": "ts-route-service",
+        "http.method": "GET",
+        "http.path": "/route/queryById/0b23bd3e-876a-4af3-b920-c50a90c90b04",
+        "http.url": "http://ts-route-service:11178/route/queryById/0b23bd3e-876a-4af3-b920-c50a90c90b04",
+        "spring.instance_id": "83e34f365744:ts-travel2-service:16346"
+      }
+    },
+    {
+      "traceId": "34163a3b547cccb6",
+      "parentId": "34163a3b547cccb6",
+      "id": "b7f00332c2a4845f",
+      "kind": "SERVER",
+      "name": "http:/travel2/getroutebytripid/z1234",
+      "timestamp": 1694755183009000,
+      "duration": 14000,
+      "localEndpoint": {
+        "serviceName": "ts-travel2-service",
+        "ipv4": "172.18.0.32",
+        "port": 16346
+      },
+      "tags": {
+        "mvc.controller.class": "Travel2Controller",
+        "mvc.controller.method": "getRouteByTripId",
+        "spring.instance_id": "83e34f365744:ts-travel2-service:16346"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "34163a3b547cccb6",
+      "parentId": "b7f00332c2a4845f",
+      "id": "427988f773758669",
+      "kind": "SERVER",
+      "name": "http:/route/querybyid/0b23bd3e-876a-4af3-b920-c50a",
+      "timestamp": 1694755183014000,
+      "duration": 7000,
+      "localEndpoint": {
+        "serviceName": "ts-route-service",
+        "ipv4": "172.18.0.61",
+        "port": 11178
+      },
+      "tags": {
+        "mvc.controller.class": "RouteController",
+        "mvc.controller.method": "queryById",
+        "spring.instance_id": "4b51ba3a64ec:ts-route-service:11178"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "34163a3b547cccb6",
+      "parentId": "34163a3b547cccb6",
+      "id": "4bece02aaeaffc08",
+      "kind": "CLIENT",
+      "name": "http:/foodmap/gettrainfoodoftrip",
+      "timestamp": 1694755178422000,
+      "duration": 374000,
+      "localEndpoint": {
+        "serviceName": "ts-food-service",
+        "ipv4": "172.18.0.3",
+        "port": 18856
+      },
+      "tags": {
+        "http.host": "ts-food-map-service",
+        "http.method": "POST",
+        "http.path": "/foodmap/getTrainFoodOfTrip",
+        "http.url": "http://ts-food-map-service:18855/foodmap/getTrainFoodOfTrip",
+        "spring.instance_id": "ad71314d34b5:ts-food-service:18856"
+      }
+    },
+    {
+      "traceId": "34163a3b547cccb6",
+      "parentId": "34163a3b547cccb6",
+      "id": "24474294df7e965f",
+      "kind": "CLIENT",
+      "name": "http:/travel/getroutebytripid/z1234",
+      "timestamp": 1694755182989000,
+      "duration": 17000,
+      "localEndpoint": {
+        "serviceName": "ts-food-service",
+        "ipv4": "172.18.0.3",
+        "port": 18856
+      },
+      "tags": {
+        "http.host": "ts-travel-service",
+        "http.method": "GET",
+        "http.path": "/travel/getRouteByTripId/Z1234",
+        "http.url": "http://ts-travel-service:12346/travel/getRouteByTripId/Z1234",
+        "spring.instance_id": "ad71314d34b5:ts-food-service:18856"
+      }
+    },
+    {
+      "traceId": "34163a3b547cccb6",
+      "parentId": "34163a3b547cccb6",
+      "id": "b7f00332c2a4845f",
+      "kind": "CLIENT",
+      "name": "http:/travel2/getroutebytripid/z1234",
+      "timestamp": 1694755183007000,
+      "duration": 20000,
+      "localEndpoint": {
+        "serviceName": "ts-food-service",
+        "ipv4": "172.18.0.3",
+        "port": 18856
+      },
+      "tags": {
+        "http.host": "ts-travel2-service",
+        "http.method": "GET",
+        "http.path": "/travel2/getRouteByTripId/Z1234",
+        "http.url": "http://ts-travel2-service:16346/travel2/getRouteByTripId/Z1234",
+        "spring.instance_id": "ad71314d34b5:ts-food-service:18856"
+      }
+    },
+    {
+      "traceId": "34163a3b547cccb6",
+      "parentId": "34163a3b547cccb6",
+      "id": "222868e2f08c85d3",
+      "kind": "CLIENT",
+      "name": "http:/station/queryforid",
+      "timestamp": 1694755183028000,
+      "duration": 6000,
+      "localEndpoint": {
+        "serviceName": "ts-food-service",
+        "ipv4": "172.18.0.3",
+        "port": 18856
+      },
+      "tags": {
+        "http.host": "ts-station-service",
+        "http.method": "POST",
+        "http.path": "/station/queryForId",
+        "http.url": "http://ts-station-service:12345/station/queryForId",
+        "spring.instance_id": "ad71314d34b5:ts-food-service:18856"
+      }
+    },
+    {
+      "traceId": "34163a3b547cccb6",
+      "parentId": "34163a3b547cccb6",
+      "id": "c42e66e64fe897de",
+      "kind": "CLIENT",
+      "name": "http:/station/queryforid",
+      "timestamp": 1694755183037000,
+      "duration": 7000,
+      "localEndpoint": {
+        "serviceName": "ts-food-service",
+        "ipv4": "172.18.0.3",
+        "port": 18856
+      },
+      "tags": {
+        "http.host": "ts-station-service",
+        "http.method": "POST",
+        "http.path": "/station/queryForId",
+        "http.url": "http://ts-station-service:12345/station/queryForId",
+        "spring.instance_id": "ad71314d34b5:ts-food-service:18856"
+      }
+    },
+    {
+      "traceId": "34163a3b547cccb6",
+      "parentId": "34163a3b547cccb6",
+      "id": "4b4a029d610de46a",
+      "kind": "CLIENT",
+      "name": "http:/foodmap/getfoodstoresofstation",
+      "timestamp": 1694755183048000,
+      "duration": 34000,
+      "localEndpoint": {
+        "serviceName": "ts-food-service",
+        "ipv4": "172.18.0.3",
+        "port": 18856
+      },
+      "tags": {
+        "http.host": "ts-food-map-service",
+        "http.method": "POST",
+        "http.path": "/foodmap/getFoodStoresOfStation",
+        "http.url": "http://ts-food-map-service:18855/foodmap/getFoodStoresOfStation",
+        "spring.instance_id": "ad71314d34b5:ts-food-service:18856"
+      }
+    },
+    {
+      "traceId": "34163a3b547cccb6",
+      "parentId": "34163a3b547cccb6",
+      "id": "6af15c84e74033f6",
+      "kind": "CLIENT",
+      "name": "http:/foodmap/getfoodstoresofstation",
+      "timestamp": 1694755183084000,
+      "duration": 8000,
+      "localEndpoint": {
+        "serviceName": "ts-food-service",
+        "ipv4": "172.18.0.3",
+        "port": 18856
+      },
+      "tags": {
+        "http.host": "ts-food-map-service",
+        "http.method": "POST",
+        "http.path": "/foodmap/getFoodStoresOfStation",
+        "http.url": "http://ts-food-map-service:18855/foodmap/getFoodStoresOfStation",
+        "spring.instance_id": "ad71314d34b5:ts-food-service:18856"
+      }
+    },
+    {
+      "traceId": "34163a3b547cccb6",
+      "parentId": "34163a3b547cccb6",
+      "id": "147662878cb1a32c",
+      "kind": "CLIENT",
+      "name": "http:/foodmap/getfoodstoresofstation",
+      "timestamp": 1694755183093000,
+      "duration": 9000,
+      "localEndpoint": {
+        "serviceName": "ts-food-service",
+        "ipv4": "172.18.0.3",
+        "port": 18856
+      },
+      "tags": {
+        "http.host": "ts-food-map-service",
+        "http.method": "POST",
+        "http.path": "/foodmap/getFoodStoresOfStation",
+        "http.url": "http://ts-food-map-service:18855/foodmap/getFoodStoresOfStation",
+        "spring.instance_id": "ad71314d34b5:ts-food-service:18856"
+      }
+    },
+    {
+      "traceId": "34163a3b547cccb6",
+      "parentId": "34163a3b547cccb6",
+      "id": "2da7f4db2477ffe5",
+      "kind": "CLIENT",
+      "name": "http:/foodmap/getfoodstoresofstation",
+      "timestamp": 1694755183104000,
+      "duration": 6000,
+      "localEndpoint": {
+        "serviceName": "ts-food-service",
+        "ipv4": "172.18.0.3",
+        "port": 18856
+      },
+      "tags": {
+        "http.host": "ts-food-map-service",
+        "http.method": "POST",
+        "http.path": "/foodmap/getFoodStoresOfStation",
+        "http.url": "http://ts-food-map-service:18855/foodmap/getFoodStoresOfStation",
+        "spring.instance_id": "ad71314d34b5:ts-food-service:18856"
+      }
+    },
+    {
+      "traceId": "34163a3b547cccb6",
+      "id": "34163a3b547cccb6",
+      "kind": "SERVER",
+      "name": "http:/food/getfood",
+      "timestamp": 1694755178294000,
+      "duration": 5116225,
+      "localEndpoint": {
+        "serviceName": "ts-food-service",
+        "ipv4": "172.18.0.3",
+        "port": 18856
+      },
+      "tags": {
+        "mvc.controller.class": "FoodController",
+        "mvc.controller.method": "getFood",
+        "spring.instance_id": "ad71314d34b5:ts-food-service:18856"
+      }
+    },
+    {
+      "traceId": "34163a3b547cccb6",
+      "parentId": "34163a3b547cccb6",
+      "id": "24474294df7e965f",
+      "kind": "SERVER",
+      "name": "http:/travel/getroutebytripid/z1234",
+      "timestamp": 1694755182992000,
+      "duration": 13000,
+      "localEndpoint": {
+        "serviceName": "ts-travel-service",
+        "ipv4": "172.18.0.8",
+        "port": 12346
+      },
+      "tags": {
+        "mvc.controller.class": "TravelController",
+        "mvc.controller.method": "getRouteByTripId",
+        "spring.instance_id": "6ade46a3de0b:ts-travel-service:12346"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "34163a3b547cccb6",
+      "parentId": "34163a3b547cccb6",
+      "id": "4b4a029d610de46a",
+      "kind": "SERVER",
+      "name": "http:/foodmap/getfoodstoresofstation",
+      "timestamp": 1694755183051000,
+      "duration": 30000,
+      "localEndpoint": {
+        "serviceName": "ts-food-map-service",
+        "ipv4": "172.18.0.37",
+        "port": 18855
+      },
+      "tags": {
+        "mvc.controller.class": "FoodMapController",
+        "mvc.controller.method": "getFoodStoresOfStation",
+        "spring.instance_id": "303466af9a27:ts-food-map-service:18855"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "34163a3b547cccb6",
+      "parentId": "34163a3b547cccb6",
+      "id": "6af15c84e74033f6",
+      "kind": "SERVER",
+      "name": "http:/foodmap/getfoodstoresofstation",
+      "timestamp": 1694755183085000,
+      "duration": 6000,
+      "localEndpoint": {
+        "serviceName": "ts-food-map-service",
+        "ipv4": "172.18.0.37",
+        "port": 18855
+      },
+      "tags": {
+        "mvc.controller.class": "FoodMapController",
+        "mvc.controller.method": "getFoodStoresOfStation",
+        "spring.instance_id": "303466af9a27:ts-food-map-service:18855"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "34163a3b547cccb6",
+      "parentId": "34163a3b547cccb6",
+      "id": "147662878cb1a32c",
+      "kind": "SERVER",
+      "name": "http:/foodmap/getfoodstoresofstation",
+      "timestamp": 1694755183094000,
+      "duration": 7000,
+      "localEndpoint": {
+        "serviceName": "ts-food-map-service",
+        "ipv4": "172.18.0.37",
+        "port": 18855
+      },
+      "tags": {
+        "mvc.controller.class": "FoodMapController",
+        "mvc.controller.method": "getFoodStoresOfStation",
+        "spring.instance_id": "303466af9a27:ts-food-map-service:18855"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "34163a3b547cccb6",
+      "parentId": "34163a3b547cccb6",
+      "id": "2da7f4db2477ffe5",
+      "kind": "SERVER",
+      "name": "http:/foodmap/getfoodstoresofstation",
+      "timestamp": 1694755183105000,
+      "duration": 4000,
+      "localEndpoint": {
+        "serviceName": "ts-food-map-service",
+        "ipv4": "172.18.0.37",
+        "port": 18855
+      },
+      "tags": {
+        "mvc.controller.class": "FoodMapController",
+        "mvc.controller.method": "getFoodStoresOfStation",
+        "spring.instance_id": "303466af9a27:ts-food-map-service:18855"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "34163a3b547cccb6",
+      "parentId": "34163a3b547cccb6",
+      "id": "c42e66e64fe897de",
+      "kind": "SERVER",
+      "name": "http:/station/queryforid",
+      "timestamp": 1694755183040000,
+      "duration": 3000,
+      "localEndpoint": {
+        "serviceName": "ts-station-service",
+        "ipv4": "172.18.0.7",
+        "port": 12345
+      },
+      "tags": {
+        "mvc.controller.class": "StationController",
+        "mvc.controller.method": "queryForId",
+        "spring.instance_id": "bfd1f61e8c8c:ts-station-service:12345"
+      },
+      "shared": true
+    }
+  ],
+  [
+    {
+      "traceId": "9deaa6cf5855b272",
+      "parentId": "9deaa6cf5855b272",
+      "id": "65385893249cb8cf",
+      "kind": "CLIENT",
+      "name": "http:/verifylogintoken/6456f70e-b664-402d-8b20-ce7",
+      "timestamp": 1694755178079000,
+      "duration": 32000,
+      "localEndpoint": {
+        "serviceName": "ts-contacts-service",
+        "ipv4": "172.18.0.40",
+        "port": 12347
+      },
+      "tags": {
+        "http.host": "ts-sso-service",
+        "http.method": "GET",
+        "http.path": "/verifyLoginToken/6456f70e-b664-402d-8b20-ce7ab8065398",
+        "http.url": "http://ts-sso-service:12349/verifyLoginToken/6456f70e-b664-402d-8b20-ce7ab8065398",
+        "spring.instance_id": "541683129f64:ts-contacts-service:12347"
+      }
+    },
+    {
+      "traceId": "9deaa6cf5855b272",
+      "id": "9deaa6cf5855b272",
+      "kind": "SERVER",
+      "name": "http:/contacts/findcontacts",
+      "timestamp": 1694755178004000,
+      "duration": 171138,
+      "localEndpoint": {
+        "serviceName": "ts-contacts-service",
+        "ipv4": "172.18.0.40",
+        "port": 12347
+      },
+      "tags": {
+        "mvc.controller.class": "ContactsController",
+        "mvc.controller.method": "findContactsByAccountId",
+        "spring.instance_id": "541683129f64:ts-contacts-service:12347"
+      }
+    },
+    {
+      "traceId": "9deaa6cf5855b272",
+      "parentId": "9deaa6cf5855b272",
+      "id": "65385893249cb8cf",
+      "kind": "SERVER",
+      "name": "http:/verifylogintoken/6456f70e-b664-402d-8b20-ce7",
+      "timestamp": 1694755178087000,
+      "duration": 12000,
+      "localEndpoint": {
+        "serviceName": "ts-sso-service",
+        "ipv4": "172.18.0.54",
+        "port": 12349
+      },
+      "tags": {
+        "mvc.controller.class": "AccountSsoController",
+        "mvc.controller.method": "verifyLoginToken",
+        "spring.instance_id": "fb38de5f7d82:ts-sso-service:12349"
+      },
+      "shared": true
+    }
+  ],
+  [
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "034f54b3c483ef53",
+      "id": "83fedbedb9103955",
+      "kind": "SERVER",
+      "name": "http:/station/queryforid",
+      "timestamp": 1694755143177000,
+      "duration": 83000,
+      "localEndpoint": {
+        "serviceName": "ts-station-service",
+        "ipv4": "172.18.0.7",
+        "port": 12345
+      },
+      "tags": {
+        "mvc.controller.class": "StationController",
+        "mvc.controller.method": "queryForId",
+        "spring.instance_id": "bfd1f61e8c8c:ts-station-service:12345"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "8fe7ba9a46ed8705",
+      "id": "37d1e2e8248f4b99",
+      "kind": "SERVER",
+      "name": "http:/station/queryforid",
+      "timestamp": 1694755154941000,
+      "duration": 6000,
+      "localEndpoint": {
+        "serviceName": "ts-station-service",
+        "ipv4": "172.18.0.7",
+        "port": 12345
+      },
+      "tags": {
+        "mvc.controller.class": "StationController",
+        "mvc.controller.method": "queryForId",
+        "spring.instance_id": "bfd1f61e8c8c:ts-station-service:12345"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "459b08c0c2696ab9",
+      "id": "4dba1790e86e9ab5",
+      "kind": "CLIENT",
+      "name": "http:/ticketinfo/queryforstationid",
+      "timestamp": 1694755141434000,
+      "duration": 13474000,
+      "localEndpoint": {
+        "serviceName": "ts-travel2-service",
+        "ipv4": "172.18.0.32",
+        "port": 16346
+      },
+      "tags": {
+        "http.host": "ts-ticketinfo-service",
+        "http.method": "POST",
+        "http.path": "/ticketinfo/queryForStationId",
+        "http.url": "http://ts-ticketinfo-service:15681/ticketinfo/queryForStationId",
+        "spring.instance_id": "83e34f365744:ts-travel2-service:16346"
+      }
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "459b08c0c2696ab9",
+      "id": "4818fc6b81c32e01",
+      "kind": "CLIENT",
+      "name": "http:/ticketinfo/queryforstationid",
+      "timestamp": 1694755154922000,
+      "duration": 30000,
+      "localEndpoint": {
+        "serviceName": "ts-travel2-service",
+        "ipv4": "172.18.0.32",
+        "port": 16346
+      },
+      "tags": {
+        "http.host": "ts-ticketinfo-service",
+        "http.method": "POST",
+        "http.path": "/ticketinfo/queryForStationId",
+        "http.url": "http://ts-ticketinfo-service:15681/ticketinfo/queryForStationId",
+        "spring.instance_id": "83e34f365744:ts-travel2-service:16346"
+      }
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "459b08c0c2696ab9",
+      "id": "2b99a8d37b03aa56",
+      "kind": "SERVER",
+      "name": "http:/route/querybyid/0b23bd3e-876a-4af3-b920-c50a",
+      "timestamp": 1694755155043000,
+      "duration": 66000,
+      "localEndpoint": {
+        "serviceName": "ts-route-service",
+        "ipv4": "172.18.0.61",
+        "port": 11178
+      },
+      "tags": {
+        "mvc.controller.class": "RouteController",
+        "mvc.controller.method": "queryById",
+        "spring.instance_id": "4b51ba3a64ec:ts-route-service:11178"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "2cbc11c574221c41",
+      "id": "b1e9a8bc2b6dd392",
+      "kind": "SERVER",
+      "name": "http:/route/querybyid/0b23bd3e-876a-4af3-b920-c50a",
+      "timestamp": 1694755155369000,
+      "duration": 7000,
+      "localEndpoint": {
+        "serviceName": "ts-route-service",
+        "ipv4": "172.18.0.61",
+        "port": 11178
+      },
+      "tags": {
+        "mvc.controller.class": "RouteController",
+        "mvc.controller.method": "queryById",
+        "spring.instance_id": "4b51ba3a64ec:ts-route-service:11178"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "2cbc11c574221c41",
+      "id": "ea66d4169d59a156",
+      "kind": "SERVER",
+      "name": "http:/train/retrieve",
+      "timestamp": 1694755155261000,
+      "duration": 97000,
+      "localEndpoint": {
+        "serviceName": "ts-train-service",
+        "ipv4": "172.18.0.38",
+        "port": 14567
+      },
+      "tags": {
+        "mvc.controller.class": "TrainController",
+        "mvc.controller.method": "retrieve",
+        "spring.instance_id": "48c9979ce3a0:ts-train-service:14567"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "4dba1790e86e9ab5",
+      "id": "034f54b3c483ef53",
+      "kind": "CLIENT",
+      "name": "http:/basic/queryforstationid",
+      "timestamp": 1694755141619000,
+      "duration": 13266000,
+      "localEndpoint": {
+        "serviceName": "ts-ticketinfo-service",
+        "ipv4": "172.18.0.62",
+        "port": 15681
+      },
+      "tags": {
+        "http.host": "ts-basic-service",
+        "http.method": "POST",
+        "http.path": "/basic/queryForStationId",
+        "http.url": "http://ts-basic-service:15680/basic/queryForStationId",
+        "spring.instance_id": "84631d46058e:ts-ticketinfo-service:15681"
+      }
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "459b08c0c2696ab9",
+      "id": "4dba1790e86e9ab5",
+      "kind": "SERVER",
+      "name": "http:/ticketinfo/queryforstationid",
+      "timestamp": 1694755141537000,
+      "duration": 13365000,
+      "localEndpoint": {
+        "serviceName": "ts-ticketinfo-service",
+        "ipv4": "172.18.0.62",
+        "port": 15681
+      },
+      "tags": {
+        "mvc.controller.class": "TicketInfoController",
+        "mvc.controller.method": "queryForStationId",
+        "spring.instance_id": "84631d46058e:ts-ticketinfo-service:15681"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "4818fc6b81c32e01",
+      "id": "8fe7ba9a46ed8705",
+      "kind": "CLIENT",
+      "name": "http:/basic/queryforstationid",
+      "timestamp": 1694755154930000,
+      "duration": 20000,
+      "localEndpoint": {
+        "serviceName": "ts-ticketinfo-service",
+        "ipv4": "172.18.0.62",
+        "port": 15681
+      },
+      "tags": {
+        "http.host": "ts-basic-service",
+        "http.method": "POST",
+        "http.path": "/basic/queryForStationId",
+        "http.url": "http://ts-basic-service:15680/basic/queryForStationId",
+        "spring.instance_id": "84631d46058e:ts-ticketinfo-service:15681"
+      }
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "459b08c0c2696ab9",
+      "id": "4818fc6b81c32e01",
+      "kind": "SERVER",
+      "name": "http:/ticketinfo/queryforstationid",
+      "timestamp": 1694755154925000,
+      "duration": 27000,
+      "localEndpoint": {
+        "serviceName": "ts-ticketinfo-service",
+        "ipv4": "172.18.0.62",
+        "port": 15681
+      },
+      "tags": {
+        "mvc.controller.class": "TicketInfoController",
+        "mvc.controller.method": "queryForStationId",
+        "spring.instance_id": "84631d46058e:ts-ticketinfo-service:15681"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "1cb98e2ace25cb9a",
+      "id": "2cbc11c574221c41",
+      "kind": "CLIENT",
+      "name": "http:/basic/queryfortravel",
+      "timestamp": 1694755155145000,
+      "duration": 432000,
+      "localEndpoint": {
+        "serviceName": "ts-ticketinfo-service",
+        "ipv4": "172.18.0.62",
+        "port": 15681
+      },
+      "tags": {
+        "http.host": "ts-basic-service",
+        "http.method": "POST",
+        "http.path": "/basic/queryForTravel",
+        "http.url": "http://ts-basic-service:15680/basic/queryForTravel",
+        "spring.instance_id": "84631d46058e:ts-ticketinfo-service:15681"
+      }
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "459b08c0c2696ab9",
+      "id": "1cb98e2ace25cb9a",
+      "kind": "SERVER",
+      "name": "http:/ticketinfo/queryfortravel",
+      "timestamp": 1694755155124000,
+      "duration": 464000,
+      "localEndpoint": {
+        "serviceName": "ts-ticketinfo-service",
+        "ipv4": "172.18.0.62",
+        "port": 15681
+      },
+      "tags": {
+        "mvc.controller.class": "TicketInfoController",
+        "mvc.controller.method": "queryForTravel",
+        "spring.instance_id": "84631d46058e:ts-ticketinfo-service:15681"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "034f54b3c483ef53",
+      "id": "83fedbedb9103955",
+      "kind": "CLIENT",
+      "name": "http:/station/queryforid",
+      "timestamp": 1694755143096000,
+      "duration": 168000,
+      "localEndpoint": {
+        "serviceName": "ts-basic-service",
+        "ipv4": "172.18.0.67",
+        "port": 15680
+      },
+      "tags": {
+        "http.host": "ts-station-service",
+        "http.method": "POST",
+        "http.path": "/station/queryForId",
+        "http.url": "http://ts-station-service:12345/station/queryForId",
+        "spring.instance_id": "50eb1c1cb512:ts-basic-service:15680"
+      }
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "4dba1790e86e9ab5",
+      "id": "034f54b3c483ef53",
+      "kind": "SERVER",
+      "name": "http:/basic/queryforstationid",
+      "timestamp": 1694755142844000,
+      "duration": 12034000,
+      "localEndpoint": {
+        "serviceName": "ts-basic-service",
+        "ipv4": "172.18.0.67",
+        "port": 15680
+      },
+      "tags": {
+        "mvc.controller.class": "BasicController",
+        "mvc.controller.method": "queryForStationId",
+        "spring.instance_id": "50eb1c1cb512:ts-basic-service:15680"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "8fe7ba9a46ed8705",
+      "id": "37d1e2e8248f4b99",
+      "kind": "CLIENT",
+      "name": "http:/station/queryforid",
+      "timestamp": 1694755154938000,
+      "duration": 9000,
+      "localEndpoint": {
+        "serviceName": "ts-basic-service",
+        "ipv4": "172.18.0.67",
+        "port": 15680
+      },
+      "tags": {
+        "http.host": "ts-station-service",
+        "http.method": "POST",
+        "http.path": "/station/queryForId",
+        "http.url": "http://ts-station-service:12345/station/queryForId",
+        "spring.instance_id": "50eb1c1cb512:ts-basic-service:15680"
+      }
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "4818fc6b81c32e01",
+      "id": "8fe7ba9a46ed8705",
+      "kind": "SERVER",
+      "name": "http:/basic/queryforstationid",
+      "timestamp": 1694755154935000,
+      "duration": 14000,
+      "localEndpoint": {
+        "serviceName": "ts-basic-service",
+        "ipv4": "172.18.0.67",
+        "port": 15680
+      },
+      "tags": {
+        "mvc.controller.class": "BasicController",
+        "mvc.controller.method": "queryForStationId",
+        "spring.instance_id": "50eb1c1cb512:ts-basic-service:15680"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "2cbc11c574221c41",
+      "id": "f131bc9ac7e50f6c",
+      "kind": "CLIENT",
+      "name": "http:/station/exist",
+      "timestamp": 1694755155160000,
+      "duration": 15000,
+      "localEndpoint": {
+        "serviceName": "ts-basic-service",
+        "ipv4": "172.18.0.67",
+        "port": 15680
+      },
+      "tags": {
+        "http.host": "ts-station-service",
+        "http.method": "POST",
+        "http.path": "/station/exist",
+        "http.url": "http://ts-station-service:12345/station/exist",
+        "spring.instance_id": "50eb1c1cb512:ts-basic-service:15680"
+      }
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "2cbc11c574221c41",
+      "id": "f3cb925444914cc7",
+      "kind": "CLIENT",
+      "name": "http:/station/exist",
+      "timestamp": 1694755155176000,
+      "duration": 7000,
+      "localEndpoint": {
+        "serviceName": "ts-basic-service",
+        "ipv4": "172.18.0.67",
+        "port": 15680
+      },
+      "tags": {
+        "http.host": "ts-station-service",
+        "http.method": "POST",
+        "http.path": "/station/exist",
+        "http.url": "http://ts-station-service:12345/station/exist",
+        "spring.instance_id": "50eb1c1cb512:ts-basic-service:15680"
+      }
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "2cbc11c574221c41",
+      "id": "ea66d4169d59a156",
+      "kind": "CLIENT",
+      "name": "http:/train/retrieve",
+      "timestamp": 1694755155185000,
+      "duration": 175000,
+      "localEndpoint": {
+        "serviceName": "ts-basic-service",
+        "ipv4": "172.18.0.67",
+        "port": 15680
+      },
+      "tags": {
+        "http.host": "ts-train-service",
+        "http.method": "POST",
+        "http.path": "/train/retrieve",
+        "http.url": "http://ts-train-service:14567/train/retrieve",
+        "spring.instance_id": "50eb1c1cb512:ts-basic-service:15680"
+      }
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "2cbc11c574221c41",
+      "id": "b1e9a8bc2b6dd392",
+      "kind": "CLIENT",
+      "name": "http:/route/querybyid/0b23bd3e-876a-4af3-b920-c50a",
+      "timestamp": 1694755155366000,
+      "duration": 10000,
+      "localEndpoint": {
+        "serviceName": "ts-basic-service",
+        "ipv4": "172.18.0.67",
+        "port": 15680
+      },
+      "tags": {
+        "http.host": "ts-route-service",
+        "http.method": "GET",
+        "http.path": "/route/queryById/0b23bd3e-876a-4af3-b920-c50a90c90b04",
+        "http.url": "http://ts-route-service:11178/route/queryById/0b23bd3e-876a-4af3-b920-c50a90c90b04",
+        "spring.instance_id": "50eb1c1cb512:ts-basic-service:15680"
+      }
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "2cbc11c574221c41",
+      "id": "e01334d6cad5f683",
+      "kind": "CLIENT",
+      "name": "http:/price/query",
+      "timestamp": 1694755155381000,
+      "duration": 165000,
+      "localEndpoint": {
+        "serviceName": "ts-basic-service",
+        "ipv4": "172.18.0.67",
+        "port": 15680
+      },
+      "tags": {
+        "http.host": "ts-price-service",
+        "http.method": "POST",
+        "http.path": "/price/query",
+        "http.url": "http://ts-price-service:16579/price/query",
+        "spring.instance_id": "50eb1c1cb512:ts-basic-service:15680"
+      }
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "2cbc11c574221c41",
+      "id": "c2d3637639c09a01",
+      "kind": "CLIENT",
+      "name": "http:/station/queryforid",
+      "timestamp": 1694755155547000,
+      "duration": 8000,
+      "localEndpoint": {
+        "serviceName": "ts-basic-service",
+        "ipv4": "172.18.0.67",
+        "port": 15680
+      },
+      "tags": {
+        "http.host": "ts-station-service",
+        "http.method": "POST",
+        "http.path": "/station/queryForId",
+        "http.url": "http://ts-station-service:12345/station/queryForId",
+        "spring.instance_id": "50eb1c1cb512:ts-basic-service:15680"
+      }
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "2cbc11c574221c41",
+      "id": "b92fe7d77a9325e1",
+      "kind": "CLIENT",
+      "name": "http:/station/queryforid",
+      "timestamp": 1694755155556000,
+      "duration": 7000,
+      "localEndpoint": {
+        "serviceName": "ts-basic-service",
+        "ipv4": "172.18.0.67",
+        "port": 15680
+      },
+      "tags": {
+        "http.host": "ts-station-service",
+        "http.method": "POST",
+        "http.path": "/station/queryForId",
+        "http.url": "http://ts-station-service:12345/station/queryForId",
+        "spring.instance_id": "50eb1c1cb512:ts-basic-service:15680"
+      }
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "1cb98e2ace25cb9a",
+      "id": "2cbc11c574221c41",
+      "kind": "SERVER",
+      "name": "http:/basic/queryfortravel",
+      "timestamp": 1694755155148000,
+      "duration": 428000,
+      "localEndpoint": {
+        "serviceName": "ts-basic-service",
+        "ipv4": "172.18.0.67",
+        "port": 15680
+      },
+      "tags": {
+        "mvc.controller.class": "BasicController",
+        "mvc.controller.method": "queryForTravel",
+        "spring.instance_id": "50eb1c1cb512:ts-basic-service:15680"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "2cbc11c574221c41",
+      "id": "f131bc9ac7e50f6c",
+      "kind": "SERVER",
+      "name": "http:/station/exist",
+      "timestamp": 1694755155163000,
+      "duration": 10000,
+      "localEndpoint": {
+        "serviceName": "ts-station-service",
+        "ipv4": "172.18.0.7",
+        "port": 12345
+      },
+      "tags": {
+        "mvc.controller.class": "StationController",
+        "mvc.controller.method": "exist",
+        "spring.instance_id": "bfd1f61e8c8c:ts-station-service:12345"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "2cbc11c574221c41",
+      "id": "f3cb925444914cc7",
+      "kind": "SERVER",
+      "name": "http:/station/exist",
+      "timestamp": 1694755155178000,
+      "duration": 4000,
+      "localEndpoint": {
+        "serviceName": "ts-station-service",
+        "ipv4": "172.18.0.7",
+        "port": 12345
+      },
+      "tags": {
+        "mvc.controller.class": "StationController",
+        "mvc.controller.method": "exist",
+        "spring.instance_id": "bfd1f61e8c8c:ts-station-service:12345"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "2cbc11c574221c41",
+      "id": "c2d3637639c09a01",
+      "kind": "SERVER",
+      "name": "http:/station/queryforid",
+      "timestamp": 1694755155549000,
+      "duration": 5000,
+      "localEndpoint": {
+        "serviceName": "ts-station-service",
+        "ipv4": "172.18.0.7",
+        "port": 12345
+      },
+      "tags": {
+        "mvc.controller.class": "StationController",
+        "mvc.controller.method": "queryForId",
+        "spring.instance_id": "bfd1f61e8c8c:ts-station-service:12345"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "2cbc11c574221c41",
+      "id": "b92fe7d77a9325e1",
+      "kind": "SERVER",
+      "name": "http:/station/queryforid",
+      "timestamp": 1694755155558000,
+      "duration": 4000,
+      "localEndpoint": {
+        "serviceName": "ts-station-service",
+        "ipv4": "172.18.0.7",
+        "port": 12345
+      },
+      "tags": {
+        "mvc.controller.class": "StationController",
+        "mvc.controller.method": "queryForId",
+        "spring.instance_id": "bfd1f61e8c8c:ts-station-service:12345"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "459b08c0c2696ab9",
+      "id": "2b99a8d37b03aa56",
+      "kind": "CLIENT",
+      "name": "http:/route/querybyid/0b23bd3e-876a-4af3-b920-c50a",
+      "timestamp": 1694755154968000,
+      "duration": 144000,
+      "localEndpoint": {
+        "serviceName": "ts-travel2-service",
+        "ipv4": "172.18.0.32",
+        "port": 16346
+      },
+      "tags": {
+        "http.host": "ts-route-service",
+        "http.method": "GET",
+        "http.path": "/route/queryById/0b23bd3e-876a-4af3-b920-c50a90c90b04",
+        "http.url": "http://ts-route-service:11178/route/queryById/0b23bd3e-876a-4af3-b920-c50a90c90b04",
+        "spring.instance_id": "83e34f365744:ts-travel2-service:16346"
+      }
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "459b08c0c2696ab9",
+      "id": "1cb98e2ace25cb9a",
+      "kind": "CLIENT",
+      "name": "http:/ticketinfo/queryfortravel",
+      "timestamp": 1694755155121000,
+      "duration": 467000,
+      "localEndpoint": {
+        "serviceName": "ts-travel2-service",
+        "ipv4": "172.18.0.32",
+        "port": 16346
+      },
+      "tags": {
+        "http.host": "ts-ticketinfo-service",
+        "http.method": "POST",
+        "http.path": "/ticketinfo/queryForTravel",
+        "http.url": "http://ts-ticketinfo-service:15681/ticketinfo/queryForTravel",
+        "spring.instance_id": "83e34f365744:ts-travel2-service:16346"
+      }
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "2cbc11c574221c41",
+      "id": "e01334d6cad5f683",
+      "kind": "SERVER",
+      "name": "http:/price/query",
+      "timestamp": 1694755155453000,
+      "duration": 90000,
+      "localEndpoint": {
+        "serviceName": "ts-price-service",
+        "ipv4": "172.18.0.63",
+        "port": 16579
+      },
+      "tags": {
+        "mvc.controller.class": "PriceController",
+        "mvc.controller.method": "query",
+        "spring.instance_id": "20566ba1a28e:ts-price-service:16579"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "46c9bb8d0e2ed0a8",
+      "id": "da2eec9568b09400",
+      "kind": "CLIENT",
+      "name": "http:/basic/queryforstationid",
+      "timestamp": 1694755164574000,
+      "duration": 18000,
+      "localEndpoint": {
+        "serviceName": "ts-ticketinfo-service",
+        "ipv4": "172.18.0.62",
+        "port": 15681
+      },
+      "tags": {
+        "http.host": "ts-basic-service",
+        "http.method": "POST",
+        "http.path": "/basic/queryForStationId",
+        "http.url": "http://ts-basic-service:15680/basic/queryForStationId",
+        "spring.instance_id": "84631d46058e:ts-ticketinfo-service:15681"
+      }
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "459b08c0c2696ab9",
+      "id": "46c9bb8d0e2ed0a8",
+      "kind": "SERVER",
+      "name": "http:/ticketinfo/queryforstationid",
+      "timestamp": 1694755164571000,
+      "duration": 22000,
+      "localEndpoint": {
+        "serviceName": "ts-ticketinfo-service",
+        "ipv4": "172.18.0.62",
+        "port": 15681
+      },
+      "tags": {
+        "mvc.controller.class": "TicketInfoController",
+        "mvc.controller.method": "queryForStationId",
+        "spring.instance_id": "84631d46058e:ts-ticketinfo-service:15681"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "7374b97739210c1a",
+      "id": "0f48037b7ff5d344",
+      "kind": "CLIENT",
+      "name": "http:/basic/queryforstationid",
+      "timestamp": 1694755164602000,
+      "duration": 13000,
+      "localEndpoint": {
+        "serviceName": "ts-ticketinfo-service",
+        "ipv4": "172.18.0.62",
+        "port": 15681
+      },
+      "tags": {
+        "http.host": "ts-basic-service",
+        "http.method": "POST",
+        "http.path": "/basic/queryForStationId",
+        "http.url": "http://ts-basic-service:15680/basic/queryForStationId",
+        "spring.instance_id": "84631d46058e:ts-ticketinfo-service:15681"
+      }
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "459b08c0c2696ab9",
+      "id": "7374b97739210c1a",
+      "kind": "SERVER",
+      "name": "http:/ticketinfo/queryforstationid",
+      "timestamp": 1694755164599000,
+      "duration": 18000,
+      "localEndpoint": {
+        "serviceName": "ts-ticketinfo-service",
+        "ipv4": "172.18.0.62",
+        "port": 15681
+      },
+      "tags": {
+        "mvc.controller.class": "TicketInfoController",
+        "mvc.controller.method": "queryForStationId",
+        "spring.instance_id": "84631d46058e:ts-ticketinfo-service:15681"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "292d6792caff87c0",
+      "id": "97e1c2769226ba36",
+      "kind": "CLIENT",
+      "name": "http:/basic/queryforstationid",
+      "timestamp": 1694755164623000,
+      "duration": 18000,
+      "localEndpoint": {
+        "serviceName": "ts-ticketinfo-service",
+        "ipv4": "172.18.0.62",
+        "port": 15681
+      },
+      "tags": {
+        "http.host": "ts-basic-service",
+        "http.method": "POST",
+        "http.path": "/basic/queryForStationId",
+        "http.url": "http://ts-basic-service:15680/basic/queryForStationId",
+        "spring.instance_id": "84631d46058e:ts-ticketinfo-service:15681"
+      }
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "459b08c0c2696ab9",
+      "id": "292d6792caff87c0",
+      "kind": "SERVER",
+      "name": "http:/ticketinfo/queryforstationid",
+      "timestamp": 1694755164621000,
+      "duration": 22000,
+      "localEndpoint": {
+        "serviceName": "ts-ticketinfo-service",
+        "ipv4": "172.18.0.62",
+        "port": 15681
+      },
+      "tags": {
+        "mvc.controller.class": "TicketInfoController",
+        "mvc.controller.method": "queryForStationId",
+        "spring.instance_id": "84631d46058e:ts-ticketinfo-service:15681"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "0614f970cb341c8c",
+      "id": "11c5b5e6293f9a47",
+      "kind": "CLIENT",
+      "name": "http:/basic/queryforstationid",
+      "timestamp": 1694755164651000,
+      "duration": 16000,
+      "localEndpoint": {
+        "serviceName": "ts-ticketinfo-service",
+        "ipv4": "172.18.0.62",
+        "port": 15681
+      },
+      "tags": {
+        "http.host": "ts-basic-service",
+        "http.method": "POST",
+        "http.path": "/basic/queryForStationId",
+        "http.url": "http://ts-basic-service:15680/basic/queryForStationId",
+        "spring.instance_id": "84631d46058e:ts-ticketinfo-service:15681"
+      }
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "459b08c0c2696ab9",
+      "id": "0614f970cb341c8c",
+      "kind": "SERVER",
+      "name": "http:/ticketinfo/queryforstationid",
+      "timestamp": 1694755164648000,
+      "duration": 20000,
+      "localEndpoint": {
+        "serviceName": "ts-ticketinfo-service",
+        "ipv4": "172.18.0.62",
+        "port": 15681
+      },
+      "tags": {
+        "mvc.controller.class": "TicketInfoController",
+        "mvc.controller.method": "queryForStationId",
+        "spring.instance_id": "84631d46058e:ts-ticketinfo-service:15681"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "da2eec9568b09400",
+      "id": "7dfe0fdad8fb76de",
+      "kind": "CLIENT",
+      "name": "http:/station/queryforid",
+      "timestamp": 1694755164580000,
+      "duration": 9000,
+      "localEndpoint": {
+        "serviceName": "ts-basic-service",
+        "ipv4": "172.18.0.67",
+        "port": 15680
+      },
+      "tags": {
+        "http.host": "ts-station-service",
+        "http.method": "POST",
+        "http.path": "/station/queryForId",
+        "http.url": "http://ts-station-service:12345/station/queryForId",
+        "spring.instance_id": "50eb1c1cb512:ts-basic-service:15680"
+      }
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "46c9bb8d0e2ed0a8",
+      "id": "da2eec9568b09400",
+      "kind": "SERVER",
+      "name": "http:/basic/queryforstationid",
+      "timestamp": 1694755164577000,
+      "duration": 14000,
+      "localEndpoint": {
+        "serviceName": "ts-basic-service",
+        "ipv4": "172.18.0.67",
+        "port": 15680
+      },
+      "tags": {
+        "mvc.controller.class": "BasicController",
+        "mvc.controller.method": "queryForStationId",
+        "spring.instance_id": "50eb1c1cb512:ts-basic-service:15680"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "0f48037b7ff5d344",
+      "id": "362e6b6dcef7c5a8",
+      "kind": "CLIENT",
+      "name": "http:/station/queryforid",
+      "timestamp": 1694755164607000,
+      "duration": 7000,
+      "localEndpoint": {
+        "serviceName": "ts-basic-service",
+        "ipv4": "172.18.0.67",
+        "port": 15680
+      },
+      "tags": {
+        "http.host": "ts-station-service",
+        "http.method": "POST",
+        "http.path": "/station/queryForId",
+        "http.url": "http://ts-station-service:12345/station/queryForId",
+        "spring.instance_id": "50eb1c1cb512:ts-basic-service:15680"
+      }
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "7374b97739210c1a",
+      "id": "0f48037b7ff5d344",
+      "kind": "SERVER",
+      "name": "http:/basic/queryforstationid",
+      "timestamp": 1694755164604000,
+      "duration": 11000,
+      "localEndpoint": {
+        "serviceName": "ts-basic-service",
+        "ipv4": "172.18.0.67",
+        "port": 15680
+      },
+      "tags": {
+        "mvc.controller.class": "BasicController",
+        "mvc.controller.method": "queryForStationId",
+        "spring.instance_id": "50eb1c1cb512:ts-basic-service:15680"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "97e1c2769226ba36",
+      "id": "0cbfb87f4fd684e5",
+      "kind": "CLIENT",
+      "name": "http:/station/queryforid",
+      "timestamp": 1694755164634000,
+      "duration": 6000,
+      "localEndpoint": {
+        "serviceName": "ts-basic-service",
+        "ipv4": "172.18.0.67",
+        "port": 15680
+      },
+      "tags": {
+        "http.host": "ts-station-service",
+        "http.method": "POST",
+        "http.path": "/station/queryForId",
+        "http.url": "http://ts-station-service:12345/station/queryForId",
+        "spring.instance_id": "50eb1c1cb512:ts-basic-service:15680"
+      }
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "292d6792caff87c0",
+      "id": "97e1c2769226ba36",
+      "kind": "SERVER",
+      "name": "http:/basic/queryforstationid",
+      "timestamp": 1694755164632000,
+      "duration": 9000,
+      "localEndpoint": {
+        "serviceName": "ts-basic-service",
+        "ipv4": "172.18.0.67",
+        "port": 15680
+      },
+      "tags": {
+        "mvc.controller.class": "BasicController",
+        "mvc.controller.method": "queryForStationId",
+        "spring.instance_id": "50eb1c1cb512:ts-basic-service:15680"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "11c5b5e6293f9a47",
+      "id": "62f472a96119ad9a",
+      "kind": "CLIENT",
+      "name": "http:/station/queryforid",
+      "timestamp": 1694755164656000,
+      "duration": 8000,
+      "localEndpoint": {
+        "serviceName": "ts-basic-service",
+        "ipv4": "172.18.0.67",
+        "port": 15680
+      },
+      "tags": {
+        "http.host": "ts-station-service",
+        "http.method": "POST",
+        "http.path": "/station/queryForId",
+        "http.url": "http://ts-station-service:12345/station/queryForId",
+        "spring.instance_id": "50eb1c1cb512:ts-basic-service:15680"
+      }
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "0614f970cb341c8c",
+      "id": "11c5b5e6293f9a47",
+      "kind": "SERVER",
+      "name": "http:/basic/queryforstationid",
+      "timestamp": 1694755164653000,
+      "duration": 13000,
+      "localEndpoint": {
+        "serviceName": "ts-basic-service",
+        "ipv4": "172.18.0.67",
+        "port": 15680
+      },
+      "tags": {
+        "mvc.controller.class": "BasicController",
+        "mvc.controller.method": "queryForStationId",
+        "spring.instance_id": "50eb1c1cb512:ts-basic-service:15680"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "da2eec9568b09400",
+      "id": "7dfe0fdad8fb76de",
+      "kind": "SERVER",
+      "name": "http:/station/queryforid",
+      "timestamp": 1694755164583000,
+      "duration": 6000,
+      "localEndpoint": {
+        "serviceName": "ts-station-service",
+        "ipv4": "172.18.0.7",
+        "port": 12345
+      },
+      "tags": {
+        "mvc.controller.class": "StationController",
+        "mvc.controller.method": "queryForId",
+        "spring.instance_id": "bfd1f61e8c8c:ts-station-service:12345"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "0f48037b7ff5d344",
+      "id": "362e6b6dcef7c5a8",
+      "kind": "SERVER",
+      "name": "http:/station/queryforid",
+      "timestamp": 1694755164610000,
+      "duration": 3000,
+      "localEndpoint": {
+        "serviceName": "ts-station-service",
+        "ipv4": "172.18.0.7",
+        "port": 12345
+      },
+      "tags": {
+        "mvc.controller.class": "StationController",
+        "mvc.controller.method": "queryForId",
+        "spring.instance_id": "bfd1f61e8c8c:ts-station-service:12345"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "97e1c2769226ba36",
+      "id": "0cbfb87f4fd684e5",
+      "kind": "SERVER",
+      "name": "http:/station/queryforid",
+      "timestamp": 1694755164636000,
+      "duration": 4000,
+      "localEndpoint": {
+        "serviceName": "ts-station-service",
+        "ipv4": "172.18.0.7",
+        "port": 12345
+      },
+      "tags": {
+        "mvc.controller.class": "StationController",
+        "mvc.controller.method": "queryForId",
+        "spring.instance_id": "bfd1f61e8c8c:ts-station-service:12345"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "11c5b5e6293f9a47",
+      "id": "62f472a96119ad9a",
+      "kind": "SERVER",
+      "name": "http:/station/queryforid",
+      "timestamp": 1694755164658000,
+      "duration": 5000,
+      "localEndpoint": {
+        "serviceName": "ts-station-service",
+        "ipv4": "172.18.0.7",
+        "port": 12345
+      },
+      "tags": {
+        "mvc.controller.class": "StationController",
+        "mvc.controller.method": "queryForId",
+        "spring.instance_id": "bfd1f61e8c8c:ts-station-service:12345"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "459b08c0c2696ab9",
+      "id": "b81a257983a3e068",
+      "kind": "CLIENT",
+      "name": "http:/orderother/calculate",
+      "timestamp": 1694755155593000,
+      "duration": 8975000,
+      "localEndpoint": {
+        "serviceName": "ts-travel2-service",
+        "ipv4": "172.18.0.32",
+        "port": 16346
+      },
+      "tags": {
+        "http.host": "ts-order-other-service",
+        "http.method": "POST",
+        "http.path": "/orderOther/calculate",
+        "http.url": "http://ts-order-other-service:12032/orderOther/calculate",
+        "spring.instance_id": "83e34f365744:ts-travel2-service:16346"
+      }
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "459b08c0c2696ab9",
+      "id": "46c9bb8d0e2ed0a8",
+      "kind": "CLIENT",
+      "name": "http:/ticketinfo/queryforstationid",
+      "timestamp": 1694755164569000,
+      "duration": 25000,
+      "localEndpoint": {
+        "serviceName": "ts-travel2-service",
+        "ipv4": "172.18.0.32",
+        "port": 16346
+      },
+      "tags": {
+        "http.host": "ts-ticketinfo-service",
+        "http.method": "POST",
+        "http.path": "/ticketinfo/queryForStationId",
+        "http.url": "http://ts-ticketinfo-service:15681/ticketinfo/queryForStationId",
+        "spring.instance_id": "83e34f365744:ts-travel2-service:16346"
+      }
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "459b08c0c2696ab9",
+      "id": "7374b97739210c1a",
+      "kind": "CLIENT",
+      "name": "http:/ticketinfo/queryforstationid",
+      "timestamp": 1694755164596000,
+      "duration": 21000,
+      "localEndpoint": {
+        "serviceName": "ts-travel2-service",
+        "ipv4": "172.18.0.32",
+        "port": 16346
+      },
+      "tags": {
+        "http.host": "ts-ticketinfo-service",
+        "http.method": "POST",
+        "http.path": "/ticketinfo/queryForStationId",
+        "http.url": "http://ts-ticketinfo-service:15681/ticketinfo/queryForStationId",
+        "spring.instance_id": "83e34f365744:ts-travel2-service:16346"
+      }
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "459b08c0c2696ab9",
+      "id": "292d6792caff87c0",
+      "kind": "CLIENT",
+      "name": "http:/ticketinfo/queryforstationid",
+      "timestamp": 1694755164619000,
+      "duration": 25000,
+      "localEndpoint": {
+        "serviceName": "ts-travel2-service",
+        "ipv4": "172.18.0.32",
+        "port": 16346
+      },
+      "tags": {
+        "http.host": "ts-ticketinfo-service",
+        "http.method": "POST",
+        "http.path": "/ticketinfo/queryForStationId",
+        "http.url": "http://ts-ticketinfo-service:15681/ticketinfo/queryForStationId",
+        "spring.instance_id": "83e34f365744:ts-travel2-service:16346"
+      }
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "459b08c0c2696ab9",
+      "id": "0614f970cb341c8c",
+      "kind": "CLIENT",
+      "name": "http:/ticketinfo/queryforstationid",
+      "timestamp": 1694755164645000,
+      "duration": 24000,
+      "localEndpoint": {
+        "serviceName": "ts-travel2-service",
+        "ipv4": "172.18.0.32",
+        "port": 16346
+      },
+      "tags": {
+        "http.host": "ts-ticketinfo-service",
+        "http.method": "POST",
+        "http.path": "/ticketinfo/queryForStationId",
+        "http.url": "http://ts-ticketinfo-service:15681/ticketinfo/queryForStationId",
+        "spring.instance_id": "83e34f365744:ts-travel2-service:16346"
+      }
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "f8867c39a2187e57",
+      "id": "de06ce0d065964c9",
+      "kind": "CLIENT",
+      "name": "http:/route/querybyid/0b23bd3e-876a-4af3-b920-c50a",
+      "timestamp": 1694755164851000,
+      "duration": 8000,
+      "localEndpoint": {
+        "serviceName": "ts-travel2-service",
+        "ipv4": "172.18.0.32",
+        "port": 16346
+      },
+      "tags": {
+        "http.host": "ts-route-service",
+        "http.method": "GET",
+        "http.path": "/route/queryById/0b23bd3e-876a-4af3-b920-c50a90c90b04",
+        "http.url": "http://ts-route-service:11178/route/queryById/0b23bd3e-876a-4af3-b920-c50a90c90b04",
+        "spring.instance_id": "83e34f365744:ts-travel2-service:16346"
+      }
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "6da49b4daffcd6bd",
+      "id": "f8867c39a2187e57",
+      "kind": "SERVER",
+      "name": "http:/travel2/getroutebytripid/z1234",
+      "timestamp": 1694755164842000,
+      "duration": 25000,
+      "localEndpoint": {
+        "serviceName": "ts-travel2-service",
+        "ipv4": "172.18.0.32",
+        "port": 16346
+      },
+      "tags": {
+        "mvc.controller.class": "Travel2Controller",
+        "mvc.controller.method": "getRouteByTripId",
+        "spring.instance_id": "83e34f365744:ts-travel2-service:16346"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "692c70533e5521eb",
+      "id": "eb91acc6664ea5d4",
+      "kind": "CLIENT",
+      "name": "http:/train/retrieve",
+      "timestamp": 1694755164944000,
+      "duration": 13000,
+      "localEndpoint": {
+        "serviceName": "ts-travel2-service",
+        "ipv4": "172.18.0.32",
+        "port": 16346
+      },
+      "tags": {
+        "http.host": "ts-train-service",
+        "http.method": "POST",
+        "http.path": "/train/retrieve",
+        "http.url": "http://ts-train-service:14567/train/retrieve",
+        "spring.instance_id": "83e34f365744:ts-travel2-service:16346"
+      }
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "6da49b4daffcd6bd",
+      "id": "692c70533e5521eb",
+      "kind": "SERVER",
+      "name": "http:/travel2/gettraintypebytripid/z1234",
+      "timestamp": 1694755164936000,
+      "duration": 26000,
+      "localEndpoint": {
+        "serviceName": "ts-travel2-service",
+        "ipv4": "172.18.0.32",
+        "port": 16346
+      },
+      "tags": {
+        "mvc.controller.class": "Travel2Controller",
+        "mvc.controller.method": "getTrainTypeByTripId",
+        "spring.instance_id": "83e34f365744:ts-travel2-service:16346"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "6da49b4daffcd6bd",
+      "id": "f7cc2cc9cd57d394",
+      "kind": "SERVER",
+      "name": "http:/config/query",
+      "timestamp": 1694755165112000,
+      "duration": 77000,
+      "localEndpoint": {
+        "serviceName": "ts-config-service",
+        "ipv4": "172.18.0.21",
+        "port": 15679
+      },
+      "tags": {
+        "mvc.controller.class": "ConfigController",
+        "mvc.controller.method": "query",
+        "spring.instance_id": "b196ba6398fc:ts-config-service:15679"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "459b08c0c2696ab9",
+      "id": "b81a257983a3e068",
+      "kind": "SERVER",
+      "name": "http:/orderother/calculate",
+      "timestamp": 1694755164121000,
+      "duration": 445000,
+      "localEndpoint": {
+        "serviceName": "ts-order-other-service",
+        "ipv4": "172.18.0.51",
+        "port": 12032
+      },
+      "tags": {
+        "mvc.controller.class": "OrderOtherController",
+        "mvc.controller.method": "calculateSoldTicket",
+        "spring.instance_id": "bdd3f1376369:ts-order-other-service:12032"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "6da49b4daffcd6bd",
+      "id": "3dc427c4e77f8592",
+      "kind": "SERVER",
+      "name": "http:/orderother/getticketlistbydateandtripid",
+      "timestamp": 1694755164912000,
+      "duration": 18000,
+      "localEndpoint": {
+        "serviceName": "ts-order-other-service",
+        "ipv4": "172.18.0.51",
+        "port": 12032
+      },
+      "tags": {
+        "mvc.controller.class": "OrderOtherController",
+        "mvc.controller.method": "getTicketListByDateAndTripId",
+        "spring.instance_id": "bdd3f1376369:ts-order-other-service:12032"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "ea2d3dc598137be3",
+      "id": "828a148f56a079cd",
+      "kind": "SERVER",
+      "name": "http:/price/query",
+      "timestamp": 1694755165403000,
+      "duration": 8000,
+      "localEndpoint": {
+        "serviceName": "ts-price-service",
+        "ipv4": "172.18.0.63",
+        "port": 16579
+      },
+      "tags": {
+        "mvc.controller.class": "PriceController",
+        "mvc.controller.method": "query",
+        "spring.instance_id": "20566ba1a28e:ts-price-service:16579"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "6da49b4daffcd6bd",
+      "id": "f8867c39a2187e57",
+      "kind": "CLIENT",
+      "name": "http:/travel2/getroutebytripid/z1234",
+      "timestamp": 1694755164831000,
+      "duration": 41000,
+      "localEndpoint": {
+        "serviceName": "ts-seat-service",
+        "ipv4": "172.18.0.55",
+        "port": 18898
+      },
+      "tags": {
+        "http.host": "ts-travel2-service",
+        "http.method": "GET",
+        "http.path": "/travel2/getRouteByTripId/Z1234",
+        "http.url": "http://ts-travel2-service:16346/travel2/getRouteByTripId/Z1234",
+        "spring.instance_id": "1f578af0b40b:ts-seat-service:18898"
+      }
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "6da49b4daffcd6bd",
+      "id": "3dc427c4e77f8592",
+      "kind": "CLIENT",
+      "name": "http:/orderother/getticketlistbydateandtripid",
+      "timestamp": 1694755164908000,
+      "duration": 23000,
+      "localEndpoint": {
+        "serviceName": "ts-seat-service",
+        "ipv4": "172.18.0.55",
+        "port": 18898
+      },
+      "tags": {
+        "http.host": "ts-order-other-service",
+        "http.method": "POST",
+        "http.path": "/orderOther/getTicketListByDateAndTripId",
+        "http.url": "http://ts-order-other-service:12032/orderOther/getTicketListByDateAndTripId",
+        "spring.instance_id": "1f578af0b40b:ts-seat-service:18898"
+      }
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "6da49b4daffcd6bd",
+      "id": "692c70533e5521eb",
+      "kind": "CLIENT",
+      "name": "http:/travel2/gettraintypebytripid/z1234",
+      "timestamp": 1694755164934000,
+      "duration": 29000,
+      "localEndpoint": {
+        "serviceName": "ts-seat-service",
+        "ipv4": "172.18.0.55",
+        "port": 18898
+      },
+      "tags": {
+        "http.host": "ts-travel2-service",
+        "http.method": "GET",
+        "http.path": "/travel2/getTrainTypeByTripId/Z1234",
+        "http.url": "http://ts-travel2-service:16346/travel2/getTrainTypeByTripId/Z1234",
+        "spring.instance_id": "1f578af0b40b:ts-seat-service:18898"
+      }
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "6da49b4daffcd6bd",
+      "id": "f7cc2cc9cd57d394",
+      "kind": "CLIENT",
+      "name": "http:/config/query",
+      "timestamp": 1694755164966000,
+      "duration": 227000,
+      "localEndpoint": {
+        "serviceName": "ts-seat-service",
+        "ipv4": "172.18.0.55",
+        "port": 18898
+      },
+      "tags": {
+        "http.host": "ts-config-service",
+        "http.method": "POST",
+        "http.path": "/config/query",
+        "http.url": "http://ts-config-service:15679/config/query",
+        "spring.instance_id": "1f578af0b40b:ts-seat-service:18898"
+      }
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "459b08c0c2696ab9",
+      "id": "6da49b4daffcd6bd",
+      "kind": "SERVER",
+      "name": "http:/seat/getleftticketofinterval",
+      "timestamp": 1694755164750000,
+      "duration": 448000,
+      "localEndpoint": {
+        "serviceName": "ts-seat-service",
+        "ipv4": "172.18.0.55",
+        "port": 18898
+      },
+      "tags": {
+        "mvc.controller.class": "SeatController",
+        "mvc.controller.method": "getLeftTicketOfInterval",
+        "spring.instance_id": "1f578af0b40b:ts-seat-service:18898"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "32c554fea16276c2",
+      "id": "28dc727a1c954a4a",
+      "kind": "CLIENT",
+      "name": "http:/travel2/getroutebytripid/z1234",
+      "timestamp": 1694755165263000,
+      "duration": 19000,
+      "localEndpoint": {
+        "serviceName": "ts-seat-service",
+        "ipv4": "172.18.0.55",
+        "port": 18898
+      },
+      "tags": {
+        "http.host": "ts-travel2-service",
+        "http.method": "GET",
+        "http.path": "/travel2/getRouteByTripId/Z1234",
+        "http.url": "http://ts-travel2-service:16346/travel2/getRouteByTripId/Z1234",
+        "spring.instance_id": "1f578af0b40b:ts-seat-service:18898"
+      }
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "32c554fea16276c2",
+      "id": "94059c28800cbd5a",
+      "kind": "CLIENT",
+      "name": "http:/orderother/getticketlistbydateandtripid",
+      "timestamp": 1694755165284000,
+      "duration": 9000,
+      "localEndpoint": {
+        "serviceName": "ts-seat-service",
+        "ipv4": "172.18.0.55",
+        "port": 18898
+      },
+      "tags": {
+        "http.host": "ts-order-other-service",
+        "http.method": "POST",
+        "http.path": "/orderOther/getTicketListByDateAndTripId",
+        "http.url": "http://ts-order-other-service:12032/orderOther/getTicketListByDateAndTripId",
+        "spring.instance_id": "1f578af0b40b:ts-seat-service:18898"
+      }
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "32c554fea16276c2",
+      "id": "687f786b8de0fa7f",
+      "kind": "CLIENT",
+      "name": "http:/travel2/gettraintypebytripid/z1234",
+      "timestamp": 1694755165294000,
+      "duration": 16000,
+      "localEndpoint": {
+        "serviceName": "ts-seat-service",
+        "ipv4": "172.18.0.55",
+        "port": 18898
+      },
+      "tags": {
+        "http.host": "ts-travel2-service",
+        "http.method": "GET",
+        "http.path": "/travel2/getTrainTypeByTripId/Z1234",
+        "http.url": "http://ts-travel2-service:16346/travel2/getTrainTypeByTripId/Z1234",
+        "spring.instance_id": "1f578af0b40b:ts-seat-service:18898"
+      }
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "32c554fea16276c2",
+      "id": "e7d0158e89816ab6",
+      "kind": "CLIENT",
+      "name": "http:/config/query",
+      "timestamp": 1694755165311000,
+      "duration": 11000,
+      "localEndpoint": {
+        "serviceName": "ts-seat-service",
+        "ipv4": "172.18.0.55",
+        "port": 18898
+      },
+      "tags": {
+        "http.host": "ts-config-service",
+        "http.method": "POST",
+        "http.path": "/config/query",
+        "http.url": "http://ts-config-service:15679/config/query",
+        "spring.instance_id": "1f578af0b40b:ts-seat-service:18898"
+      }
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "459b08c0c2696ab9",
+      "id": "32c554fea16276c2",
+      "kind": "SERVER",
+      "name": "http:/seat/getleftticketofinterval",
+      "timestamp": 1694755165256000,
+      "duration": 67000,
+      "localEndpoint": {
+        "serviceName": "ts-seat-service",
+        "ipv4": "172.18.0.55",
+        "port": 18898
+      },
+      "tags": {
+        "mvc.controller.class": "SeatController",
+        "mvc.controller.method": "getLeftTicketOfInterval",
+        "spring.instance_id": "1f578af0b40b:ts-seat-service:18898"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "c930069e6acfc865",
+      "id": "4b20315bca993746",
+      "kind": "CLIENT",
+      "name": "http:/travel2/getroutebytripid/t1235",
+      "timestamp": 1694755165517000,
+      "duration": 13000,
+      "localEndpoint": {
+        "serviceName": "ts-seat-service",
+        "ipv4": "172.18.0.55",
+        "port": 18898
+      },
+      "tags": {
+        "http.host": "ts-travel2-service",
+        "http.method": "GET",
+        "http.path": "/travel2/getRouteByTripId/T1235",
+        "http.url": "http://ts-travel2-service:16346/travel2/getRouteByTripId/T1235",
+        "spring.instance_id": "1f578af0b40b:ts-seat-service:18898"
+      }
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "c930069e6acfc865",
+      "id": "83b6fd787d63b67f",
+      "kind": "CLIENT",
+      "name": "http:/orderother/getticketlistbydateandtripid",
+      "timestamp": 1694755165531000,
+      "duration": 6000,
+      "localEndpoint": {
+        "serviceName": "ts-seat-service",
+        "ipv4": "172.18.0.55",
+        "port": 18898
+      },
+      "tags": {
+        "http.host": "ts-order-other-service",
+        "http.method": "POST",
+        "http.path": "/orderOther/getTicketListByDateAndTripId",
+        "http.url": "http://ts-order-other-service:12032/orderOther/getTicketListByDateAndTripId",
+        "spring.instance_id": "1f578af0b40b:ts-seat-service:18898"
+      }
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "c930069e6acfc865",
+      "id": "12453d39cd38a706",
+      "kind": "CLIENT",
+      "name": "http:/travel2/gettraintypebytripid/t1235",
+      "timestamp": 1694755165538000,
+      "duration": 14000,
+      "localEndpoint": {
+        "serviceName": "ts-seat-service",
+        "ipv4": "172.18.0.55",
+        "port": 18898
+      },
+      "tags": {
+        "http.host": "ts-travel2-service",
+        "http.method": "GET",
+        "http.path": "/travel2/getTrainTypeByTripId/T1235",
+        "http.url": "http://ts-travel2-service:16346/travel2/getTrainTypeByTripId/T1235",
+        "spring.instance_id": "1f578af0b40b:ts-seat-service:18898"
+      }
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "f8867c39a2187e57",
+      "id": "de06ce0d065964c9",
+      "kind": "SERVER",
+      "name": "http:/route/querybyid/0b23bd3e-876a-4af3-b920-c50a",
+      "timestamp": 1694755164852000,
+      "duration": 6000,
+      "localEndpoint": {
+        "serviceName": "ts-route-service",
+        "ipv4": "172.18.0.61",
+        "port": 11178
+      },
+      "tags": {
+        "mvc.controller.class": "RouteController",
+        "mvc.controller.method": "queryById",
+        "spring.instance_id": "4b51ba3a64ec:ts-route-service:11178"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "28dc727a1c954a4a",
+      "id": "840cd6f4f5737c12",
+      "kind": "SERVER",
+      "name": "http:/route/querybyid/0b23bd3e-876a-4af3-b920-c50a",
+      "timestamp": 1694755165273000,
+      "duration": 6000,
+      "localEndpoint": {
+        "serviceName": "ts-route-service",
+        "ipv4": "172.18.0.61",
+        "port": 11178
+      },
+      "tags": {
+        "mvc.controller.class": "RouteController",
+        "mvc.controller.method": "queryById",
+        "spring.instance_id": "4b51ba3a64ec:ts-route-service:11178"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "459b08c0c2696ab9",
+      "id": "95c3b2fd2224f755",
+      "kind": "SERVER",
+      "name": "http:/route/querybyid/9fc9c261-3263-4bfa-82f8-bb44",
+      "timestamp": 1694755165335000,
+      "duration": 5000,
+      "localEndpoint": {
+        "serviceName": "ts-route-service",
+        "ipv4": "172.18.0.61",
+        "port": 11178
+      },
+      "tags": {
+        "mvc.controller.class": "RouteController",
+        "mvc.controller.method": "queryById",
+        "spring.instance_id": "4b51ba3a64ec:ts-route-service:11178"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "459b08c0c2696ab9",
+      "id": "64ae09320cb18ece",
+      "kind": "SERVER",
+      "name": "http:/route/querybyid/d693a2c5-ef87-4a3c-bef8-600b",
+      "timestamp": 1694755165343000,
+      "duration": 3000,
+      "localEndpoint": {
+        "serviceName": "ts-route-service",
+        "ipv4": "172.18.0.61",
+        "port": 11178
+      },
+      "tags": {
+        "mvc.controller.class": "RouteController",
+        "mvc.controller.method": "queryById",
+        "spring.instance_id": "4b51ba3a64ec:ts-route-service:11178"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "459b08c0c2696ab9",
+      "id": "67fd6ff54d508ae1",
+      "kind": "SERVER",
+      "name": "http:/route/querybyid/20eb7122-3a11-423f-b10a-be0d",
+      "timestamp": 1694755165349000,
+      "duration": 4000,
+      "localEndpoint": {
+        "serviceName": "ts-route-service",
+        "ipv4": "172.18.0.61",
+        "port": 11178
+      },
+      "tags": {
+        "mvc.controller.class": "RouteController",
+        "mvc.controller.method": "queryById",
+        "spring.instance_id": "4b51ba3a64ec:ts-route-service:11178"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "ea2d3dc598137be3",
+      "id": "25989146174017e1",
+      "kind": "SERVER",
+      "name": "http:/route/querybyid/20eb7122-3a11-423f-b10a-be0d",
+      "timestamp": 1694755165394000,
+      "duration": 5000,
+      "localEndpoint": {
+        "serviceName": "ts-route-service",
+        "ipv4": "172.18.0.61",
+        "port": 11178
+      },
+      "tags": {
+        "mvc.controller.class": "RouteController",
+        "mvc.controller.method": "queryById",
+        "spring.instance_id": "4b51ba3a64ec:ts-route-service:11178"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "4b20315bca993746",
+      "id": "2f402025ef4225d1",
+      "kind": "SERVER",
+      "name": "http:/route/querybyid/20eb7122-3a11-423f-b10a-be0d",
+      "timestamp": 1694755165523000,
+      "duration": 4000,
+      "localEndpoint": {
+        "serviceName": "ts-route-service",
+        "ipv4": "172.18.0.61",
+        "port": 11178
+      },
+      "tags": {
+        "mvc.controller.class": "RouteController",
+        "mvc.controller.method": "queryById",
+        "spring.instance_id": "4b51ba3a64ec:ts-route-service:11178"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "a62114363e69bcfd",
+      "id": "7b84b9e8a0918d0b",
+      "kind": "SERVER",
+      "name": "http:/route/querybyid/20eb7122-3a11-423f-b10a-be0d",
+      "timestamp": 1694755165617000,
+      "duration": 6000,
+      "localEndpoint": {
+        "serviceName": "ts-route-service",
+        "ipv4": "172.18.0.61",
+        "port": 11178
+      },
+      "tags": {
+        "mvc.controller.class": "RouteController",
+        "mvc.controller.method": "queryById",
+        "spring.instance_id": "4b51ba3a64ec:ts-route-service:11178"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "459b08c0c2696ab9",
+      "id": "d8e7715bd59cd4a9",
+      "kind": "SERVER",
+      "name": "http:/route/querybyid/1367db1f-461e-4ab7-87ad-2bcc",
+      "timestamp": 1694755165676000,
+      "duration": 6000,
+      "localEndpoint": {
+        "serviceName": "ts-route-service",
+        "ipv4": "172.18.0.61",
+        "port": 11178
+      },
+      "tags": {
+        "mvc.controller.class": "RouteController",
+        "mvc.controller.method": "queryById",
+        "spring.instance_id": "4b51ba3a64ec:ts-route-service:11178"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "692c70533e5521eb",
+      "id": "eb91acc6664ea5d4",
+      "kind": "SERVER",
+      "name": "http:/train/retrieve",
+      "timestamp": 1694755164947000,
+      "duration": 8000,
+      "localEndpoint": {
+        "serviceName": "ts-train-service",
+        "ipv4": "172.18.0.38",
+        "port": 14567
+      },
+      "tags": {
+        "mvc.controller.class": "TrainController",
+        "mvc.controller.method": "retrieve",
+        "spring.instance_id": "48c9979ce3a0:ts-train-service:14567"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "687f786b8de0fa7f",
+      "id": "0aaebd6ebb4f5328",
+      "kind": "SERVER",
+      "name": "http:/train/retrieve",
+      "timestamp": 1694755165300000,
+      "duration": 7000,
+      "localEndpoint": {
+        "serviceName": "ts-train-service",
+        "ipv4": "172.18.0.38",
+        "port": 14567
+      },
+      "tags": {
+        "mvc.controller.class": "TrainController",
+        "mvc.controller.method": "retrieve",
+        "spring.instance_id": "48c9979ce3a0:ts-train-service:14567"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "459b08c0c2696ab9",
+      "id": "86c9a20e1aa8d095",
+      "kind": "SERVER",
+      "name": "http:/train/retrieve",
+      "timestamp": 1694755165327000,
+      "duration": 5000,
+      "localEndpoint": {
+        "serviceName": "ts-train-service",
+        "ipv4": "172.18.0.38",
+        "port": 14567
+      },
+      "tags": {
+        "mvc.controller.class": "TrainController",
+        "mvc.controller.method": "retrieve",
+        "spring.instance_id": "48c9979ce3a0:ts-train-service:14567"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "ea2d3dc598137be3",
+      "id": "5154de9f39a51c4e",
+      "kind": "SERVER",
+      "name": "http:/train/retrieve",
+      "timestamp": 1694755165385000,
+      "duration": 6000,
+      "localEndpoint": {
+        "serviceName": "ts-train-service",
+        "ipv4": "172.18.0.38",
+        "port": 14567
+      },
+      "tags": {
+        "mvc.controller.class": "TrainController",
+        "mvc.controller.method": "retrieve",
+        "spring.instance_id": "48c9979ce3a0:ts-train-service:14567"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "12453d39cd38a706",
+      "id": "804da87251c61978",
+      "kind": "SERVER",
+      "name": "http:/train/retrieve",
+      "timestamp": 1694755165545000,
+      "duration": 4000,
+      "localEndpoint": {
+        "serviceName": "ts-train-service",
+        "ipv4": "172.18.0.38",
+        "port": 14567
+      },
+      "tags": {
+        "mvc.controller.class": "TrainController",
+        "mvc.controller.method": "retrieve",
+        "spring.instance_id": "48c9979ce3a0:ts-train-service:14567"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "8e5a6286f577e3bc",
+      "id": "6182d662f3acb946",
+      "kind": "SERVER",
+      "name": "http:/train/retrieve",
+      "timestamp": 1694755165644000,
+      "duration": 5000,
+      "localEndpoint": {
+        "serviceName": "ts-train-service",
+        "ipv4": "172.18.0.38",
+        "port": 14567
+      },
+      "tags": {
+        "mvc.controller.class": "TrainController",
+        "mvc.controller.method": "retrieve",
+        "spring.instance_id": "48c9979ce3a0:ts-train-service:14567"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "459b08c0c2696ab9",
+      "id": "378c367c4522c5b8",
+      "kind": "SERVER",
+      "name": "http:/train/retrieve",
+      "timestamp": 1694755165667000,
+      "duration": 6000,
+      "localEndpoint": {
+        "serviceName": "ts-train-service",
+        "ipv4": "172.18.0.38",
+        "port": 14567
+      },
+      "tags": {
+        "mvc.controller.class": "TrainController",
+        "mvc.controller.method": "retrieve",
+        "spring.instance_id": "48c9979ce3a0:ts-train-service:14567"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "79414f6e0c98aaf5",
+      "id": "535f80914c1cfc7b",
+      "kind": "CLIENT",
+      "name": "http:/basic/queryforstationid",
+      "timestamp": 1694755165209000,
+      "duration": 12000,
+      "localEndpoint": {
+        "serviceName": "ts-ticketinfo-service",
+        "ipv4": "172.18.0.62",
+        "port": 15681
+      },
+      "tags": {
+        "http.host": "ts-basic-service",
+        "http.method": "POST",
+        "http.path": "/basic/queryForStationId",
+        "http.url": "http://ts-basic-service:15680/basic/queryForStationId",
+        "spring.instance_id": "84631d46058e:ts-ticketinfo-service:15681"
+      }
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "459b08c0c2696ab9",
+      "id": "79414f6e0c98aaf5",
+      "kind": "SERVER",
+      "name": "http:/ticketinfo/queryforstationid",
+      "timestamp": 1694755165206000,
+      "duration": 16000,
+      "localEndpoint": {
+        "serviceName": "ts-ticketinfo-service",
+        "ipv4": "172.18.0.62",
+        "port": 15681
+      },
+      "tags": {
+        "mvc.controller.class": "TicketInfoController",
+        "mvc.controller.method": "queryForStationId",
+        "spring.instance_id": "84631d46058e:ts-ticketinfo-service:15681"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "2ec0701e730623e4",
+      "id": "2d0ba931ae656451",
+      "kind": "CLIENT",
+      "name": "http:/basic/queryforstationid",
+      "timestamp": 1694755165231000,
+      "duration": 18000,
+      "localEndpoint": {
+        "serviceName": "ts-ticketinfo-service",
+        "ipv4": "172.18.0.62",
+        "port": 15681
+      },
+      "tags": {
+        "http.host": "ts-basic-service",
+        "http.method": "POST",
+        "http.path": "/basic/queryForStationId",
+        "http.url": "http://ts-basic-service:15680/basic/queryForStationId",
+        "spring.instance_id": "84631d46058e:ts-ticketinfo-service:15681"
+      }
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "459b08c0c2696ab9",
+      "id": "2ec0701e730623e4",
+      "kind": "SERVER",
+      "name": "http:/ticketinfo/queryforstationid",
+      "timestamp": 1694755165229000,
+      "duration": 21000,
+      "localEndpoint": {
+        "serviceName": "ts-ticketinfo-service",
+        "ipv4": "172.18.0.62",
+        "port": 15681
+      },
+      "tags": {
+        "mvc.controller.class": "TicketInfoController",
+        "mvc.controller.method": "queryForStationId",
+        "spring.instance_id": "84631d46058e:ts-ticketinfo-service:15681"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "691b7d541ce2709b",
+      "id": "ea2d3dc598137be3",
+      "kind": "CLIENT",
+      "name": "http:/basic/queryfortravel",
+      "timestamp": 1694755165360000,
+      "duration": 67000,
+      "localEndpoint": {
+        "serviceName": "ts-ticketinfo-service",
+        "ipv4": "172.18.0.62",
+        "port": 15681
+      },
+      "tags": {
+        "http.host": "ts-basic-service",
+        "http.method": "POST",
+        "http.path": "/basic/queryForTravel",
+        "http.url": "http://ts-basic-service:15680/basic/queryForTravel",
+        "spring.instance_id": "84631d46058e:ts-ticketinfo-service:15681"
+      }
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "459b08c0c2696ab9",
+      "id": "691b7d541ce2709b",
+      "kind": "SERVER",
+      "name": "http:/ticketinfo/queryfortravel",
+      "timestamp": 1694755165357000,
+      "duration": 72000,
+      "localEndpoint": {
+        "serviceName": "ts-ticketinfo-service",
+        "ipv4": "172.18.0.62",
+        "port": 15681
+      },
+      "tags": {
+        "mvc.controller.class": "TicketInfoController",
+        "mvc.controller.method": "queryForTravel",
+        "spring.instance_id": "84631d46058e:ts-ticketinfo-service:15681"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "39fae8f58a17beeb",
+      "id": "1b8aacf576c7256d",
+      "kind": "CLIENT",
+      "name": "http:/basic/queryforstationid",
+      "timestamp": 1694755165441000,
+      "duration": 11000,
+      "localEndpoint": {
+        "serviceName": "ts-ticketinfo-service",
+        "ipv4": "172.18.0.62",
+        "port": 15681
+      },
+      "tags": {
+        "http.host": "ts-basic-service",
+        "http.method": "POST",
+        "http.path": "/basic/queryForStationId",
+        "http.url": "http://ts-basic-service:15680/basic/queryForStationId",
+        "spring.instance_id": "84631d46058e:ts-ticketinfo-service:15681"
+      }
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "459b08c0c2696ab9",
+      "id": "39fae8f58a17beeb",
+      "kind": "SERVER",
+      "name": "http:/ticketinfo/queryforstationid",
+      "timestamp": 1694755165440000,
+      "duration": 13000,
+      "localEndpoint": {
+        "serviceName": "ts-ticketinfo-service",
+        "ipv4": "172.18.0.62",
+        "port": 15681
+      },
+      "tags": {
+        "mvc.controller.class": "TicketInfoController",
+        "mvc.controller.method": "queryForStationId",
+        "spring.instance_id": "84631d46058e:ts-ticketinfo-service:15681"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "1000f684361b888d",
+      "id": "5b5d705d26813bdc",
+      "kind": "CLIENT",
+      "name": "http:/basic/queryforstationid",
+      "timestamp": 1694755165457000,
+      "duration": 12000,
+      "localEndpoint": {
+        "serviceName": "ts-ticketinfo-service",
+        "ipv4": "172.18.0.62",
+        "port": 15681
+      },
+      "tags": {
+        "http.host": "ts-basic-service",
+        "http.method": "POST",
+        "http.path": "/basic/queryForStationId",
+        "http.url": "http://ts-basic-service:15680/basic/queryForStationId",
+        "spring.instance_id": "84631d46058e:ts-ticketinfo-service:15681"
+      }
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "459b08c0c2696ab9",
+      "id": "1000f684361b888d",
+      "kind": "SERVER",
+      "name": "http:/ticketinfo/queryforstationid",
+      "timestamp": 1694755165456000,
+      "duration": 15000,
+      "localEndpoint": {
+        "serviceName": "ts-ticketinfo-service",
+        "ipv4": "172.18.0.62",
+        "port": 15681
+      },
+      "tags": {
+        "mvc.controller.class": "TicketInfoController",
+        "mvc.controller.method": "queryForStationId",
+        "spring.instance_id": "84631d46058e:ts-ticketinfo-service:15681"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "8a8312cc02fca995",
+      "id": "ba41868e22d6fb1d",
+      "kind": "CLIENT",
+      "name": "http:/basic/queryforstationid",
+      "timestamp": 1694755165476000,
+      "duration": 12000,
+      "localEndpoint": {
+        "serviceName": "ts-ticketinfo-service",
+        "ipv4": "172.18.0.62",
+        "port": 15681
+      },
+      "tags": {
+        "http.host": "ts-basic-service",
+        "http.method": "POST",
+        "http.path": "/basic/queryForStationId",
+        "http.url": "http://ts-basic-service:15680/basic/queryForStationId",
+        "spring.instance_id": "84631d46058e:ts-ticketinfo-service:15681"
+      }
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "459b08c0c2696ab9",
+      "id": "8a8312cc02fca995",
+      "kind": "SERVER",
+      "name": "http:/ticketinfo/queryforstationid",
+      "timestamp": 1694755165475000,
+      "duration": 14000,
+      "localEndpoint": {
+        "serviceName": "ts-ticketinfo-service",
+        "ipv4": "172.18.0.62",
+        "port": 15681
+      },
+      "tags": {
+        "mvc.controller.class": "TicketInfoController",
+        "mvc.controller.method": "queryForStationId",
+        "spring.instance_id": "84631d46058e:ts-ticketinfo-service:15681"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "6e39812c0dca274d",
+      "id": "276e59e42ba6ea3b",
+      "kind": "CLIENT",
+      "name": "http:/basic/queryforstationid",
+      "timestamp": 1694755165495000,
+      "duration": 13000,
+      "localEndpoint": {
+        "serviceName": "ts-ticketinfo-service",
+        "ipv4": "172.18.0.62",
+        "port": 15681
+      },
+      "tags": {
+        "http.host": "ts-basic-service",
+        "http.method": "POST",
+        "http.path": "/basic/queryForStationId",
+        "http.url": "http://ts-basic-service:15680/basic/queryForStationId",
+        "spring.instance_id": "84631d46058e:ts-ticketinfo-service:15681"
+      }
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "459b08c0c2696ab9",
+      "id": "6e39812c0dca274d",
+      "kind": "SERVER",
+      "name": "http:/ticketinfo/queryforstationid",
+      "timestamp": 1694755165493000,
+      "duration": 16000,
+      "localEndpoint": {
+        "serviceName": "ts-ticketinfo-service",
+        "ipv4": "172.18.0.62",
+        "port": 15681
+      },
+      "tags": {
+        "mvc.controller.class": "TicketInfoController",
+        "mvc.controller.method": "queryForStationId",
+        "spring.instance_id": "84631d46058e:ts-ticketinfo-service:15681"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "edfb028f137c4e97",
+      "id": "d0ae19b129de048e",
+      "kind": "CLIENT",
+      "name": "http:/basic/queryforstationid",
+      "timestamp": 1694755165570000,
+      "duration": 12000,
+      "localEndpoint": {
+        "serviceName": "ts-ticketinfo-service",
+        "ipv4": "172.18.0.62",
+        "port": 15681
+      },
+      "tags": {
+        "http.host": "ts-basic-service",
+        "http.method": "POST",
+        "http.path": "/basic/queryForStationId",
+        "http.url": "http://ts-basic-service:15680/basic/queryForStationId",
+        "spring.instance_id": "84631d46058e:ts-ticketinfo-service:15681"
+      }
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "459b08c0c2696ab9",
+      "id": "edfb028f137c4e97",
+      "kind": "SERVER",
+      "name": "http:/ticketinfo/queryforstationid",
+      "timestamp": 1694755165568000,
+      "duration": 15000,
+      "localEndpoint": {
+        "serviceName": "ts-ticketinfo-service",
+        "ipv4": "172.18.0.62",
+        "port": 15681
+      },
+      "tags": {
+        "mvc.controller.class": "TicketInfoController",
+        "mvc.controller.method": "queryForStationId",
+        "spring.instance_id": "84631d46058e:ts-ticketinfo-service:15681"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "31f5d5e9726f10c9",
+      "id": "bf48cd52693d9490",
+      "kind": "CLIENT",
+      "name": "http:/basic/queryforstationid",
+      "timestamp": 1694755165589000,
+      "duration": 12000,
+      "localEndpoint": {
+        "serviceName": "ts-ticketinfo-service",
+        "ipv4": "172.18.0.62",
+        "port": 15681
+      },
+      "tags": {
+        "http.host": "ts-basic-service",
+        "http.method": "POST",
+        "http.path": "/basic/queryForStationId",
+        "http.url": "http://ts-basic-service:15680/basic/queryForStationId",
+        "spring.instance_id": "84631d46058e:ts-ticketinfo-service:15681"
+      }
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "459b08c0c2696ab9",
+      "id": "31f5d5e9726f10c9",
+      "kind": "SERVER",
+      "name": "http:/ticketinfo/queryforstationid",
+      "timestamp": 1694755165587000,
+      "duration": 16000,
+      "localEndpoint": {
+        "serviceName": "ts-ticketinfo-service",
+        "ipv4": "172.18.0.62",
+        "port": 15681
+      },
+      "tags": {
+        "mvc.controller.class": "TicketInfoController",
+        "mvc.controller.method": "queryForStationId",
+        "spring.instance_id": "84631d46058e:ts-ticketinfo-service:15681"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "535f80914c1cfc7b",
+      "id": "9246028b4c159727",
+      "kind": "CLIENT",
+      "name": "http:/station/queryforid",
+      "timestamp": 1694755165213000,
+      "duration": 6000,
+      "localEndpoint": {
+        "serviceName": "ts-basic-service",
+        "ipv4": "172.18.0.67",
+        "port": 15680
+      },
+      "tags": {
+        "http.host": "ts-station-service",
+        "http.method": "POST",
+        "http.path": "/station/queryForId",
+        "http.url": "http://ts-station-service:12345/station/queryForId",
+        "spring.instance_id": "50eb1c1cb512:ts-basic-service:15680"
+      }
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "79414f6e0c98aaf5",
+      "id": "535f80914c1cfc7b",
+      "kind": "SERVER",
+      "name": "http:/basic/queryforstationid",
+      "timestamp": 1694755165211000,
+      "duration": 9000,
+      "localEndpoint": {
+        "serviceName": "ts-basic-service",
+        "ipv4": "172.18.0.67",
+        "port": 15680
+      },
+      "tags": {
+        "mvc.controller.class": "BasicController",
+        "mvc.controller.method": "queryForStationId",
+        "spring.instance_id": "50eb1c1cb512:ts-basic-service:15680"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "2d0ba931ae656451",
+      "id": "361ebfd826e83b2c",
+      "kind": "CLIENT",
+      "name": "http:/station/queryforid",
+      "timestamp": 1694755165239000,
+      "duration": 8000,
+      "localEndpoint": {
+        "serviceName": "ts-basic-service",
+        "ipv4": "172.18.0.67",
+        "port": 15680
+      },
+      "tags": {
+        "http.host": "ts-station-service",
+        "http.method": "POST",
+        "http.path": "/station/queryForId",
+        "http.url": "http://ts-station-service:12345/station/queryForId",
+        "spring.instance_id": "50eb1c1cb512:ts-basic-service:15680"
+      }
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "2ec0701e730623e4",
+      "id": "2d0ba931ae656451",
+      "kind": "SERVER",
+      "name": "http:/basic/queryforstationid",
+      "timestamp": 1694755165234000,
+      "duration": 14000,
+      "localEndpoint": {
+        "serviceName": "ts-basic-service",
+        "ipv4": "172.18.0.67",
+        "port": 15680
+      },
+      "tags": {
+        "mvc.controller.class": "BasicController",
+        "mvc.controller.method": "queryForStationId",
+        "spring.instance_id": "50eb1c1cb512:ts-basic-service:15680"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "ea2d3dc598137be3",
+      "id": "f845418c66a7309e",
+      "kind": "CLIENT",
+      "name": "http:/station/exist",
+      "timestamp": 1694755165366000,
+      "duration": 9000,
+      "localEndpoint": {
+        "serviceName": "ts-basic-service",
+        "ipv4": "172.18.0.67",
+        "port": 15680
+      },
+      "tags": {
+        "http.host": "ts-station-service",
+        "http.method": "POST",
+        "http.path": "/station/exist",
+        "http.url": "http://ts-station-service:12345/station/exist",
+        "spring.instance_id": "50eb1c1cb512:ts-basic-service:15680"
+      }
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "ea2d3dc598137be3",
+      "id": "d9ee809adf8660a8",
+      "kind": "CLIENT",
+      "name": "http:/station/exist",
+      "timestamp": 1694755165376000,
+      "duration": 7000,
+      "localEndpoint": {
+        "serviceName": "ts-basic-service",
+        "ipv4": "172.18.0.67",
+        "port": 15680
+      },
+      "tags": {
+        "http.host": "ts-station-service",
+        "http.method": "POST",
+        "http.path": "/station/exist",
+        "http.url": "http://ts-station-service:12345/station/exist",
+        "spring.instance_id": "50eb1c1cb512:ts-basic-service:15680"
+      }
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "ea2d3dc598137be3",
+      "id": "5154de9f39a51c4e",
+      "kind": "CLIENT",
+      "name": "http:/train/retrieve",
+      "timestamp": 1694755165384000,
+      "duration": 8000,
+      "localEndpoint": {
+        "serviceName": "ts-basic-service",
+        "ipv4": "172.18.0.67",
+        "port": 15680
+      },
+      "tags": {
+        "http.host": "ts-train-service",
+        "http.method": "POST",
+        "http.path": "/train/retrieve",
+        "http.url": "http://ts-train-service:14567/train/retrieve",
+        "spring.instance_id": "50eb1c1cb512:ts-basic-service:15680"
+      }
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "ea2d3dc598137be3",
+      "id": "25989146174017e1",
+      "kind": "CLIENT",
+      "name": "http:/route/querybyid/20eb7122-3a11-423f-b10a-be0d",
+      "timestamp": 1694755165393000,
+      "duration": 7000,
+      "localEndpoint": {
+        "serviceName": "ts-basic-service",
+        "ipv4": "172.18.0.67",
+        "port": 15680
+      },
+      "tags": {
+        "http.host": "ts-route-service",
+        "http.method": "GET",
+        "http.path": "/route/queryById/20eb7122-3a11-423f-b10a-be0dc5bce7db",
+        "http.url": "http://ts-route-service:11178/route/queryById/20eb7122-3a11-423f-b10a-be0dc5bce7db",
+        "spring.instance_id": "50eb1c1cb512:ts-basic-service:15680"
+      }
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "ea2d3dc598137be3",
+      "id": "828a148f56a079cd",
+      "kind": "CLIENT",
+      "name": "http:/price/query",
+      "timestamp": 1694755165401000,
+      "duration": 11000,
+      "localEndpoint": {
+        "serviceName": "ts-basic-service",
+        "ipv4": "172.18.0.67",
+        "port": 15680
+      },
+      "tags": {
+        "http.host": "ts-price-service",
+        "http.method": "POST",
+        "http.path": "/price/query",
+        "http.url": "http://ts-price-service:16579/price/query",
+        "spring.instance_id": "50eb1c1cb512:ts-basic-service:15680"
+      }
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "ea2d3dc598137be3",
+      "id": "d095691ba6b8ac50",
+      "kind": "CLIENT",
+      "name": "http:/station/queryforid",
+      "timestamp": 1694755165412000,
+      "duration": 7000,
+      "localEndpoint": {
+        "serviceName": "ts-basic-service",
+        "ipv4": "172.18.0.67",
+        "port": 15680
+      },
+      "tags": {
+        "http.host": "ts-station-service",
+        "http.method": "POST",
+        "http.path": "/station/queryForId",
+        "http.url": "http://ts-station-service:12345/station/queryForId",
+        "spring.instance_id": "50eb1c1cb512:ts-basic-service:15680"
+      }
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "ea2d3dc598137be3",
+      "id": "91f9d9225d038e05",
+      "kind": "CLIENT",
+      "name": "http:/station/queryforid",
+      "timestamp": 1694755165419000,
+      "duration": 6000,
+      "localEndpoint": {
+        "serviceName": "ts-basic-service",
+        "ipv4": "172.18.0.67",
+        "port": 15680
+      },
+      "tags": {
+        "http.host": "ts-station-service",
+        "http.method": "POST",
+        "http.path": "/station/queryForId",
+        "http.url": "http://ts-station-service:12345/station/queryForId",
+        "spring.instance_id": "50eb1c1cb512:ts-basic-service:15680"
+      }
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "691b7d541ce2709b",
+      "id": "ea2d3dc598137be3",
+      "kind": "SERVER",
+      "name": "http:/basic/queryfortravel",
+      "timestamp": 1694755165363000,
+      "duration": 64000,
+      "localEndpoint": {
+        "serviceName": "ts-basic-service",
+        "ipv4": "172.18.0.67",
+        "port": 15680
+      },
+      "tags": {
+        "mvc.controller.class": "BasicController",
+        "mvc.controller.method": "queryForTravel",
+        "spring.instance_id": "50eb1c1cb512:ts-basic-service:15680"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "1b8aacf576c7256d",
+      "id": "488715bcccb1037f",
+      "kind": "CLIENT",
+      "name": "http:/station/queryforid",
+      "timestamp": 1694755165444000,
+      "duration": 6000,
+      "localEndpoint": {
+        "serviceName": "ts-basic-service",
+        "ipv4": "172.18.0.67",
+        "port": 15680
+      },
+      "tags": {
+        "http.host": "ts-station-service",
+        "http.method": "POST",
+        "http.path": "/station/queryForId",
+        "http.url": "http://ts-station-service:12345/station/queryForId",
+        "spring.instance_id": "50eb1c1cb512:ts-basic-service:15680"
+      }
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "39fae8f58a17beeb",
+      "id": "1b8aacf576c7256d",
+      "kind": "SERVER",
+      "name": "http:/basic/queryforstationid",
+      "timestamp": 1694755165442000,
+      "duration": 9000,
+      "localEndpoint": {
+        "serviceName": "ts-basic-service",
+        "ipv4": "172.18.0.67",
+        "port": 15680
+      },
+      "tags": {
+        "mvc.controller.class": "BasicController",
+        "mvc.controller.method": "queryForStationId",
+        "spring.instance_id": "50eb1c1cb512:ts-basic-service:15680"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "5b5d705d26813bdc",
+      "id": "395f87aec0b95c39",
+      "kind": "CLIENT",
+      "name": "http:/station/queryforid",
+      "timestamp": 1694755165462000,
+      "duration": 7000,
+      "localEndpoint": {
+        "serviceName": "ts-basic-service",
+        "ipv4": "172.18.0.67",
+        "port": 15680
+      },
+      "tags": {
+        "http.host": "ts-station-service",
+        "http.method": "POST",
+        "http.path": "/station/queryForId",
+        "http.url": "http://ts-station-service:12345/station/queryForId",
+        "spring.instance_id": "50eb1c1cb512:ts-basic-service:15680"
+      }
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "1000f684361b888d",
+      "id": "5b5d705d26813bdc",
+      "kind": "SERVER",
+      "name": "http:/basic/queryforstationid",
+      "timestamp": 1694755165460000,
+      "duration": 10000,
+      "localEndpoint": {
+        "serviceName": "ts-basic-service",
+        "ipv4": "172.18.0.67",
+        "port": 15680
+      },
+      "tags": {
+        "mvc.controller.class": "BasicController",
+        "mvc.controller.method": "queryForStationId",
+        "spring.instance_id": "50eb1c1cb512:ts-basic-service:15680"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "ba41868e22d6fb1d",
+      "id": "61bef9dc663f87a9",
+      "kind": "CLIENT",
+      "name": "http:/station/queryforid",
+      "timestamp": 1694755165480000,
+      "duration": 6000,
+      "localEndpoint": {
+        "serviceName": "ts-basic-service",
+        "ipv4": "172.18.0.67",
+        "port": 15680
+      },
+      "tags": {
+        "http.host": "ts-station-service",
+        "http.method": "POST",
+        "http.path": "/station/queryForId",
+        "http.url": "http://ts-station-service:12345/station/queryForId",
+        "spring.instance_id": "50eb1c1cb512:ts-basic-service:15680"
+      }
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "8a8312cc02fca995",
+      "id": "ba41868e22d6fb1d",
+      "kind": "SERVER",
+      "name": "http:/basic/queryforstationid",
+      "timestamp": 1694755165478000,
+      "duration": 9000,
+      "localEndpoint": {
+        "serviceName": "ts-basic-service",
+        "ipv4": "172.18.0.67",
+        "port": 15680
+      },
+      "tags": {
+        "mvc.controller.class": "BasicController",
+        "mvc.controller.method": "queryForStationId",
+        "spring.instance_id": "50eb1c1cb512:ts-basic-service:15680"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "276e59e42ba6ea3b",
+      "id": "99eb20f455c74b45",
+      "kind": "CLIENT",
+      "name": "http:/station/queryforid",
+      "timestamp": 1694755165499000,
+      "duration": 7000,
+      "localEndpoint": {
+        "serviceName": "ts-basic-service",
+        "ipv4": "172.18.0.67",
+        "port": 15680
+      },
+      "tags": {
+        "http.host": "ts-station-service",
+        "http.method": "POST",
+        "http.path": "/station/queryForId",
+        "http.url": "http://ts-station-service:12345/station/queryForId",
+        "spring.instance_id": "50eb1c1cb512:ts-basic-service:15680"
+      }
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "6e39812c0dca274d",
+      "id": "276e59e42ba6ea3b",
+      "kind": "SERVER",
+      "name": "http:/basic/queryforstationid",
+      "timestamp": 1694755165497000,
+      "duration": 10000,
+      "localEndpoint": {
+        "serviceName": "ts-basic-service",
+        "ipv4": "172.18.0.67",
+        "port": 15680
+      },
+      "tags": {
+        "mvc.controller.class": "BasicController",
+        "mvc.controller.method": "queryForStationId",
+        "spring.instance_id": "50eb1c1cb512:ts-basic-service:15680"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "d0ae19b129de048e",
+      "id": "24d44333fac998a2",
+      "kind": "CLIENT",
+      "name": "http:/station/queryforid",
+      "timestamp": 1694755165575000,
+      "duration": 5000,
+      "localEndpoint": {
+        "serviceName": "ts-basic-service",
+        "ipv4": "172.18.0.67",
+        "port": 15680
+      },
+      "tags": {
+        "http.host": "ts-station-service",
+        "http.method": "POST",
+        "http.path": "/station/queryForId",
+        "http.url": "http://ts-station-service:12345/station/queryForId",
+        "spring.instance_id": "50eb1c1cb512:ts-basic-service:15680"
+      }
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "edfb028f137c4e97",
+      "id": "d0ae19b129de048e",
+      "kind": "SERVER",
+      "name": "http:/basic/queryforstationid",
+      "timestamp": 1694755165573000,
+      "duration": 8000,
+      "localEndpoint": {
+        "serviceName": "ts-basic-service",
+        "ipv4": "172.18.0.67",
+        "port": 15680
+      },
+      "tags": {
+        "mvc.controller.class": "BasicController",
+        "mvc.controller.method": "queryForStationId",
+        "spring.instance_id": "50eb1c1cb512:ts-basic-service:15680"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "bf48cd52693d9490",
+      "id": "3b1334259d855b29",
+      "kind": "CLIENT",
+      "name": "http:/station/queryforid",
+      "timestamp": 1694755165593000,
+      "duration": 6000,
+      "localEndpoint": {
+        "serviceName": "ts-basic-service",
+        "ipv4": "172.18.0.67",
+        "port": 15680
+      },
+      "tags": {
+        "http.host": "ts-station-service",
+        "http.method": "POST",
+        "http.path": "/station/queryForId",
+        "http.url": "http://ts-station-service:12345/station/queryForId",
+        "spring.instance_id": "50eb1c1cb512:ts-basic-service:15680"
+      }
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "31f5d5e9726f10c9",
+      "id": "bf48cd52693d9490",
+      "kind": "SERVER",
+      "name": "http:/basic/queryforstationid",
+      "timestamp": 1694755165591000,
+      "duration": 10000,
+      "localEndpoint": {
+        "serviceName": "ts-basic-service",
+        "ipv4": "172.18.0.67",
+        "port": 15680
+      },
+      "tags": {
+        "mvc.controller.class": "BasicController",
+        "mvc.controller.method": "queryForStationId",
+        "spring.instance_id": "50eb1c1cb512:ts-basic-service:15680"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "535f80914c1cfc7b",
+      "id": "9246028b4c159727",
+      "kind": "SERVER",
+      "name": "http:/station/queryforid",
+      "timestamp": 1694755165215000,
+      "duration": 3000,
+      "localEndpoint": {
+        "serviceName": "ts-station-service",
+        "ipv4": "172.18.0.7",
+        "port": 12345
+      },
+      "tags": {
+        "mvc.controller.class": "StationController",
+        "mvc.controller.method": "queryForId",
+        "spring.instance_id": "bfd1f61e8c8c:ts-station-service:12345"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "2d0ba931ae656451",
+      "id": "361ebfd826e83b2c",
+      "kind": "SERVER",
+      "name": "http:/station/queryforid",
+      "timestamp": 1694755165241000,
+      "duration": 5000,
+      "localEndpoint": {
+        "serviceName": "ts-station-service",
+        "ipv4": "172.18.0.7",
+        "port": 12345
+      },
+      "tags": {
+        "mvc.controller.class": "StationController",
+        "mvc.controller.method": "queryForId",
+        "spring.instance_id": "bfd1f61e8c8c:ts-station-service:12345"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "ea2d3dc598137be3",
+      "id": "f845418c66a7309e",
+      "kind": "SERVER",
+      "name": "http:/station/exist",
+      "timestamp": 1694755165370000,
+      "duration": 4000,
+      "localEndpoint": {
+        "serviceName": "ts-station-service",
+        "ipv4": "172.18.0.7",
+        "port": 12345
+      },
+      "tags": {
+        "mvc.controller.class": "StationController",
+        "mvc.controller.method": "exist",
+        "spring.instance_id": "bfd1f61e8c8c:ts-station-service:12345"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "ea2d3dc598137be3",
+      "id": "d9ee809adf8660a8",
+      "kind": "SERVER",
+      "name": "http:/station/exist",
+      "timestamp": 1694755165379000,
+      "duration": 3000,
+      "localEndpoint": {
+        "serviceName": "ts-station-service",
+        "ipv4": "172.18.0.7",
+        "port": 12345
+      },
+      "tags": {
+        "mvc.controller.class": "StationController",
+        "mvc.controller.method": "exist",
+        "spring.instance_id": "bfd1f61e8c8c:ts-station-service:12345"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "ea2d3dc598137be3",
+      "id": "d095691ba6b8ac50",
+      "kind": "SERVER",
+      "name": "http:/station/queryforid",
+      "timestamp": 1694755165415000,
+      "duration": 3000,
+      "localEndpoint": {
+        "serviceName": "ts-station-service",
+        "ipv4": "172.18.0.7",
+        "port": 12345
+      },
+      "tags": {
+        "mvc.controller.class": "StationController",
+        "mvc.controller.method": "queryForId",
+        "spring.instance_id": "bfd1f61e8c8c:ts-station-service:12345"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "ea2d3dc598137be3",
+      "id": "91f9d9225d038e05",
+      "kind": "SERVER",
+      "name": "http:/station/queryforid",
+      "timestamp": 1694755165421000,
+      "duration": 4000,
+      "localEndpoint": {
+        "serviceName": "ts-station-service",
+        "ipv4": "172.18.0.7",
+        "port": 12345
+      },
+      "tags": {
+        "mvc.controller.class": "StationController",
+        "mvc.controller.method": "queryForId",
+        "spring.instance_id": "bfd1f61e8c8c:ts-station-service:12345"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "1b8aacf576c7256d",
+      "id": "488715bcccb1037f",
+      "kind": "SERVER",
+      "name": "http:/station/queryforid",
+      "timestamp": 1694755165446000,
+      "duration": 3000,
+      "localEndpoint": {
+        "serviceName": "ts-station-service",
+        "ipv4": "172.18.0.7",
+        "port": 12345
+      },
+      "tags": {
+        "mvc.controller.class": "StationController",
+        "mvc.controller.method": "queryForId",
+        "spring.instance_id": "bfd1f61e8c8c:ts-station-service:12345"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "5b5d705d26813bdc",
+      "id": "395f87aec0b95c39",
+      "kind": "SERVER",
+      "name": "http:/station/queryforid",
+      "timestamp": 1694755165464000,
+      "duration": 4000,
+      "localEndpoint": {
+        "serviceName": "ts-station-service",
+        "ipv4": "172.18.0.7",
+        "port": 12345
+      },
+      "tags": {
+        "mvc.controller.class": "StationController",
+        "mvc.controller.method": "queryForId",
+        "spring.instance_id": "bfd1f61e8c8c:ts-station-service:12345"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "ba41868e22d6fb1d",
+      "id": "61bef9dc663f87a9",
+      "kind": "SERVER",
+      "name": "http:/station/queryforid",
+      "timestamp": 1694755165482000,
+      "duration": 4000,
+      "localEndpoint": {
+        "serviceName": "ts-station-service",
+        "ipv4": "172.18.0.7",
+        "port": 12345
+      },
+      "tags": {
+        "mvc.controller.class": "StationController",
+        "mvc.controller.method": "queryForId",
+        "spring.instance_id": "bfd1f61e8c8c:ts-station-service:12345"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "276e59e42ba6ea3b",
+      "id": "99eb20f455c74b45",
+      "kind": "SERVER",
+      "name": "http:/station/queryforid",
+      "timestamp": 1694755165502000,
+      "duration": 3000,
+      "localEndpoint": {
+        "serviceName": "ts-station-service",
+        "ipv4": "172.18.0.7",
+        "port": 12345
+      },
+      "tags": {
+        "mvc.controller.class": "StationController",
+        "mvc.controller.method": "queryForId",
+        "spring.instance_id": "bfd1f61e8c8c:ts-station-service:12345"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "d0ae19b129de048e",
+      "id": "24d44333fac998a2",
+      "kind": "SERVER",
+      "name": "http:/station/queryforid",
+      "timestamp": 1694755165577000,
+      "duration": 3000,
+      "localEndpoint": {
+        "serviceName": "ts-station-service",
+        "ipv4": "172.18.0.7",
+        "port": 12345
+      },
+      "tags": {
+        "mvc.controller.class": "StationController",
+        "mvc.controller.method": "queryForId",
+        "spring.instance_id": "bfd1f61e8c8c:ts-station-service:12345"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "bf48cd52693d9490",
+      "id": "3b1334259d855b29",
+      "kind": "SERVER",
+      "name": "http:/station/queryforid",
+      "timestamp": 1694755165595000,
+      "duration": 4000,
+      "localEndpoint": {
+        "serviceName": "ts-station-service",
+        "ipv4": "172.18.0.7",
+        "port": 12345
+      },
+      "tags": {
+        "mvc.controller.class": "StationController",
+        "mvc.controller.method": "queryForId",
+        "spring.instance_id": "bfd1f61e8c8c:ts-station-service:12345"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "459b08c0c2696ab9",
+      "id": "6da49b4daffcd6bd",
+      "kind": "CLIENT",
+      "name": "http:/seat/getleftticketofinterval",
+      "timestamp": 1694755164673000,
+      "duration": 530000,
+      "localEndpoint": {
+        "serviceName": "ts-travel2-service",
+        "ipv4": "172.18.0.32",
+        "port": 16346
+      },
+      "tags": {
+        "http.host": "ts-seat-service",
+        "http.method": "POST",
+        "http.path": "/seat/getLeftTicketOfInterval",
+        "http.url": "http://ts-seat-service:18898/seat/getLeftTicketOfInterval",
+        "spring.instance_id": "83e34f365744:ts-travel2-service:16346"
+      }
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "459b08c0c2696ab9",
+      "id": "79414f6e0c98aaf5",
+      "kind": "CLIENT",
+      "name": "http:/ticketinfo/queryforstationid",
+      "timestamp": 1694755165204000,
+      "duration": 19000,
+      "localEndpoint": {
+        "serviceName": "ts-travel2-service",
+        "ipv4": "172.18.0.32",
+        "port": 16346
+      },
+      "tags": {
+        "http.host": "ts-ticketinfo-service",
+        "http.method": "POST",
+        "http.path": "/ticketinfo/queryForStationId",
+        "http.url": "http://ts-ticketinfo-service:15681/ticketinfo/queryForStationId",
+        "spring.instance_id": "83e34f365744:ts-travel2-service:16346"
+      }
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "459b08c0c2696ab9",
+      "id": "2ec0701e730623e4",
+      "kind": "CLIENT",
+      "name": "http:/ticketinfo/queryforstationid",
+      "timestamp": 1694755165226000,
+      "duration": 25000,
+      "localEndpoint": {
+        "serviceName": "ts-travel2-service",
+        "ipv4": "172.18.0.32",
+        "port": 16346
+      },
+      "tags": {
+        "http.host": "ts-ticketinfo-service",
+        "http.method": "POST",
+        "http.path": "/ticketinfo/queryForStationId",
+        "http.url": "http://ts-ticketinfo-service:15681/ticketinfo/queryForStationId",
+        "spring.instance_id": "83e34f365744:ts-travel2-service:16346"
+      }
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "28dc727a1c954a4a",
+      "id": "840cd6f4f5737c12",
+      "kind": "CLIENT",
+      "name": "http:/route/querybyid/0b23bd3e-876a-4af3-b920-c50a",
+      "timestamp": 1694755165272000,
+      "duration": 8000,
+      "localEndpoint": {
+        "serviceName": "ts-travel2-service",
+        "ipv4": "172.18.0.32",
+        "port": 16346
+      },
+      "tags": {
+        "http.host": "ts-route-service",
+        "http.method": "GET",
+        "http.path": "/route/queryById/0b23bd3e-876a-4af3-b920-c50a90c90b04",
+        "http.url": "http://ts-route-service:11178/route/queryById/0b23bd3e-876a-4af3-b920-c50a90c90b04",
+        "spring.instance_id": "83e34f365744:ts-travel2-service:16346"
+      }
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "32c554fea16276c2",
+      "id": "28dc727a1c954a4a",
+      "kind": "SERVER",
+      "name": "http:/travel2/getroutebytripid/z1234",
+      "timestamp": 1694755165265000,
+      "duration": 17000,
+      "localEndpoint": {
+        "serviceName": "ts-travel2-service",
+        "ipv4": "172.18.0.32",
+        "port": 16346
+      },
+      "tags": {
+        "mvc.controller.class": "Travel2Controller",
+        "mvc.controller.method": "getRouteByTripId",
+        "spring.instance_id": "83e34f365744:ts-travel2-service:16346"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "687f786b8de0fa7f",
+      "id": "0aaebd6ebb4f5328",
+      "kind": "CLIENT",
+      "name": "http:/train/retrieve",
+      "timestamp": 1694755165299000,
+      "duration": 9000,
+      "localEndpoint": {
+        "serviceName": "ts-travel2-service",
+        "ipv4": "172.18.0.32",
+        "port": 16346
+      },
+      "tags": {
+        "http.host": "ts-train-service",
+        "http.method": "POST",
+        "http.path": "/train/retrieve",
+        "http.url": "http://ts-train-service:14567/train/retrieve",
+        "spring.instance_id": "83e34f365744:ts-travel2-service:16346"
+      }
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "32c554fea16276c2",
+      "id": "687f786b8de0fa7f",
+      "kind": "SERVER",
+      "name": "http:/travel2/gettraintypebytripid/z1234",
+      "timestamp": 1694755165296000,
+      "duration": 13000,
+      "localEndpoint": {
+        "serviceName": "ts-travel2-service",
+        "ipv4": "172.18.0.32",
+        "port": 16346
+      },
+      "tags": {
+        "mvc.controller.class": "Travel2Controller",
+        "mvc.controller.method": "getTrainTypeByTripId",
+        "spring.instance_id": "83e34f365744:ts-travel2-service:16346"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "459b08c0c2696ab9",
+      "id": "32c554fea16276c2",
+      "kind": "CLIENT",
+      "name": "http:/seat/getleftticketofinterval",
+      "timestamp": 1694755165252000,
+      "duration": 73000,
+      "localEndpoint": {
+        "serviceName": "ts-travel2-service",
+        "ipv4": "172.18.0.32",
+        "port": 16346
+      },
+      "tags": {
+        "http.host": "ts-seat-service",
+        "http.method": "POST",
+        "http.path": "/seat/getLeftTicketOfInterval",
+        "http.url": "http://ts-seat-service:18898/seat/getLeftTicketOfInterval",
+        "spring.instance_id": "83e34f365744:ts-travel2-service:16346"
+      }
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "459b08c0c2696ab9",
+      "id": "86c9a20e1aa8d095",
+      "kind": "CLIENT",
+      "name": "http:/train/retrieve",
+      "timestamp": 1694755165326000,
+      "duration": 7000,
+      "localEndpoint": {
+        "serviceName": "ts-travel2-service",
+        "ipv4": "172.18.0.32",
+        "port": 16346
+      },
+      "tags": {
+        "http.host": "ts-train-service",
+        "http.method": "POST",
+        "http.path": "/train/retrieve",
+        "http.url": "http://ts-train-service:14567/train/retrieve",
+        "spring.instance_id": "83e34f365744:ts-travel2-service:16346"
+      }
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "459b08c0c2696ab9",
+      "id": "95c3b2fd2224f755",
+      "kind": "CLIENT",
+      "name": "http:/route/querybyid/9fc9c261-3263-4bfa-82f8-bb44",
+      "timestamp": 1694755165333000,
+      "duration": 7000,
+      "localEndpoint": {
+        "serviceName": "ts-travel2-service",
+        "ipv4": "172.18.0.32",
+        "port": 16346
+      },
+      "tags": {
+        "http.host": "ts-route-service",
+        "http.method": "GET",
+        "http.path": "/route/queryById/9fc9c261-3263-4bfa-82f8-bb44e06b2f52",
+        "http.url": "http://ts-route-service:11178/route/queryById/9fc9c261-3263-4bfa-82f8-bb44e06b2f52",
+        "spring.instance_id": "83e34f365744:ts-travel2-service:16346"
+      }
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "459b08c0c2696ab9",
+      "id": "64ae09320cb18ece",
+      "kind": "CLIENT",
+      "name": "http:/route/querybyid/d693a2c5-ef87-4a3c-bef8-600b",
+      "timestamp": 1694755165342000,
+      "duration": 5000,
+      "localEndpoint": {
+        "serviceName": "ts-travel2-service",
+        "ipv4": "172.18.0.32",
+        "port": 16346
+      },
+      "tags": {
+        "http.host": "ts-route-service",
+        "http.method": "GET",
+        "http.path": "/route/queryById/d693a2c5-ef87-4a3c-bef8-600b43f62c68",
+        "http.url": "http://ts-route-service:11178/route/queryById/d693a2c5-ef87-4a3c-bef8-600b43f62c68",
+        "spring.instance_id": "83e34f365744:ts-travel2-service:16346"
+      }
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "459b08c0c2696ab9",
+      "id": "67fd6ff54d508ae1",
+      "kind": "CLIENT",
+      "name": "http:/route/querybyid/20eb7122-3a11-423f-b10a-be0d",
+      "timestamp": 1694755165348000,
+      "duration": 5000,
+      "localEndpoint": {
+        "serviceName": "ts-travel2-service",
+        "ipv4": "172.18.0.32",
+        "port": 16346
+      },
+      "tags": {
+        "http.host": "ts-route-service",
+        "http.method": "GET",
+        "http.path": "/route/queryById/20eb7122-3a11-423f-b10a-be0dc5bce7db",
+        "http.url": "http://ts-route-service:11178/route/queryById/20eb7122-3a11-423f-b10a-be0dc5bce7db",
+        "spring.instance_id": "83e34f365744:ts-travel2-service:16346"
+      }
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "459b08c0c2696ab9",
+      "id": "691b7d541ce2709b",
+      "kind": "CLIENT",
+      "name": "http:/ticketinfo/queryfortravel",
+      "timestamp": 1694755165355000,
+      "duration": 75000,
+      "localEndpoint": {
+        "serviceName": "ts-travel2-service",
+        "ipv4": "172.18.0.32",
+        "port": 16346
+      },
+      "tags": {
+        "http.host": "ts-ticketinfo-service",
+        "http.method": "POST",
+        "http.path": "/ticketinfo/queryForTravel",
+        "http.url": "http://ts-ticketinfo-service:15681/ticketinfo/queryForTravel",
+        "spring.instance_id": "83e34f365744:ts-travel2-service:16346"
+      }
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "459b08c0c2696ab9",
+      "id": "0b3a47796e447945",
+      "kind": "CLIENT",
+      "name": "http:/orderother/calculate",
+      "timestamp": 1694755165431000,
+      "duration": 7000,
+      "localEndpoint": {
+        "serviceName": "ts-travel2-service",
+        "ipv4": "172.18.0.32",
+        "port": 16346
+      },
+      "tags": {
+        "http.host": "ts-order-other-service",
+        "http.method": "POST",
+        "http.path": "/orderOther/calculate",
+        "http.url": "http://ts-order-other-service:12032/orderOther/calculate",
+        "spring.instance_id": "83e34f365744:ts-travel2-service:16346"
+      }
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "459b08c0c2696ab9",
+      "id": "39fae8f58a17beeb",
+      "kind": "CLIENT",
+      "name": "http:/ticketinfo/queryforstationid",
+      "timestamp": 1694755165438000,
+      "duration": 14000,
+      "localEndpoint": {
+        "serviceName": "ts-travel2-service",
+        "ipv4": "172.18.0.32",
+        "port": 16346
+      },
+      "tags": {
+        "http.host": "ts-ticketinfo-service",
+        "http.method": "POST",
+        "http.path": "/ticketinfo/queryForStationId",
+        "http.url": "http://ts-ticketinfo-service:15681/ticketinfo/queryForStationId",
+        "spring.instance_id": "83e34f365744:ts-travel2-service:16346"
+      }
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "459b08c0c2696ab9",
+      "id": "1000f684361b888d",
+      "kind": "CLIENT",
+      "name": "http:/ticketinfo/queryforstationid",
+      "timestamp": 1694755165454000,
+      "duration": 18000,
+      "localEndpoint": {
+        "serviceName": "ts-travel2-service",
+        "ipv4": "172.18.0.32",
+        "port": 16346
+      },
+      "tags": {
+        "http.host": "ts-ticketinfo-service",
+        "http.method": "POST",
+        "http.path": "/ticketinfo/queryForStationId",
+        "http.url": "http://ts-ticketinfo-service:15681/ticketinfo/queryForStationId",
+        "spring.instance_id": "83e34f365744:ts-travel2-service:16346"
+      }
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "459b08c0c2696ab9",
+      "id": "8a8312cc02fca995",
+      "kind": "CLIENT",
+      "name": "http:/ticketinfo/queryforstationid",
+      "timestamp": 1694755165473000,
+      "duration": 17000,
+      "localEndpoint": {
+        "serviceName": "ts-travel2-service",
+        "ipv4": "172.18.0.32",
+        "port": 16346
+      },
+      "tags": {
+        "http.host": "ts-ticketinfo-service",
+        "http.method": "POST",
+        "http.path": "/ticketinfo/queryForStationId",
+        "http.url": "http://ts-ticketinfo-service:15681/ticketinfo/queryForStationId",
+        "spring.instance_id": "83e34f365744:ts-travel2-service:16346"
+      }
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "459b08c0c2696ab9",
+      "id": "6e39812c0dca274d",
+      "kind": "CLIENT",
+      "name": "http:/ticketinfo/queryforstationid",
+      "timestamp": 1694755165491000,
+      "duration": 19000,
+      "localEndpoint": {
+        "serviceName": "ts-travel2-service",
+        "ipv4": "172.18.0.32",
+        "port": 16346
+      },
+      "tags": {
+        "http.host": "ts-ticketinfo-service",
+        "http.method": "POST",
+        "http.path": "/ticketinfo/queryForStationId",
+        "http.url": "http://ts-ticketinfo-service:15681/ticketinfo/queryForStationId",
+        "spring.instance_id": "83e34f365744:ts-travel2-service:16346"
+      }
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "4b20315bca993746",
+      "id": "2f402025ef4225d1",
+      "kind": "CLIENT",
+      "name": "http:/route/querybyid/20eb7122-3a11-423f-b10a-be0d",
+      "timestamp": 1694755165521000,
+      "duration": 7000,
+      "localEndpoint": {
+        "serviceName": "ts-travel2-service",
+        "ipv4": "172.18.0.32",
+        "port": 16346
+      },
+      "tags": {
+        "http.host": "ts-route-service",
+        "http.method": "GET",
+        "http.path": "/route/queryById/20eb7122-3a11-423f-b10a-be0dc5bce7db",
+        "http.url": "http://ts-route-service:11178/route/queryById/20eb7122-3a11-423f-b10a-be0dc5bce7db",
+        "spring.instance_id": "83e34f365744:ts-travel2-service:16346"
+      }
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "c930069e6acfc865",
+      "id": "4b20315bca993746",
+      "kind": "SERVER",
+      "name": "http:/travel2/getroutebytripid/t1235",
+      "timestamp": 1694755165518000,
+      "duration": 11000,
+      "localEndpoint": {
+        "serviceName": "ts-travel2-service",
+        "ipv4": "172.18.0.32",
+        "port": 16346
+      },
+      "tags": {
+        "mvc.controller.class": "Travel2Controller",
+        "mvc.controller.method": "getRouteByTripId",
+        "spring.instance_id": "83e34f365744:ts-travel2-service:16346"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "12453d39cd38a706",
+      "id": "804da87251c61978",
+      "kind": "CLIENT",
+      "name": "http:/train/retrieve",
+      "timestamp": 1694755165544000,
+      "duration": 6000,
+      "localEndpoint": {
+        "serviceName": "ts-travel2-service",
+        "ipv4": "172.18.0.32",
+        "port": 16346
+      },
+      "tags": {
+        "http.host": "ts-train-service",
+        "http.method": "POST",
+        "http.path": "/train/retrieve",
+        "http.url": "http://ts-train-service:14567/train/retrieve",
+        "spring.instance_id": "83e34f365744:ts-travel2-service:16346"
+      }
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "c930069e6acfc865",
+      "id": "12453d39cd38a706",
+      "kind": "SERVER",
+      "name": "http:/travel2/gettraintypebytripid/t1235",
+      "timestamp": 1694755165539000,
+      "duration": 12000,
+      "localEndpoint": {
+        "serviceName": "ts-travel2-service",
+        "ipv4": "172.18.0.32",
+        "port": 16346
+      },
+      "tags": {
+        "mvc.controller.class": "Travel2Controller",
+        "mvc.controller.method": "getTrainTypeByTripId",
+        "spring.instance_id": "83e34f365744:ts-travel2-service:16346"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "459b08c0c2696ab9",
+      "id": "c930069e6acfc865",
+      "kind": "CLIENT",
+      "name": "http:/seat/getleftticketofinterval",
+      "timestamp": 1694755165511000,
+      "duration": 54000,
+      "localEndpoint": {
+        "serviceName": "ts-travel2-service",
+        "ipv4": "172.18.0.32",
+        "port": 16346
+      },
+      "tags": {
+        "http.host": "ts-seat-service",
+        "http.method": "POST",
+        "http.path": "/seat/getLeftTicketOfInterval",
+        "http.url": "http://ts-seat-service:18898/seat/getLeftTicketOfInterval",
+        "spring.instance_id": "83e34f365744:ts-travel2-service:16346"
+      }
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "459b08c0c2696ab9",
+      "id": "edfb028f137c4e97",
+      "kind": "CLIENT",
+      "name": "http:/ticketinfo/queryforstationid",
+      "timestamp": 1694755165566000,
+      "duration": 18000,
+      "localEndpoint": {
+        "serviceName": "ts-travel2-service",
+        "ipv4": "172.18.0.32",
+        "port": 16346
+      },
+      "tags": {
+        "http.host": "ts-ticketinfo-service",
+        "http.method": "POST",
+        "http.path": "/ticketinfo/queryForStationId",
+        "http.url": "http://ts-ticketinfo-service:15681/ticketinfo/queryForStationId",
+        "spring.instance_id": "83e34f365744:ts-travel2-service:16346"
+      }
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "459b08c0c2696ab9",
+      "id": "31f5d5e9726f10c9",
+      "kind": "CLIENT",
+      "name": "http:/ticketinfo/queryforstationid",
+      "timestamp": 1694755165585000,
+      "duration": 18000,
+      "localEndpoint": {
+        "serviceName": "ts-travel2-service",
+        "ipv4": "172.18.0.32",
+        "port": 16346
+      },
+      "tags": {
+        "http.host": "ts-ticketinfo-service",
+        "http.method": "POST",
+        "http.path": "/ticketinfo/queryForStationId",
+        "http.url": "http://ts-ticketinfo-service:15681/ticketinfo/queryForStationId",
+        "spring.instance_id": "83e34f365744:ts-travel2-service:16346"
+      }
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "a62114363e69bcfd",
+      "id": "7b84b9e8a0918d0b",
+      "kind": "CLIENT",
+      "name": "http:/route/querybyid/20eb7122-3a11-423f-b10a-be0d",
+      "timestamp": 1694755165616000,
+      "duration": 7000,
+      "localEndpoint": {
+        "serviceName": "ts-travel2-service",
+        "ipv4": "172.18.0.32",
+        "port": 16346
+      },
+      "tags": {
+        "http.host": "ts-route-service",
+        "http.method": "GET",
+        "http.path": "/route/queryById/20eb7122-3a11-423f-b10a-be0dc5bce7db",
+        "http.url": "http://ts-route-service:11178/route/queryById/20eb7122-3a11-423f-b10a-be0dc5bce7db",
+        "spring.instance_id": "83e34f365744:ts-travel2-service:16346"
+      }
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "d4e3e7e9309e9201",
+      "id": "a62114363e69bcfd",
+      "kind": "SERVER",
+      "name": "http:/travel2/getroutebytripid/t1235",
+      "timestamp": 1694755165611000,
+      "duration": 14000,
+      "localEndpoint": {
+        "serviceName": "ts-travel2-service",
+        "ipv4": "172.18.0.32",
+        "port": 16346
+      },
+      "tags": {
+        "mvc.controller.class": "Travel2Controller",
+        "mvc.controller.method": "getRouteByTripId",
+        "spring.instance_id": "83e34f365744:ts-travel2-service:16346"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "8e5a6286f577e3bc",
+      "id": "6182d662f3acb946",
+      "kind": "CLIENT",
+      "name": "http:/train/retrieve",
+      "timestamp": 1694755165643000,
+      "duration": 7000,
+      "localEndpoint": {
+        "serviceName": "ts-travel2-service",
+        "ipv4": "172.18.0.32",
+        "port": 16346
+      },
+      "tags": {
+        "http.host": "ts-train-service",
+        "http.method": "POST",
+        "http.path": "/train/retrieve",
+        "http.url": "http://ts-train-service:14567/train/retrieve",
+        "spring.instance_id": "83e34f365744:ts-travel2-service:16346"
+      }
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "d4e3e7e9309e9201",
+      "id": "8e5a6286f577e3bc",
+      "kind": "SERVER",
+      "name": "http:/travel2/gettraintypebytripid/t1235",
+      "timestamp": 1694755165639000,
+      "duration": 12000,
+      "localEndpoint": {
+        "serviceName": "ts-travel2-service",
+        "ipv4": "172.18.0.32",
+        "port": 16346
+      },
+      "tags": {
+        "mvc.controller.class": "Travel2Controller",
+        "mvc.controller.method": "getTrainTypeByTripId",
+        "spring.instance_id": "83e34f365744:ts-travel2-service:16346"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "459b08c0c2696ab9",
+      "id": "d4e3e7e9309e9201",
+      "kind": "CLIENT",
+      "name": "http:/seat/getleftticketofinterval",
+      "timestamp": 1694755165604000,
+      "duration": 61000,
+      "localEndpoint": {
+        "serviceName": "ts-travel2-service",
+        "ipv4": "172.18.0.32",
+        "port": 16346
+      },
+      "tags": {
+        "http.host": "ts-seat-service",
+        "http.method": "POST",
+        "http.path": "/seat/getLeftTicketOfInterval",
+        "http.url": "http://ts-seat-service:18898/seat/getLeftTicketOfInterval",
+        "spring.instance_id": "83e34f365744:ts-travel2-service:16346"
+      }
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "459b08c0c2696ab9",
+      "id": "378c367c4522c5b8",
+      "kind": "CLIENT",
+      "name": "http:/train/retrieve",
+      "timestamp": 1694755165666000,
+      "duration": 8000,
+      "localEndpoint": {
+        "serviceName": "ts-travel2-service",
+        "ipv4": "172.18.0.32",
+        "port": 16346
+      },
+      "tags": {
+        "http.host": "ts-train-service",
+        "http.method": "POST",
+        "http.path": "/train/retrieve",
+        "http.url": "http://ts-train-service:14567/train/retrieve",
+        "spring.instance_id": "83e34f365744:ts-travel2-service:16346"
+      }
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "459b08c0c2696ab9",
+      "id": "d8e7715bd59cd4a9",
+      "kind": "CLIENT",
+      "name": "http:/route/querybyid/1367db1f-461e-4ab7-87ad-2bcc",
+      "timestamp": 1694755165674000,
+      "duration": 9000,
+      "localEndpoint": {
+        "serviceName": "ts-travel2-service",
+        "ipv4": "172.18.0.32",
+        "port": 16346
+      },
+      "tags": {
+        "http.host": "ts-route-service",
+        "http.method": "GET",
+        "http.path": "/route/queryById/1367db1f-461e-4ab7-87ad-2bcc05fd9cb7",
+        "http.url": "http://ts-route-service:11178/route/queryById/1367db1f-461e-4ab7-87ad-2bcc05fd9cb7",
+        "spring.instance_id": "83e34f365744:ts-travel2-service:16346"
+      }
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "id": "459b08c0c2696ab9",
+      "kind": "SERVER",
+      "name": "http:/travel2/query",
+      "timestamp": 1694755141336000,
+      "duration": 24351423,
+      "localEndpoint": {
+        "serviceName": "ts-travel2-service",
+        "ipv4": "172.18.0.32",
+        "port": 16346
+      },
+      "tags": {
+        "mvc.controller.class": "Travel2Controller",
+        "mvc.controller.method": "query",
+        "spring.instance_id": "83e34f365744:ts-travel2-service:16346"
+      }
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "32c554fea16276c2",
+      "id": "e7d0158e89816ab6",
+      "kind": "SERVER",
+      "name": "http:/config/query",
+      "timestamp": 1694755165314000,
+      "duration": 7000,
+      "localEndpoint": {
+        "serviceName": "ts-config-service",
+        "ipv4": "172.18.0.21",
+        "port": 15679
+      },
+      "tags": {
+        "mvc.controller.class": "ConfigController",
+        "mvc.controller.method": "query",
+        "spring.instance_id": "b196ba6398fc:ts-config-service:15679"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "c930069e6acfc865",
+      "id": "f41ad019c3ed51a5",
+      "kind": "SERVER",
+      "name": "http:/config/query",
+      "timestamp": 1694755165556000,
+      "duration": 6000,
+      "localEndpoint": {
+        "serviceName": "ts-config-service",
+        "ipv4": "172.18.0.21",
+        "port": 15679
+      },
+      "tags": {
+        "mvc.controller.class": "ConfigController",
+        "mvc.controller.method": "query",
+        "spring.instance_id": "b196ba6398fc:ts-config-service:15679"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "d4e3e7e9309e9201",
+      "id": "533d79f9f5921b7f",
+      "kind": "SERVER",
+      "name": "http:/config/query",
+      "timestamp": 1694755165657000,
+      "duration": 5000,
+      "localEndpoint": {
+        "serviceName": "ts-config-service",
+        "ipv4": "172.18.0.21",
+        "port": 15679
+      },
+      "tags": {
+        "mvc.controller.class": "ConfigController",
+        "mvc.controller.method": "query",
+        "spring.instance_id": "b196ba6398fc:ts-config-service:15679"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "32c554fea16276c2",
+      "id": "94059c28800cbd5a",
+      "kind": "SERVER",
+      "name": "http:/orderother/getticketlistbydateandtripid",
+      "timestamp": 1694755165285000,
+      "duration": 7000,
+      "localEndpoint": {
+        "serviceName": "ts-order-other-service",
+        "ipv4": "172.18.0.51",
+        "port": 12032
+      },
+      "tags": {
+        "mvc.controller.class": "OrderOtherController",
+        "mvc.controller.method": "getTicketListByDateAndTripId",
+        "spring.instance_id": "bdd3f1376369:ts-order-other-service:12032"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "459b08c0c2696ab9",
+      "id": "0b3a47796e447945",
+      "kind": "SERVER",
+      "name": "http:/orderother/calculate",
+      "timestamp": 1694755165432000,
+      "duration": 5000,
+      "localEndpoint": {
+        "serviceName": "ts-order-other-service",
+        "ipv4": "172.18.0.51",
+        "port": 12032
+      },
+      "tags": {
+        "mvc.controller.class": "OrderOtherController",
+        "mvc.controller.method": "calculateSoldTicket",
+        "spring.instance_id": "bdd3f1376369:ts-order-other-service:12032"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "c930069e6acfc865",
+      "id": "83b6fd787d63b67f",
+      "kind": "SERVER",
+      "name": "http:/orderother/getticketlistbydateandtripid",
+      "timestamp": 1694755165532000,
+      "duration": 5000,
+      "localEndpoint": {
+        "serviceName": "ts-order-other-service",
+        "ipv4": "172.18.0.51",
+        "port": 12032
+      },
+      "tags": {
+        "mvc.controller.class": "OrderOtherController",
+        "mvc.controller.method": "getTicketListByDateAndTripId",
+        "spring.instance_id": "bdd3f1376369:ts-order-other-service:12032"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "d4e3e7e9309e9201",
+      "id": "1d623e81102b8386",
+      "kind": "SERVER",
+      "name": "http:/orderother/getticketlistbydateandtripid",
+      "timestamp": 1694755165631000,
+      "duration": 5000,
+      "localEndpoint": {
+        "serviceName": "ts-order-other-service",
+        "ipv4": "172.18.0.51",
+        "port": 12032
+      },
+      "tags": {
+        "mvc.controller.class": "OrderOtherController",
+        "mvc.controller.method": "getTicketListByDateAndTripId",
+        "spring.instance_id": "bdd3f1376369:ts-order-other-service:12032"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "c930069e6acfc865",
+      "id": "f41ad019c3ed51a5",
+      "kind": "CLIENT",
+      "name": "http:/config/query",
+      "timestamp": 1694755165553000,
+      "duration": 9000,
+      "localEndpoint": {
+        "serviceName": "ts-seat-service",
+        "ipv4": "172.18.0.55",
+        "port": 18898
+      },
+      "tags": {
+        "http.host": "ts-config-service",
+        "http.method": "POST",
+        "http.path": "/config/query",
+        "http.url": "http://ts-config-service:15679/config/query",
+        "spring.instance_id": "1f578af0b40b:ts-seat-service:18898"
+      }
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "459b08c0c2696ab9",
+      "id": "c930069e6acfc865",
+      "kind": "SERVER",
+      "name": "http:/seat/getleftticketofinterval",
+      "timestamp": 1694755165513000,
+      "duration": 51000,
+      "localEndpoint": {
+        "serviceName": "ts-seat-service",
+        "ipv4": "172.18.0.55",
+        "port": 18898
+      },
+      "tags": {
+        "mvc.controller.class": "SeatController",
+        "mvc.controller.method": "getLeftTicketOfInterval",
+        "spring.instance_id": "1f578af0b40b:ts-seat-service:18898"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "d4e3e7e9309e9201",
+      "id": "a62114363e69bcfd",
+      "kind": "CLIENT",
+      "name": "http:/travel2/getroutebytripid/t1235",
+      "timestamp": 1694755165610000,
+      "duration": 17000,
+      "localEndpoint": {
+        "serviceName": "ts-seat-service",
+        "ipv4": "172.18.0.55",
+        "port": 18898
+      },
+      "tags": {
+        "http.host": "ts-travel2-service",
+        "http.method": "GET",
+        "http.path": "/travel2/getRouteByTripId/T1235",
+        "http.url": "http://ts-travel2-service:16346/travel2/getRouteByTripId/T1235",
+        "spring.instance_id": "1f578af0b40b:ts-seat-service:18898"
+      }
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "d4e3e7e9309e9201",
+      "id": "1d623e81102b8386",
+      "kind": "CLIENT",
+      "name": "http:/orderother/getticketlistbydateandtripid",
+      "timestamp": 1694755165629000,
+      "duration": 8000,
+      "localEndpoint": {
+        "serviceName": "ts-seat-service",
+        "ipv4": "172.18.0.55",
+        "port": 18898
+      },
+      "tags": {
+        "http.host": "ts-order-other-service",
+        "http.method": "POST",
+        "http.path": "/orderOther/getTicketListByDateAndTripId",
+        "http.url": "http://ts-order-other-service:12032/orderOther/getTicketListByDateAndTripId",
+        "spring.instance_id": "1f578af0b40b:ts-seat-service:18898"
+      }
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "d4e3e7e9309e9201",
+      "id": "8e5a6286f577e3bc",
+      "kind": "CLIENT",
+      "name": "http:/travel2/gettraintypebytripid/t1235",
+      "timestamp": 1694755165638000,
+      "duration": 14000,
+      "localEndpoint": {
+        "serviceName": "ts-seat-service",
+        "ipv4": "172.18.0.55",
+        "port": 18898
+      },
+      "tags": {
+        "http.host": "ts-travel2-service",
+        "http.method": "GET",
+        "http.path": "/travel2/getTrainTypeByTripId/T1235",
+        "http.url": "http://ts-travel2-service:16346/travel2/getTrainTypeByTripId/T1235",
+        "spring.instance_id": "1f578af0b40b:ts-seat-service:18898"
+      }
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "d4e3e7e9309e9201",
+      "id": "533d79f9f5921b7f",
+      "kind": "CLIENT",
+      "name": "http:/config/query",
+      "timestamp": 1694755165653000,
+      "duration": 9000,
+      "localEndpoint": {
+        "serviceName": "ts-seat-service",
+        "ipv4": "172.18.0.55",
+        "port": 18898
+      },
+      "tags": {
+        "http.host": "ts-config-service",
+        "http.method": "POST",
+        "http.path": "/config/query",
+        "http.url": "http://ts-config-service:15679/config/query",
+        "spring.instance_id": "1f578af0b40b:ts-seat-service:18898"
+      }
+    },
+    {
+      "traceId": "459b08c0c2696ab9",
+      "parentId": "459b08c0c2696ab9",
+      "id": "d4e3e7e9309e9201",
+      "kind": "SERVER",
+      "name": "http:/seat/getleftticketofinterval",
+      "timestamp": 1694755165606000,
+      "duration": 58000,
+      "localEndpoint": {
+        "serviceName": "ts-seat-service",
+        "ipv4": "172.18.0.55",
+        "port": 18898
+      },
+      "tags": {
+        "mvc.controller.class": "SeatController",
+        "mvc.controller.method": "getLeftTicketOfInterval",
+        "spring.instance_id": "1f578af0b40b:ts-seat-service:18898"
+      },
+      "shared": true
+    }
+  ],
+  [
+    {
+      "traceId": "e13c6c2ae8461286",
+      "parentId": "bcee90d241258b39",
+      "id": "87bae2e13025a70b",
+      "kind": "SERVER",
+      "name": "http:/station/queryforid",
+      "timestamp": 1694755143177000,
+      "duration": 83000,
+      "localEndpoint": {
+        "serviceName": "ts-station-service",
+        "ipv4": "172.18.0.7",
+        "port": 12345
+      },
+      "tags": {
+        "mvc.controller.class": "StationController",
+        "mvc.controller.method": "queryForId",
+        "spring.instance_id": "bfd1f61e8c8c:ts-station-service:12345"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "e13c6c2ae8461286",
+      "parentId": "dbcf8492790400ad",
+      "id": "bcee90d241258b39",
+      "kind": "CLIENT",
+      "name": "http:/basic/queryforstationid",
+      "timestamp": 1694755141619000,
+      "duration": 13264000,
+      "localEndpoint": {
+        "serviceName": "ts-ticketinfo-service",
+        "ipv4": "172.18.0.62",
+        "port": 15681
+      },
+      "tags": {
+        "http.host": "ts-basic-service",
+        "http.method": "POST",
+        "http.path": "/basic/queryForStationId",
+        "http.url": "http://ts-basic-service:15680/basic/queryForStationId",
+        "spring.instance_id": "84631d46058e:ts-ticketinfo-service:15681"
+      }
+    },
+    {
+      "traceId": "e13c6c2ae8461286",
+      "parentId": "e13c6c2ae8461286",
+      "id": "dbcf8492790400ad",
+      "kind": "SERVER",
+      "name": "http:/ticketinfo/queryforstationid",
+      "timestamp": 1694755141537000,
+      "duration": 13365000,
+      "localEndpoint": {
+        "serviceName": "ts-ticketinfo-service",
+        "ipv4": "172.18.0.62",
+        "port": 15681
+      },
+      "tags": {
+        "mvc.controller.class": "TicketInfoController",
+        "mvc.controller.method": "queryForStationId",
+        "spring.instance_id": "84631d46058e:ts-ticketinfo-service:15681"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "e13c6c2ae8461286",
+      "parentId": "bcee90d241258b39",
+      "id": "87bae2e13025a70b",
+      "kind": "CLIENT",
+      "name": "http:/station/queryforid",
+      "timestamp": 1694755143096000,
+      "duration": 168000,
+      "localEndpoint": {
+        "serviceName": "ts-basic-service",
+        "ipv4": "172.18.0.67",
+        "port": 15680
+      },
+      "tags": {
+        "http.host": "ts-station-service",
+        "http.method": "POST",
+        "http.path": "/station/queryForId",
+        "http.url": "http://ts-station-service:12345/station/queryForId",
+        "spring.instance_id": "50eb1c1cb512:ts-basic-service:15680"
+      }
+    },
+    {
+      "traceId": "e13c6c2ae8461286",
+      "parentId": "dbcf8492790400ad",
+      "id": "bcee90d241258b39",
+      "kind": "SERVER",
+      "name": "http:/basic/queryforstationid",
+      "timestamp": 1694755142844000,
+      "duration": 12034000,
+      "localEndpoint": {
+        "serviceName": "ts-basic-service",
+        "ipv4": "172.18.0.67",
+        "port": 15680
+      },
+      "tags": {
+        "mvc.controller.class": "BasicController",
+        "mvc.controller.method": "queryForStationId",
+        "spring.instance_id": "50eb1c1cb512:ts-basic-service:15680"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "e13c6c2ae8461286",
+      "parentId": "0ab64fe395abc7c1",
+      "id": "c82eda4ad8aae8ae",
+      "kind": "SERVER",
+      "name": "http:/station/queryforid",
+      "timestamp": 1694755163922000,
+      "duration": 7000,
+      "localEndpoint": {
+        "serviceName": "ts-station-service",
+        "ipv4": "172.18.0.7",
+        "port": 12345
+      },
+      "tags": {
+        "mvc.controller.class": "StationController",
+        "mvc.controller.method": "queryForId",
+        "spring.instance_id": "bfd1f61e8c8c:ts-station-service:12345"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "e13c6c2ae8461286",
+      "parentId": "e13c6c2ae8461286",
+      "id": "a389c4d42514a4d8",
+      "kind": "SERVER",
+      "name": "http:/route/querybyid/92708982-77af-4318-be25-57cc",
+      "timestamp": 1694755163954000,
+      "duration": 9000,
+      "localEndpoint": {
+        "serviceName": "ts-route-service",
+        "ipv4": "172.18.0.61",
+        "port": 11178
+      },
+      "tags": {
+        "mvc.controller.class": "RouteController",
+        "mvc.controller.method": "queryById",
+        "spring.instance_id": "4b51ba3a64ec:ts-route-service:11178"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "e13c6c2ae8461286",
+      "parentId": "e13c6c2ae8461286",
+      "id": "e4c5c1a7b2fea28b",
+      "kind": "SERVER",
+      "name": "http:/route/querybyid/aefcef3f-3f42-46e8-afd7-6cb2",
+      "timestamp": 1694755163971000,
+      "duration": 5000,
+      "localEndpoint": {
+        "serviceName": "ts-route-service",
+        "ipv4": "172.18.0.61",
+        "port": 11178
+      },
+      "tags": {
+        "mvc.controller.class": "RouteController",
+        "mvc.controller.method": "queryById",
+        "spring.instance_id": "4b51ba3a64ec:ts-route-service:11178"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "e13c6c2ae8461286",
+      "parentId": "e13c6c2ae8461286",
+      "id": "d8001e33cb7cc748",
+      "kind": "SERVER",
+      "name": "http:/route/querybyid/a3f256c1-0e43-4f7d-9c21-121b",
+      "timestamp": 1694755163980000,
+      "duration": 11000,
+      "localEndpoint": {
+        "serviceName": "ts-route-service",
+        "ipv4": "172.18.0.61",
+        "port": 11178
+      },
+      "tags": {
+        "mvc.controller.class": "RouteController",
+        "mvc.controller.method": "queryById",
+        "spring.instance_id": "4b51ba3a64ec:ts-route-service:11178"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "e13c6c2ae8461286",
+      "parentId": "e13c6c2ae8461286",
+      "id": "f42701451cb14b95",
+      "kind": "SERVER",
+      "name": "http:/route/querybyid/084837bb-53c8-4438-87c8-0321",
+      "timestamp": 1694755163995000,
+      "duration": 7000,
+      "localEndpoint": {
+        "serviceName": "ts-route-service",
+        "ipv4": "172.18.0.61",
+        "port": 11178
+      },
+      "tags": {
+        "mvc.controller.class": "RouteController",
+        "mvc.controller.method": "queryById",
+        "spring.instance_id": "4b51ba3a64ec:ts-route-service:11178"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "e13c6c2ae8461286",
+      "parentId": "e13c6c2ae8461286",
+      "id": "c38e0290cc528cca",
+      "kind": "SERVER",
+      "name": "http:/route/querybyid/f3d4d4ef-693b-4456-8eed-59c0",
+      "timestamp": 1694755164007000,
+      "duration": 5000,
+      "localEndpoint": {
+        "serviceName": "ts-route-service",
+        "ipv4": "172.18.0.61",
+        "port": 11178
+      },
+      "tags": {
+        "mvc.controller.class": "RouteController",
+        "mvc.controller.method": "queryById",
+        "spring.instance_id": "4b51ba3a64ec:ts-route-service:11178"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "e13c6c2ae8461286",
+      "parentId": "eb8ce7d89be50ef3",
+      "id": "0ab64fe395abc7c1",
+      "kind": "CLIENT",
+      "name": "http:/basic/queryforstationid",
+      "timestamp": 1694755163915000,
+      "duration": 17000,
+      "localEndpoint": {
+        "serviceName": "ts-ticketinfo-service",
+        "ipv4": "172.18.0.62",
+        "port": 15681
+      },
+      "tags": {
+        "http.host": "ts-basic-service",
+        "http.method": "POST",
+        "http.path": "/basic/queryForStationId",
+        "http.url": "http://ts-basic-service:15680/basic/queryForStationId",
+        "spring.instance_id": "84631d46058e:ts-ticketinfo-service:15681"
+      }
+    },
+    {
+      "traceId": "e13c6c2ae8461286",
+      "parentId": "e13c6c2ae8461286",
+      "id": "eb8ce7d89be50ef3",
+      "kind": "SERVER",
+      "name": "http:/ticketinfo/queryforstationid",
+      "timestamp": 1694755163911000,
+      "duration": 22000,
+      "localEndpoint": {
+        "serviceName": "ts-ticketinfo-service",
+        "ipv4": "172.18.0.62",
+        "port": 15681
+      },
+      "tags": {
+        "mvc.controller.class": "TicketInfoController",
+        "mvc.controller.method": "queryForStationId",
+        "spring.instance_id": "84631d46058e:ts-ticketinfo-service:15681"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "e13c6c2ae8461286",
+      "parentId": "0ab64fe395abc7c1",
+      "id": "c82eda4ad8aae8ae",
+      "kind": "CLIENT",
+      "name": "http:/station/queryforid",
+      "timestamp": 1694755163920000,
+      "duration": 9000,
+      "localEndpoint": {
+        "serviceName": "ts-basic-service",
+        "ipv4": "172.18.0.67",
+        "port": 15680
+      },
+      "tags": {
+        "http.host": "ts-station-service",
+        "http.method": "POST",
+        "http.path": "/station/queryForId",
+        "http.url": "http://ts-station-service:12345/station/queryForId",
+        "spring.instance_id": "50eb1c1cb512:ts-basic-service:15680"
+      }
+    },
+    {
+      "traceId": "e13c6c2ae8461286",
+      "parentId": "eb8ce7d89be50ef3",
+      "id": "0ab64fe395abc7c1",
+      "kind": "SERVER",
+      "name": "http:/basic/queryforstationid",
+      "timestamp": 1694755163918000,
+      "duration": 12000,
+      "localEndpoint": {
+        "serviceName": "ts-basic-service",
+        "ipv4": "172.18.0.67",
+        "port": 15680
+      },
+      "tags": {
+        "mvc.controller.class": "BasicController",
+        "mvc.controller.method": "queryForStationId",
+        "spring.instance_id": "50eb1c1cb512:ts-basic-service:15680"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "e13c6c2ae8461286",
+      "parentId": "e13c6c2ae8461286",
+      "id": "dbcf8492790400ad",
+      "kind": "CLIENT",
+      "name": "http:/ticketinfo/queryforstationid",
+      "timestamp": 1694755141434000,
+      "duration": 13472000,
+      "localEndpoint": {
+        "serviceName": "ts-travel-service",
+        "ipv4": "172.18.0.8",
+        "port": 12346
+      },
+      "tags": {
+        "http.host": "ts-ticketinfo-service",
+        "http.method": "POST",
+        "http.path": "/ticketinfo/queryForStationId",
+        "http.url": "http://ts-ticketinfo-service:15681/ticketinfo/queryForStationId",
+        "spring.instance_id": "6ade46a3de0b:ts-travel-service:12346"
+      }
+    },
+    {
+      "traceId": "e13c6c2ae8461286",
+      "parentId": "e13c6c2ae8461286",
+      "id": "eb8ce7d89be50ef3",
+      "kind": "CLIENT",
+      "name": "http:/ticketinfo/queryforstationid",
+      "timestamp": 1694755163908000,
+      "duration": 26000,
+      "localEndpoint": {
+        "serviceName": "ts-travel-service",
+        "ipv4": "172.18.0.8",
+        "port": 12346
+      },
+      "tags": {
+        "http.host": "ts-ticketinfo-service",
+        "http.method": "POST",
+        "http.path": "/ticketinfo/queryForStationId",
+        "http.url": "http://ts-ticketinfo-service:15681/ticketinfo/queryForStationId",
+        "spring.instance_id": "6ade46a3de0b:ts-travel-service:12346"
+      }
+    },
+    {
+      "traceId": "e13c6c2ae8461286",
+      "parentId": "e13c6c2ae8461286",
+      "id": "a389c4d42514a4d8",
+      "kind": "CLIENT",
+      "name": "http:/route/querybyid/92708982-77af-4318-be25-57cc",
+      "timestamp": 1694755163951000,
+      "duration": 14000,
+      "localEndpoint": {
+        "serviceName": "ts-travel-service",
+        "ipv4": "172.18.0.8",
+        "port": 12346
+      },
+      "tags": {
+        "http.host": "ts-route-service",
+        "http.method": "GET",
+        "http.path": "/route/queryById/92708982-77af-4318-be25-57ccb0ff69ad",
+        "http.url": "http://ts-route-service:11178/route/queryById/92708982-77af-4318-be25-57ccb0ff69ad",
+        "spring.instance_id": "6ade46a3de0b:ts-travel-service:12346"
+      }
+    },
+    {
+      "traceId": "e13c6c2ae8461286",
+      "parentId": "e13c6c2ae8461286",
+      "id": "e4c5c1a7b2fea28b",
+      "kind": "CLIENT",
+      "name": "http:/route/querybyid/aefcef3f-3f42-46e8-afd7-6cb2",
+      "timestamp": 1694755163967000,
+      "duration": 10000,
+      "localEndpoint": {
+        "serviceName": "ts-travel-service",
+        "ipv4": "172.18.0.8",
+        "port": 12346
+      },
+      "tags": {
+        "http.host": "ts-route-service",
+        "http.method": "GET",
+        "http.path": "/route/queryById/aefcef3f-3f42-46e8-afd7-6cb2a928bd3d",
+        "http.url": "http://ts-route-service:11178/route/queryById/aefcef3f-3f42-46e8-afd7-6cb2a928bd3d",
+        "spring.instance_id": "6ade46a3de0b:ts-travel-service:12346"
+      }
+    },
+    {
+      "traceId": "e13c6c2ae8461286",
+      "parentId": "e13c6c2ae8461286",
+      "id": "d8001e33cb7cc748",
+      "kind": "CLIENT",
+      "name": "http:/route/querybyid/a3f256c1-0e43-4f7d-9c21-121b",
+      "timestamp": 1694755163978000,
+      "duration": 14000,
+      "localEndpoint": {
+        "serviceName": "ts-travel-service",
+        "ipv4": "172.18.0.8",
+        "port": 12346
+      },
+      "tags": {
+        "http.host": "ts-route-service",
+        "http.method": "GET",
+        "http.path": "/route/queryById/a3f256c1-0e43-4f7d-9c21-121bf258101f",
+        "http.url": "http://ts-route-service:11178/route/queryById/a3f256c1-0e43-4f7d-9c21-121bf258101f",
+        "spring.instance_id": "6ade46a3de0b:ts-travel-service:12346"
+      }
+    },
+    {
+      "traceId": "e13c6c2ae8461286",
+      "parentId": "e13c6c2ae8461286",
+      "id": "f42701451cb14b95",
+      "kind": "CLIENT",
+      "name": "http:/route/querybyid/084837bb-53c8-4438-87c8-0321",
+      "timestamp": 1694755163993000,
+      "duration": 10000,
+      "localEndpoint": {
+        "serviceName": "ts-travel-service",
+        "ipv4": "172.18.0.8",
+        "port": 12346
+      },
+      "tags": {
+        "http.host": "ts-route-service",
+        "http.method": "GET",
+        "http.path": "/route/queryById/084837bb-53c8-4438-87c8-0321a4d09917",
+        "http.url": "http://ts-route-service:11178/route/queryById/084837bb-53c8-4438-87c8-0321a4d09917",
+        "spring.instance_id": "6ade46a3de0b:ts-travel-service:12346"
+      }
+    },
+    {
+      "traceId": "e13c6c2ae8461286",
+      "parentId": "e13c6c2ae8461286",
+      "id": "c38e0290cc528cca",
+      "kind": "CLIENT",
+      "name": "http:/route/querybyid/f3d4d4ef-693b-4456-8eed-59c0",
+      "timestamp": 1694755164006000,
+      "duration": 7000,
+      "localEndpoint": {
+        "serviceName": "ts-travel-service",
+        "ipv4": "172.18.0.8",
+        "port": 12346
+      },
+      "tags": {
+        "http.host": "ts-route-service",
+        "http.method": "GET",
+        "http.path": "/route/queryById/f3d4d4ef-693b-4456-8eed-59c0d717dd08",
+        "http.url": "http://ts-route-service:11178/route/queryById/f3d4d4ef-693b-4456-8eed-59c0d717dd08",
+        "spring.instance_id": "6ade46a3de0b:ts-travel-service:12346"
+      }
+    },
+    {
+      "traceId": "e13c6c2ae8461286",
+      "id": "e13c6c2ae8461286",
+      "kind": "SERVER",
+      "name": "http:/travel/query",
+      "timestamp": 1694755141344000,
+      "duration": 22681207,
+      "localEndpoint": {
+        "serviceName": "ts-travel-service",
+        "ipv4": "172.18.0.8",
+        "port": 12346
+      },
+      "tags": {
+        "mvc.controller.class": "TravelController",
+        "mvc.controller.method": "query",
+        "spring.instance_id": "6ade46a3de0b:ts-travel-service:12346"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "1cf320f10ba1561c",
+      "parentId": "1cf320f10ba1561c",
+      "id": "e98c0b1aabcd5be4",
+      "kind": "SERVER",
+      "name": "http:/verification/verify",
+      "timestamp": 1694755114739000,
+      "duration": 30000,
+      "localEndpoint": {
+        "serviceName": "ts-verification-code-service",
+        "ipv4": "172.18.0.41",
+        "port": 15678
+      },
+      "tags": {
+        "mvc.controller.class": "VerificationCodeController",
+        "mvc.controller.method": "verifyCode",
+        "spring.instance_id": "db09679dd792:ts-verification-code-service:15678"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "1cf320f10ba1561c",
+      "parentId": "1cf320f10ba1561c",
+      "id": "13178e90b570c60b",
+      "kind": "SERVER",
+      "name": "http:/account/login",
+      "timestamp": 1694755114952000,
+      "duration": 120000,
+      "localEndpoint": {
+        "serviceName": "ts-sso-service",
+        "ipv4": "172.18.0.54",
+        "port": 12349
+      },
+      "tags": {
+        "mvc.controller.class": "AccountSsoController",
+        "mvc.controller.method": "login",
+        "spring.instance_id": "fb38de5f7d82:ts-sso-service:12349"
+      },
+      "shared": true
+    },
+    {
+      "traceId": "1cf320f10ba1561c",
+      "parentId": "1cf320f10ba1561c",
+      "id": "e98c0b1aabcd5be4",
+      "kind": "CLIENT",
+      "name": "http:/verification/verify",
+      "timestamp": 1694755114717000,
+      "duration": 79000,
+      "localEndpoint": {
+        "serviceName": "ts-login-service",
+        "ipv4": "172.18.0.60",
+        "port": 12342
+      },
+      "tags": {
+        "http.host": "ts-verification-code-service",
+        "http.method": "POST",
+        "http.path": "/verification/verify",
+        "http.url": "http://ts-verification-code-service:15678/verification/verify",
+        "spring.instance_id": "7e6698de3ec8:ts-login-service:12342"
+      }
+    },
+    {
+      "traceId": "1cf320f10ba1561c",
+      "parentId": "1cf320f10ba1561c",
+      "id": "13178e90b570c60b",
+      "kind": "CLIENT",
+      "name": "http:/account/login",
+      "timestamp": 1694755114842000,
+      "duration": 233000,
+      "localEndpoint": {
+        "serviceName": "ts-login-service",
+        "ipv4": "172.18.0.60",
+        "port": 12342
+      },
+      "tags": {
+        "http.host": "ts-sso-service",
+        "http.method": "POST",
+        "http.path": "/account/login",
+        "http.url": "http://ts-sso-service:12349/account/login",
+        "spring.instance_id": "7e6698de3ec8:ts-login-service:12342"
+      }
+    },
+    {
+      "traceId": "1cf320f10ba1561c",
+      "id": "1cf320f10ba1561c",
+      "kind": "SERVER",
+      "name": "http:/login",
+      "timestamp": 1694755114609000,
+      "duration": 478529,
+      "localEndpoint": {
+        "serviceName": "ts-login-service",
+        "ipv4": "172.18.0.60",
+        "port": 12342
+      },
+      "tags": {
+        "mvc.controller.class": "AccountLoginController",
+        "mvc.controller.method": "login",
+        "spring.instance_id": "7e6698de3ec8:ts-login-service:12342"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "1d45a93d5f1b0c19",
+      "id": "1d45a93d5f1b0c19",
+      "kind": "SERVER",
+      "name": "http:/assurance/getallassurancetype",
+      "timestamp": 1694755097621000,
+      "duration": 4421,
+      "localEndpoint": {
+        "serviceName": "ts-assurance-service",
+        "ipv4": "172.18.0.49",
+        "port": 18888
+      },
+      "tags": {
+        "mvc.controller.class": "AssuranceController",
+        "mvc.controller.method": "getAllAssuranceType",
+        "spring.instance_id": "12c7cfa8bc0c:ts-assurance-service:18888"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "3e1133ab0a62f759",
+      "id": "3e1133ab0a62f759",
+      "kind": "SERVER",
+      "name": "http:/assurance/getallassurancetype",
+      "timestamp": 1694755097525000,
+      "duration": 77085,
+      "localEndpoint": {
+        "serviceName": "ts-assurance-service",
+        "ipv4": "172.18.0.49",
+        "port": 18888
+      },
+      "tags": {
+        "mvc.controller.class": "AssuranceController",
+        "mvc.controller.method": "getAllAssuranceType",
+        "spring.instance_id": "12c7cfa8bc0c:ts-assurance-service:18888"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "0696dcafd1f966d2",
+      "id": "0696dcafd1f966d2",
+      "kind": "SERVER",
+      "name": "http:/verification/generate",
+      "timestamp": 1694755097380000,
+      "duration": 199911,
+      "localEndpoint": {
+        "serviceName": "ts-verification-code-service",
+        "ipv4": "172.18.0.41",
+        "port": 15678
+      },
+      "tags": {
+        "mvc.controller.class": "VerificationCodeController",
+        "mvc.controller.method": "imagecode",
+        "spring.instance_id": "db09679dd792:ts-verification-code-service:15678"
+      }
+    }
+  ]
+]

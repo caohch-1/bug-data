@@ -1,0 +1,190 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.3.RELEASE)
+
+2023-09-15 05:14:29.453  INFO [ts-station-service,,,] 1 --- [           main] fdse.microservice.StationApplication     : Starting StationApplication v1.0 on bfd1f61e8c8c with PID 1 (/app/ts-station-service-1.0.jar started by root in /)
+2023-09-15 05:14:29.472  INFO [ts-station-service,,,] 1 --- [           main] fdse.microservice.StationApplication     : No active profile set, falling back to default profiles: default
+2023-09-15 05:14:29.954  INFO [ts-station-service,,,] 1 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@61e717c2: startup date [Fri Sep 15 05:14:29 UTC 2023]; root of context hierarchy
+2023-09-15 05:14:48.300  INFO [ts-station-service,,,] 1 --- [           main] o.s.i.config.IntegrationRegistrar        : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2023-09-15 05:14:55.896  INFO [ts-station-service,,,] 1 --- [           main] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2023-09-15 05:14:55.998  INFO [ts-station-service,,,] 1 --- [           main] faultConfiguringBeanFactoryPostProcessor : No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2023-09-15 05:14:56.907  INFO [ts-station-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration$DefaultAsyncConfigurerSupport' of type [org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration$DefaultAsyncConfigurerSupport$$EnhancerBySpringCGLIB$$93fc0f3c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-15 05:14:59.709  INFO [ts-station-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.annotation.SleuthAnnotationAutoConfiguration' of type [org.springframework.cloud.sleuth.annotation.SleuthAnnotationAutoConfiguration$$EnhancerBySpringCGLIB$$591fb7ab] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-15 05:15:02.848  INFO [ts-station-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'sleuthAdvisorConfig' of type [org.springframework.cloud.sleuth.annotation.SleuthAdvisorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-15 05:15:03.802  INFO [ts-station-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'integrationGlobalProperties' of type [org.springframework.beans.factory.config.PropertiesFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-15 05:15:04.120  INFO [ts-station-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'integrationGlobalProperties' of type [java.util.Properties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-15 05:15:07.233  INFO [ts-station-service,,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration' of type [org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration$$EnhancerBySpringCGLIB$$3e9e1d98] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-15 05:15:14.361  INFO [ts-station-service,,,] 1 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 12345 (http)
+2023-09-15 05:15:14.453  INFO [ts-station-service,,,] 1 --- [           main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2023-09-15 05:15:14.462  INFO [ts-station-service,,,] 1 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.14
+2023-09-15 05:15:15.543  INFO [ts-station-service,,,] 1 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-15 05:15:15.544  INFO [ts-station-service,,,] 1 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 45611 ms
+2023-09-15 05:15:43.006  INFO [ts-station-service,,,] 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'metricsFilter' to: [/*]
+2023-09-15 05:15:43.006  INFO [ts-station-service,,,] 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2023-09-15 05:15:43.007  INFO [ts-station-service,,,] 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'traceFilter' to: [/*]
+2023-09-15 05:15:43.007  INFO [ts-station-service,,,] 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2023-09-15 05:15:43.007  INFO [ts-station-service,,,] 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2023-09-15 05:15:43.007  INFO [ts-station-service,,,] 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2023-09-15 05:15:43.084  INFO [ts-station-service,,,] 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2023-09-15 05:15:43.085  INFO [ts-station-service,,,] 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'applicationContextIdFilter' to: [/*]
+2023-09-15 05:15:43.085  INFO [ts-station-service,,,] 1 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2023-09-15 05:15:50.067  INFO [ts-station-service,,,] 1 --- [           main] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[ts-station-mongo:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2023-09-15 05:15:50.067  INFO [ts-station-service,,,] 1 --- [           main] org.mongodb.driver.cluster               : Adding discovered server ts-station-mongo:27017 to client view of cluster
+2023-09-15 05:15:52.302  INFO [ts-station-service,,,] 1 --- [ion-mongo:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:1}] to ts-station-mongo:27017
+2023-09-15 05:15:52.311  INFO [ts-station-service,,,] 1 --- [ion-mongo:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=ts-station-mongo:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[5, 0, 10]}, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, roundTripTimeNanos=6519034}
+2023-09-15 05:15:52.382  INFO [ts-station-service,,,] 1 --- [ion-mongo:27017] org.mongodb.driver.cluster               : Discovered cluster type of STANDALONE
+2023-09-15 05:16:29.638  INFO [ts-station-service,,,] 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@61e717c2: startup date [Fri Sep 15 05:14:29 UTC 2023]; root of context hierarchy
+2023-09-15 05:16:35.379  INFO [ts-station-service,,,] 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/station/queryByIdForName],methods=[POST]}" onto public java.lang.String fdse.microservice.controller.StationController.queryByIdForName(fdse.microservice.domain.QueryById)
+2023-09-15 05:16:35.527  INFO [ts-station-service,,,] 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/station/queryForId],methods=[POST]}" onto public java.lang.String fdse.microservice.controller.StationController.queryForId(fdse.microservice.domain.QueryForId)
+2023-09-15 05:16:35.528  INFO [ts-station-service,,,] 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/station/exist],methods=[POST]}" onto public boolean fdse.microservice.controller.StationController.exist(fdse.microservice.domain.QueryStation)
+2023-09-15 05:16:35.528  INFO [ts-station-service,,,] 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/station/queryById],methods=[POST]}" onto public fdse.microservice.domain.QueryStation fdse.microservice.controller.StationController.queryById(fdse.microservice.domain.QueryById)
+2023-09-15 05:16:35.681  INFO [ts-station-service,,,] 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/station/update],methods=[POST]}" onto public boolean fdse.microservice.controller.StationController.update(fdse.microservice.domain.Information)
+2023-09-15 05:16:35.681  INFO [ts-station-service,,,] 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/station/delete],methods=[POST]}" onto public boolean fdse.microservice.controller.StationController.delete(fdse.microservice.domain.Information)
+2023-09-15 05:16:35.682  INFO [ts-station-service,,,] 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/station/create],methods=[POST]}" onto public boolean fdse.microservice.controller.StationController.create(fdse.microservice.domain.Information)
+2023-09-15 05:16:35.682  INFO [ts-station-service,,,] 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/station/query],methods=[GET]}" onto public java.util.List<fdse.microservice.domain.Station> fdse.microservice.controller.StationController.query()
+2023-09-15 05:16:35.759  INFO [ts-station-service,,,] 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2023-09-15 05:16:35.760  INFO [ts-station-service,,,] 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2023-09-15 05:16:40.791  INFO [ts-station-service,,,] 1 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2023-09-15 05:16:40.791  INFO [ts-station-service,,,] 1 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2023-09-15 05:16:43.359  INFO [ts-station-service,,,] 1 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2023-09-15 05:16:58.682  INFO [ts-station-service,,,] 1 --- [           main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService  'taskScheduler'
+2023-09-15 05:17:14.802  INFO [ts-station-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2023-09-15 05:17:14.804  INFO [ts-station-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+2023-09-15 05:17:14.876  INFO [ts-station-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+2023-09-15 05:17:14.877  INFO [ts-station-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+2023-09-15 05:17:14.877  INFO [ts-station-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2023-09-15 05:17:14.877  INFO [ts-station-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/features || /features.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2023-09-15 05:17:14.878  INFO [ts-station-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2023-09-15 05:17:14.879  INFO [ts-station-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2023-09-15 05:17:14.960  INFO [ts-station-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2023-09-15 05:17:14.962  INFO [ts-station-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2023-09-15 05:17:15.046  INFO [ts-station-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+2023-09-15 05:17:15.048  INFO [ts-station-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2023-09-15 05:17:15.084  INFO [ts-station-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2023-09-15 05:17:15.085  INFO [ts-station-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2023-09-15 05:17:15.085  INFO [ts-station-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2023-09-15 05:17:15.086  INFO [ts-station-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2023-09-15 05:17:15.087  INFO [ts-station-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2023-09-15 05:17:15.192  INFO [ts-station-service,,,] 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2023-09-15 05:17:20.626  INFO [ts-station-service,,,] 1 --- [           main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 
+2023-09-15 05:17:22.980  INFO [ts-station-service,,,] 1 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2023-09-15 05:17:23.291  INFO [ts-station-service,,,] 1 --- [           main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2023-09-15 05:17:24.524  INFO [ts-station-service,,,] 1 --- [           main] o.s.i.endpoint.EventDrivenConsumer       : Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2023-09-15 05:17:24.579  INFO [ts-station-service,,,] 1 --- [           main] o.s.i.channel.PublishSubscribeChannel    : Channel 'ts-station-service:12345.errorChannel' has 1 subscriber(s).
+2023-09-15 05:17:24.579  INFO [ts-station-service,,,] 1 --- [           main] o.s.i.endpoint.EventDrivenConsumer       : started _org.springframework.integration.errorLogger
+2023-09-15 05:17:25.516  INFO [ts-station-service,,,] 1 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 12345 (http)
+2023-09-15 05:17:25.948  INFO [ts-station-service,,,] 1 --- [           main] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:2}] to ts-station-mongo:27017
+2023-09-15 05:17:27.986  INFO [ts-station-service,,,] 1 --- [           main] fdse.microservice.StationApplication     : Started StationApplication in 181.164 seconds (JVM running for 182.77)
+2023-09-15 05:19:03.140  INFO [ts-station-service,,,] 1 --- [io-12345-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2023-09-15 05:19:03.140  INFO [ts-station-service,,,] 1 --- [io-12345-exec-3] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2023-09-15 05:19:03.168  INFO [ts-station-service,,,] 1 --- [io-12345-exec-3] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 28 ms
+c=fdse.microservice.domain.QueryForId@c3418e4
+c=fdse.microservice.domain.QueryForId@684a26bc
+requestArgs={"name":"Shang Hai"}
+requestArgs={"name":"Shang Hai"}
+2023-09-15 05:19:03.237  INFO [ts-station-service,e13c6c2ae8461286,87bae2e13025a70b,true] 1 --- [io-12345-exec-2] fdse.microservice.conf.HttpAspect        : [Service:ts-station-service][URI:ts-station-service/station/queryForId][Method:POST][Request:{"name":"Shang Hai"}][RemoteHost:172.18.0.67][IP:172.18.0.67]
+2023-09-15 05:19:03.238  INFO [ts-station-service,459b08c0c2696ab9,83fedbedb9103955,true] 1 --- [io-12345-exec-3] fdse.microservice.conf.HttpAspect        : [Service:ts-station-service][URI:ts-station-service/station/queryForId][Method:POST][Request:{"name":"Shang Hai"}][RemoteHost:172.18.0.67][IP:172.18.0.67]
+2023-09-15 05:19:03.244  INFO [ts-station-service,459b08c0c2696ab9,83fedbedb9103955,true] 1 --- [io-12345-exec-3] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:3, serverValue:3}] to ts-station-mongo:27017
+2023-09-15 05:19:03.255  INFO [ts-station-service,459b08c0c2696ab9,83fedbedb9103955,true] 1 --- [io-12345-exec-3] fdse.microservice.conf.HttpAspect        : [Service:ts-station-service][Response:"shanghai"]
+2023-09-15 05:19:03.255  INFO [ts-station-service,e13c6c2ae8461286,87bae2e13025a70b,true] 1 --- [io-12345-exec-2] fdse.microservice.conf.HttpAspect        : [Service:ts-station-service][Response:"shanghai"]
+c=fdse.microservice.domain.QueryForId@58cba781
+requestArgs={"name":"Tai Yuan"}
+2023-09-15 05:19:14.945  INFO [ts-station-service,459b08c0c2696ab9,37d1e2e8248f4b99,true] 1 --- [io-12345-exec-6] fdse.microservice.conf.HttpAspect        : [Service:ts-station-service][URI:ts-station-service/station/queryForId][Method:POST][Request:{"name":"Tai Yuan"}][RemoteHost:172.18.0.67][IP:172.18.0.67]
+2023-09-15 05:19:14.946  INFO [ts-station-service,459b08c0c2696ab9,37d1e2e8248f4b99,true] 1 --- [io-12345-exec-6] fdse.microservice.conf.HttpAspect        : [Service:ts-station-service][Response:"taiyuan"]
+c=fdse.microservice.domain.QueryStation@7e9e19c7
+requestArgs={"name":"Shang Hai"}
+2023-09-15 05:19:15.167  INFO [ts-station-service,459b08c0c2696ab9,f131bc9ac7e50f6c,true] 1 --- [io-12345-exec-7] fdse.microservice.conf.HttpAspect        : [Service:ts-station-service][URI:ts-station-service/station/exist][Method:POST][Request:{"name":"Shang Hai"}][RemoteHost:172.18.0.67][IP:172.18.0.67]
+2023-09-15 05:19:15.169  INFO [ts-station-service,459b08c0c2696ab9,f131bc9ac7e50f6c,true] 1 --- [io-12345-exec-7] fdse.microservice.conf.HttpAspect        : [Service:ts-station-service][Response:true]
+c=fdse.microservice.domain.QueryStation@42c39f78
+requestArgs={"name":"Tai Yuan"}
+2023-09-15 05:19:15.180  INFO [ts-station-service,459b08c0c2696ab9,f3cb925444914cc7,true] 1 --- [io-12345-exec-1] fdse.microservice.conf.HttpAspect        : [Service:ts-station-service][URI:ts-station-service/station/exist][Method:POST][Request:{"name":"Tai Yuan"}][RemoteHost:172.18.0.67][IP:172.18.0.67]
+2023-09-15 05:19:15.182  INFO [ts-station-service,459b08c0c2696ab9,f3cb925444914cc7,true] 1 --- [io-12345-exec-1] fdse.microservice.conf.HttpAspect        : [Service:ts-station-service][Response:true]
+c=fdse.microservice.domain.QueryForId@69bcb53d
+requestArgs={"name":"Shang Hai"}
+2023-09-15 05:19:15.552  INFO [ts-station-service,459b08c0c2696ab9,c2d3637639c09a01,true] 1 --- [io-12345-exec-8] fdse.microservice.conf.HttpAspect        : [Service:ts-station-service][URI:ts-station-service/station/queryForId][Method:POST][Request:{"name":"Shang Hai"}][RemoteHost:172.18.0.67][IP:172.18.0.67]
+2023-09-15 05:19:15.554  INFO [ts-station-service,459b08c0c2696ab9,c2d3637639c09a01,true] 1 --- [io-12345-exec-8] fdse.microservice.conf.HttpAspect        : [Service:ts-station-service][Response:"shanghai"]
+c=fdse.microservice.domain.QueryForId@2063089e
+requestArgs={"name":"Tai Yuan"}
+2023-09-15 05:19:15.560  INFO [ts-station-service,459b08c0c2696ab9,b92fe7d77a9325e1,true] 1 --- [io-12345-exec-9] fdse.microservice.conf.HttpAspect        : [Service:ts-station-service][URI:ts-station-service/station/queryForId][Method:POST][Request:{"name":"Tai Yuan"}][RemoteHost:172.18.0.67][IP:172.18.0.67]
+2023-09-15 05:19:15.562  INFO [ts-station-service,459b08c0c2696ab9,b92fe7d77a9325e1,true] 1 --- [io-12345-exec-9] fdse.microservice.conf.HttpAspect        : [Service:ts-station-service][Response:"taiyuan"]
+c=fdse.microservice.domain.QueryForId@7ccd83b4
+requestArgs={"name":"Tai Yuan"}
+2023-09-15 05:19:23.926  INFO [ts-station-service,e13c6c2ae8461286,c82eda4ad8aae8ae,true] 1 --- [io-12345-exec-3] fdse.microservice.conf.HttpAspect        : [Service:ts-station-service][URI:ts-station-service/station/queryForId][Method:POST][Request:{"name":"Tai Yuan"}][RemoteHost:172.18.0.67][IP:172.18.0.67]
+2023-09-15 05:19:23.928  INFO [ts-station-service,e13c6c2ae8461286,c82eda4ad8aae8ae,true] 1 --- [io-12345-exec-3] fdse.microservice.conf.HttpAspect        : [Service:ts-station-service][Response:"taiyuan"]
+c=fdse.microservice.domain.QueryForId@5955813c
+requestArgs={"name":"Shang Hai"}
+2023-09-15 05:19:24.585  INFO [ts-station-service,459b08c0c2696ab9,7dfe0fdad8fb76de,true] 1 --- [io-12345-exec-2] fdse.microservice.conf.HttpAspect        : [Service:ts-station-service][URI:ts-station-service/station/queryForId][Method:POST][Request:{"name":"Shang Hai"}][RemoteHost:172.18.0.67][IP:172.18.0.67]
+2023-09-15 05:19:24.588  INFO [ts-station-service,459b08c0c2696ab9,7dfe0fdad8fb76de,true] 1 --- [io-12345-exec-2] fdse.microservice.conf.HttpAspect        : [Service:ts-station-service][Response:"shanghai"]
+c=fdse.microservice.domain.QueryForId@3212f383
+requestArgs={"name":"Tai Yuan"}
+2023-09-15 05:19:24.611  INFO [ts-station-service,459b08c0c2696ab9,362e6b6dcef7c5a8,true] 1 --- [io-12345-exec-4] fdse.microservice.conf.HttpAspect        : [Service:ts-station-service][URI:ts-station-service/station/queryForId][Method:POST][Request:{"name":"Tai Yuan"}][RemoteHost:172.18.0.67][IP:172.18.0.67]
+2023-09-15 05:19:24.613  INFO [ts-station-service,459b08c0c2696ab9,362e6b6dcef7c5a8,true] 1 --- [io-12345-exec-4] fdse.microservice.conf.HttpAspect        : [Service:ts-station-service][Response:"taiyuan"]
+c=fdse.microservice.domain.QueryForId@7451d902
+requestArgs={"name":"Shang Hai"}
+2023-09-15 05:19:24.637  INFO [ts-station-service,459b08c0c2696ab9,0cbfb87f4fd684e5,true] 1 --- [io-12345-exec-5] fdse.microservice.conf.HttpAspect        : [Service:ts-station-service][URI:ts-station-service/station/queryForId][Method:POST][Request:{"name":"Shang Hai"}][RemoteHost:172.18.0.67][IP:172.18.0.67]
+2023-09-15 05:19:24.639  INFO [ts-station-service,459b08c0c2696ab9,0cbfb87f4fd684e5,true] 1 --- [io-12345-exec-5] fdse.microservice.conf.HttpAspect        : [Service:ts-station-service][Response:"shanghai"]
+c=fdse.microservice.domain.QueryForId@5233ccf1
+requestArgs={"name":"Tai Yuan"}
+2023-09-15 05:19:24.660  INFO [ts-station-service,459b08c0c2696ab9,62f472a96119ad9a,true] 1 --- [io-12345-exec-6] fdse.microservice.conf.HttpAspect        : [Service:ts-station-service][URI:ts-station-service/station/queryForId][Method:POST][Request:{"name":"Tai Yuan"}][RemoteHost:172.18.0.67][IP:172.18.0.67]
+2023-09-15 05:19:24.662  INFO [ts-station-service,459b08c0c2696ab9,62f472a96119ad9a,true] 1 --- [io-12345-exec-6] fdse.microservice.conf.HttpAspect        : [Service:ts-station-service][Response:"taiyuan"]
+c=fdse.microservice.domain.QueryForId@729f681f
+requestArgs={"name":"Shang Hai"}
+2023-09-15 05:19:25.216  INFO [ts-station-service,459b08c0c2696ab9,9246028b4c159727,true] 1 --- [io-12345-exec-7] fdse.microservice.conf.HttpAspect        : [Service:ts-station-service][URI:ts-station-service/station/queryForId][Method:POST][Request:{"name":"Shang Hai"}][RemoteHost:172.18.0.67][IP:172.18.0.67]
+2023-09-15 05:19:25.218  INFO [ts-station-service,459b08c0c2696ab9,9246028b4c159727,true] 1 --- [io-12345-exec-7] fdse.microservice.conf.HttpAspect        : [Service:ts-station-service][Response:"shanghai"]
+c=fdse.microservice.domain.QueryForId@4c046950
+requestArgs={"name":"Tai Yuan"}
+2023-09-15 05:19:25.243  INFO [ts-station-service,459b08c0c2696ab9,361ebfd826e83b2c,true] 1 --- [io-12345-exec-1] fdse.microservice.conf.HttpAspect        : [Service:ts-station-service][URI:ts-station-service/station/queryForId][Method:POST][Request:{"name":"Tai Yuan"}][RemoteHost:172.18.0.67][IP:172.18.0.67]
+2023-09-15 05:19:25.245  INFO [ts-station-service,459b08c0c2696ab9,361ebfd826e83b2c,true] 1 --- [io-12345-exec-1] fdse.microservice.conf.HttpAspect        : [Service:ts-station-service][Response:"taiyuan"]
+c=fdse.microservice.domain.QueryStation@677b467a
+requestArgs={"name":"Shang Hai"}
+2023-09-15 05:19:25.372  INFO [ts-station-service,459b08c0c2696ab9,f845418c66a7309e,true] 1 --- [io-12345-exec-8] fdse.microservice.conf.HttpAspect        : [Service:ts-station-service][URI:ts-station-service/station/exist][Method:POST][Request:{"name":"Shang Hai"}][RemoteHost:172.18.0.67][IP:172.18.0.67]
+2023-09-15 05:19:25.373  INFO [ts-station-service,459b08c0c2696ab9,f845418c66a7309e,true] 1 --- [io-12345-exec-8] fdse.microservice.conf.HttpAspect        : [Service:ts-station-service][Response:true]
+c=fdse.microservice.domain.QueryStation@2a9b63ee
+requestArgs={"name":"Tai Yuan"}
+2023-09-15 05:19:25.380  INFO [ts-station-service,459b08c0c2696ab9,d9ee809adf8660a8,true] 1 --- [io-12345-exec-9] fdse.microservice.conf.HttpAspect        : [Service:ts-station-service][URI:ts-station-service/station/exist][Method:POST][Request:{"name":"Tai Yuan"}][RemoteHost:172.18.0.67][IP:172.18.0.67]
+2023-09-15 05:19:25.382  INFO [ts-station-service,459b08c0c2696ab9,d9ee809adf8660a8,true] 1 --- [io-12345-exec-9] fdse.microservice.conf.HttpAspect        : [Service:ts-station-service][Response:true]
+c=fdse.microservice.domain.QueryForId@1f15cc21
+requestArgs={"name":"Shang Hai"}
+2023-09-15 05:19:25.416  INFO [ts-station-service,459b08c0c2696ab9,d095691ba6b8ac50,true] 1 --- [o-12345-exec-10] fdse.microservice.conf.HttpAspect        : [Service:ts-station-service][URI:ts-station-service/station/queryForId][Method:POST][Request:{"name":"Shang Hai"}][RemoteHost:172.18.0.67][IP:172.18.0.67]
+2023-09-15 05:19:25.418  INFO [ts-station-service,459b08c0c2696ab9,d095691ba6b8ac50,true] 1 --- [o-12345-exec-10] fdse.microservice.conf.HttpAspect        : [Service:ts-station-service][Response:"shanghai"]
+c=fdse.microservice.domain.QueryForId@6e46bc51
+requestArgs={"name":"Tai Yuan"}
+2023-09-15 05:19:25.423  INFO [ts-station-service,459b08c0c2696ab9,91f9d9225d038e05,true] 1 --- [io-12345-exec-3] fdse.microservice.conf.HttpAspect        : [Service:ts-station-service][URI:ts-station-service/station/queryForId][Method:POST][Request:{"name":"Tai Yuan"}][RemoteHost:172.18.0.67][IP:172.18.0.67]
+2023-09-15 05:19:25.425  INFO [ts-station-service,459b08c0c2696ab9,91f9d9225d038e05,true] 1 --- [io-12345-exec-3] fdse.microservice.conf.HttpAspect        : [Service:ts-station-service][Response:"taiyuan"]
+c=fdse.microservice.domain.QueryForId@496dcef9
+requestArgs={"name":"Shang Hai"}
+2023-09-15 05:19:25.447  INFO [ts-station-service,459b08c0c2696ab9,488715bcccb1037f,true] 1 --- [io-12345-exec-2] fdse.microservice.conf.HttpAspect        : [Service:ts-station-service][URI:ts-station-service/station/queryForId][Method:POST][Request:{"name":"Shang Hai"}][RemoteHost:172.18.0.67][IP:172.18.0.67]
+2023-09-15 05:19:25.449  INFO [ts-station-service,459b08c0c2696ab9,488715bcccb1037f,true] 1 --- [io-12345-exec-2] fdse.microservice.conf.HttpAspect        : [Service:ts-station-service][Response:"shanghai"]
+c=fdse.microservice.domain.QueryForId@3cd50bb1
+requestArgs={"name":"Tai Yuan"}
+2023-09-15 05:19:25.466  INFO [ts-station-service,459b08c0c2696ab9,395f87aec0b95c39,true] 1 --- [io-12345-exec-4] fdse.microservice.conf.HttpAspect        : [Service:ts-station-service][URI:ts-station-service/station/queryForId][Method:POST][Request:{"name":"Tai Yuan"}][RemoteHost:172.18.0.67][IP:172.18.0.67]
+2023-09-15 05:19:25.467  INFO [ts-station-service,459b08c0c2696ab9,395f87aec0b95c39,true] 1 --- [io-12345-exec-4] fdse.microservice.conf.HttpAspect        : [Service:ts-station-service][Response:"taiyuan"]
+c=fdse.microservice.domain.QueryForId@4148647d
+requestArgs={"name":"Shang Hai"}
+2023-09-15 05:19:25.484  INFO [ts-station-service,459b08c0c2696ab9,61bef9dc663f87a9,true] 1 --- [io-12345-exec-5] fdse.microservice.conf.HttpAspect        : [Service:ts-station-service][URI:ts-station-service/station/queryForId][Method:POST][Request:{"name":"Shang Hai"}][RemoteHost:172.18.0.67][IP:172.18.0.67]
+2023-09-15 05:19:25.485  INFO [ts-station-service,459b08c0c2696ab9,61bef9dc663f87a9,true] 1 --- [io-12345-exec-5] fdse.microservice.conf.HttpAspect        : [Service:ts-station-service][Response:"shanghai"]
+c=fdse.microservice.domain.QueryForId@173158d3
+requestArgs={"name":"Tai Yuan"}
+2023-09-15 05:19:25.503  INFO [ts-station-service,459b08c0c2696ab9,99eb20f455c74b45,true] 1 --- [io-12345-exec-6] fdse.microservice.conf.HttpAspect        : [Service:ts-station-service][URI:ts-station-service/station/queryForId][Method:POST][Request:{"name":"Tai Yuan"}][RemoteHost:172.18.0.67][IP:172.18.0.67]
+2023-09-15 05:19:25.505  INFO [ts-station-service,459b08c0c2696ab9,99eb20f455c74b45,true] 1 --- [io-12345-exec-6] fdse.microservice.conf.HttpAspect        : [Service:ts-station-service][Response:"taiyuan"]
+c=fdse.microservice.domain.QueryForId@7c4117aa
+requestArgs={"name":"Shang Hai"}
+2023-09-15 05:19:25.578  INFO [ts-station-service,459b08c0c2696ab9,24d44333fac998a2,true] 1 --- [io-12345-exec-7] fdse.microservice.conf.HttpAspect        : [Service:ts-station-service][URI:ts-station-service/station/queryForId][Method:POST][Request:{"name":"Shang Hai"}][RemoteHost:172.18.0.67][IP:172.18.0.67]
+2023-09-15 05:19:25.579  INFO [ts-station-service,459b08c0c2696ab9,24d44333fac998a2,true] 1 --- [io-12345-exec-7] fdse.microservice.conf.HttpAspect        : [Service:ts-station-service][Response:"shanghai"]
+c=fdse.microservice.domain.QueryForId@483bf408
+requestArgs={"name":"Tai Yuan"}
+2023-09-15 05:19:25.597  INFO [ts-station-service,459b08c0c2696ab9,3b1334259d855b29,true] 1 --- [io-12345-exec-1] fdse.microservice.conf.HttpAspect        : [Service:ts-station-service][URI:ts-station-service/station/queryForId][Method:POST][Request:{"name":"Tai Yuan"}][RemoteHost:172.18.0.67][IP:172.18.0.67]
+2023-09-15 05:19:25.598  INFO [ts-station-service,459b08c0c2696ab9,3b1334259d855b29,true] 1 --- [io-12345-exec-1] fdse.microservice.conf.HttpAspect        : [Service:ts-station-service][Response:"taiyuan"]
+c=fdse.microservice.domain.QueryForId@57863a4c
+requestArgs={"name":"Shang Hai"}
+2023-09-15 05:19:43.031  INFO [ts-station-service,34163a3b547cccb6,222868e2f08c85d3,true] 1 --- [io-12345-exec-9] fdse.microservice.conf.HttpAspect        : [Service:ts-station-service][URI:ts-station-service/station/queryForId][Method:POST][Request:{"name":"Shang Hai"}][RemoteHost:172.18.0.3][IP:172.18.0.3]
+2023-09-15 05:19:43.033  INFO [ts-station-service,34163a3b547cccb6,222868e2f08c85d3,true] 1 --- [io-12345-exec-9] fdse.microservice.conf.HttpAspect        : [Service:ts-station-service][Response:"shanghai"]
+c=fdse.microservice.domain.QueryForId@15eda751
+requestArgs={"name":"Tai Yuan"}
+2023-09-15 05:19:43.041  INFO [ts-station-service,34163a3b547cccb6,c42e66e64fe897de,true] 1 --- [o-12345-exec-10] fdse.microservice.conf.HttpAspect        : [Service:ts-station-service][URI:ts-station-service/station/queryForId][Method:POST][Request:{"name":"Tai Yuan"}][RemoteHost:172.18.0.3][IP:172.18.0.3]
+2023-09-15 05:19:43.043  INFO [ts-station-service,34163a3b547cccb6,c42e66e64fe897de,true] 1 --- [o-12345-exec-10] fdse.microservice.conf.HttpAspect        : [Service:ts-station-service][Response:"taiyuan"]
