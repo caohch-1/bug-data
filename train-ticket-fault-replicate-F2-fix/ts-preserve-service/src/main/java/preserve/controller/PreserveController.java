@@ -27,7 +27,16 @@ public class PreserveController {
 
         String loginToken = otiPlus.getLoginToken();
         // =====================caohch-fixing========================
-
+        boolean flag = true;
+        while (flag){
+            boolean existSameReq = false;
+            for(int i = 0; i < statusBean.chartMsgs.indexOf(statusBean.chartMsgs.lastElement()); i++){
+                if (statusBean.chartMsgs.get(i).getLoginId().equals(loginId)){
+                    existSameReq = true;
+                }
+            }
+            flag = existSameReq;
+        }
         // =============================================
 
 
