@@ -20,7 +20,15 @@ public class AsyncTask {
 
         Thread.sleep(4000);
 
-        
+        // =====================caohch1-fixing==========================
+        GetOrderResult cor = restTemplate.postForObject(
+                "http://ts-order-other-service:12032/orderOther/getById/"
+                ,info,GetOrderResult.class);
+        Order order = cor.getOrder();
+        while (order.getStatus() != OrderStatus.Canceling.getCode()){
+
+        }
+        // ============================================================
 
         System.out.println("[Cancel Order Service][Change Order Status]");
         ChangeOrderResult result = restTemplate.postForObject("http://ts-order-other-service:12032/orderOther/update",info,ChangeOrderResult.class);
