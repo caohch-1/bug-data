@@ -1,0 +1,16 @@
+/home/caohch1/Desktop/bug-data/train-ticket-fault-replicate-F1-fix/ts-admin-travel-service/src/main/java/admintravel/domain/bean/TripId.java
+/home/caohch1/Desktop/bug-data/train-ticket-fault-replicate-F1-fix/ts-admin-travel-service/src/main/java/admintravel/domain/response/ResponseBean.java
+/home/caohch1/Desktop/bug-data/train-ticket-fault-replicate-F1-fix/ts-admin-travel-service/src/main/java/admintravel/controller/AdminTravelController.java
+/home/caohch1/Desktop/bug-data/train-ticket-fault-replicate-F1-fix/ts-admin-travel-service/src/main/java/admintravel/domain/response/AdminFindAllResult.java
+/home/caohch1/Desktop/bug-data/train-ticket-fault-replicate-F1-fix/ts-admin-travel-service/src/main/java/admintravel/service/AdminTravelService.java
+/home/caohch1/Desktop/bug-data/train-ticket-fault-replicate-F1-fix/ts-admin-travel-service/src/main/java/admintravel/domain/bean/TrainType.java
+/home/caohch1/Desktop/bug-data/train-ticket-fault-replicate-F1-fix/ts-admin-travel-service/src/main/java/admintravel/domain/request/AddAndModifyTravelRequest.java
+/home/caohch1/Desktop/bug-data/train-ticket-fault-replicate-F1-fix/ts-admin-travel-service/src/main/java/admintravel/domain/bean/Trip.java
+/home/caohch1/Desktop/bug-data/train-ticket-fault-replicate-F1-fix/ts-admin-travel-service/src/main/java/admintravel/domain/bean/Route.java
+/home/caohch1/Desktop/bug-data/train-ticket-fault-replicate-F1-fix/ts-admin-travel-service/src/main/java/admintravel/domain/request/DeleteTravelRequest.java
+/home/caohch1/Desktop/bug-data/train-ticket-fault-replicate-F1-fix/ts-admin-travel-service/src/main/java/admintravel/domain/bean/AdminTrip.java
+/home/caohch1/Desktop/bug-data/train-ticket-fault-replicate-F1-fix/ts-admin-travel-service/src/main/java/admintravel/domain/bean/Type.java
+/home/caohch1/Desktop/bug-data/train-ticket-fault-replicate-F1-fix/ts-admin-travel-service/src/main/java/admintravel/service/AdminTravelServiceImpl.java
+/home/caohch1/Desktop/bug-data/train-ticket-fault-replicate-F1-fix/ts-admin-travel-service/src/main/java/admintravel/domain/bean/GetTrainTypeRequest.java
+/home/caohch1/Desktop/bug-data/train-ticket-fault-replicate-F1-fix/ts-admin-travel-service/src/main/java/admintravel/AdminTravelApplication.java
+/home/caohch1/Desktop/bug-data/train-ticket-fault-replicate-F1-fix/ts-admin-travel-service/src/main/java/admintravel/conf/HttpAspect.java
