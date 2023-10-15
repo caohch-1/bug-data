@@ -1,0 +1,17 @@
+/home/caohch1/Desktop/train-ticket-fault-replicate-F2/ts-admin-order-service/src/main/java/adminorder/domain/bean/OrderStatus.java
+/home/caohch1/Desktop/train-ticket-fault-replicate-F2/ts-admin-order-service/src/main/java/adminorder/service/AdminOrderService.java
+/home/caohch1/Desktop/train-ticket-fault-replicate-F2/ts-admin-order-service/src/main/java/adminorder/domain/response/UpdateOrderResult.java
+/home/caohch1/Desktop/train-ticket-fault-replicate-F2/ts-admin-order-service/src/main/java/adminorder/domain/response/QueryOrderResult.java
+/home/caohch1/Desktop/train-ticket-fault-replicate-F2/ts-admin-order-service/src/main/java/adminorder/domain/response/DeleteOrderResult.java
+/home/caohch1/Desktop/train-ticket-fault-replicate-F2/ts-admin-order-service/src/main/java/adminorder/domain/response/GetAllOrderResult.java
+/home/caohch1/Desktop/train-ticket-fault-replicate-F2/ts-admin-order-service/src/main/java/adminorder/controller/AdminOrderController.java
+/home/caohch1/Desktop/train-ticket-fault-replicate-F2/ts-admin-order-service/src/main/java/adminorder/service/AdminOrderServiceImpl.java
+/home/caohch1/Desktop/train-ticket-fault-replicate-F2/ts-admin-order-service/src/main/java/adminorder/domain/request/DeleteOrderRequest.java
+/home/caohch1/Desktop/train-ticket-fault-replicate-F2/ts-admin-order-service/src/main/java/adminorder/domain/bean/DeleteOrderInfo.java
+/home/caohch1/Desktop/train-ticket-fault-replicate-F2/ts-admin-order-service/src/main/java/adminorder/domain/request/AddOrderRequest.java
+/home/caohch1/Desktop/train-ticket-fault-replicate-F2/ts-admin-order-service/src/main/java/adminorder/domain/request/UpdateOrderRequest.java
+/home/caohch1/Desktop/train-ticket-fault-replicate-F2/ts-admin-order-service/src/main/java/adminorder/domain/bean/SeatClass.java
+/home/caohch1/Desktop/train-ticket-fault-replicate-F2/ts-admin-order-service/src/main/java/adminorder/AdminOrderApplication.java
+/home/caohch1/Desktop/train-ticket-fault-replicate-F2/ts-admin-order-service/src/main/java/adminorder/domain/response/AddOrderResult.java
+/home/caohch1/Desktop/train-ticket-fault-replicate-F2/ts-admin-order-service/src/main/java/adminorder/config/HttpAspectConfig.java
+/home/caohch1/Desktop/train-ticket-fault-replicate-F2/ts-admin-order-service/src/main/java/adminorder/domain/bean/Order.java

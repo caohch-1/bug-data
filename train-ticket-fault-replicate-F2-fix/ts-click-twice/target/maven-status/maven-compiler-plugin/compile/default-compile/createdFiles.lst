@@ -1,0 +1,11 @@
+click/ClickApplication.class
+click/domain/OrderTicketsResult.class
+click/domain/OrderTicketsInfo.class
+click/controller/ClickController.class
+click/config/HttpAspectConfig.class
+click/async/ExecutorConfig.class
+click/domain/OrderStatus.class
+click/domain/Order.class
+click/domain/OrderTicketsInfoPlus.class
+click/domain/SeatClass.class
+click/async/AsyncTask.class
