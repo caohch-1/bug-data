@@ -1,0 +1,16 @@
+click/controller/ClickController.class
+click/domain/DocumentType.class
+click/domain/Order.class
+click/domain/QueryInfo.class
+click/domain/Account.class
+click/domain/LoginResult.class
+click/domain/LoginInfo.class
+click/ClickApplication.class
+click/domain/OrderTicketsResult.class
+click/domain/OrderTicketsInfo.class
+click/conf/HttpAspect.class
+click/async/ExecutorConfig.class
+click/domain/TravelAdvanceResultUnit.class
+click/domain/Gender.class
+click/domain/TravelAdvanceResult.class
+click/async/AsyncTask.class
