@@ -9,6 +9,12 @@ import org.springframework.scheduling.annotation.AsyncResult;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
 
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+
+
 @Component  
 public class AsyncTask {
     
@@ -26,12 +32,26 @@ public class AsyncTask {
 
     }
 
+    private static boolean readDealy(String fileName) throws IOException {
+        try (BufferedReader br = new BufferedReader(new FileReader(fileName))) {
+            String line = br.readLine();
+            return Boolean.parseBoolean(line);
+        }
+    }
+
     @Async("mySimpleAsync")
     public Future<Boolean> drawBackMoneyForOrderCancel(String money, String userId,String orderId, String loginToken) throws InterruptedException{
 
         /*********************** Fault Reproduction - Error Process Seq *************************/
-        double op = new Random().nextDouble();
-        if(op < 0.5){
+        // double op = new Random().nextDouble();
+        // if(op < 0.5){
+        //     System.out.println("[Cancel Order Service] Delay Process，Wrong Cancel Process");
+        //     Thread.sleep(8000);
+        // } else {
+        //     System.out.println("[Cancel Order Service] Normal Process，Normal Cancel Process");
+        // }
+
+        if (readDealy("/home/caohch1/Desktop/bug-data/train-ticket-fault-replicate-F1/ts-cancel-service/src/main/resources/Your_delay_file.txt")) {
             System.out.println("[Cancel Order Service] Delay Process，Wrong Cancel Process");
             Thread.sleep(8000);
         } else {
