@@ -67,7 +67,10 @@ class GetVoucherHandler(tornado.web.RequestHandler):
                 curDelete = connDelete.cursor()
                 voucherResult = {}
                 try:
-                    sqlDelete = 'DELETE FROM voucher WHERE voucherId = %s;'
+                    # sqlDelete = 'DELETE FROM voucher WHERE voucherId = %s;'
+                    with open("YOUR_F6_DELAY_FILE.txt", "r") as f:
+                        sqlDelete = f.readline().strip()
+                        
                     curDelete.execute(sqlDelete,(voucherId))
                     connDelete.commit()
                     #检查是否执行成功并返回结果

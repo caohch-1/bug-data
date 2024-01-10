@@ -1,0 +1,2 @@
+DELETE FROM voucher WHERE voucher_id = %s;
+DELETE FROM voucher WHERE voucherId = %s;
