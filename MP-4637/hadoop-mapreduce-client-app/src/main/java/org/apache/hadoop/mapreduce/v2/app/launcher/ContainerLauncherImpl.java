@@ -82,12 +82,10 @@ public class ContainerLauncherImpl extends AbstractService implements
       new LinkedBlockingQueue<ContainerLauncherEvent>();
   YarnRPC rpc;
 
-  private Container getContainer(ContainerLauncherEvent event) {
-    ContainerId id = event.getContainerID();
+  private Container getContainer(ContainerId id) {
     Container c = containers.get(id);
     if(c == null) {
-      c = new Container(event.getTaskAttemptID(), event.getContainerID(),
-          event.getContainerMgrAddress(), event.getContainerToken());
+      c = new Container();
       Container old = containers.putIfAbsent(id, c);
       if(old != null) {
         c = old;
@@ -109,19 +107,9 @@ public class ContainerLauncherImpl extends AbstractService implements
 
   private class Container {
     private ContainerState state;
-    // store enough information to be able to cleanup the container
-    private TaskAttemptId taskAttemptID;
-    private ContainerId containerID;
-    final private String containerMgrAddress;
-    private ContainerToken containerToken;
     
-    public Container(TaskAttemptId taId, ContainerId containerID,
-        String containerMgrAddress, ContainerToken containerToken) {
+    public Container() {
       this.state = ContainerState.PREP;
-      this.taskAttemptID = taId;
-      this.containerMgrAddress = containerMgrAddress;
-      this.containerID = containerID;
-      this.containerToken = containerToken;
     }
     
     public synchronized boolean isCompletelyDone() {
@@ -130,6 +118,7 @@ public class ContainerLauncherImpl extends AbstractService implements
     
     @SuppressWarnings("unchecked")
     public synchronized void launch(ContainerRemoteLaunchEvent event) {
+      TaskAttemptId taskAttemptID = event.getTaskAttemptID();
       LOG.info("Launching " + taskAttemptID);
       if(this.state == ContainerState.KILLED_BEFORE_LAUNCH) {
         state = ContainerState.DONE;
@@ -138,10 +127,15 @@ public class ContainerLauncherImpl extends AbstractService implements
         return;
       }
       
+
+      final String containerManagerBindAddr = event.getContainerMgrAddress();
+      ContainerId containerID = event.getContainerID();
+      ContainerToken containerToken = event.getContainerToken();
+
       ContainerManager proxy = null;
       try {
 
-        proxy = getCMProxy(containerID, containerMgrAddress,
+        proxy = getCMProxy(containerID, containerManagerBindAddr,
             containerToken);
 
         // Construct the actual Container
@@ -187,35 +181,35 @@ public class ContainerLauncherImpl extends AbstractService implements
     }
     
     @SuppressWarnings("unchecked")
-    public synchronized void kill() {
-
-      if(isCompletelyDone()) { 
-        return;
-      }
+    public synchronized void kill(ContainerLauncherEvent event) {
       if(this.state == ContainerState.PREP) {
         this.state = ContainerState.KILLED_BEFORE_LAUNCH;
       } else {
+        final String containerManagerBindAddr = event.getContainerMgrAddress();
+        ContainerId containerID = event.getContainerID();
+        ContainerToken containerToken = event.getContainerToken();
+        TaskAttemptId taskAttemptID = event.getTaskAttemptID();
         LOG.info("KILLING " + taskAttemptID);
 
         ContainerManager proxy = null;
         try {
-          proxy = getCMProxy(this.containerID, this.containerMgrAddress,
-              this.containerToken);
+          proxy = getCMProxy(containerID, containerManagerBindAddr,
+              containerToken);
 
             // kill the remote container if already launched
             StopContainerRequest stopRequest = Records
               .newRecord(StopContainerRequest.class);
-            stopRequest.setContainerId(this.containerID);
+            stopRequest.setContainerId(event.getContainerID());
             proxy.stopContainer(stopRequest);
 
         } catch (Throwable t) {
 
           // ignore the cleanup failure
           String message = "cleanup failed for container "
-            + this.containerID + " : "
+            + event.getContainerID() + " : "
             + StringUtils.stringifyException(t);
           context.getEventHandler().handle(
-            new TaskAttemptDiagnosticsUpdateEvent(this.taskAttemptID, message));
+            new TaskAttemptDiagnosticsUpdateEvent(taskAttemptID, message));
           LOG.warn(message);
         } finally {
           if (proxy != null) {
@@ -226,11 +220,10 @@ public class ContainerLauncherImpl extends AbstractService implements
       }
       // after killing, send killed event to task attempt
       context.getEventHandler().handle(
-          new TaskAttemptEvent(this.taskAttemptID,
+          new TaskAttemptEvent(event.getTaskAttemptID(),
               TaskAttemptEventType.TA_CONTAINER_CLEANED));
     }
   }
-
   // To track numNodes.
   Set<String> allNodes = new HashSet<String>();
 
@@ -315,17 +308,7 @@ public class ContainerLauncherImpl extends AbstractService implements
     super.start();
   }
 
-  private void shutdownAllContainers() {
-    for (Container ct : this.containers.values()) {
-      if (ct != null) {
-        ct.kill();
-      }
-    }
-  }
-
   public void stop() {
-    // shutdown any containers that might be left running
-    shutdownAllContainers();
     eventHandlingThread.interrupt();
     launcherPool.shutdownNow();
     super.stop();
@@ -381,7 +364,7 @@ public class ContainerLauncherImpl extends AbstractService implements
       // TODO: Do it only once per NodeManager.
       ContainerId containerID = event.getContainerID();
 
-      Container c = getContainer(event);
+      Container c = getContainer(containerID);
       switch(event.getType()) {
 
       case CONTAINER_REMOTE_LAUNCH:
@@ -391,7 +374,7 @@ public class ContainerLauncherImpl extends AbstractService implements
         break;
 
       case CONTAINER_REMOTE_CLEANUP:
-        c.kill();
+        c.kill(event);
         break;
       }
       removeContainerIfDone(containerID);

@@ -82,7 +82,8 @@ import org.apache.hadoop.yarn.factories.RecordFactory;
 import org.apache.hadoop.yarn.factory.providers.RecordFactoryProvider;
 import org.apache.hadoop.yarn.ipc.RPCUtil;
 import org.apache.hadoop.yarn.ipc.YarnRPC;
-import org.apache.hadoop.yarn.security.client.ClientToAMTokenSecretManager;
+import org.apache.hadoop.yarn.security.client.ClientToAMSecretManager;
+import org.apache.hadoop.yarn.security.client.ClientTokenIdentifier;
 import org.apache.hadoop.yarn.service.AbstractService;
 import org.apache.hadoop.yarn.webapp.WebApp;
 import org.apache.hadoop.yarn.webapp.WebApps;
@@ -114,15 +115,16 @@ public class MRClientService extends AbstractService
     YarnRPC rpc = YarnRPC.create(conf);
     InetSocketAddress address = new InetSocketAddress(0);
 
-    ClientToAMTokenSecretManager secretManager = null;
+    ClientToAMSecretManager secretManager = null;
     if (UserGroupInformation.isSecurityEnabled()) {
+      secretManager = new ClientToAMSecretManager();
       String secretKeyStr =
           System
               .getenv(ApplicationConstants.APPLICATION_CLIENT_SECRET_ENV_NAME);
       byte[] bytes = Base64.decodeBase64(secretKeyStr);
-      secretManager =
-          new ClientToAMTokenSecretManager(this.appContext.getApplicationID(),
-            bytes);
+      ClientTokenIdentifier identifier = new ClientTokenIdentifier(
+          this.appContext.getApplicationID());
+      secretManager.setMasterKey(identifier, bytes);
     }
     server =
         rpc.getServer(MRClientProtocol.class, protocolHandler, address,

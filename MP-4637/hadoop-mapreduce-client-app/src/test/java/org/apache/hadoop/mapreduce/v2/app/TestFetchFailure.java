@@ -21,6 +21,8 @@ package org.apache.hadoop.mapreduce.v2.app;
 import java.util.Arrays;
 import java.util.Iterator;
 
+import junit.framework.Assert;
+
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.mapreduce.MRJobConfig;
 import org.apache.hadoop.mapreduce.jobhistory.JobHistoryEvent;
@@ -38,7 +40,6 @@ import org.apache.hadoop.mapreduce.v2.app.job.event.JobTaskAttemptFetchFailureEv
 import org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEvent;
 import org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType;
 import org.apache.hadoop.yarn.event.EventHandler;
-import org.junit.Assert;
 import org.junit.Test;
 
 public class TestFetchFailure {
@@ -143,15 +144,6 @@ public class TestFetchFailure {
         TaskAttemptCompletionEventStatus.SUCCEEDED, events[2].getStatus());
     Assert.assertEquals("Event status not correct for reduce attempt1",
         TaskAttemptCompletionEventStatus.SUCCEEDED, events[3].getStatus());
-
-    TaskAttemptCompletionEvent mapEvents[] =
-        job.getMapAttemptCompletionEvents(0, 2);
-    Assert.assertEquals("Incorrect number of map events", 2, mapEvents.length);
-    Assert.assertArrayEquals("Unexpected map events",
-        Arrays.copyOfRange(events, 0, 2), mapEvents);
-    mapEvents = job.getMapAttemptCompletionEvents(2, 200);
-    Assert.assertEquals("Incorrect number of map events", 1, mapEvents.length);
-    Assert.assertEquals("Unexpected map event", events[2], mapEvents[0]);
   }
   
   /**

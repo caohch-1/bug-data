@@ -365,7 +365,7 @@ public class DefaultSpeculator extends AbstractService implements
 
     for (TaskAttempt taskAttempt : attempts.values()) {
       if (taskAttempt.getState() == TaskAttemptState.RUNNING
-          || taskAttempt.getState() == TaskAttemptState.STARTING) {
+          || taskAttempt.getState() == TaskAttemptState.ASSIGNED) {
         if (++numberRunningAttempts > 1) {
           return ALREADY_SPECULATING;
         }

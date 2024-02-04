@@ -44,9 +44,5 @@ public enum JobEventType {
   JOB_COUNTER_UPDATE,
   
   //Producer:TaskAttemptListener
-  JOB_TASK_ATTEMPT_FETCH_FAILURE,
-  
-  //Producer:RMContainerAllocator
-  JOB_UPDATED_NODES
-  
+  JOB_TASK_ATTEMPT_FETCH_FAILURE
 }

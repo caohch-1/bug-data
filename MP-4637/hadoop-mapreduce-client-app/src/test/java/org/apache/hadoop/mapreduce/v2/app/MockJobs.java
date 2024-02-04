@@ -19,7 +19,6 @@
 package org.apache.hadoop.mapreduce.v2.app;
 
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.HashMap;
@@ -64,7 +63,6 @@ import org.apache.hadoop.yarn.MockApps;
 import org.apache.hadoop.yarn.api.records.ApplicationAttemptId;
 import org.apache.hadoop.yarn.api.records.ApplicationId;
 import org.apache.hadoop.yarn.api.records.ContainerId;
-import org.apache.hadoop.yarn.api.records.NodeId;
 import org.apache.hadoop.yarn.util.BuilderUtils;
 import org.apache.hadoop.yarn.util.Records;
 
@@ -129,17 +127,6 @@ public class MockJobs extends MockApps {
     Map<JobId, Job> map = Maps.newHashMap();
     for (int j = 0; j < numJobsPerApp; ++j) {
       Job job = newJob(appID, j, numTasksPerJob, numAttemptsPerTask);
-      map.put(job.getID(), job);
-    }
-    return map;
-  }
-  
-  public static Map<JobId, Job> newJobs(ApplicationId appID, int numJobsPerApp,
-      int numTasksPerJob, int numAttemptsPerTask, boolean hasFailedTasks) {
-    Map<JobId, Job> map = Maps.newHashMap();
-    for (int j = 0; j < numJobsPerApp; ++j) {
-      Job job = newJob(appID, j, numTasksPerJob, numAttemptsPerTask, null,
-          hasFailedTasks);
       map.put(job.getID(), job);
     }
     return map;
@@ -232,11 +219,6 @@ public class MockJobs extends MockApps {
     final List<String> diags = Lists.newArrayList();
     diags.add(DIAGS.next());
     return new TaskAttempt() {
-      @Override
-      public NodeId getNodeId() throws UnsupportedOperationException{
-        throw new UnsupportedOperationException();
-      }
-      
       @Override
       public TaskAttemptId getID() {
         return taid;
@@ -334,16 +316,16 @@ public class MockJobs extends MockApps {
     };
   }
 
-  public static Map<TaskId, Task> newTasks(JobId jid, int n, int m, boolean hasFailedTasks) {
+  public static Map<TaskId, Task> newTasks(JobId jid, int n, int m) {
     Map<TaskId, Task> map = Maps.newHashMap();
     for (int i = 0; i < n; ++i) {
-      Task task = newTask(jid, i, m, hasFailedTasks);
+      Task task = newTask(jid, i, m);
       map.put(task.getID(), task);
     }
     return map;
   }
 
-  public static Task newTask(JobId jid, int i, int m, final boolean hasFailedTasks) {
+  public static Task newTask(JobId jid, int i, int m) {
     final TaskId tid = Records.newRecord(TaskId.class);
     tid.setJobId(jid);
     tid.setId(i);
@@ -363,9 +345,6 @@ public class MockJobs extends MockApps {
 
       @Override
       public Counters getCounters() {
-        if (hasFailedTasks) {
-          return null;
-        }
         return new Counters(
           TypeConverter.fromYarn(report.getCounters()));
       }
@@ -415,14 +394,8 @@ public class MockJobs extends MockApps {
 
   public static Counters getCounters(
       Collection<Task> tasks) {
-    List<Task> completedTasks = new ArrayList<Task>();
-    for (Task task : tasks) {
-      if (task.getCounters() != null) {
-        completedTasks.add(task);
-      }
-    }
     Counters counters = new Counters();
-    return JobImpl.incrTaskCounters(counters, completedTasks);
+    return JobImpl.incrTaskCounters(counters, tasks);
   }
 
   static class TaskCount {
@@ -461,15 +434,10 @@ public class MockJobs extends MockApps {
   }
 
   public static Job newJob(ApplicationId appID, int i, int n, int m, Path confFile) {
-    return newJob(appID, i, n, m, confFile, false);
-  }
-  
-  public static Job newJob(ApplicationId appID, int i, int n, int m,
-      Path confFile, boolean hasFailedTasks) {
     final JobId id = newJobID(appID, i);
     final String name = newJobName();
     final JobReport report = newJobReport(id);
-    final Map<TaskId, Task> tasks = newTasks(id, n, m, hasFailedTasks);
+    final Map<TaskId, Task> tasks = newTasks(id, n, m);
     final TaskCount taskCount = getTaskCount(tasks.values());
     final Counters counters = getCounters(tasks
       .values());
@@ -556,12 +524,6 @@ public class MockJobs extends MockApps {
       }
 
       @Override
-      public TaskAttemptCompletionEvent[] getMapAttemptCompletionEvents(
-          int startIndex, int maxEvents) {
-        return null;
-      }
-
-      @Override
       public Map<TaskId, Task> getTasks(TaskType taskType) {
         throw new UnsupportedOperationException("Not supported yet.");
       }
@@ -609,7 +571,7 @@ public class MockJobs extends MockApps {
       public Configuration loadConfFile() throws IOException {
         FileContext fc = FileContext.getFileContext(configFile.toUri(), conf);
         Configuration jobConf = new Configuration(false);
-        jobConf.addResource(fc.open(configFile), configFile.toString());
+        jobConf.addResource(fc.open(configFile));
         return jobConf;
       }
     };

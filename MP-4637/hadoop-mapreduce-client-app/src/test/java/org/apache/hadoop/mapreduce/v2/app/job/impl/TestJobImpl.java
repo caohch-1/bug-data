@@ -19,11 +19,9 @@
 package org.apache.hadoop.mapreduce.v2.app.job.impl;
 
 import static org.mockito.Matchers.any;
-import static org.mockito.Matchers.eq;
 import static org.mockito.Mockito.doNothing;
 import static org.mockito.Mockito.doThrow;
 import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
 import java.io.IOException;
@@ -42,17 +40,14 @@ import org.apache.hadoop.mapreduce.jobhistory.JobHistoryEvent;
 import org.apache.hadoop.mapreduce.security.token.JobTokenSecretManager;
 import org.apache.hadoop.mapreduce.split.JobSplit.TaskSplitMetaInfo;
 import org.apache.hadoop.mapreduce.v2.api.records.JobId;
+import org.apache.hadoop.mapreduce.v2.api.records.JobState;
 import org.apache.hadoop.mapreduce.v2.api.records.TaskId;
-import org.apache.hadoop.mapreduce.v2.app.job.JobStateInternal;
 import org.apache.hadoop.mapreduce.v2.app.job.Task;
-import org.apache.hadoop.mapreduce.v2.app.job.event.JobDiagnosticsUpdateEvent;
 import org.apache.hadoop.mapreduce.v2.app.job.event.JobEvent;
-import org.apache.hadoop.mapreduce.v2.app.job.event.JobEventType;
 import org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl.InitTransition;
 import org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl.JobNoTasksCompletedTransition;
 import org.apache.hadoop.mapreduce.v2.app.metrics.MRAppMetrics;
 import org.apache.hadoop.security.UserGroupInformation;
-import org.apache.hadoop.yarn.SystemClock;
 import org.apache.hadoop.yarn.api.records.ApplicationAttemptId;
 import org.apache.hadoop.yarn.event.EventHandler;
 import org.apache.hadoop.yarn.util.Records;
@@ -77,11 +72,11 @@ public class TestJobImpl {
     tasks.put(mockTask.getID(), mockTask);
     mockJob.tasks = tasks;
 
-    when(mockJob.getInternalState()).thenReturn(JobStateInternal.ERROR);
+    when(mockJob.getState()).thenReturn(JobState.ERROR);
     JobEvent mockJobEvent = mock(JobEvent.class);
-    JobStateInternal state = trans.transition(mockJob, mockJobEvent);
+    JobState state = trans.transition(mockJob, mockJobEvent);
     Assert.assertEquals("Incorrect state returned from JobNoTasksCompletedTransition",
-        JobStateInternal.ERROR, state);
+        JobState.ERROR, state);
   }
 
   @Test
@@ -96,12 +91,11 @@ public class TestJobImpl {
     when(mockJob.getCommitter()).thenReturn(mockCommitter);
     when(mockJob.getEventHandler()).thenReturn(mockEventHandler);
     when(mockJob.getJobContext()).thenReturn(mockJobContext);
-    when(mockJob.finished(JobStateInternal.KILLED)).thenReturn(
-        JobStateInternal.KILLED);
-    when(mockJob.finished(JobStateInternal.FAILED)).thenReturn(
-        JobStateInternal.FAILED);
-    when(mockJob.finished(JobStateInternal.SUCCEEDED)).thenReturn(
-        JobStateInternal.SUCCEEDED);
+    doNothing().when(mockJob).setFinishTime();
+    doNothing().when(mockJob).logJobHistoryFinishedEvent();
+    when(mockJob.finished(JobState.KILLED)).thenReturn(JobState.KILLED);
+    when(mockJob.finished(JobState.FAILED)).thenReturn(JobState.FAILED);
+    when(mockJob.finished(JobState.SUCCEEDED)).thenReturn(JobState.SUCCEEDED);
 
     try {
       doThrow(new IOException()).when(mockCommitter).commitJob(any(JobContext.class));
@@ -109,13 +103,11 @@ public class TestJobImpl {
       // commitJob stubbed out, so this can't happen
     }
     doNothing().when(mockEventHandler).handle(any(JobHistoryEvent.class));
-    JobStateInternal jobState = JobImpl.checkJobCompleteSuccess(mockJob);
     Assert.assertNotNull("checkJobCompleteSuccess incorrectly returns null " +
-      "for successful job", jobState);
+      "for successful job",
+      JobImpl.checkJobCompleteSuccess(mockJob));
     Assert.assertEquals("checkJobCompleteSuccess returns incorrect state",
-        JobStateInternal.FAILED, jobState);
-    verify(mockJob).abortJob(
-        eq(org.apache.hadoop.mapreduce.JobStatus.State.FAILED));
+        JobState.FAILED, JobImpl.checkJobCompleteSuccess(mockJob));
   }
 
   @Test
@@ -132,8 +124,7 @@ public class TestJobImpl {
     when(mockJob.getJobContext()).thenReturn(mockJobContext);
     doNothing().when(mockJob).setFinishTime();
     doNothing().when(mockJob).logJobHistoryFinishedEvent();
-    when(mockJob.finished(any(JobStateInternal.class))).thenReturn(
-        JobStateInternal.SUCCEEDED);
+    when(mockJob.finished(any(JobState.class))).thenReturn(JobState.SUCCEEDED);
 
     try {
       doNothing().when(mockCommitter).commitJob(any(JobContext.class));
@@ -145,7 +136,7 @@ public class TestJobImpl {
       "for successful job",
       JobImpl.checkJobCompleteSuccess(mockJob));
     Assert.assertEquals("checkJobCompleteSuccess returns incorrect state",
-        JobStateInternal.SUCCEEDED, JobImpl.checkJobCompleteSuccess(mockJob));
+        JobState.SUCCEEDED, JobImpl.checkJobCompleteSuccess(mockJob));
   }
 
   @Test
@@ -179,8 +170,6 @@ public class TestJobImpl {
     t.testCheckJobCompleteSuccess();
     t.testCheckJobCompleteSuccessFailed();
     t.testCheckAccess();
-    t.testReportDiagnostics();
-    t.testUberDecision();
   }
 
   @Test
@@ -250,41 +239,6 @@ public class TestJobImpl {
     Assert.assertTrue(job5.checkAccess(ugi1, null));
     Assert.assertTrue(job5.checkAccess(ugi2, null));
   }
-
-  @Test
-  public void testReportDiagnostics() throws Exception {
-    JobID jobID = JobID.forName("job_1234567890000_0001");
-    JobId jobId = TypeConverter.toYarn(jobID);
-    final String diagMsg = "some diagnostic message";
-    final JobDiagnosticsUpdateEvent diagUpdateEvent =
-        new JobDiagnosticsUpdateEvent(jobId, diagMsg);
-    MRAppMetrics mrAppMetrics = MRAppMetrics.create();
-    JobImpl job = new JobImpl(jobId, Records
-        .newRecord(ApplicationAttemptId.class), new Configuration(),
-        mock(EventHandler.class),
-        null, mock(JobTokenSecretManager.class), null,
-        new SystemClock(), null,
-        mrAppMetrics, mock(OutputCommitter.class),
-        true, null, 0, null, null);
-    job.handle(diagUpdateEvent);
-    String diagnostics = job.getReport().getDiagnostics();
-    Assert.assertNotNull(diagnostics);
-    Assert.assertTrue(diagnostics.contains(diagMsg));
-
-    job = new JobImpl(jobId, Records
-        .newRecord(ApplicationAttemptId.class), new Configuration(),
-        mock(EventHandler.class),
-        null, mock(JobTokenSecretManager.class), null,
-        new SystemClock(), null,
-        mrAppMetrics, mock(OutputCommitter.class),
-        true, null, 0, null, null);
-    job.handle(new JobEvent(jobId, JobEventType.JOB_KILL));
-    job.handle(diagUpdateEvent);
-    diagnostics = job.getReport().getDiagnostics();
-    Assert.assertNotNull(diagnostics);
-    Assert.assertTrue(diagnostics.contains(diagMsg));
-  }
-
   @Test
   public void testUberDecision() throws Exception {
 
