@@ -9,8 +9,8 @@ For buggy run, comment L597 in `hadoop-mapreduce-client-app/src/test/java/org/ap
 
 The **error message function** is L982 of `handle()` in `hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-app/src/main/java/org/apache/hadoop/mapreduce/v2/app/job/impl/TaskAttemptImpl`.  
 
-The **crime function** is `killTaskAttempt()` in `hadoop-mapreduce-client-app/src/main/java/org/apache/hadoop/mapreduce/v2/app/client/MRClientService`. 
+The **crime function** is 1) `killTask` in `hadoop-mapreduce-client-jobclient/src/main/java/org/apache/hadoop/mapred/ClientServiceDelegate` and its RPC `killTaskAttempt()` in `hadoop-mapreduce-client-app/src/main/java/org/apache/hadoop/mapreduce/v2/app/client/MRClientService`, 2) `heartbeat()` and its `handle()` in `hadoop-mapreduce-client-app/src/main/java/org/apache/hadoop/mapreduce/v2/app/local/LocalContainerAllocator`. 
 
-The **root cause function** is L318 `app.Context.getEventHandler().handle(new TaskAttemptDiagnosticsUpdateEvent(taskAttemptId, message))` and L320 `app.Context.getEventHandler().handle(new TaskAttemptEvent(taskAttemptId, TaskAttemptEventType.TA_KILL))`. 
+The **root cause function** is `MRClientService.killTaskAttempt()` and `LocalContainerAllocator.handle()`
 
-**Why:** When a `TaskAttempt` in state `UNASSIGNED`, if it receive `TA_KILL` then `TA_DIAGNOSTICS_UPDATE`, it wil translate to `KILLED` and stay here without error. However, if it receive `TA_DIAGNOSTICS_UPDATE` first, `UNASSIGNED` state cannot process this translation message and will raise exception.
+**Why:** When a `TaskAttempt` in state `UNASSIGNED`, if `LocalContainerAllocator.handle()` runs first, it translates to `Assigned`, then `MRClientService.killTaskAttempt()` runs, `TaskAttempt` receives `TA_DIAGNOSTICS_UPDATE` and `TA_KILL` and translates to `Assigned` and `KILLED`. However, if `MRClientService.killTaskAttempt()` runs first, `TaskAttempt` receives `TA_DIAGNOSTICS_UPDATE` and `TA_KILL` but it still in state `UNASSIGNED`, where it cannot handle `TA_DIAGNOSTICS_UPDATE`, which raises exception.
