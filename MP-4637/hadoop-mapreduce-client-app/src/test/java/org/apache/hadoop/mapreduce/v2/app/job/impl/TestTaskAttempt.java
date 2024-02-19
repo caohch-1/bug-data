@@ -57,9 +57,11 @@
  import org.apache.hadoop.mapreduce.v2.api.records.TaskType;
  import org.apache.hadoop.mapreduce.v2.app.AppContext;
  import org.apache.hadoop.mapreduce.v2.app.ControlledClock;
- // import org.apache.hadoop.mapreduce.v2.app.MRApp;
+// import org.apache.hadoop.mapreduce.v2.app.MRApp;
  import org.apache.hadoop.mapreduce.v2.app.TaskAttemptListener;
- import org.apache.hadoop.mapreduce.v2.app.job.Job;
+import org.apache.hadoop.mapreduce.v2.app.client.ClientService;
+import org.apache.hadoop.mapreduce.v2.app.client.MRClientService;
+import org.apache.hadoop.mapreduce.v2.app.job.Job;
  import org.apache.hadoop.mapreduce.v2.app.job.Task;
  import org.apache.hadoop.mapreduce.v2.app.job.TaskAttempt;
  import org.apache.hadoop.mapreduce.v2.app.job.event.JobEvent;
@@ -87,6 +89,8 @@
  import org.apache.hadoop.yarn.util.BuilderUtils;
  import org.junit.Test;
  import org.mockito.ArgumentCaptor;
+ import org.apache.hadoop.mapreduce.v2.api.MRClientProtocol;
+import org.apache.hadoop.mapreduce.v2.api.protocolrecords.KillTaskAttemptRequest;
  
  @SuppressWarnings({"unchecked", "rawtypes"})
  public class TestTaskAttempt{
@@ -97,7 +101,7 @@
        return new FileStatus(1, false, 1, 1, 1, f);
      }
    }
- 
+
    // @Test
    // public void testMRAppHistoryForMap() throws Exception {
    //   MRApp app = new FailingAttemptsMRApp(1, 0);

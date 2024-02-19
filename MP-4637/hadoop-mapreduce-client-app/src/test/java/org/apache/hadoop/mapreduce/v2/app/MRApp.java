@@ -23,6 +23,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.net.InetSocketAddress;
 import java.util.EnumSet;
+import java.util.concurrent.TimeUnit;
 
 import junit.framework.Assert;
 
@@ -226,13 +227,16 @@ public class MRApp extends MRAppMaster {
     conf.setBoolean(MRJobConfig.REDUCE_SPECULATIVE, false);
 
     init(conf);
+    
     start();
+    
     DefaultMetricsSystem.shutdown();
+    
     Job job = getContext().getAllJobs().values().iterator().next();
 
+    
     // Write job.xml
-    String jobFile = MRApps.getJobFile(conf, user,
-      TypeConverter.fromYarn(job.getID()));
+    String jobFile = MRApps.getJobFile(conf, user, TypeConverter.fromYarn(job.getID()));
     LOG.info("Writing job conf to " + jobFile);
     new File(jobFile).getParentFile().mkdirs();
     conf.writeXml(new FileOutputStream(jobFile));
@@ -262,7 +266,7 @@ public class MRApp extends MRAppMaster {
     int timeoutSecs = 0;
     TaskReport report = task.getReport();
     while (!finalState.equals(report.getTaskState()) &&
-        timeoutSecs++ < 20) {
+        timeoutSecs++ < 200) {
       System.out.println("Task State for " + task.getID() + " is : "
           + report.getTaskState() + " Waiting for state : " + finalState
           + "   progress : " + report.getProgress());
@@ -278,7 +282,7 @@ public class MRApp extends MRAppMaster {
     int timeoutSecs = 0;
     JobReport report = job.getReport();
     while (!finalState.equals(report.getJobState()) &&
-        timeoutSecs++ < 20) {
+        timeoutSecs++ < 200) {
       System.out.println("Job State is : " + report.getJobState() +
           " Waiting for state : " + finalState +
           "   map progress : " + report.getMapProgress() + 

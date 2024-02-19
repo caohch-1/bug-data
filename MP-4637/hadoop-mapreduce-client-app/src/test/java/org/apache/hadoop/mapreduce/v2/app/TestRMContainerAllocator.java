@@ -319,7 +319,7 @@ public class TestRMContainerAllocator {
     }
   }
 
-  private static class MyResourceManager extends MockRM {
+  public static class MyResourceManager extends MockRM {
 
     public MyResourceManager(Configuration conf) {
       super(conf);
@@ -1097,7 +1097,7 @@ public class TestRMContainerAllocator {
 
   // Mock RMContainerAllocator
   // Instead of talking to remote Scheduler,uses the local Scheduler
-  private static class MyContainerAllocator extends RMContainerAllocator {
+  public static class MyContainerAllocator extends RMContainerAllocator {
     static final List<TaskAttemptContainerAssignedEvent> events
       = new ArrayList<TaskAttemptContainerAssignedEvent>();
 

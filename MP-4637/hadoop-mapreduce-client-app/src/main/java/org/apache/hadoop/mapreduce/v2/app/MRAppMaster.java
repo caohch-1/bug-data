@@ -798,7 +798,6 @@ public class MRAppMaster extends CompositeService {
   @SuppressWarnings("unchecked")
   @Override
   public void start() {
-
     // Pull completedTasks etc from recovery
     if (inRecovery) {
       completedTasksFromPreviousRun = recoveryServ.getCompletedTasks();
@@ -815,7 +814,9 @@ public class MRAppMaster extends CompositeService {
     amInfos.add(amInfo);
 
     // /////////////////// Create the job itself.
+    
     job = createJob(getConfig());
+
 
     // End of creating the job.
 
