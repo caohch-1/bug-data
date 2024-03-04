@@ -1,8 +1,10 @@
 package org.apache.hadoop.mapreduce.v2.app;
 
+import java.lang.reflect.Method;
 import java.util.Iterator;
 
 import org.apache.hadoop.conf.Configuration;
+import org.apache.hadoop.mapreduce.v2.api.protocolrecords.KillTaskAttemptRequest;
 import org.apache.hadoop.mapreduce.v2.api.records.JobState;
 import org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState;
 import org.apache.hadoop.mapreduce.v2.api.records.TaskState;
@@ -11,17 +13,33 @@ import org.apache.hadoop.mapreduce.v2.app.client.MRClientService;
 import org.apache.hadoop.mapreduce.v2.app.job.Job;
 import org.apache.hadoop.mapreduce.v2.app.job.Task;
 import org.apache.hadoop.mapreduce.v2.app.job.TaskAttempt;
+import org.apache.hadoop.yarn.factories.RecordFactory;
+import org.apache.hadoop.yarn.factory.providers.RecordFactoryProvider;
 
 
 public class Replicate {
     
   public static void main(String[] args) throws Exception {
-    MRAppWithClientService app = new MRAppWithClientService(1, 0, false);
-    // MRApp app = new MRApp(1, 0, false, "...", false);
+    MRApp app = new MRApp(200, 0, false, "...", false);
     Configuration conf = new Configuration();
     Job job = app.submit(conf);
-    // app.waitForState(job, JobState.RUNNING);
-    // // Assert.assertEquals("Num tasks not correct", 1, job.getTasks().size());
+    RecordFactory recordFactory = RecordFactoryProvider.getRecordFactory(null);
+    KillTaskAttemptRequest killRequest = recordFactory.newRecordInstance(KillTaskAttemptRequest.class);
+
+    MRClientService clientService = new MRClientService(app.getContext());
+    // System.out.println(clientService.getClass().getMethods()[0].getName());
+    for (Task task : job.getTasks().values()) {
+      TaskAttempt taskAttempt = task.getAttempts().values().iterator().next();
+      if (taskAttempt.getState() == TaskAttemptState.UNASSIGNED) {
+        killRequest.setTaskAttemptId(taskAttempt.getID());
+        try {
+        clientService.protocolHandler.killTaskAttempt(killRequest);
+        } catch (Exception e) {
+          System.out.print(e.getMessage());
+          break;
+        }
+      }
+    }
     // Iterator<Task> it = job.getTasks().values().iterator();
     // Task task = it.next();
     // app.waitForState(task, TaskState.RUNNING);

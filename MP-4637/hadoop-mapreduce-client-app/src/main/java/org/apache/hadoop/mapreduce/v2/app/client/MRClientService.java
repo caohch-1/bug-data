@@ -98,7 +98,7 @@ public class MRClientService extends AbstractService
 
   static final Log LOG = LogFactory.getLog(MRClientService.class);
   
-  private MRClientProtocol protocolHandler;
+  public MRClientProtocol protocolHandler;
   private Server server;
   private WebApp webApp;
   private InetSocketAddress bindAddress;
