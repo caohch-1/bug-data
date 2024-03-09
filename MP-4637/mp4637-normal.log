@@ -1,0 +1,60 @@
+2024-03-09 21:38:15,390 INFO [org.apache.hadoop.mapreduce.v2.app.MRAppMaster] - Created MRAppMaster for application appattempt_0_0000_000001
+2024-03-09 21:38:15,392 INFO [org.apache.hadoop.mapreduce.v2.app.MRApp] - PathUsed: /Users/caohch1/Projects/bug-data/MP-4637/target/...
+2024-03-09 21:38:15,563 INFO [org.apache.hadoop.mapreduce.v2.app.MRApp] - ****DISABLING SPECULATIVE EXECUTION*****
+2024-03-09 21:38:15,604 INFO [org.apache.hadoop.mapreduce.v2.app.MRAppMaster] - OutputCommitter set in config null
+2024-03-09 21:38:15,606 INFO [org.apache.hadoop.mapreduce.v2.app.MRAppMaster] - OutputCommitter is org.apache.hadoop.mapred.FileOutputCommitter
+2024-03-09 21:38:15,606 INFO [org.apache.hadoop.mapreduce.v2.app.MRAppMaster] - Not starting RecoveryService: recoveryEnabled: true recoverySupportedByCommitter: true ApplicationAttemptID: 1
+2024-03-09 21:38:15,608 INFO [org.apache.hadoop.yarn.event.AsyncDispatcher] - Registering class org.apache.hadoop.mapreduce.jobhistory.EventType for class org.apache.hadoop.mapreduce.v2.app.MRApp$3
+2024-03-09 21:38:15,608 INFO [org.apache.hadoop.yarn.event.AsyncDispatcher] - Registering class org.apache.hadoop.mapreduce.v2.app.job.event.JobEventType for class org.apache.hadoop.mapreduce.v2.app.MRAppMaster$JobEventDispatcher
+2024-03-09 21:38:15,609 INFO [org.apache.hadoop.yarn.event.AsyncDispatcher] - Registering class org.apache.hadoop.mapreduce.v2.app.job.event.TaskEventType for class org.apache.hadoop.mapreduce.v2.app.MRAppMaster$TaskEventDispatcher
+2024-03-09 21:38:15,609 INFO [org.apache.hadoop.yarn.event.AsyncDispatcher] - Registering class org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType for class org.apache.hadoop.mapreduce.v2.app.MRAppMaster$TaskAttemptEventDispatcher
+2024-03-09 21:38:15,609 INFO [org.apache.hadoop.yarn.event.AsyncDispatcher] - Registering class org.apache.hadoop.mapreduce.v2.app.taskclean.TaskCleaner$EventType for class org.apache.hadoop.mapreduce.v2.app.MRApp$4
+2024-03-09 21:38:15,610 INFO [org.apache.hadoop.yarn.event.AsyncDispatcher] - Registering class org.apache.hadoop.mapreduce.v2.app.speculate.Speculator$EventType for class org.apache.hadoop.mapreduce.v2.app.MRAppMaster$SpeculatorEventDispatcher
+2024-03-09 21:38:15,611 INFO [org.apache.hadoop.yarn.event.AsyncDispatcher] - Registering class org.apache.hadoop.mapreduce.v2.app.rm.ContainerAllocator$EventType for class org.apache.hadoop.mapreduce.v2.app.MRApp$MRAppContainerAllocator
+2024-03-09 21:38:15,612 INFO [org.apache.hadoop.yarn.event.AsyncDispatcher] - Registering class org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncher$EventType for class org.apache.hadoop.mapreduce.v2.app.MRApp$MockContainerLauncher
+2024-03-09 21:38:15,612 INFO [org.apache.hadoop.yarn.service.AbstractService] - Service:Dispatcher is inited.
+2024-03-09 21:38:15,612 INFO [org.apache.hadoop.yarn.service.AbstractService] - Service:org.apache.hadoop.mapreduce.v2.app.MRAppMaster$StagingDirCleaningService is inited.
+2024-03-09 21:38:15,612 INFO [org.apache.hadoop.yarn.service.AbstractService] - Service:org.apache.hadoop.mapreduce.v2.app.MRAppMaster is inited.
+2024-03-09 21:38:15,669 INFO [org.apache.hadoop.yarn.event.AsyncDispatcher] - Registering class org.apache.hadoop.mapreduce.v2.app.job.event.JobFinishEvent$Type for class org.apache.hadoop.mapreduce.v2.app.MRApp$1
+2024-03-09 21:38:15,821 WARN [org.apache.hadoop.metrics2.impl.MetricsConfig] - Cannot locate configuration: tried hadoop-metrics2-mrappmaster.properties,hadoop-metrics2.properties
+2024-03-09 21:38:15,889 INFO [org.apache.hadoop.metrics2.impl.MetricsSystemImpl] - Scheduled snapshot period at 10 second(s).
+2024-03-09 21:38:15,889 INFO [org.apache.hadoop.metrics2.impl.MetricsSystemImpl] - MRAppMaster metrics system started
+2024-03-09 21:38:15,924 INFO [org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl] - Adding job token for job_0_0000 to jobTokenSecretManager
+2024-03-09 21:38:15,928 INFO [org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl] - Not uberizing job_0_0000 because: not enabled;
+2024-03-09 21:38:15,929 WARN [org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter] - Output Path is null in setupJob()
+2024-03-09 21:38:15,939 INFO [org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl] - Input size for job job_0_0000 = 0. Number of splits = 1
+2024-03-09 21:38:15,940 INFO [org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl] - Number of reduces for job job_0_0000 = 0
+2024-03-09 21:38:15,940 INFO [org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl] - job_0_0000Job Transitioned from NEW to INITED
+2024-03-09 21:38:15,940 INFO [org.apache.hadoop.mapreduce.v2.app.MRAppMaster] - MRAppMaster launching normal, non-uberized, multi-container job job_0_0000.
+2024-03-09 21:38:15,940 INFO [org.apache.hadoop.yarn.service.AbstractService] - Service:Dispatcher is started.
+2024-03-09 21:38:15,940 INFO [org.apache.hadoop.yarn.service.AbstractService] - Service:org.apache.hadoop.mapreduce.v2.app.MRAppMaster$StagingDirCleaningService is started.
+2024-03-09 21:38:15,940 INFO [org.apache.hadoop.yarn.service.AbstractService] - Service:org.apache.hadoop.mapreduce.v2.app.MRAppMaster is started.
+2024-03-09 21:38:15,941 INFO [org.apache.hadoop.metrics2.impl.MetricsSystemImpl] - Stopping MRAppMaster metrics system...
+2024-03-09 21:38:15,942 INFO [org.apache.hadoop.metrics2.impl.MetricsSystemImpl] - MRAppMaster metrics system stopped.
+2024-03-09 21:38:15,942 INFO [org.apache.hadoop.metrics2.impl.MetricsSystemImpl] - MRAppMaster metrics system shutdown complete.
+2024-03-09 21:38:15,942 INFO [org.apache.hadoop.mapreduce.v2.app.MRApp] - Writing job conf to /Users/caohch1/Projects/bug-data/MP-4637/target/.../caohch1/.staging/job_0_0000/job.xml
+2024-03-09 21:38:15,945 INFO [org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl] - job_0_0000Job Transitioned from INITED to RUNNING
+2024-03-09 21:38:15,948 WARN [org.apache.hadoop.conf.Configuration] - mapred.map.tasks.speculative.execution is deprecated. Instead, use mapreduce.map.speculative
+2024-03-09 21:38:15,948 WARN [org.apache.hadoop.conf.Configuration] - user.name is deprecated. Instead, use mapreduce.job.user.name
+2024-03-09 21:38:15,948 WARN [org.apache.hadoop.conf.Configuration] - mapred.reduce.tasks.speculative.execution is deprecated. Instead, use mapreduce.reduce.speculative
+2024-03-09 21:38:15,964 INFO [org.apache.hadoop.mapreduce.v2.app.job.impl.TaskImpl] - task_0_0000_m_000000 Task Transitioned from NEW to SCHEDULED
+2024-03-09 21:38:15,965 INFO [org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl] - attempt_0_0000_m_000000_0 TaskAttempt Transitioned from NEW to UNASSIGNED
+2024-03-09 21:38:16,014 INFO [org.apache.hadoop.yarn.util.RackResolver] - Resolved localhost to /default-rack
+2024-03-09 21:38:16,052 INFO [org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl] - Job jar is not present. Not adding any jar to the list of resources.
+2024-03-09 21:38:16,061 INFO [org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl] - The job-conf file on the remote FS is /Users/caohch1/Projects/bug-data/MP-4637/target/.../caohch1/.staging/job_0_0000/job.xml
+2024-03-09 21:38:16,062 INFO [org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl] - Size of containertokens_dob is 1
+2024-03-09 21:38:16,063 INFO [org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl] - Putting shuffle token in serviceData
+2024-03-09 21:38:16,130 INFO [org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl] - attempt_0_0000_m_000000_0 TaskAttempt Transitioned from UNASSIGNED to ASSIGNED
+2024-03-09 21:38:16,131 INFO [org.apache.hadoop.mapreduce.v2.app.client.MRClientService] - Kill task attempt received from client attempt_0_0000_m_000000_0
+2024-03-09 21:38:16,132 INFO [org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl] - TaskAttempt: [attempt_0_0000_m_000000_0] using containerId: [container_0_0000_01_000000 on NM: [localhost:1234]
+2024-03-09 21:38:16,136 INFO [org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl] - attempt_0_0000_m_000000_0 TaskAttempt Transitioned from ASSIGNED to RUNNING
+2024-03-09 21:38:16,136 INFO [org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl] - Diagnostics report from attempt_0_0000_m_000000_0: Kill task attempt received from client attempt_0_0000_m_000000_0
+2024-03-09 21:38:16,138 INFO [org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl] - attempt_0_0000_m_000000_0 TaskAttempt Transitioned from RUNNING to KILL_CONTAINER_CLEANUP
+2024-03-09 21:38:16,139 INFO [org.apache.hadoop.mapreduce.v2.app.job.impl.TaskImpl] - task_0_0000_m_000000 Task Transitioned from SCHEDULED to RUNNING
+2024-03-09 21:38:16,141 INFO [org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl] - attempt_0_0000_m_000000_0 TaskAttempt Transitioned from KILL_CONTAINER_CLEANUP to KILL_TASK_CLEANUP
+2024-03-09 21:38:16,143 INFO [org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl] - attempt_0_0000_m_000000_0 TaskAttempt Transitioned from KILL_TASK_CLEANUP to KILLED
+2024-03-09 21:38:16,147 INFO [org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl] - attempt_0_0000_m_000000_1 TaskAttempt Transitioned from NEW to UNASSIGNED
+2024-03-09 21:38:16,147 INFO [org.apache.hadoop.yarn.util.RackResolver] - Resolved localhost to /default-rack
+2024-03-09 21:38:16,148 INFO [org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl] - attempt_0_0000_m_000000_1 TaskAttempt Transitioned from UNASSIGNED to ASSIGNED
+2024-03-09 21:38:16,148 INFO [org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl] - TaskAttempt: [attempt_0_0000_m_000000_1] using containerId: [container_0_0000_01_000001 on NM: [localhost:1234]
+2024-03-09 21:38:16,148 INFO [org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl] - attempt_0_0000_m_000000_1 TaskAttempt Transitioned from ASSIGNED to RUNNING

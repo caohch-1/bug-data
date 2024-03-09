@@ -20,17 +20,30 @@ import org.apache.hadoop.yarn.factory.providers.RecordFactoryProvider;
 public class Replicate {
     
   public static void main(String[] args) throws Exception {
-    MRApp app = new MRApp(200, 0, false, "...", false);
+    MRApp app = new MRApp(1, 0, false, "...", false);
     Configuration conf = new Configuration();
     Job job = app.submit(conf);
     RecordFactory recordFactory = RecordFactoryProvider.getRecordFactory(null);
     KillTaskAttemptRequest killRequest = recordFactory.newRecordInstance(KillTaskAttemptRequest.class);
 
     MRClientService clientService = new MRClientService(app.getContext());
-    // System.out.println(clientService.getClass().getMethods()[0].getName());
+    // Buggy
+    // for (Task task : job.getTasks().values()) {
+    //   TaskAttempt taskAttempt = task.getAttempts().values().iterator().next();
+    //   if (taskAttempt.getState() == TaskAttemptState.UNASSIGNED) {
+    //     killRequest.setTaskAttemptId(taskAttempt.getID());
+    //     try {
+    //     clientService.protocolHandler.killTaskAttempt(killRequest);
+    //     } catch (Exception e) {
+    //       System.out.print(e.getMessage());
+    //       break;
+    //     }
+    //   }
+    // }
+    // Normal
     for (Task task : job.getTasks().values()) {
       TaskAttempt taskAttempt = task.getAttempts().values().iterator().next();
-      if (taskAttempt.getState() == TaskAttemptState.UNASSIGNED) {
+      if (taskAttempt.getState() == TaskAttemptState.ASSIGNED) {
         killRequest.setTaskAttemptId(taskAttempt.getID());
         try {
         clientService.protocolHandler.killTaskAttempt(killRequest);
