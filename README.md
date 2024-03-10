@@ -23,3 +23,14 @@ The **crime function** is 1) `getTask` in `hadoop-mapreduce-client-app/src/main/
 The **root cause function** is `TaskAttemptListenerImpl.getTask()` and `TaskAttemptListenerImpl.unregister()`
 
 **Why:** `TaskAttemptListenerImpl.unregister()` remove the element that `TaskAttemptListenerImpl.getTask()` try to visit.
+
+### ZK-1144
+Replication TBD
+
+The **error message function** Not sure  
+
+The **crime function** is 1) `lead()` in `src/java/main/org/apache/zookeeper/server/quorum/Leader`, 2) `run()` in `src/java/main/org/apache/zookeeper/server/quorum/LearnerHandler` and its callee `processAck()` in `src/java/main/org/apache/zookeeper/server/quorum/Leader`. 
+
+The **root cause function** is `Leader.lead()` and `Leader.processAck()`
+
+**Why:** `Leader.lead()` insert the element that `TaskAttemptListenerImpl.getTask()` try to visit. `outstandingProposals` is important. Similar to MP-3274.
