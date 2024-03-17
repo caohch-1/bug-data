@@ -1,0 +1,844 @@
+static void <clinit>()
+    {
+        org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType $stack13, $stack18, $stack23, $stack28, $stack33, $stack39, $stack45, $stack50, $stack53, $stack61, $stack64, $stack69, $stack74, $stack81, $stack84, $stack89, $stack96, $stack99, $stack104, $stack109, $stack114, $stack121, $stack124, $stack129, $stack134, $stack139, $stack144, $stack149, $stack156, $stack159, $stack163, $stack164, $stack165, $stack166, $stack174, $stack177, $stack182, $stack183, $stack184, $stack185, $stack186, $stack187, $stack188, $stack189, $stack190, $stack198, $stack201, $stack206, $stack207, $stack208, $stack209, $stack210, $stack211, $stack212, $stack213, $stack214, $stack222, $stack225, $stack230, $stack231, $stack232, $stack233, $stack234, $stack235, $stack236, $stack237, $stack245, $stack248, $stack253, $stack254, $stack255, $stack256, $stack257, $stack258, $stack259, $stack260, $stack268, $stack271, $stack275, $stack276, $stack277, $stack283, $stack288, $stack289, $stack290, $stack291, $stack292, $stack293, $stack294, $stack295, $stack296, $stack302, $stack307, $stack308, $stack309, $stack310, $stack311, $stack312, $stack313, $stack314, $stack315;
+        org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType[] $stack181, $stack205, $stack229, $stack252, $stack287, $stack306;
+        org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl$ContainerAssignedTransition $stack30;
+        org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl$LaunchedContainerTransition $stack47;
+        org.apache.hadoop.yarn.factories.RecordFactory $stack2;
+        org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl$FailedTransition $stack25, $stack219;
+        org.apache.hadoop.yarn.state.StateMachineFactory $stack8, $stack14, $stack19, $stack24, $stack29, $stack34, $stack40, $stack46, $stack51, $stack56, $stack62, $stack67, $stack72, $stack77, $stack82, $stack87, $stack92, $stack97, $stack102, $stack107, $stack112, $stack117, $stack122, $stack127, $stack132, $stack137, $stack142, $stack147, $stack152, $stack157, $stack162, $stack170, $stack175, $stack180, $stack194, $stack199, $stack204, $stack218, $stack223, $stack228, $stack241, $stack246, $stack251, $stack264, $stack269, $stack274, $stack281, $stack286, $stack300, $stack305, $stack319, $stack320;
+        java.util.concurrent.atomic.AtomicBoolean $stack3;
+        org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl$KilledTransition $stack20, $stack242;
+        org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl$CommitPendingTransition $stack93;
+        java.lang.String $stack321;
+        org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl$SucceededTransition $stack153;
+        java.util.regex.Pattern $stack322;
+        org.apache.commons.logging.Log $stack1;
+        org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState $stack9, $stack11, $stack12, $stack16, $stack17, $stack21, $stack22, $stack26, $stack27, $stack31, $stack32, $stack36, $stack37, $stack38, $stack42, $stack43, $stack44, $stack48, $stack49, $stack54, $stack55, $stack58, $stack59, $stack60, $stack65, $stack66, $stack70, $stack71, $stack75, $stack76, $stack79, $stack80, $stack85, $stack86, $stack90, $stack91, $stack94, $stack95, $stack100, $stack101, $stack105, $stack106, $stack110, $stack111, $stack115, $stack116, $stack119, $stack120, $stack125, $stack126, $stack130, $stack131, $stack135, $stack136, $stack140, $stack141, $stack145, $stack146, $stack150, $stack151, $stack154, $stack155, $stack160, $stack161, $stack167, $stack168, $stack172, $stack173, $stack178, $stack179, $stack191, $stack192, $stack196, $stack197, $stack202, $stack203, $stack215, $stack216, $stack220, $stack221, $stack226, $stack227, $stack238, $stack239, $stack243, $stack244, $stack249, $stack250, $stack261, $stack262, $stack266, $stack267, $stack272, $stack273, $stack278, $stack279, $stack284, $stack285, $stack297, $stack298, $stack303, $stack304, $stack316, $stack317;
+        java.util.EnumSet $stack169, $stack193, $stack217, $stack240, $stack263, $stack280, $stack299, $stack318;
+        org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl$TooManyFetchFailureTransition $stack265;
+        org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl$DiagnosticInformationUpdater $stack7, $stack52, $stack83, $stack123, $stack158, $stack176, $stack200, $stack224, $stack247, $stack270, $stack282, $stack301;
+        org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl$RequestContainerTransition $stack10, $stack15;
+        java.lang.Object $stack4, $stack5;
+        org.apache.hadoop.mapreduce.Counters $stack0;
+        org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl$StatusUpdater $stack78, $stack118;
+        org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl$CleanupContainerTransition $stack6, $stack63, $stack68, $stack73, $stack88, $stack98, $stack103, $stack108, $stack113, $stack128, $stack133, $stack138, $stack143, $stack148;
+        org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl$DeallocateContainerTransition $stack35, $stack41, $stack57;
+        org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl$TaskCleanupTransition $stack171, $stack195;
+
+        $stack0 = new org.apache.hadoop.mapreduce.Counters;
+
+        specialinvoke $stack0.<org.apache.hadoop.mapreduce.Counters: void <init>()>();
+
+        <org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: org.apache.hadoop.mapreduce.Counters EMPTY_COUNTERS> = $stack0;
+
+        $stack1 = staticinvoke <org.apache.commons.logging.LogFactory: org.apache.commons.logging.Log getLog(java.lang.Class)>(class "Lorg/apache/hadoop/mapreduce/v2/app/job/impl/TaskAttemptImpl;");
+
+        <org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: org.apache.commons.logging.Log LOG> = $stack1;
+
+        $stack2 = staticinvoke <org.apache.hadoop.yarn.factory.providers.RecordFactoryProvider: org.apache.hadoop.yarn.factories.RecordFactory getRecordFactory(org.apache.hadoop.conf.Configuration)>(null);
+
+        <org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: org.apache.hadoop.yarn.factories.RecordFactory recordFactory> = $stack2;
+
+        $stack3 = new java.util.concurrent.atomic.AtomicBoolean;
+
+        specialinvoke $stack3.<java.util.concurrent.atomic.AtomicBoolean: void <init>()>();
+
+        <org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: java.util.concurrent.atomic.AtomicBoolean initialClasspathFlag> = $stack3;
+
+        <org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: java.lang.String initialClasspath> = null;
+
+        $stack4 = new java.lang.Object;
+
+        specialinvoke $stack4.<java.lang.Object: void <init>()>();
+
+        <org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: java.lang.Object commonContainerSpecLock> = $stack4;
+
+        <org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: org.apache.hadoop.yarn.api.records.ContainerLaunchContext commonContainerSpec> = null;
+
+        $stack5 = new java.lang.Object;
+
+        specialinvoke $stack5.<java.lang.Object: void <init>()>();
+
+        <org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: java.lang.Object classpathLock> = $stack5;
+
+        $stack6 = new org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl$CleanupContainerTransition;
+
+        specialinvoke $stack6.<org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl$CleanupContainerTransition: void <init>(org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl$1)>(null);
+
+        <org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl$CleanupContainerTransition CLEANUP_CONTAINER_TRANSITION> = $stack6;
+
+        $stack7 = new org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl$DiagnosticInformationUpdater;
+
+        specialinvoke $stack7.<org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl$DiagnosticInformationUpdater: void <init>(org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl$1)>(null);
+
+        <org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl$DiagnosticInformationUpdater DIAGNOSTIC_INFORMATION_UPDATE_TRANSITION> = $stack7;
+
+        $stack8 = new org.apache.hadoop.yarn.state.StateMachineFactory;
+
+        $stack9 = <org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState: org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState NEW>;
+
+        specialinvoke $stack8.<org.apache.hadoop.yarn.state.StateMachineFactory: void <init>(java.lang.Enum)>($stack9);
+
+        $stack11 = <org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState: org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState NEW>;
+
+        $stack12 = <org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState: org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState UNASSIGNED>;
+
+        $stack13 = <org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType: org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType TA_SCHEDULE>;
+
+        $stack10 = new org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl$RequestContainerTransition;
+
+        specialinvoke $stack10.<org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl$RequestContainerTransition: void <init>(boolean)>(0);
+
+        $stack14 = virtualinvoke $stack8.<org.apache.hadoop.yarn.state.StateMachineFactory: org.apache.hadoop.yarn.state.StateMachineFactory addTransition(java.lang.Enum,java.lang.Enum,java.lang.Enum,org.apache.hadoop.yarn.state.SingleArcTransition)>($stack11, $stack12, $stack13, $stack10);
+
+        $stack16 = <org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState: org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState NEW>;
+
+        $stack17 = <org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState: org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState UNASSIGNED>;
+
+        $stack18 = <org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType: org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType TA_RESCHEDULE>;
+
+        $stack15 = new org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl$RequestContainerTransition;
+
+        specialinvoke $stack15.<org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl$RequestContainerTransition: void <init>(boolean)>(1);
+
+        $stack19 = virtualinvoke $stack14.<org.apache.hadoop.yarn.state.StateMachineFactory: org.apache.hadoop.yarn.state.StateMachineFactory addTransition(java.lang.Enum,java.lang.Enum,java.lang.Enum,org.apache.hadoop.yarn.state.SingleArcTransition)>($stack16, $stack17, $stack18, $stack15);
+
+        $stack21 = <org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState: org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState NEW>;
+
+        $stack22 = <org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState: org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState KILLED>;
+
+        $stack23 = <org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType: org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType TA_KILL>;
+
+        $stack20 = new org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl$KilledTransition;
+
+        specialinvoke $stack20.<org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl$KilledTransition: void <init>(org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl$1)>(null);
+
+        $stack24 = virtualinvoke $stack19.<org.apache.hadoop.yarn.state.StateMachineFactory: org.apache.hadoop.yarn.state.StateMachineFactory addTransition(java.lang.Enum,java.lang.Enum,java.lang.Enum,org.apache.hadoop.yarn.state.SingleArcTransition)>($stack21, $stack22, $stack23, $stack20);
+
+        $stack26 = <org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState: org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState NEW>;
+
+        $stack27 = <org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState: org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState FAILED>;
+
+        $stack28 = <org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType: org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType TA_FAILMSG>;
+
+        $stack25 = new org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl$FailedTransition;
+
+        specialinvoke $stack25.<org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl$FailedTransition: void <init>(org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl$1)>(null);
+
+        $stack29 = virtualinvoke $stack24.<org.apache.hadoop.yarn.state.StateMachineFactory: org.apache.hadoop.yarn.state.StateMachineFactory addTransition(java.lang.Enum,java.lang.Enum,java.lang.Enum,org.apache.hadoop.yarn.state.SingleArcTransition)>($stack26, $stack27, $stack28, $stack25);
+
+        $stack31 = <org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState: org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState UNASSIGNED>;
+
+        $stack32 = <org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState: org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState ASSIGNED>;
+
+        $stack33 = <org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType: org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType TA_ASSIGNED>;
+
+        $stack30 = new org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl$ContainerAssignedTransition;
+
+        specialinvoke $stack30.<org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl$ContainerAssignedTransition: void <init>(org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl$1)>(null);
+
+        $stack34 = virtualinvoke $stack29.<org.apache.hadoop.yarn.state.StateMachineFactory: org.apache.hadoop.yarn.state.StateMachineFactory addTransition(java.lang.Enum,java.lang.Enum,java.lang.Enum,org.apache.hadoop.yarn.state.SingleArcTransition)>($stack31, $stack32, $stack33, $stack30);
+
+        $stack37 = <org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState: org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState UNASSIGNED>;
+
+        $stack38 = <org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState: org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState KILLED>;
+
+        $stack39 = <org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType: org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType TA_KILL>;
+
+        $stack35 = new org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl$DeallocateContainerTransition;
+
+        $stack36 = <org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState: org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState KILLED>;
+
+        specialinvoke $stack35.<org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl$DeallocateContainerTransition: void <init>(org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState,boolean)>($stack36, 1);
+
+        $stack40 = virtualinvoke $stack34.<org.apache.hadoop.yarn.state.StateMachineFactory: org.apache.hadoop.yarn.state.StateMachineFactory addTransition(java.lang.Enum,java.lang.Enum,java.lang.Enum,org.apache.hadoop.yarn.state.SingleArcTransition)>($stack37, $stack38, $stack39, $stack35);
+
+        $stack43 = <org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState: org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState UNASSIGNED>;
+
+        $stack44 = <org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState: org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState FAILED>;
+
+        $stack45 = <org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType: org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType TA_FAILMSG>;
+
+        $stack41 = new org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl$DeallocateContainerTransition;
+
+        $stack42 = <org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState: org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState FAILED>;
+
+        specialinvoke $stack41.<org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl$DeallocateContainerTransition: void <init>(org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState,boolean)>($stack42, 1);
+
+        $stack46 = virtualinvoke $stack40.<org.apache.hadoop.yarn.state.StateMachineFactory: org.apache.hadoop.yarn.state.StateMachineFactory addTransition(java.lang.Enum,java.lang.Enum,java.lang.Enum,org.apache.hadoop.yarn.state.SingleArcTransition)>($stack43, $stack44, $stack45, $stack41);
+
+        $stack48 = <org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState: org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState ASSIGNED>;
+
+        $stack49 = <org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState: org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState RUNNING>;
+
+        $stack50 = <org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType: org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType TA_CONTAINER_LAUNCHED>;
+
+        $stack47 = new org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl$LaunchedContainerTransition;
+
+        specialinvoke $stack47.<org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl$LaunchedContainerTransition: void <init>(org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl$1)>(null);
+
+        $stack51 = virtualinvoke $stack46.<org.apache.hadoop.yarn.state.StateMachineFactory: org.apache.hadoop.yarn.state.StateMachineFactory addTransition(java.lang.Enum,java.lang.Enum,java.lang.Enum,org.apache.hadoop.yarn.state.SingleArcTransition)>($stack48, $stack49, $stack50, $stack47);
+
+        $stack55 = <org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState: org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState ASSIGNED>;
+
+        $stack54 = <org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState: org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState ASSIGNED>;
+
+        $stack53 = <org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType: org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType TA_DIAGNOSTICS_UPDATE>;
+
+        $stack52 = <org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl$DiagnosticInformationUpdater DIAGNOSTIC_INFORMATION_UPDATE_TRANSITION>;
+
+        $stack56 = virtualinvoke $stack51.<org.apache.hadoop.yarn.state.StateMachineFactory: org.apache.hadoop.yarn.state.StateMachineFactory addTransition(java.lang.Enum,java.lang.Enum,java.lang.Enum,org.apache.hadoop.yarn.state.SingleArcTransition)>($stack55, $stack54, $stack53, $stack52);
+
+        $stack59 = <org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState: org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState ASSIGNED>;
+
+        $stack60 = <org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState: org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState FAILED>;
+
+        $stack61 = <org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType: org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType TA_CONTAINER_LAUNCH_FAILED>;
+
+        $stack57 = new org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl$DeallocateContainerTransition;
+
+        $stack58 = <org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState: org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState FAILED>;
+
+        specialinvoke $stack57.<org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl$DeallocateContainerTransition: void <init>(org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState,boolean)>($stack58, 0);
+
+        $stack62 = virtualinvoke $stack56.<org.apache.hadoop.yarn.state.StateMachineFactory: org.apache.hadoop.yarn.state.StateMachineFactory addTransition(java.lang.Enum,java.lang.Enum,java.lang.Enum,org.apache.hadoop.yarn.state.SingleArcTransition)>($stack59, $stack60, $stack61, $stack57);
+
+        $stack66 = <org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState: org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState ASSIGNED>;
+
+        $stack65 = <org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState: org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState FAIL_CONTAINER_CLEANUP>;
+
+        $stack64 = <org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType: org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType TA_CONTAINER_COMPLETED>;
+
+        $stack63 = <org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl$CleanupContainerTransition CLEANUP_CONTAINER_TRANSITION>;
+
+        $stack67 = virtualinvoke $stack62.<org.apache.hadoop.yarn.state.StateMachineFactory: org.apache.hadoop.yarn.state.StateMachineFactory addTransition(java.lang.Enum,java.lang.Enum,java.lang.Enum,org.apache.hadoop.yarn.state.SingleArcTransition)>($stack66, $stack65, $stack64, $stack63);
+
+        $stack71 = <org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState: org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState ASSIGNED>;
+
+        $stack70 = <org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState: org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState KILL_CONTAINER_CLEANUP>;
+
+        $stack69 = <org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType: org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType TA_KILL>;
+
+        $stack68 = <org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl$CleanupContainerTransition CLEANUP_CONTAINER_TRANSITION>;
+
+        $stack72 = virtualinvoke $stack67.<org.apache.hadoop.yarn.state.StateMachineFactory: org.apache.hadoop.yarn.state.StateMachineFactory addTransition(java.lang.Enum,java.lang.Enum,java.lang.Enum,org.apache.hadoop.yarn.state.SingleArcTransition)>($stack71, $stack70, $stack69, $stack68);
+
+        $stack76 = <org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState: org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState ASSIGNED>;
+
+        $stack75 = <org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState: org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState FAIL_CONTAINER_CLEANUP>;
+
+        $stack74 = <org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType: org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType TA_FAILMSG>;
+
+        $stack73 = <org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl$CleanupContainerTransition CLEANUP_CONTAINER_TRANSITION>;
+
+        $stack77 = virtualinvoke $stack72.<org.apache.hadoop.yarn.state.StateMachineFactory: org.apache.hadoop.yarn.state.StateMachineFactory addTransition(java.lang.Enum,java.lang.Enum,java.lang.Enum,org.apache.hadoop.yarn.state.SingleArcTransition)>($stack76, $stack75, $stack74, $stack73);
+
+        $stack79 = <org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState: org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState RUNNING>;
+
+        $stack80 = <org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState: org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState RUNNING>;
+
+        $stack81 = <org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType: org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType TA_UPDATE>;
+
+        $stack78 = new org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl$StatusUpdater;
+
+        specialinvoke $stack78.<org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl$StatusUpdater: void <init>(org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl$1)>(null);
+
+        $stack82 = virtualinvoke $stack77.<org.apache.hadoop.yarn.state.StateMachineFactory: org.apache.hadoop.yarn.state.StateMachineFactory addTransition(java.lang.Enum,java.lang.Enum,java.lang.Enum,org.apache.hadoop.yarn.state.SingleArcTransition)>($stack79, $stack80, $stack81, $stack78);
+
+        $stack86 = <org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState: org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState RUNNING>;
+
+        $stack85 = <org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState: org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState RUNNING>;
+
+        $stack84 = <org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType: org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType TA_DIAGNOSTICS_UPDATE>;
+
+        $stack83 = <org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl$DiagnosticInformationUpdater DIAGNOSTIC_INFORMATION_UPDATE_TRANSITION>;
+
+        $stack87 = virtualinvoke $stack82.<org.apache.hadoop.yarn.state.StateMachineFactory: org.apache.hadoop.yarn.state.StateMachineFactory addTransition(java.lang.Enum,java.lang.Enum,java.lang.Enum,org.apache.hadoop.yarn.state.SingleArcTransition)>($stack86, $stack85, $stack84, $stack83);
+
+        $stack91 = <org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState: org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState RUNNING>;
+
+        $stack90 = <org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState: org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState SUCCESS_CONTAINER_CLEANUP>;
+
+        $stack89 = <org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType: org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType TA_DONE>;
+
+        $stack88 = <org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl$CleanupContainerTransition CLEANUP_CONTAINER_TRANSITION>;
+
+        $stack92 = virtualinvoke $stack87.<org.apache.hadoop.yarn.state.StateMachineFactory: org.apache.hadoop.yarn.state.StateMachineFactory addTransition(java.lang.Enum,java.lang.Enum,java.lang.Enum,org.apache.hadoop.yarn.state.SingleArcTransition)>($stack91, $stack90, $stack89, $stack88);
+
+        $stack94 = <org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState: org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState RUNNING>;
+
+        $stack95 = <org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState: org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState COMMIT_PENDING>;
+
+        $stack96 = <org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType: org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType TA_COMMIT_PENDING>;
+
+        $stack93 = new org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl$CommitPendingTransition;
+
+        specialinvoke $stack93.<org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl$CommitPendingTransition: void <init>(org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl$1)>(null);
+
+        $stack97 = virtualinvoke $stack92.<org.apache.hadoop.yarn.state.StateMachineFactory: org.apache.hadoop.yarn.state.StateMachineFactory addTransition(java.lang.Enum,java.lang.Enum,java.lang.Enum,org.apache.hadoop.yarn.state.SingleArcTransition)>($stack94, $stack95, $stack96, $stack93);
+
+        $stack101 = <org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState: org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState RUNNING>;
+
+        $stack100 = <org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState: org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState FAIL_CONTAINER_CLEANUP>;
+
+        $stack99 = <org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType: org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType TA_FAILMSG>;
+
+        $stack98 = <org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl$CleanupContainerTransition CLEANUP_CONTAINER_TRANSITION>;
+
+        $stack102 = virtualinvoke $stack97.<org.apache.hadoop.yarn.state.StateMachineFactory: org.apache.hadoop.yarn.state.StateMachineFactory addTransition(java.lang.Enum,java.lang.Enum,java.lang.Enum,org.apache.hadoop.yarn.state.SingleArcTransition)>($stack101, $stack100, $stack99, $stack98);
+
+        $stack106 = <org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState: org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState RUNNING>;
+
+        $stack105 = <org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState: org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState FAIL_CONTAINER_CLEANUP>;
+
+        $stack104 = <org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType: org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType TA_CONTAINER_COMPLETED>;
+
+        $stack103 = <org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl$CleanupContainerTransition CLEANUP_CONTAINER_TRANSITION>;
+
+        $stack107 = virtualinvoke $stack102.<org.apache.hadoop.yarn.state.StateMachineFactory: org.apache.hadoop.yarn.state.StateMachineFactory addTransition(java.lang.Enum,java.lang.Enum,java.lang.Enum,org.apache.hadoop.yarn.state.SingleArcTransition)>($stack106, $stack105, $stack104, $stack103);
+
+        $stack111 = <org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState: org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState RUNNING>;
+
+        $stack110 = <org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState: org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState FAIL_CONTAINER_CLEANUP>;
+
+        $stack109 = <org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType: org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType TA_TIMED_OUT>;
+
+        $stack108 = <org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl$CleanupContainerTransition CLEANUP_CONTAINER_TRANSITION>;
+
+        $stack112 = virtualinvoke $stack107.<org.apache.hadoop.yarn.state.StateMachineFactory: org.apache.hadoop.yarn.state.StateMachineFactory addTransition(java.lang.Enum,java.lang.Enum,java.lang.Enum,org.apache.hadoop.yarn.state.SingleArcTransition)>($stack111, $stack110, $stack109, $stack108);
+
+        $stack116 = <org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState: org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState RUNNING>;
+
+        $stack115 = <org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState: org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState KILL_CONTAINER_CLEANUP>;
+
+        $stack114 = <org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType: org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType TA_KILL>;
+
+        $stack113 = <org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl$CleanupContainerTransition CLEANUP_CONTAINER_TRANSITION>;
+
+        $stack117 = virtualinvoke $stack112.<org.apache.hadoop.yarn.state.StateMachineFactory: org.apache.hadoop.yarn.state.StateMachineFactory addTransition(java.lang.Enum,java.lang.Enum,java.lang.Enum,org.apache.hadoop.yarn.state.SingleArcTransition)>($stack116, $stack115, $stack114, $stack113);
+
+        $stack119 = <org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState: org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState COMMIT_PENDING>;
+
+        $stack120 = <org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState: org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState COMMIT_PENDING>;
+
+        $stack121 = <org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType: org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType TA_UPDATE>;
+
+        $stack118 = new org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl$StatusUpdater;
+
+        specialinvoke $stack118.<org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl$StatusUpdater: void <init>(org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl$1)>(null);
+
+        $stack122 = virtualinvoke $stack117.<org.apache.hadoop.yarn.state.StateMachineFactory: org.apache.hadoop.yarn.state.StateMachineFactory addTransition(java.lang.Enum,java.lang.Enum,java.lang.Enum,org.apache.hadoop.yarn.state.SingleArcTransition)>($stack119, $stack120, $stack121, $stack118);
+
+        $stack126 = <org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState: org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState COMMIT_PENDING>;
+
+        $stack125 = <org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState: org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState COMMIT_PENDING>;
+
+        $stack124 = <org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType: org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType TA_DIAGNOSTICS_UPDATE>;
+
+        $stack123 = <org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl$DiagnosticInformationUpdater DIAGNOSTIC_INFORMATION_UPDATE_TRANSITION>;
+
+        $stack127 = virtualinvoke $stack122.<org.apache.hadoop.yarn.state.StateMachineFactory: org.apache.hadoop.yarn.state.StateMachineFactory addTransition(java.lang.Enum,java.lang.Enum,java.lang.Enum,org.apache.hadoop.yarn.state.SingleArcTransition)>($stack126, $stack125, $stack124, $stack123);
+
+        $stack131 = <org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState: org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState COMMIT_PENDING>;
+
+        $stack130 = <org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState: org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState SUCCESS_CONTAINER_CLEANUP>;
+
+        $stack129 = <org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType: org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType TA_DONE>;
+
+        $stack128 = <org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl$CleanupContainerTransition CLEANUP_CONTAINER_TRANSITION>;
+
+        $stack132 = virtualinvoke $stack127.<org.apache.hadoop.yarn.state.StateMachineFactory: org.apache.hadoop.yarn.state.StateMachineFactory addTransition(java.lang.Enum,java.lang.Enum,java.lang.Enum,org.apache.hadoop.yarn.state.SingleArcTransition)>($stack131, $stack130, $stack129, $stack128);
+
+        $stack136 = <org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState: org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState COMMIT_PENDING>;
+
+        $stack135 = <org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState: org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState KILL_CONTAINER_CLEANUP>;
+
+        $stack134 = <org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType: org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType TA_KILL>;
+
+        $stack133 = <org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl$CleanupContainerTransition CLEANUP_CONTAINER_TRANSITION>;
+
+        $stack137 = virtualinvoke $stack132.<org.apache.hadoop.yarn.state.StateMachineFactory: org.apache.hadoop.yarn.state.StateMachineFactory addTransition(java.lang.Enum,java.lang.Enum,java.lang.Enum,org.apache.hadoop.yarn.state.SingleArcTransition)>($stack136, $stack135, $stack134, $stack133);
+
+        $stack141 = <org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState: org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState COMMIT_PENDING>;
+
+        $stack140 = <org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState: org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState FAIL_CONTAINER_CLEANUP>;
+
+        $stack139 = <org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType: org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType TA_FAILMSG>;
+
+        $stack138 = <org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl$CleanupContainerTransition CLEANUP_CONTAINER_TRANSITION>;
+
+        $stack142 = virtualinvoke $stack137.<org.apache.hadoop.yarn.state.StateMachineFactory: org.apache.hadoop.yarn.state.StateMachineFactory addTransition(java.lang.Enum,java.lang.Enum,java.lang.Enum,org.apache.hadoop.yarn.state.SingleArcTransition)>($stack141, $stack140, $stack139, $stack138);
+
+        $stack146 = <org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState: org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState COMMIT_PENDING>;
+
+        $stack145 = <org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState: org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState FAIL_CONTAINER_CLEANUP>;
+
+        $stack144 = <org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType: org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType TA_CONTAINER_COMPLETED>;
+
+        $stack143 = <org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl$CleanupContainerTransition CLEANUP_CONTAINER_TRANSITION>;
+
+        $stack147 = virtualinvoke $stack142.<org.apache.hadoop.yarn.state.StateMachineFactory: org.apache.hadoop.yarn.state.StateMachineFactory addTransition(java.lang.Enum,java.lang.Enum,java.lang.Enum,org.apache.hadoop.yarn.state.SingleArcTransition)>($stack146, $stack145, $stack144, $stack143);
+
+        $stack151 = <org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState: org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState COMMIT_PENDING>;
+
+        $stack150 = <org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState: org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState FAIL_CONTAINER_CLEANUP>;
+
+        $stack149 = <org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType: org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType TA_TIMED_OUT>;
+
+        $stack148 = <org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl$CleanupContainerTransition CLEANUP_CONTAINER_TRANSITION>;
+
+        $stack152 = virtualinvoke $stack147.<org.apache.hadoop.yarn.state.StateMachineFactory: org.apache.hadoop.yarn.state.StateMachineFactory addTransition(java.lang.Enum,java.lang.Enum,java.lang.Enum,org.apache.hadoop.yarn.state.SingleArcTransition)>($stack151, $stack150, $stack149, $stack148);
+
+        $stack154 = <org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState: org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState SUCCESS_CONTAINER_CLEANUP>;
+
+        $stack155 = <org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState: org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState SUCCEEDED>;
+
+        $stack156 = <org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType: org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType TA_CONTAINER_CLEANED>;
+
+        $stack153 = new org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl$SucceededTransition;
+
+        specialinvoke $stack153.<org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl$SucceededTransition: void <init>(org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl$1)>(null);
+
+        $stack157 = virtualinvoke $stack152.<org.apache.hadoop.yarn.state.StateMachineFactory: org.apache.hadoop.yarn.state.StateMachineFactory addTransition(java.lang.Enum,java.lang.Enum,java.lang.Enum,org.apache.hadoop.yarn.state.SingleArcTransition)>($stack154, $stack155, $stack156, $stack153);
+
+        $stack161 = <org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState: org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState SUCCESS_CONTAINER_CLEANUP>;
+
+        $stack160 = <org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState: org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState SUCCESS_CONTAINER_CLEANUP>;
+
+        $stack159 = <org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType: org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType TA_DIAGNOSTICS_UPDATE>;
+
+        $stack158 = <org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl$DiagnosticInformationUpdater DIAGNOSTIC_INFORMATION_UPDATE_TRANSITION>;
+
+        $stack162 = virtualinvoke $stack157.<org.apache.hadoop.yarn.state.StateMachineFactory: org.apache.hadoop.yarn.state.StateMachineFactory addTransition(java.lang.Enum,java.lang.Enum,java.lang.Enum,org.apache.hadoop.yarn.state.SingleArcTransition)>($stack161, $stack160, $stack159, $stack158);
+
+        $stack167 = <org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState: org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState SUCCESS_CONTAINER_CLEANUP>;
+
+        $stack168 = <org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState: org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState SUCCESS_CONTAINER_CLEANUP>;
+
+        $stack166 = <org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType: org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType TA_KILL>;
+
+        $stack165 = <org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType: org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType TA_FAILMSG>;
+
+        $stack164 = <org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType: org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType TA_TIMED_OUT>;
+
+        $stack163 = <org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType: org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType TA_CONTAINER_COMPLETED>;
+
+        $stack169 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum,java.lang.Enum,java.lang.Enum,java.lang.Enum)>($stack166, $stack165, $stack164, $stack163);
+
+        $stack170 = virtualinvoke $stack162.<org.apache.hadoop.yarn.state.StateMachineFactory: org.apache.hadoop.yarn.state.StateMachineFactory addTransition(java.lang.Enum,java.lang.Enum,java.util.Set)>($stack167, $stack168, $stack169);
+
+        $stack172 = <org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState: org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState FAIL_CONTAINER_CLEANUP>;
+
+        $stack173 = <org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState: org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState FAIL_TASK_CLEANUP>;
+
+        $stack174 = <org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType: org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType TA_CONTAINER_CLEANED>;
+
+        $stack171 = new org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl$TaskCleanupTransition;
+
+        specialinvoke $stack171.<org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl$TaskCleanupTransition: void <init>(org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl$1)>(null);
+
+        $stack175 = virtualinvoke $stack170.<org.apache.hadoop.yarn.state.StateMachineFactory: org.apache.hadoop.yarn.state.StateMachineFactory addTransition(java.lang.Enum,java.lang.Enum,java.lang.Enum,org.apache.hadoop.yarn.state.SingleArcTransition)>($stack172, $stack173, $stack174, $stack171);
+
+        $stack179 = <org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState: org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState FAIL_CONTAINER_CLEANUP>;
+
+        $stack178 = <org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState: org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState FAIL_CONTAINER_CLEANUP>;
+
+        $stack177 = <org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType: org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType TA_DIAGNOSTICS_UPDATE>;
+
+        $stack176 = <org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl$DiagnosticInformationUpdater DIAGNOSTIC_INFORMATION_UPDATE_TRANSITION>;
+
+        $stack180 = virtualinvoke $stack175.<org.apache.hadoop.yarn.state.StateMachineFactory: org.apache.hadoop.yarn.state.StateMachineFactory addTransition(java.lang.Enum,java.lang.Enum,java.lang.Enum,org.apache.hadoop.yarn.state.SingleArcTransition)>($stack179, $stack178, $stack177, $stack176);
+
+        $stack191 = <org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState: org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState FAIL_CONTAINER_CLEANUP>;
+
+        $stack192 = <org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState: org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState FAIL_CONTAINER_CLEANUP>;
+
+        $stack190 = <org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType: org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType TA_KILL>;
+
+        $stack181 = newarray (org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType)[8];
+
+        $stack182 = <org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType: org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType TA_CONTAINER_COMPLETED>;
+
+        $stack181[0] = $stack182;
+
+        $stack183 = <org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType: org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType TA_UPDATE>;
+
+        $stack181[1] = $stack183;
+
+        $stack184 = <org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType: org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType TA_COMMIT_PENDING>;
+
+        $stack181[2] = $stack184;
+
+        $stack185 = <org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType: org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType TA_CONTAINER_LAUNCHED>;
+
+        $stack181[3] = $stack185;
+
+        $stack186 = <org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType: org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType TA_CONTAINER_LAUNCH_FAILED>;
+
+        $stack181[4] = $stack186;
+
+        $stack187 = <org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType: org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType TA_DONE>;
+
+        $stack181[5] = $stack187;
+
+        $stack188 = <org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType: org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType TA_FAILMSG>;
+
+        $stack181[6] = $stack188;
+
+        $stack189 = <org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType: org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType TA_TIMED_OUT>;
+
+        $stack181[7] = $stack189;
+
+        $stack193 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum,java.lang.Enum[])>($stack190, $stack181);
+
+        $stack194 = virtualinvoke $stack180.<org.apache.hadoop.yarn.state.StateMachineFactory: org.apache.hadoop.yarn.state.StateMachineFactory addTransition(java.lang.Enum,java.lang.Enum,java.util.Set)>($stack191, $stack192, $stack193);
+
+        $stack196 = <org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState: org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState KILL_CONTAINER_CLEANUP>;
+
+        $stack197 = <org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState: org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState KILL_TASK_CLEANUP>;
+
+        $stack198 = <org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType: org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType TA_CONTAINER_CLEANED>;
+
+        $stack195 = new org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl$TaskCleanupTransition;
+
+        specialinvoke $stack195.<org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl$TaskCleanupTransition: void <init>(org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl$1)>(null);
+
+        $stack199 = virtualinvoke $stack194.<org.apache.hadoop.yarn.state.StateMachineFactory: org.apache.hadoop.yarn.state.StateMachineFactory addTransition(java.lang.Enum,java.lang.Enum,java.lang.Enum,org.apache.hadoop.yarn.state.SingleArcTransition)>($stack196, $stack197, $stack198, $stack195);
+
+        $stack203 = <org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState: org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState KILL_CONTAINER_CLEANUP>;
+
+        $stack202 = <org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState: org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState KILL_CONTAINER_CLEANUP>;
+
+        $stack201 = <org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType: org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType TA_DIAGNOSTICS_UPDATE>;
+
+        $stack200 = <org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl$DiagnosticInformationUpdater DIAGNOSTIC_INFORMATION_UPDATE_TRANSITION>;
+
+        $stack204 = virtualinvoke $stack199.<org.apache.hadoop.yarn.state.StateMachineFactory: org.apache.hadoop.yarn.state.StateMachineFactory addTransition(java.lang.Enum,java.lang.Enum,java.lang.Enum,org.apache.hadoop.yarn.state.SingleArcTransition)>($stack203, $stack202, $stack201, $stack200);
+
+        $stack215 = <org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState: org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState KILL_CONTAINER_CLEANUP>;
+
+        $stack216 = <org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState: org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState KILL_CONTAINER_CLEANUP>;
+
+        $stack214 = <org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType: org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType TA_KILL>;
+
+        $stack205 = newarray (org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType)[8];
+
+        $stack206 = <org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType: org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType TA_CONTAINER_COMPLETED>;
+
+        $stack205[0] = $stack206;
+
+        $stack207 = <org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType: org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType TA_UPDATE>;
+
+        $stack205[1] = $stack207;
+
+        $stack208 = <org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType: org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType TA_COMMIT_PENDING>;
+
+        $stack205[2] = $stack208;
+
+        $stack209 = <org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType: org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType TA_CONTAINER_LAUNCHED>;
+
+        $stack205[3] = $stack209;
+
+        $stack210 = <org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType: org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType TA_CONTAINER_LAUNCH_FAILED>;
+
+        $stack205[4] = $stack210;
+
+        $stack211 = <org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType: org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType TA_DONE>;
+
+        $stack205[5] = $stack211;
+
+        $stack212 = <org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType: org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType TA_FAILMSG>;
+
+        $stack205[6] = $stack212;
+
+        $stack213 = <org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType: org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType TA_TIMED_OUT>;
+
+        $stack205[7] = $stack213;
+
+        $stack217 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum,java.lang.Enum[])>($stack214, $stack205);
+
+        $stack218 = virtualinvoke $stack204.<org.apache.hadoop.yarn.state.StateMachineFactory: org.apache.hadoop.yarn.state.StateMachineFactory addTransition(java.lang.Enum,java.lang.Enum,java.util.Set)>($stack215, $stack216, $stack217);
+
+        $stack220 = <org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState: org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState FAIL_TASK_CLEANUP>;
+
+        $stack221 = <org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState: org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState FAILED>;
+
+        $stack222 = <org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType: org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType TA_CLEANUP_DONE>;
+
+        $stack219 = new org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl$FailedTransition;
+
+        specialinvoke $stack219.<org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl$FailedTransition: void <init>(org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl$1)>(null);
+
+        $stack223 = virtualinvoke $stack218.<org.apache.hadoop.yarn.state.StateMachineFactory: org.apache.hadoop.yarn.state.StateMachineFactory addTransition(java.lang.Enum,java.lang.Enum,java.lang.Enum,org.apache.hadoop.yarn.state.SingleArcTransition)>($stack220, $stack221, $stack222, $stack219);
+
+        $stack227 = <org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState: org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState FAIL_TASK_CLEANUP>;
+
+        $stack226 = <org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState: org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState FAIL_TASK_CLEANUP>;
+
+        $stack225 = <org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType: org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType TA_DIAGNOSTICS_UPDATE>;
+
+        $stack224 = <org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl$DiagnosticInformationUpdater DIAGNOSTIC_INFORMATION_UPDATE_TRANSITION>;
+
+        $stack228 = virtualinvoke $stack223.<org.apache.hadoop.yarn.state.StateMachineFactory: org.apache.hadoop.yarn.state.StateMachineFactory addTransition(java.lang.Enum,java.lang.Enum,java.lang.Enum,org.apache.hadoop.yarn.state.SingleArcTransition)>($stack227, $stack226, $stack225, $stack224);
+
+        $stack238 = <org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState: org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState FAIL_TASK_CLEANUP>;
+
+        $stack239 = <org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState: org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState FAIL_TASK_CLEANUP>;
+
+        $stack237 = <org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType: org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType TA_KILL>;
+
+        $stack229 = newarray (org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType)[7];
+
+        $stack230 = <org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType: org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType TA_CONTAINER_COMPLETED>;
+
+        $stack229[0] = $stack230;
+
+        $stack231 = <org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType: org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType TA_UPDATE>;
+
+        $stack229[1] = $stack231;
+
+        $stack232 = <org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType: org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType TA_COMMIT_PENDING>;
+
+        $stack229[2] = $stack232;
+
+        $stack233 = <org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType: org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType TA_DONE>;
+
+        $stack229[3] = $stack233;
+
+        $stack234 = <org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType: org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType TA_FAILMSG>;
+
+        $stack229[4] = $stack234;
+
+        $stack235 = <org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType: org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType TA_CONTAINER_LAUNCHED>;
+
+        $stack229[5] = $stack235;
+
+        $stack236 = <org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType: org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType TA_CONTAINER_LAUNCH_FAILED>;
+
+        $stack229[6] = $stack236;
+
+        $stack240 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum,java.lang.Enum[])>($stack237, $stack229);
+
+        $stack241 = virtualinvoke $stack228.<org.apache.hadoop.yarn.state.StateMachineFactory: org.apache.hadoop.yarn.state.StateMachineFactory addTransition(java.lang.Enum,java.lang.Enum,java.util.Set)>($stack238, $stack239, $stack240);
+
+        $stack243 = <org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState: org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState KILL_TASK_CLEANUP>;
+
+        $stack244 = <org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState: org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState KILLED>;
+
+        $stack245 = <org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType: org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType TA_CLEANUP_DONE>;
+
+        $stack242 = new org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl$KilledTransition;
+
+        specialinvoke $stack242.<org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl$KilledTransition: void <init>(org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl$1)>(null);
+
+        $stack246 = virtualinvoke $stack241.<org.apache.hadoop.yarn.state.StateMachineFactory: org.apache.hadoop.yarn.state.StateMachineFactory addTransition(java.lang.Enum,java.lang.Enum,java.lang.Enum,org.apache.hadoop.yarn.state.SingleArcTransition)>($stack243, $stack244, $stack245, $stack242);
+
+        $stack250 = <org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState: org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState KILL_TASK_CLEANUP>;
+
+        $stack249 = <org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState: org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState KILL_TASK_CLEANUP>;
+
+        $stack248 = <org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType: org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType TA_DIAGNOSTICS_UPDATE>;
+
+        $stack247 = <org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl$DiagnosticInformationUpdater DIAGNOSTIC_INFORMATION_UPDATE_TRANSITION>;
+
+        $stack251 = virtualinvoke $stack246.<org.apache.hadoop.yarn.state.StateMachineFactory: org.apache.hadoop.yarn.state.StateMachineFactory addTransition(java.lang.Enum,java.lang.Enum,java.lang.Enum,org.apache.hadoop.yarn.state.SingleArcTransition)>($stack250, $stack249, $stack248, $stack247);
+
+        $stack261 = <org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState: org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState KILL_TASK_CLEANUP>;
+
+        $stack262 = <org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState: org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState KILL_TASK_CLEANUP>;
+
+        $stack260 = <org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType: org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType TA_KILL>;
+
+        $stack252 = newarray (org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType)[7];
+
+        $stack253 = <org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType: org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType TA_CONTAINER_COMPLETED>;
+
+        $stack252[0] = $stack253;
+
+        $stack254 = <org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType: org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType TA_UPDATE>;
+
+        $stack252[1] = $stack254;
+
+        $stack255 = <org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType: org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType TA_COMMIT_PENDING>;
+
+        $stack252[2] = $stack255;
+
+        $stack256 = <org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType: org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType TA_DONE>;
+
+        $stack252[3] = $stack256;
+
+        $stack257 = <org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType: org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType TA_FAILMSG>;
+
+        $stack252[4] = $stack257;
+
+        $stack258 = <org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType: org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType TA_CONTAINER_LAUNCHED>;
+
+        $stack252[5] = $stack258;
+
+        $stack259 = <org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType: org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType TA_CONTAINER_LAUNCH_FAILED>;
+
+        $stack252[6] = $stack259;
+
+        $stack263 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum,java.lang.Enum[])>($stack260, $stack252);
+
+        $stack264 = virtualinvoke $stack251.<org.apache.hadoop.yarn.state.StateMachineFactory: org.apache.hadoop.yarn.state.StateMachineFactory addTransition(java.lang.Enum,java.lang.Enum,java.util.Set)>($stack261, $stack262, $stack263);
+
+        $stack266 = <org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState: org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState SUCCEEDED>;
+
+        $stack267 = <org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState: org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState FAILED>;
+
+        $stack268 = <org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType: org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType TA_TOO_MANY_FETCH_FAILURE>;
+
+        $stack265 = new org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl$TooManyFetchFailureTransition;
+
+        specialinvoke $stack265.<org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl$TooManyFetchFailureTransition: void <init>(org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl$1)>(null);
+
+        $stack269 = virtualinvoke $stack264.<org.apache.hadoop.yarn.state.StateMachineFactory: org.apache.hadoop.yarn.state.StateMachineFactory addTransition(java.lang.Enum,java.lang.Enum,java.lang.Enum,org.apache.hadoop.yarn.state.SingleArcTransition)>($stack266, $stack267, $stack268, $stack265);
+
+        $stack273 = <org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState: org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState SUCCEEDED>;
+
+        $stack272 = <org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState: org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState SUCCEEDED>;
+
+        $stack271 = <org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType: org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType TA_DIAGNOSTICS_UPDATE>;
+
+        $stack270 = <org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl$DiagnosticInformationUpdater DIAGNOSTIC_INFORMATION_UPDATE_TRANSITION>;
+
+        $stack274 = virtualinvoke $stack269.<org.apache.hadoop.yarn.state.StateMachineFactory: org.apache.hadoop.yarn.state.StateMachineFactory addTransition(java.lang.Enum,java.lang.Enum,java.lang.Enum,org.apache.hadoop.yarn.state.SingleArcTransition)>($stack273, $stack272, $stack271, $stack270);
+
+        $stack278 = <org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState: org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState SUCCEEDED>;
+
+        $stack279 = <org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState: org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState SUCCEEDED>;
+
+        $stack277 = <org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType: org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType TA_KILL>;
+
+        $stack276 = <org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType: org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType TA_FAILMSG>;
+
+        $stack275 = <org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType: org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType TA_CONTAINER_COMPLETED>;
+
+        $stack280 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum,java.lang.Enum,java.lang.Enum)>($stack277, $stack276, $stack275);
+
+        $stack281 = virtualinvoke $stack274.<org.apache.hadoop.yarn.state.StateMachineFactory: org.apache.hadoop.yarn.state.StateMachineFactory addTransition(java.lang.Enum,java.lang.Enum,java.util.Set)>($stack278, $stack279, $stack280);
+
+        $stack285 = <org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState: org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState FAILED>;
+
+        $stack284 = <org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState: org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState FAILED>;
+
+        $stack283 = <org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType: org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType TA_DIAGNOSTICS_UPDATE>;
+
+        $stack282 = <org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl$DiagnosticInformationUpdater DIAGNOSTIC_INFORMATION_UPDATE_TRANSITION>;
+
+        $stack286 = virtualinvoke $stack281.<org.apache.hadoop.yarn.state.StateMachineFactory: org.apache.hadoop.yarn.state.StateMachineFactory addTransition(java.lang.Enum,java.lang.Enum,java.lang.Enum,org.apache.hadoop.yarn.state.SingleArcTransition)>($stack285, $stack284, $stack283, $stack282);
+
+        $stack297 = <org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState: org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState FAILED>;
+
+        $stack298 = <org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState: org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState FAILED>;
+
+        $stack296 = <org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType: org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType TA_KILL>;
+
+        $stack287 = newarray (org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType)[8];
+
+        $stack288 = <org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType: org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType TA_ASSIGNED>;
+
+        $stack287[0] = $stack288;
+
+        $stack289 = <org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType: org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType TA_CONTAINER_COMPLETED>;
+
+        $stack287[1] = $stack289;
+
+        $stack290 = <org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType: org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType TA_UPDATE>;
+
+        $stack287[2] = $stack290;
+
+        $stack291 = <org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType: org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType TA_CONTAINER_LAUNCHED>;
+
+        $stack287[3] = $stack291;
+
+        $stack292 = <org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType: org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType TA_CONTAINER_LAUNCH_FAILED>;
+
+        $stack287[4] = $stack292;
+
+        $stack293 = <org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType: org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType TA_COMMIT_PENDING>;
+
+        $stack287[5] = $stack293;
+
+        $stack294 = <org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType: org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType TA_DONE>;
+
+        $stack287[6] = $stack294;
+
+        $stack295 = <org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType: org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType TA_FAILMSG>;
+
+        $stack287[7] = $stack295;
+
+        $stack299 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum,java.lang.Enum[])>($stack296, $stack287);
+
+        $stack300 = virtualinvoke $stack286.<org.apache.hadoop.yarn.state.StateMachineFactory: org.apache.hadoop.yarn.state.StateMachineFactory addTransition(java.lang.Enum,java.lang.Enum,java.util.Set)>($stack297, $stack298, $stack299);
+
+        $stack304 = <org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState: org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState KILLED>;
+
+        $stack303 = <org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState: org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState KILLED>;
+
+        $stack302 = <org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType: org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType TA_DIAGNOSTICS_UPDATE>;
+
+        $stack301 = <org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl$DiagnosticInformationUpdater DIAGNOSTIC_INFORMATION_UPDATE_TRANSITION>;
+
+        $stack305 = virtualinvoke $stack300.<org.apache.hadoop.yarn.state.StateMachineFactory: org.apache.hadoop.yarn.state.StateMachineFactory addTransition(java.lang.Enum,java.lang.Enum,java.lang.Enum,org.apache.hadoop.yarn.state.SingleArcTransition)>($stack304, $stack303, $stack302, $stack301);
+
+        $stack316 = <org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState: org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState KILLED>;
+
+        $stack317 = <org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState: org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptState KILLED>;
+
+        $stack315 = <org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType: org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType TA_KILL>;
+
+        $stack306 = newarray (org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType)[8];
+
+        $stack307 = <org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType: org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType TA_ASSIGNED>;
+
+        $stack306[0] = $stack307;
+
+        $stack308 = <org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType: org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType TA_CONTAINER_COMPLETED>;
+
+        $stack306[1] = $stack308;
+
+        $stack309 = <org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType: org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType TA_UPDATE>;
+
+        $stack306[2] = $stack309;
+
+        $stack310 = <org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType: org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType TA_CONTAINER_LAUNCHED>;
+
+        $stack306[3] = $stack310;
+
+        $stack311 = <org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType: org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType TA_CONTAINER_LAUNCH_FAILED>;
+
+        $stack306[4] = $stack311;
+
+        $stack312 = <org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType: org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType TA_COMMIT_PENDING>;
+
+        $stack306[5] = $stack312;
+
+        $stack313 = <org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType: org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType TA_DONE>;
+
+        $stack306[6] = $stack313;
+
+        $stack314 = <org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType: org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType TA_FAILMSG>;
+
+        $stack306[7] = $stack314;
+
+        $stack318 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum,java.lang.Enum[])>($stack315, $stack306);
+
+        $stack319 = virtualinvoke $stack305.<org.apache.hadoop.yarn.state.StateMachineFactory: org.apache.hadoop.yarn.state.StateMachineFactory addTransition(java.lang.Enum,java.lang.Enum,java.util.Set)>($stack316, $stack317, $stack318);
+
+        $stack320 = virtualinvoke $stack319.<org.apache.hadoop.yarn.state.StateMachineFactory: org.apache.hadoop.yarn.state.StateMachineFactory installTopology()>();
+
+        <org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: org.apache.hadoop.yarn.state.StateMachineFactory stateMachineFactory> = $stack320;
+
+        $stack321 = staticinvoke <java.lang.System: java.lang.String getProperty(java.lang.String)>("line.separator");
+
+        <org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: java.lang.String LINE_SEPARATOR> = $stack321;
+
+        $stack322 = staticinvoke <java.util.regex.Pattern: java.util.regex.Pattern compile(java.lang.String)>("\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}");
+
+        <org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: java.util.regex.Pattern ipPattern> = $stack322;
+
+        return;
+    }

@@ -22,7 +22,7 @@ public class Replicate {
   public static void main(String[] args) throws Exception {
     MRApp app = new MRApp(1, 0, false, "...", false);
     Configuration conf = new Configuration();
-    Job job = app.submit(conf);
+    Job job = app.submit(conf); //submit->init->super.init->createContainerAllocator->MRAppContainerAllocator->handle
     RecordFactory recordFactory = RecordFactoryProvider.getRecordFactory(null);
     KillTaskAttemptRequest killRequest = recordFactory.newRecordInstance(KillTaskAttemptRequest.class);
 
